@@ -1,11 +1,6 @@
-import Image from "next/image";
 import React from "react";
-import SideMenu from "./_components/SideMenu";
+import Map from "./_components/Map";
 
 export default function Home() {
-  return (
-    <div className="flex w-full">
-      <SideMenu />
-    </div>
-  );
+  return <Map />;
 }

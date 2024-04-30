@@ -4,8 +4,8 @@ const SideMenu = () => {
   const leftMenu = [
     {
       id: 1,
-      name: "Country Profiles",
-      path: "/",
+      name: "Country Profile",
+      path: "/country-profile",
       submenu: [
         {
           id: 1,
@@ -22,17 +22,17 @@ const SideMenu = () => {
     {
       id: 2,
       name: "Policy/Legislation Mapping",
-      path: "/",
+      path: "/policy-legislation-map",
     },
     {
       id: 3,
       name: "Return Infrastructure",
-      path: "/",
+      path: "/return-infrastructure",
     },
     {
       id: 4,
       name: "International Cooperation",
-      path: "/",
+      path: "/international-cooperation",
     },
     {
       id: 5,
@@ -87,7 +87,7 @@ const SideMenu = () => {
     },
   ];
   return (
-    <div className="flex h-screen flex-col justify-between border-e bg-white">
+    <div className="flex h-screen flex-col justify-between border-e bg-white w-64 overflow-y-auto">
       <div className="px-4 py-6">
         <ul className="mt-6 space-y-1">
           {leftMenu.map((menuItem) => (

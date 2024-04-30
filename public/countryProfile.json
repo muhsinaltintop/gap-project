@@ -1,0 +1,114 @@
+[
+  {
+    "countryName": "Germany",
+    "euMember": true,
+    "executiveSummary": "Executive Summary.docx",
+    "returnPolicyTimeline": "Timeline events EU_Germany_Return_final_010124.pdf",
+    "returnFlowchart": "stages of German asylum procedure.pdf",
+    "actorReturnDiagram": "German actor landscape.pdf"
+  },
+  {
+    "countryName": "Sweden",
+    "euMember": true,
+    "executiveSummary": "Executive Summary_Swedish Return and Readmission Policies.pdf",
+    "returnPolicyTimeline": "Timeline of the Return Policy in Sweden.png",
+    "returnFlowchart": "",
+    "actorReturnDiagram": "Diagram - Actors in Return.jpg"
+  },
+  {
+    "countryName": "Greece",
+    "euMember": true,
+    "executiveSummary": "Executive Summary.docx",
+    "returnPolicyTimeline": "Timeline of Return Policies.docx",
+    "returnFlowchart": "Return Procedures Flowchart.jpg",
+    "actorReturnDiagram": "Diagram Actors in Return.docx"
+  },
+  {
+    "countryName": "Poland",
+    "euMember": true,
+    "executiveSummary": "Executive summary.docx",
+    "returnPolicyTimeline": "TIMELINE OF RETURN POLICIES_POLAND(1).xlsx",
+    "returnFlowchart": "Diagram WP3.pdf",
+    "actorReturnDiagram": "Diagram WP3.pdf"
+  },
+  {
+    "countryName": "Netherlands",
+    "euMember": true,
+    "executiveSummary": "Summary return in the Netherlands.docx",
+    "returnPolicyTimeline": "Timeline Dutch return policies.docx",
+    "returnFlowchart": "Removal process The Netherlands.docx",
+    "actorReturnDiagram": "Actors of return migration in The Netherlands.docx"
+  },
+  {
+    "countryName": "Turkey",
+    "euMember": false,
+    "executiveSummary": "Executive_Summary.docx",
+    "returnPolicyTimeline": "Turkey Return Policy Timeline.pdf",
+    "returnFlowchart": "National Return System.pdf",
+    "actorReturnDiagram": "Actors Technologies and Materials - Turkey Return System.pdf"
+  },
+  {
+    "countryName": "Iraq",
+    "euMember": false,
+    "executiveSummary": "",
+    "returnPolicyTimeline": "",
+    "returnFlowchart": "",
+    "actorReturnDiagram": ""
+  },
+  {
+    "countryName": "Jordan",
+    "euMember": false,
+    "executiveSummary": "",
+    "returnPolicyTimeline": "",
+    "returnFlowchart": "",
+    "actorReturnDiagram": ""
+  },
+  {
+    "countryName": "Afghanistan",
+    "euMember": false,
+    "executiveSummary": "Return & Reintegration-Afghanistan.pdf",
+    "returnPolicyTimeline": "Time-Line of Return Policies.pdf",
+    "returnFlowchart": "Flow Chart.pdf",
+    "actorReturnDiagram": "Diagram- Actors in Return.pdf"
+  },
+  {
+    "countryName": "Nigeria",
+    "euMember": false,
+    "executiveSummary": "",
+    "returnPolicyTimeline": "",
+    "returnFlowchart": "",
+    "actorReturnDiagram": ""
+  },
+  {
+    "countryName": "Morocco",
+    "euMember": false,
+    "executiveSummary": "GAPS WP1_Executive Summary of Morocco's Return Policy.pdf",
+    "returnPolicyTimeline": "GAPS WP1_ Timeline of Moroccan Return Policy.pdf",
+    "returnFlowchart": "GAPS WP1_Flow chart of the  National Return System of Morocco.pdf",
+    "actorReturnDiagram": "GAPS WP1_ Diagram Actors in Return Morocco.pdf"
+  },
+  {
+    "countryName": "Tunisia",
+    "euMember": false,
+    "executiveSummary": "Tunisian excutive Summary.docx",
+    "returnPolicyTimeline": "Hanen Final.pdf",
+    "returnFlowchart": "Hanen-4 (2).docx",
+    "actorReturnDiagram": "Return actors in Tunisia.png"
+  },
+  {
+    "countryName": "Canada",
+    "euMember": false,
+    "executiveSummary": "Executive Summary_Canada.docx",
+    "returnPolicyTimeline": "",
+    "returnFlowchart": "",
+    "actorReturnDiagram": ""
+  },
+  {
+    "countryName": "United Kingdom",
+    "euMember": false,
+    "executiveSummary": "Executive Summary (Record ID 1700-1).xlsx",
+    "returnPolicyTimeline": "",
+    "returnFlowchart": "",
+    "actorReturnDiagram": ""
+  }
+]
