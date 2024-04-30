@@ -1,9 +1,6 @@
 import Image from "next/image";
+import React from "react";
 
 export default function Home() {
-  return (
-    <div>
-      <h2>GAP's Project</h2>
-    </div>
-  );
+  return <div></div>;
 }
