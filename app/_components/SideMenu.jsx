@@ -9,7 +9,7 @@ const SideMenu = () => {
       submenu: [
         {
           id: 1,
-          name: "Identificaiton",
+          name: "Identification",
           path: "/",
         },
         {

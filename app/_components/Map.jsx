@@ -1,14 +1,10 @@
 "use client";
 import React, { memo, useEffect, useState } from "react";
-import {
-  ZoomableGroup,
-  ComposableMap,
-  Geographies,
-  Geography,
-} from "react-simple-maps";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { Tooltip } from "@mui/material";
-import ModalComponent from "./ModalComponent";
+
 import countryProfileData from "../../public/countryProfile.json";
+import ModalComponent from "./ModalComponent";
 
 const MapChart = () => {
   const [content, setContent] = useState("");
@@ -28,7 +24,7 @@ const MapChart = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="w-6/12 h-full border-solid border-2 border-gray-400 px-4 m-6 border-r-4 rounded">
+    <div className="w-8/12 h-full border-solid border-2 border-gray-400 px-6 py-0 m-6 border-r-4 rounded">
       <ModalComponent
         handleOpen={handleOpen}
         handleClose={handleClose}
@@ -42,6 +38,11 @@ const MapChart = () => {
               <Tooltip key={index} title={content}>
                 {geo.properties.color ? (
                   <Geography
+                    className={
+                      geo.properties
+                        ? "cursor-pointer fill-primary hover:fill-destructive outline-none"
+                        : ""
+                    }
                     key={geo.rsmKey}
                     geography={geo}
                     onMouseEnter={() => {
@@ -55,25 +56,12 @@ const MapChart = () => {
                       setClickedCountry(geo.properties);
                       open ? handleClose() : handleOpen();
                     }}
-                    style={{
-                      default: {
-                        fill: geo.properties.color
-                          ? geo.properties.color
-                          : "#D6D6DA",
-                        outline: "none",
-                      },
-                      hover: {
-                        fill: geo.properties.color ? "#F53" : "#D6D6DA",
-                        outline: "none",
-                      },
-                      pressed: {
-                        fill: "#E42",
-                        outline: "none",
-                      },
-                    }}
                   />
                 ) : (
                   <Geography
+                    className={
+                      geo.properties ? "fill-secondary outline-none" : ""
+                    }
                     key={geo.rsmKey}
                     geography={geo}
                     onMouseEnter={() => {
@@ -82,22 +70,6 @@ const MapChart = () => {
                     }}
                     onMouseLeave={() => {
                       setContent("");
-                    }}
-                    style={{
-                      default: {
-                        fill: geo.properties.color
-                          ? geo.properties.color
-                          : "#D6D6DA",
-                        outline: "none",
-                      },
-                      hover: {
-                        fill: geo.properties.color ? "#F53" : "#D6D6DA",
-                        outline: "none",
-                      },
-                      pressed: {
-                        fill: "#E42",
-                        outline: "none",
-                      },
                     }}
                   />
                 )}

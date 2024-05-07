@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={lato.className}>
-        <div className="md:px-20">
+        <div className="w-12/12 flex flex-col">
           <Header />
         </div>
         <div className="flex w-12/12">

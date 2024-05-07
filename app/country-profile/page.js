@@ -1,7 +1,12 @@
 import React from "react";
+import Map from "../_components/Map";
 
 const CountryProfile = () => {
-  return <div>Country Profile</div>;
+  return (
+    <div>
+      <Map />
+    </div>
+  );
 };
 
 export default CountryProfile;
