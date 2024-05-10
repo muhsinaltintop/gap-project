@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,6 +13,13 @@ function Header() {
     { id: 5, name: "GAPs News", path: "/" },
     { id: 6, name: "Contact", path: "/" },
     { id: 7, name: "GAPs News", path: "/" },
+  ];
+
+  const Social = [
+    { id: 1, name: "Facebook", path: "/", icon: <Facebook /> },
+    { id: 2, name: "Instagram", path: "/", icon: <Instagram /> },
+    { id: 3, name: "LinkedIn", path: "/", icon: <Linkedin /> },
+    { id: 4, name: "Twitter", path: "/", icon: <Twitter /> },
   ];
   return (
     <div className="flex items-center justify-between p-4 shadow-sm">
@@ -32,10 +40,13 @@ function Header() {
         </ul>
       </div>
       <div className="flex gap-1">
-        <Button>F</Button>
-        <Button>I</Button>
-        <Button>X</Button>
-        <Button>L</Button>
+        {Social.map((item, index) => (
+          <Link key={index} href={item.path}>
+            <Button className="bg-transparent text-primary hover:bg-primary hover:text-white transition-all ease-in-out">
+              {item.icon}
+            </Button>
+          </Link>
+        ))}
       </div>
     </div>
   );
