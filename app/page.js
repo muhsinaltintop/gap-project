@@ -1,5 +1,4 @@
-import React from "react";
-import Map from "./_components/Map";
+import Button from "./_components/_atoms/Button";
 import CountryProfile from "./country-profile/page";
 
 export default function Home() {

@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "@mui/material/Modal";
 import Image from "next/image";
+import Link from "next/link";
 
 const style = {
   position: "absolute",
@@ -43,29 +44,35 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             <p className="text-sm font-semibold uppercase tracking-widest">
               {selectedCountry?.countryName}
             </p>
+            <span className=" flex-row text-xl">
+              <h2 className="text-2xl font-bold">Executive Summary</h2>
+              <div className="overflow-hidden max-h-40 transition-all duration-500 group-open:max-h-[1000px]">
+                {selectedCountry?.executiveSummary
+                  ? selectedCountry.executiveSummary.map((item, index) => item)
+                  : "No executive summary available"}
+              </div>
+              <Link href={`/executiveSummary/${selectedCountry?.countryName}`}>
+                <div className="truncate text-primary">Read More</div>
+              </Link>
+            </span>
 
-            <h2 className="mt-6 font-black uppercase">
-              <span className="text-4xl font-black sm:text-5xl lg:text-6xl">
-                {console.log("selected:", selectedCountry)}
-                {selectedCountry?.returnPolictTimeline
-                  ? returnPolictTimeline
-                  : "No return policy timeline available"}
-              </span>
-
-              <span className="mt-2 block text-sm">
-                {selectedCountry?.returnFlowChart
-                  ? returnFlowChart
-                  : "No return flow chart available"}
-              </span>
-            </h2>
-
+            <span className="text-4xl font-black sm:text-5xl lg:text-6xl">
+              {console.log("selected:", selectedCountry?.executiveSummary)}
+              {selectedCountry?.returnPolictTimeline
+                ? returnPolictTimeline
+                : "No return policy timeline available"}
+            </span>
+            <span className="mt-2 block text-sm">
+              {selectedCountry?.returnFlowChart
+                ? returnFlowChart
+                : "No return flow chart available"}
+            </span>
             <a
               className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
               href="#"
             >
               Get Executive Summary
             </a>
-
             <p className="mt-8 text-xs font-medium uppercase text-gray-400">
               This part will be updated...
             </p>

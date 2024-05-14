@@ -2,7 +2,12 @@
   {
     "countryName": "Germany",
     "euMember": true,
-    "executiveSummary": "Executive Summary.docx",
+    "executiveSummary": [
+      "The German political context for return policy in the period 2015 to 2022 is, on the one hand, primarily characterised by continuity despite a change of government in 2021. On the other hand, it is a repetition of the migration policymaking and rhetoric of the first half of the 1990s. The persistent trend is for migration and return policymaking to be grounded in domestic factors, particularly the steady rise of right-wing populist political voices and political groups that rally against immigration. Political rhetoric portrays immigrants as burdens on the social welfare system, contributing to the prioritization of deportation measures.",
+      "The German institutional framework for returns is highly complex due to multi-level governance with discretionary powers of the federal states and sub-national administrative actors (districts and municipalities) in the federal system. Decentralized enforcement by 16 states and their administrative bodies leads to challenges in uniform policy implementation. The Federal Ministry of the Interior plays a pivotal role in shaping return policies, with the Federal Office for Migration and Asylum (BAMF) serving as the operational entity. Return support services, such as counselling and financial assistance, exhibit variations across different federal states. Since 2015, the return governance framework has expanded to include intermediate coordination structures between the federal and state levels as well as inter-ministerial coordination at the federal level and between the state ministries of the interior.  Moreover, in this multi-level governance setup, the authority and discretionary powers of judges in district and administrative courts is noteworthy, as well as of the individual ‘decision-makers’ of the third-level Foreigners Authorities in that they have a special responsibility to make well-informed decisions.",
+      "Decentralized legal provisions and implementation of (supra)national requirements by multiple actors results in varying outcomes for migrants, and internal contradictions in policy execution create challenges in ensuring compliance during implementation. The influence of the Court of Justice of the European Union (CJEU) case-law significantly shapes return policies, adding layers of complexity to the legal framework. It should be acknowledged that various actors, in particular some political parties, have played an outstanding role in documenting or requesting data on returns through their parliamentary authority.",
+      "Nevertheless, there are several specific challenges in the German return regime including those related to the legislative, institutional, and international cooperation frameworks as well as issues in data collection, the enforcement, and political communication."
+    ],
     "returnPolicyTimeline": "Timeline events EU_Germany_Return_final_010124.pdf",
     "returnFlowchart": "stages of German asylum procedure.pdf",
     "actorReturnDiagram": "German actor landscape.pdf"
@@ -90,7 +95,11 @@
   {
     "countryName": "Tunisia",
     "euMember": false,
-    "executiveSummary": "Tunisian excutive Summary.docx",
+    "executiveSummary": [
+      "Placeholder paragraph 1",
+      "Placeholder paragraph 2",
+      "Placeholder paragraph 3"
+    ],
     "returnPolicyTimeline": "Hanen Final.pdf",
     "returnFlowchart": "Hanen-4 (2).docx",
     "actorReturnDiagram": "Return actors in Tunisia.png"
@@ -98,7 +107,11 @@
   {
     "countryName": "Canada",
     "euMember": false,
-    "executiveSummary": "Executive Summary_Canada.docx",
+    "executiveSummary": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula magna eget tellus consectetur, at fermentum sem consectetur. Phasellus tincidunt purus eu magna sagittis, nec tristique velit posuere. Nullam auctor sem nec justo venenatis, quis fermentum lorem consequat. Nulla facilisi. Donec in urna ac dui interdum venenatis. Sed auctor, ante quis convallis vestibulum, nunc ex consequat velit, nec convallis quam turpis a velit. Phasellus malesuada velit non odio ultrices, nec convallis sem suscipit.",
+      "Fusce ullamcorper sapien et mauris dapibus feugiat. Sed interdum risus ac tellus aliquam, in luctus purus scelerisque. Nunc rutrum, mauris at convallis fermentum, sapien lacus iaculis libero, eu bibendum dui velit vel nisi. In vehicula tellus ac libero malesuada, vitae vulputate risus luctus. Proin nec ipsum ultricies, consequat enim non, consectetur libero. Pellentesque non gravida nulla.",
+      "Maecenas ac est nec leo congue posuere. Vivamus eget ligula vitae mi interdum varius. Integer lacinia, nunc sit amet gravida convallis, ipsum purus pharetra diam, eget condimentum velit arcu nec justo. Nam ac tortor vitae nunc tincidunt fermentum. Suspendisse ut libero eu dolor congue placerat. Nulla facilisi. Cras molestie libero sed dolor fermentum, nec molestie enim varius."
+    ],
     "returnPolicyTimeline": "",
     "returnFlowchart": "",
     "actorReturnDiagram": ""

@@ -6,18 +6,6 @@ const SideMenu = () => {
       id: 1,
       name: "Country Profile",
       path: "/country-profile",
-      submenu: [
-        {
-          id: 1,
-          name: "Identification",
-          path: "/",
-        },
-        {
-          id: 2,
-          name: "Executive Summary",
-          path: "/",
-        },
-      ],
     },
     {
       id: 2,

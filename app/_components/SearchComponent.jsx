@@ -4,7 +4,8 @@ import CountrySelect from "./CountrySelect";
 import SelectYearsComponent from "./SelectYearsComponent";
 import SearchBarComponent from "./SearchBarComponent";
 import policies from "../../public/policies.json";
-import { Button } from "@/components/ui/button";
+import Button from "../_components/_atoms/Button";
+import TableComponent from "./TableComponent";
 
 const SearchComponent = () => {
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -28,8 +29,6 @@ const SearchComponent = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPolicies, setFilteredPolicies] = useState([]);
-
-  console.log("policies:", policies);
 
   const handleSearch = () => {
     let filtered = policies.flatMap((country) => {
@@ -79,8 +78,9 @@ const SearchComponent = () => {
           onChange={(e) => e.target.value}
           placeholder="Enter a policy term..."
         />
-        <Button onClick={handleSearch}>Search</Button>
-        {console.log(filteredPolicies)}
+        <Button label={"Search"} onClick={handleSearch} icon={false} />
+
+        <TableComponent policies={filteredPolicies} />
       </div>
     </div>
   );
