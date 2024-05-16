@@ -19,6 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-simple-maps": "^3.0.0",
+    "recharts": "^2.12.7",
+    "save-svg-as-png": "^1.4.17",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },

@@ -45,7 +45,7 @@ const SideMenu = () => {
         {
           id: 4,
           name: "Dublin Returns",
-          path: "/",
+          path: "statistics/dublin-returns",
         },
         {
           id: 5,

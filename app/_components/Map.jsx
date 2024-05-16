@@ -2,7 +2,6 @@
 import React, { memo, useEffect, useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { Tooltip } from "@mui/material";
-
 import countryProfileData from "../../public/countryProfile.json";
 import ModalComponent from "./ModalComponent";
 
