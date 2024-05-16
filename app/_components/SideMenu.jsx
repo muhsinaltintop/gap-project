@@ -5,7 +5,7 @@ const SideMenu = () => {
     {
       id: 1,
       name: "Country Profile",
-      path: "/country-profile",
+      path: "/",
     },
     {
       id: 2,

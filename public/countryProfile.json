@@ -9,7 +9,7 @@
       "Nevertheless, there are several specific challenges in the German return regime including those related to the legislative, institutional, and international cooperation frameworks as well as issues in data collection, the enforcement, and political communication."
     ],
     "returnPolicyTimeline": "Timeline events EU_Germany_Return_final_010124.pdf",
-    "returnFlowchart": "stages of German asylum procedure.pdf",
+    "returnFlowChart": "stages of German asylum procedure.pdf",
     "actorReturnDiagram": "German actor landscape.pdf"
   },
   {
@@ -17,7 +17,7 @@
     "euMember": true,
     "executiveSummary": "Executive Summary_Swedish Return and Readmission Policies.pdf",
     "returnPolicyTimeline": "Timeline of the Return Policy in Sweden.png",
-    "returnFlowchart": "",
+    "returnFlowChart": "",
     "actorReturnDiagram": "Diagram - Actors in Return.jpg"
   },
   {
@@ -25,7 +25,7 @@
     "euMember": true,
     "executiveSummary": "Executive Summary.docx",
     "returnPolicyTimeline": "Timeline of Return Policies.docx",
-    "returnFlowchart": "Return Procedures Flowchart.jpg",
+    "returnFlowChart": "Return Procedures Flowchart.jpg",
     "actorReturnDiagram": "Diagram Actors in Return.docx"
   },
   {
@@ -33,7 +33,7 @@
     "euMember": true,
     "executiveSummary": "Executive summary.docx",
     "returnPolicyTimeline": "TIMELINE OF RETURN POLICIES_POLAND(1).xlsx",
-    "returnFlowchart": "Diagram WP3.pdf",
+    "returnFlowChart": "Diagram WP3.pdf",
     "actorReturnDiagram": "Diagram WP3.pdf"
   },
   {
@@ -41,7 +41,7 @@
     "euMember": true,
     "executiveSummary": "Summary return in the Netherlands.docx",
     "returnPolicyTimeline": "Timeline Dutch return policies.docx",
-    "returnFlowchart": "Removal process The Netherlands.docx",
+    "returnFlowChart": "Removal process The Netherlands.docx",
     "actorReturnDiagram": "Actors of return migration in The Netherlands.docx"
   },
   {
@@ -49,7 +49,7 @@
     "euMember": false,
     "executiveSummary": "Executive_Summary.docx",
     "returnPolicyTimeline": "Turkey Return Policy Timeline.pdf",
-    "returnFlowchart": "National Return System.pdf",
+    "returnFlowChart": "National Return System.pdf",
     "actorReturnDiagram": "Actors Technologies and Materials - Turkey Return System.pdf"
   },
   {
@@ -57,7 +57,7 @@
     "euMember": false,
     "executiveSummary": "",
     "returnPolicyTimeline": "",
-    "returnFlowchart": "",
+    "returnFlowChart": "",
     "actorReturnDiagram": ""
   },
   {
@@ -65,7 +65,7 @@
     "euMember": false,
     "executiveSummary": "",
     "returnPolicyTimeline": "",
-    "returnFlowchart": "",
+    "returnFlowChart": "",
     "actorReturnDiagram": ""
   },
   {
@@ -73,7 +73,7 @@
     "euMember": false,
     "executiveSummary": "Return & Reintegration-Afghanistan.pdf",
     "returnPolicyTimeline": "Time-Line of Return Policies.pdf",
-    "returnFlowchart": "Flow Chart.pdf",
+    "returnFlowChart": "Flow Chart.pdf",
     "actorReturnDiagram": "Diagram- Actors in Return.pdf"
   },
   {
@@ -81,7 +81,7 @@
     "euMember": false,
     "executiveSummary": "",
     "returnPolicyTimeline": "",
-    "returnFlowchart": "",
+    "returnFlowChart": "",
     "actorReturnDiagram": ""
   },
   {
@@ -89,7 +89,7 @@
     "euMember": false,
     "executiveSummary": "GAPS WP1_Executive Summary of Morocco's Return Policy.pdf",
     "returnPolicyTimeline": "GAPS WP1_ Timeline of Moroccan Return Policy.pdf",
-    "returnFlowchart": "GAPS WP1_Flow chart of the  National Return System of Morocco.pdf",
+    "returnFlowChart": "GAPS WP1_Flow chart of the  National Return System of Morocco.pdf",
     "actorReturnDiagram": "GAPS WP1_ Diagram Actors in Return Morocco.pdf"
   },
   {
@@ -101,7 +101,7 @@
       "Placeholder paragraph 3"
     ],
     "returnPolicyTimeline": "Hanen Final.pdf",
-    "returnFlowchart": "Hanen-4 (2).docx",
+    "returnFlowChart": "Hanen-4 (2).docx",
     "actorReturnDiagram": "Return actors in Tunisia.png"
   },
   {
@@ -112,16 +112,16 @@
       "Fusce ullamcorper sapien et mauris dapibus feugiat. Sed interdum risus ac tellus aliquam, in luctus purus scelerisque. Nunc rutrum, mauris at convallis fermentum, sapien lacus iaculis libero, eu bibendum dui velit vel nisi. In vehicula tellus ac libero malesuada, vitae vulputate risus luctus. Proin nec ipsum ultricies, consequat enim non, consectetur libero. Pellentesque non gravida nulla.",
       "Maecenas ac est nec leo congue posuere. Vivamus eget ligula vitae mi interdum varius. Integer lacinia, nunc sit amet gravida convallis, ipsum purus pharetra diam, eget condimentum velit arcu nec justo. Nam ac tortor vitae nunc tincidunt fermentum. Suspendisse ut libero eu dolor congue placerat. Nulla facilisi. Cras molestie libero sed dolor fermentum, nec molestie enim varius."
     ],
-    "returnPolicyTimeline": "",
-    "returnFlowchart": "",
-    "actorReturnDiagram": ""
+    "returnPolicyTimeline": "returnPolicyTimeline",
+    "returnFlowChart": "returnFlowChart",
+    "actorReturnDiagram": "actorReturnDiagram"
   },
   {
     "countryName": "United Kingdom",
     "euMember": false,
     "executiveSummary": "Executive Summary (Record ID 1700-1).xlsx",
     "returnPolicyTimeline": "",
-    "returnFlowchart": "",
+    "returnFlowChart": "",
     "actorReturnDiagram": ""
   }
 ]
