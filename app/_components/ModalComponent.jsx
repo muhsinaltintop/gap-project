@@ -80,6 +80,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             <a
               className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
               href={`https://www.returnmigration.eu/countries-${selectedCountry?.countryName.toLowerCase()}`}
+              target="_blank"
             >
               {`${selectedCountry?.countryName} Country Profile on GAP`}
             </a>
