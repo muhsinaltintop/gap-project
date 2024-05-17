@@ -55,7 +55,11 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             <div className="flex-col mt-4 align-sub">
               <span className="font-black m-2">
                 {selectedCountry?.returnPolicyTimeline ? (
-                  <Link href={"#"}>Return Policy Timeline</Link>
+                  <Link
+                    href={"https://www.returnmigration.eu/countries-germany"}
+                  >
+                    Return Policy Timeline
+                  </Link>
                 ) : (
                   ""
                 )}
