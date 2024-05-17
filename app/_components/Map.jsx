@@ -1,6 +1,11 @@
 "use client";
 import React, { memo, useEffect, useState } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  ZoomableGroup,
+} from "react-simple-maps";
 import { Tooltip } from "@mui/material";
 import countryProfileData from "../../public/countryProfile.json";
 import ModalComponent from "./ModalComponent";
@@ -30,52 +35,54 @@ const MapChart = () => {
         open={open}
         selectedCountry={selectedCountry}
       />
-      <ComposableMap className="w-full h-auto">
-        <Geographies geography="/features.json">
-          {({ geographies }) =>
-            geographies.map((geo, index) => (
-              <Tooltip key={index} title={content}>
-                {geo.properties.color ? (
-                  <Geography
-                    className={
-                      geo.properties
-                        ? "cursor-pointer fill-primary hover:fill-destructive outline-none"
-                        : ""
-                    }
-                    key={geo.rsmKey}
-                    geography={geo}
-                    onMouseEnter={() => {
-                      if (geo.properties.color)
-                        setContent(`${geo.properties.name}`);
-                    }}
-                    onMouseLeave={() => {
-                      setContent("");
-                    }}
-                    onClick={() => {
-                      setClickedCountry(geo.properties);
-                      open ? handleClose() : handleOpen();
-                    }}
-                  />
-                ) : (
-                  <Geography
-                    className={
-                      geo.properties ? "fill-secondary outline-none" : ""
-                    }
-                    key={geo.rsmKey}
-                    geography={geo}
-                    onMouseEnter={() => {
-                      if (geo.properties.color)
-                        setContent(`${geo.properties.name}`);
-                    }}
-                    onMouseLeave={() => {
-                      setContent("");
-                    }}
-                  />
-                )}
-              </Tooltip>
-            ))
-          }
-        </Geographies>
+      <ComposableMap className="w-full h-80">
+        <ZoomableGroup center={[-20, 35]} zoom={2.8}>
+          <Geographies geography="/features.json">
+            {({ geographies }) =>
+              geographies.map((geo, index) => (
+                <Tooltip key={index} title={content}>
+                  {geo.properties.color ? (
+                    <Geography
+                      className={
+                        geo.properties
+                          ? "cursor-pointer fill-primary hover:fill-destructive outline-none"
+                          : ""
+                      }
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={() => {
+                        if (geo.properties.color)
+                          setContent(`${geo.properties.name}`);
+                      }}
+                      onMouseLeave={() => {
+                        setContent("");
+                      }}
+                      onClick={() => {
+                        setClickedCountry(geo.properties);
+                        open ? handleClose() : handleOpen();
+                      }}
+                    />
+                  ) : (
+                    <Geography
+                      className={
+                        geo.properties ? "fill-secondary outline-none" : ""
+                      }
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={() => {
+                        if (geo.properties.color)
+                          setContent(`${geo.properties.name}`);
+                      }}
+                      onMouseLeave={() => {
+                        setContent("");
+                      }}
+                    />
+                  )}
+                </Tooltip>
+              ))
+            }
+          </Geographies>
+        </ZoomableGroup>
       </ComposableMap>
     </div>
   );

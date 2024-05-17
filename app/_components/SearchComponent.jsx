@@ -57,9 +57,8 @@ const SearchComponent = () => {
 
   return (
     <div className="mx-4 first-line:flex flex-col">
-      <h2 className="flex font-bold gap-2 text-2xl">
-        Search
-        <span className="text-primary">Policies</span>:
+      <h2 className="flex font-bold text-2xl mb-4">
+        Policy/<span className="text-primary">Legislation</span>:
       </h2>
       <div className="flex flex-col gap-4">
         <CountrySelect
@@ -72,13 +71,13 @@ const SearchComponent = () => {
           onStartYearChange={handleStartYearChange}
           onEndYearChange={handleEndYearChange}
         />
+        <Button label={"Filter"} onClick={handleSearch} icon={false} />
         <SearchBarComponent
-          title="Search Policies"
+          title="Search with Key Terms..."
           value={searchTerm}
           onChange={(e) => e.target.value}
           placeholder="Enter a policy term..."
         />
-        <Button label={"Search"} onClick={handleSearch} icon={false} />
 
         <TableComponent policies={filteredPolicies} />
       </div>

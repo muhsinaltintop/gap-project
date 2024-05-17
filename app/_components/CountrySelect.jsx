@@ -4,9 +4,11 @@ import countryList from "../../public/_mocks_/countryList.json";
 const CountrySelect = ({ selectedCountries, onSelect }) => {
   return (
     <div>
-      <h3>Select the Countries</h3>
+      <h3>
+        Select the <span className="text-primary">Countries</span>
+      </h3>
       {countryList.map((country) => (
-        <div key={country.id} className="flex float-left">
+        <div key={country.id} className="flex float-left mt-1">
           <CheckBox
             id={country.countryName}
             label={country.countryName}

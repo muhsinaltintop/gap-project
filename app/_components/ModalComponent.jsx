@@ -47,7 +47,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             </p>
             <span className=" flex-row text-xl">
               <h2 className="text-2xl font-bold">Executive Summary</h2>
-              <PlainText executiveSummary={selectedCountry?.executiveSummary} />
+              <PlainText text={selectedCountry?.executiveSummary} />
               <Link href={`/executiveSummary/${selectedCountry?.countryName}`}>
                 <div className="truncate text-primary">Read More</div>
               </Link>
@@ -55,9 +55,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             <div className="flex-col mt-4 align-sub">
               <span className="font-black m-2">
                 {selectedCountry?.returnPolicyTimeline ? (
-                  <Link
-                    href={"https://www.returnmigration.eu/countries-germany"}
-                  >
+                  <Link href={"#"} target="_blank">
                     Return Policy Timeline
                   </Link>
                 ) : (
@@ -79,12 +77,12 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 )}
               </span>
             </div>
-            {/* <a
+            <a
               className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
-              href="#"
+              href={`https://www.returnmigration.eu/countries-${selectedCountry?.countryName.toLowerCase()}`}
             >
-              Get Executive Summary
-            </a> */}
+              {`${selectedCountry?.countryName} Country Profile on GAP`}
+            </a>
             {/* <p className="mt-8 text-xs font-medium uppercase text-gray-400">
               This part will be updated...
             </p> */}

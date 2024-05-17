@@ -1,7 +1,7 @@
 const Button = ({ label, icon, onClick }) => {
   return (
     <button
-      className="inline-flex items-center gap-2 rounded border border-primary bg-primary px-8 py-3 text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
+      className="w-40 inline-flex items-center gap-2 rounded border border-primary bg-primary px-8 py-3 text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
       onClick={onClick}
     >
       <span className="text-sm font-medium"> {label} </span>
