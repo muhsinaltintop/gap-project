@@ -8,8 +8,8 @@
       "Decentralized legal provisions and implementation of (supra)national requirements by multiple actors results in varying outcomes for migrants, and internal contradictions in policy execution create challenges in ensuring compliance during implementation. The influence of the Court of Justice of the European Union (CJEU) case-law significantly shapes return policies, adding layers of complexity to the legal framework. It should be acknowledged that various actors, in particular some political parties, have played an outstanding role in documenting or requesting data on returns through their parliamentary authority.",
       "Nevertheless, there are several specific challenges in the German return regime including those related to the legislative, institutional, and international cooperation frameworks as well as issues in data collection, the enforcement, and political communication."
     ],
-    "returnPolicyTimeline": "Timeline events EU_Germany_Return_final_010124.pdf",
-    "returnFlowChart": "stages of German asylum procedure.pdf",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "German actor landscape.pdf"
   },
   {
@@ -26,8 +26,8 @@
       "The Aliens Act outlines the circumstances under which decisions on immediate enforcement can be implemented (Chapter 8, Section 19) and provides instructions for enforcement procedures (Chapter 8, Section 20). It also details when a decision on deportation or expulsion shall be considered executed (Chapter 12, Sections 21 and 22) and when enforcement of a decision has not ceased or is still applicable (Chapter 12, Section 23).",
       "Sweden entered into 15 bilateral readmission agreements with various countries, both within and outside the EU, starting with Germany in 1956, as indicated by the schedule in an official document4 provided through communication with the Migration Agency. These countries include Iraq, Bulgaria, Cyprus, Estonia, France, Kosovo, Croatia, Estonia, Latvia, Lithuania, Romania, Switzerland, Germany, and Vietnam. Furthermore, from 2008 to 2022, Sweden has been a party to 18 EU and bilateral agreements, extending to countries such as Ukraine, Turkey, Sri Lanka, Serbia, Russia, Pakistan, Montenegro, Moldova, North Macedonia, Macao, Cape Verde, Hong Kong, Georgia, Bosnia, Belarus, Azerbaijan, Armenia, and Albania"
     ],
-    "returnPolicyTimeline": "Timeline of the Return Policy in Sweden.png",
-    "returnFlowChart": "",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": false,
     "actorReturnDiagram": "Diagram - Actors in Return.jpg"
   },
   {
@@ -47,8 +47,8 @@
 
       "Assisted Voluntary Return and Reintegration program run by IOM provides the ground for a more humane approach to return migration, even if the context in which it operates is one of coercion, as it also addresses migrants who have been issued with a return decision and even detainees. Nevertheless, it remains underfunded if compared to other types of forced removals, a choice that reveals the political priorities of the authorities in current return and – more generally – migration issues."
     ],
-    "returnPolicyTimeline": "Timeline of Return Policies.docx",
-    "returnFlowChart": "Return Procedures Flowchart.jpg",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "Diagram Actors in Return.docx"
   },
   {
@@ -67,8 +67,8 @@
       "- automated use of detention, including the detention of children and the possibility of long-term detention;",
       "- failure to ensure sufficient transparency in monitoring the implementation of return decisions, in particular by preventing the Ombudsman from monitoring."
     ],
-    "returnPolicyTimeline": "TIMELINE OF RETURN POLICIES_POLAND(1).xlsx",
-    "returnFlowChart": "Diagram WP3.pdf",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": false,
     "actorReturnDiagram": "Diagram WP3.pdf"
   },
   {
@@ -78,8 +78,8 @@
       "In the last two decades, the Netherlands has showed increased interest in migration enforcement. In this context questions of assisted and coerced return gained more significance over years, and has become a policy priority since 2018. The datafication of returns is part of this policy prioritization. Yet, researchers should be careful in reproducing these data as it is part of the legitimization of actual return policies. Considering the data, the number of third country nationals with a return order in the Netherlands vary between 15740 and 25310 in the last 10 years. According to the Dutch Authorities, roughly 2/3 of those returns that are considered ‘proven returns’ (aantoonbaar vertrek) can be considered voluntary returns (zelfstandig vertrek) and 1/3 can be considered coerced returns (Ministry of Justice and Security 2023, p. 113).",
       "The Dutch approach to assisted and voluntary returns can be seen as a ‘carrot and stick’ approach (Ebrahim & Strik 2024). Those migrants who cooperate with their return processes are offered shelter and basic services, those who do not cooperate are excluded. The institutional landscape of return migration has become increasingly complex, with more and more bilateral agreements as well as more actors involved in return migration practices."
     ],
-    "returnPolicyTimeline": "Timeline Dutch return policies.docx",
-    "returnFlowChart": "Removal process The Netherlands.docx",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "Actors of return migration in The Netherlands.docx"
   },
   {
@@ -118,24 +118,24 @@
 
       "Turkey’s return migration policies illustrate the complex interplay between national interests, international pressures, and humanitarian obligations. As Turkey continues to navigate its role as a key actor in regional migration governance, future policies must balance these often-competing priorities. Academically, this necessitates ongoing research to critically evaluate the impact of these policies on migrant rights, regional stability, and the evolving nature of international migration governance."
     ],
-    "returnPolicyTimeline": "Turkey Return Policy Timeline.pdf",
-    "returnFlowChart": "National Return System.pdf",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "Actors Technologies and Materials - Turkey Return System.pdf"
   },
   {
     "countryName": "Iraq",
     "euMember": false,
     "executiveSummary": "",
-    "returnPolicyTimeline": "",
-    "returnFlowChart": "",
+    "returnPolicyTimeline": false,
+    "returnFlowChart": false,
     "actorReturnDiagram": ""
   },
   {
     "countryName": "Jordan",
     "euMember": false,
     "executiveSummary": "",
-    "returnPolicyTimeline": "",
-    "returnFlowChart": "",
+    "returnPolicyTimeline": false,
+    "returnFlowChart": false,
     "actorReturnDiagram": ""
   },
   {
@@ -145,16 +145,16 @@
       "For the majority of Afghan migration is a panacea for all socio-political and economic ills of the society.  In other words, people perceive migration as the best coping mechanism against  the day-to-day livelihood challenges ranging from family conflicts, physical insecurity, political instability and socioeconomic hardships. For example, Ahmad, a returnee respondent from Mazar-e Sharif who left Afghanistan in 2018, found out-migration as the best solution against the life threats caused by a conflict with powerful figures in his locality. Similarly, for Fawad, a returnee who left Afghanistan for Germany in 2019, out-migration was a life-saving strategy to escape assassination attempts, in one of which his brother-in-law lost his life. Lack of or absence of reliable and trustworthy legal institutions and functioning safeguard systems, particularly in rural areas force Afghans to opt out-migration as a life-saving mechanism to overcome security challenges that they face in their routine day-to-day activities.",
       "Data from the field observations indicate that a range of psychological factors  (some may have root in trauma felt in early childhood due to war and its associated challenges) from feeling inconsequential, inability to attract family and social attraction, depression, post traumatic syndrome (PTSD), anxiety, and sentiments of proving oneself capable of achieving success in life have significant contribution in navigating aspiration for migration as a life saving coping mechanism. Lack of economic opportunity, lack or no social services, and ambiguities surrounding political situations have left Afghan families with no prospects for the future. Thus, for Afghan families too migration is perceived as an ideal life-saving strategy to (i) protect children from physical and psychological harm and (ii) secure economic insurance for the families."
     ],
-    "returnPolicyTimeline": "Time-Line of Return Policies.pdf",
-    "returnFlowChart": "Flow Chart.pdf",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "Diagram- Actors in Return.pdf"
   },
   {
     "countryName": "Nigeria",
     "euMember": false,
     "executiveSummary": "",
-    "returnPolicyTimeline": "",
-    "returnFlowChart": "",
+    "returnPolicyTimeline": false,
+    "returnFlowChart": false,
     "actorReturnDiagram": ""
   },
   {
@@ -166,8 +166,8 @@
       "Despite adopting progressive migration policies, including a ‘’New immigration policy’’ in 2013, the National Strategy for Immigration and Asylum (SNIA), Morocco still faces internal challenges in migration, including protecting migrants' rights and integrating them into Moroccan society. Bridging these gaps and developing more effective approaches to return migration requires extensive research and collaboration among Moroccan authorities, civil society, international organizations, and development partners. This collaboration is essential to develop policies and programs that meet migrants' needs and advocate for dignified and safe return migration.",
       "As a key member of the GAPs project, the case of Morocco is central to the studied migration dynamics. Its pivotal role in migration routes to Europe strengthens its involvement in proposing governance and cooperation models for return migration."
     ],
-    "returnPolicyTimeline": "GAPS WP1_ Timeline of Moroccan Return Policy.pdf",
-    "returnFlowChart": "GAPS WP1_Flow chart of the  National Return System of Morocco.pdf",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "GAPS WP1_ Diagram Actors in Return Morocco.pdf"
   },
   {
@@ -178,8 +178,8 @@
       "Placeholder paragraph 2",
       "Placeholder paragraph 3"
     ],
-    "returnPolicyTimeline": "Hanen Final.pdf",
-    "returnFlowChart": "Hanen-4 (2).docx",
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
     "actorReturnDiagram": "Return actors in Tunisia.png"
   },
   {
@@ -190,16 +190,16 @@
       "Fusce ullamcorper sapien et mauris dapibus feugiat. Sed interdum risus ac tellus aliquam, in luctus purus scelerisque. Nunc rutrum, mauris at convallis fermentum, sapien lacus iaculis libero, eu bibendum dui velit vel nisi. In vehicula tellus ac libero malesuada, vitae vulputate risus luctus. Proin nec ipsum ultricies, consequat enim non, consectetur libero. Pellentesque non gravida nulla.",
       "Maecenas ac est nec leo congue posuere. Vivamus eget ligula vitae mi interdum varius. Integer lacinia, nunc sit amet gravida convallis, ipsum purus pharetra diam, eget condimentum velit arcu nec justo. Nam ac tortor vitae nunc tincidunt fermentum. Suspendisse ut libero eu dolor congue placerat. Nulla facilisi. Cras molestie libero sed dolor fermentum, nec molestie enim varius."
     ],
-    "returnPolicyTimeline": "returnPolicyTimeline",
-    "returnFlowChart": "returnFlowChart",
+    "returnPolicyTimeline": false,
+    "returnFlowChart": false,
     "actorReturnDiagram": "actorReturnDiagram"
   },
   {
     "countryName": "United Kingdom",
     "euMember": false,
     "executiveSummary": "Executive Summary (Record ID 1700-1).xlsx",
-    "returnPolicyTimeline": "",
-    "returnFlowChart": "",
+    "returnPolicyTimeline": false,
+    "returnFlowChart": false,
     "actorReturnDiagram": ""
   }
 ]

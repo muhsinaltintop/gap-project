@@ -47,15 +47,23 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             </p>
             <span className=" flex-row text-xl">
               <h2 className="text-2xl font-bold">Executive Summary</h2>
-              <PlainText text={selectedCountry?.executiveSummary} />
-              <Link href={`/executiveSummary/${selectedCountry?.countryName}`}>
+              <div className="overflow-hidden max-h-40 transition-all duration-500 group-open:max-h-[1000px]">
+                <PlainText text={selectedCountry?.executiveSummary} />
+              </div>
+              <Link
+                href={`/executive-summary/${selectedCountry?.countryName}`}
+                target="_blank"
+              >
                 <div className="truncate text-primary">Read More</div>
               </Link>
             </span>
             <div className="flex-col mt-4 align-sub">
               <span className="font-black m-2">
                 {selectedCountry?.returnPolicyTimeline ? (
-                  <Link href={"#"} target="_blank">
+                  <Link
+                    href={`/return-policy-timeline/${selectedCountry?.countryName}`}
+                    target="_blank"
+                  >
                     Return Policy Timeline
                   </Link>
                 ) : (
@@ -64,7 +72,11 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
               </span>
               <span className="font-black m-2">
                 {selectedCountry?.returnFlowChart ? (
-                  <Link href={"#"}>Return Flow Chart</Link>
+                  <Link
+                    href={`/return-flow-chart/${selectedCountry?.countryName}`}
+                  >
+                    Return Flow Chart
+                  </Link>
                 ) : (
                   ""
                 )}
