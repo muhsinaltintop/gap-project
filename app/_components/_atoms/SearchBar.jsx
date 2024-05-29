@@ -1,4 +1,4 @@
-const SearchBar = ({ title, placeholder }) => {
+const SearchBar = ({ title, placeholder, value, onChange }) => {
   return (
     <div>
       <h2>{title}</h2>
@@ -9,6 +9,8 @@ const SearchBar = ({ title, placeholder }) => {
         </label>
 
         <input
+          value={value}
+          onChange={onChange}
           type="text"
           id="Search"
           placeholder={placeholder}

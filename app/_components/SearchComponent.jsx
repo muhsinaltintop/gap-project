@@ -1,14 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CountrySelect from "./CountrySelect";
 import SelectYearsComponent from "./SelectYearsComponent";
 import SearchBarComponent from "./SearchBarComponent";
 import policies from "../../public/policies.json";
 import Button from "../_components/_atoms/Button";
 import TableComponent from "./TableComponent";
+import SearchBar from "./_atoms/SearchBar";
 
 const SearchComponent = () => {
   const [selectedCountries, setSelectedCountries] = useState([]);
+
   const handleCountryChange = (country) => {
     if (selectedCountries.includes(country)) {
       setSelectedCountries(selectedCountries.filter((c) => c !== country));
@@ -71,13 +73,15 @@ const SearchComponent = () => {
           onStartYearChange={handleStartYearChange}
           onEndYearChange={handleEndYearChange}
         />
-        <Button label={"Filter"} onClick={handleSearch} icon={false} />
         <SearchBarComponent
           title="Search with Key Terms..."
           value={searchTerm}
-          onChange={(e) => e.target.value}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }}
           placeholder="Enter a policy term..."
         />
+        <Button label={"Filter"} onClick={handleSearch} icon={false} />
 
         <TableComponent policies={filteredPolicies} />
       </div>
