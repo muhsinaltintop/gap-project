@@ -73,6 +73,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
               <span className="font-black m-2">
                 {selectedCountry?.returnFlowChart ? (
                   <Link
+                    target="_blank"
                     href={`/return-flow-chart/${selectedCountry?.countryName}`}
                   >
                     Return Flow Chart
@@ -83,7 +84,12 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
               </span>
               <span className="font-black m-2">
                 {selectedCountry?.actorReturnDiagram ? (
-                  <Link href={"#"}>Actor Return Diagram</Link>
+                  <Link
+                    target="_blank"
+                    href={`/actor-return-diagram/${selectedCountry?.countryName}`}
+                  >
+                    Actor Return Diagram
+                  </Link>
                 ) : (
                   ""
                 )}

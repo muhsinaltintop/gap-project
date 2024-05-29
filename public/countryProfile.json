@@ -10,7 +10,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "German actor landscape.pdf"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Sweden",
@@ -28,7 +28,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": false,
-    "actorReturnDiagram": "Diagram - Actors in Return.jpg"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Greece",
@@ -49,7 +49,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "Diagram Actors in Return.docx"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Poland",
@@ -69,7 +69,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": false,
-    "actorReturnDiagram": "Diagram WP3.pdf"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Netherlands",
@@ -80,7 +80,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "Actors of return migration in The Netherlands.docx"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Turkey",
@@ -120,7 +120,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "Actors Technologies and Materials - Turkey Return System.pdf"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Iraq",
@@ -128,7 +128,7 @@
     "executiveSummary": "",
     "returnPolicyTimeline": false,
     "returnFlowChart": false,
-    "actorReturnDiagram": ""
+    "actorReturnDiagram": false
   },
   {
     "countryName": "Jordan",
@@ -136,7 +136,7 @@
     "executiveSummary": "",
     "returnPolicyTimeline": false,
     "returnFlowChart": false,
-    "actorReturnDiagram": ""
+    "actorReturnDiagram": false
   },
   {
     "countryName": "Afghanistan",
@@ -147,7 +147,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "Diagram- Actors in Return.pdf"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Nigeria",
@@ -155,7 +155,7 @@
     "executiveSummary": "",
     "returnPolicyTimeline": false,
     "returnFlowChart": false,
-    "actorReturnDiagram": ""
+    "actorReturnDiagram": false
   },
   {
     "countryName": "Morocco",
@@ -168,7 +168,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "GAPS WP1_ Diagram Actors in Return Morocco.pdf"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Tunisia",
@@ -180,7 +180,7 @@
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
-    "actorReturnDiagram": "Return actors in Tunisia.png"
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Canada",
@@ -192,7 +192,7 @@
     ],
     "returnPolicyTimeline": false,
     "returnFlowChart": false,
-    "actorReturnDiagram": "actorReturnDiagram"
+    "actorReturnDiagram": false
   },
   {
     "countryName": "United Kingdom",
@@ -200,6 +200,6 @@
     "executiveSummary": "Executive Summary (Record ID 1700-1).xlsx",
     "returnPolicyTimeline": false,
     "returnFlowChart": false,
-    "actorReturnDiagram": ""
+    "actorReturnDiagram": false
   }
 ]
