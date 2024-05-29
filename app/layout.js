@@ -2,6 +2,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import SideMenu from "./_components/SideMenu";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <div className="flex w-12/12">
           <SideMenu />
           {children}
+          <SpeedInsights />
         </div>
       </body>
     </html>
