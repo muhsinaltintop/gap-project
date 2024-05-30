@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # backups
-/app/_components/_oldComponents
+#/app/_components/_oldComponents
