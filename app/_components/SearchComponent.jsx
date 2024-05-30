@@ -71,6 +71,7 @@ const SearchComponent = ({ data }) => {
           onStartYearChange={handleStartYearChange}
           onEndYearChange={handleEndYearChange}
         />
+        <Button label={"Filter"} onClick={handleSearch} icon={false} />
         <SearchBarComponent
           title="Search with Key Terms..."
           value={searchTerm}
@@ -79,7 +80,7 @@ const SearchComponent = ({ data }) => {
           }}
           placeholder="Enter a policy term..."
         />
-        <Button label={"Filter"} onClick={handleSearch} icon={false} />
+        <Button label={"Search"} onClick={handleSearch} icon={false} />
 
         <TableComponent policies={filteredPolicies} />
       </div>
