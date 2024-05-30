@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import policiesData from "../../public/policies.json";
+import policiesData from "../../public/_mocks_/policies.json";
 import SearchInput from "./SearchInput";
 import CountrySelect from "./CountrySelect";
 import YearInput from "./YearInput";

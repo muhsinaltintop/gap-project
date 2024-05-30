@@ -1,14 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CountrySelect from "./CountrySelect";
 import SelectYearsComponent from "./SelectYearsComponent";
 import SearchBarComponent from "./SearchBarComponent";
-import policies from "../../public/policies.json";
 import Button from "../_components/_atoms/Button";
 import TableComponent from "./TableComponent";
-import SearchBar from "./_atoms/SearchBar";
 
-const SearchComponent = () => {
+const SearchComponent = ({ data }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
 
   const handleCountryChange = (country) => {
@@ -33,7 +31,7 @@ const SearchComponent = () => {
   const [filteredPolicies, setFilteredPolicies] = useState([]);
 
   const handleSearch = () => {
-    let filtered = policies.flatMap((country) => {
+    let filtered = data.flatMap((country) => {
       if (
         selectedCountries.length === 0 ||
         selectedCountries.includes(country.countryName)

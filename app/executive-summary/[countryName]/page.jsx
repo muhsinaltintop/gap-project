@@ -1,6 +1,6 @@
 import React from "react";
 import PlainText from "@/app/_components/_atoms/PlainText";
-import countryProfileData from "../../../public/countryProfile.json";
+import countryProfileData from "../../../public/_mocks_/countryProfile.json";
 
 const page = ({ params }) => {
   const country = countryProfileData?.find(

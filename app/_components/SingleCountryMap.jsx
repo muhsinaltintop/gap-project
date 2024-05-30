@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { Tooltip } from "@mui/material";
-import countryProfileData from "../../public/countryProfile.json";
+import countryProfileData from "../../public/_mocks_/countryProfile.json";
 import NewModalComponent from "./ModalComponent";
 
 const getCountryByCode = (code) =>
