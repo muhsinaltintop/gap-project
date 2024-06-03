@@ -1,10 +1,10 @@
-const Button = ({ label, icon, onClick }) => {
+const Button = ({ label, icon, onClick, font }) => {
   return (
     <button
-      className="w-40 inline-flex items-center gap-2 rounded border border-primary bg-primary px-8 py-3 text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
+      className="w-40 inline-flex items-center gap-1 rounded border border-primary bg-primary px-4 py-3 text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
       onClick={onClick}
     >
-      <span className="text-sm font-medium"> {label} </span>
+      <span className={`text-sm ${font} text-center`}> {label} </span>
       {icon && (
         <svg
           className="size-5 rtl:rotate-180"

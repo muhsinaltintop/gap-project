@@ -3,6 +3,7 @@ import Modal from "@mui/material/Modal";
 import Image from "next/image";
 import Link from "next/link";
 import PlainText from "./_atoms/PlainText";
+import Button from "./_atoms/Button";
 
 const style = {
   position: "absolute",
@@ -64,7 +65,10 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     href={`/return-policy-timeline/${selectedCountry?.countryName}`}
                     target="_blank"
                   >
-                    Return Policy Timeline
+                    <Button
+                      label={"Return Policy Timeline"}
+                      font={"font-bold"}
+                    />
                   </Link>
                 ) : (
                   ""
@@ -76,7 +80,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     target="_blank"
                     href={`/return-flow-chart/${selectedCountry?.countryName}`}
                   >
-                    Return Flow Chart
+                    <Button label={"Return Flow Chart"} font={"font-bold"} />
                   </Link>
                 ) : (
                   ""
@@ -88,23 +92,30 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     target="_blank"
                     href={`/actor-return-diagram/${selectedCountry?.countryName}`}
                   >
-                    Actor Return Diagram
+                    <Button label={"Actor Return Diagram"} font={"font-bold"} />
                   </Link>
                 ) : (
                   ""
                 )}
               </span>
             </div>
-            <a
-              className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
-              href={`https://www.returnmigration.eu/countries-${selectedCountry?.countryName.toLowerCase()}`}
-              target="_blank"
-            >
-              {`${selectedCountry?.countryName} Country Profile on GAP`}
-            </a>
-            {/* <p className="mt-8 text-xs font-medium uppercase text-gray-400">
-              This part will be updated...
-            </p> */}
+            {["United Kingdom"].includes(selectedCountry?.countryName) ? (
+              ""
+            ) : (
+              <a
+                className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
+                href={
+                  ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
+                    selectedCountry?.countryName
+                  )
+                    ? `https://www.returnmigration.eu/countries_${selectedCountry?.countryName.toLowerCase()}`
+                    : `https://www.returnmigration.eu/countries-${selectedCountry?.countryName.toLowerCase()}`
+                }
+                target="_blank"
+              >
+                {`${selectedCountry?.countryName} Country Profile on GAP`}
+              </a>
+            )}
           </div>
         </section>
       </Modal>

@@ -57,9 +57,7 @@ const SearchComponent = ({ data }) => {
 
   return (
     <div className="mx-4 first-line:flex flex-col">
-      <h2 className="flex font-bold text-2xl mb-4">
-        Policy/<span className="text-primary">Legislation</span>:
-      </h2>
+      <h2 className="flex font-bold text-2xl mb-4">Policy/Legislation:</h2>
       <div className="flex flex-col gap-4">
         <CountrySelect
           selectedCountries={selectedCountries}

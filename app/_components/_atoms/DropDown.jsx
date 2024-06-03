@@ -7,7 +7,7 @@ const DropDown = ({ label, options, value, onChange }) => {
     <div className="flex flex-col">
       <label
         htmlFor="DropDownSelect"
-        className="block text-sm font-medium text-gray-900"
+        className="block text-sm font-bold text-gray-900"
       >
         {label}
       </label>

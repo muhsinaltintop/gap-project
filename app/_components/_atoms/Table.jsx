@@ -14,7 +14,7 @@ const Table = ({ policies, headers }) => {
               {headers.map((header, index) => (
                 <th
                   key={index}
-                  className="whitespace-nowrap px-4 py-2 font-medium text-gray-900"
+                  className="whitespace-nowrap px-4 py-2 font-bold text-gray-900"
                 >
                   {header.label}
                 </th>
@@ -25,7 +25,7 @@ const Table = ({ policies, headers }) => {
           <tbody className="divide-y divide-gray-200">
             {policies.map((policy, index) => (
               <tr key={`${index}`}>
-                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                <td className="whitespace-nowrap px-4 py-2 font-bold text-gray-900">
                   {policy.country}
                 </td>
                 <td className="whitespace-normal px-4 py-2 text-gray-700 break-words max-w-xs">
@@ -37,7 +37,7 @@ const Table = ({ policies, headers }) => {
                         href={`${policy.urlEnglish}`}
                         target="_blank"
                       >
-                        <ExternalLink className="size-3" />
+                        <ExternalLink className="size-3" color="#0d7dff" />
                       </Link>
                     ) : (
                       ""
@@ -53,27 +53,12 @@ const Table = ({ policies, headers }) => {
                         href={`${policy.originalUrl}`}
                         target="_blank"
                       >
-                        <ExternalLink className="size-3" />
+                        <ExternalLink className="size-3" color="#0d7dff" />
                       </Link>
                     ) : (
                       ""
                     )}
                   </span>
-                </td>
-                <td className="whitespace-normal px-4 py-2 text-gray-700 break-words max-w-xs">
-                  {policy.asistedReturn ? "Asisted Return, " : ""}
-                  {policy.borderManagement ? "Border Management, " : ""}
-                  {policy.coercedEnforcedReturn
-                    ? "Coerced Enforced Return, "
-                    : ""}
-                  {policy.generalAsylum ? "General Asylum, " : ""}
-                  {policy.irregularity ? "Irregularity, " : ""}
-                  {policy.massExpulsion ? "Mass Expulsion, " : ""}
-                  {policy.preRemovalDetention ? "Pre-Removal Detention, " : ""}
-                  {policy.pushback ? "Pushback, " : ""}
-                  {policy.residence ? "Residence, " : ""}
-                  {policy.voluntaryReturn ? "Voluntary Return, " : ""}
-                  {policy.other ? "Other, " : ""}
                 </td>
                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                   {policy.day}/{policy.month}/{policy.year}
@@ -81,11 +66,39 @@ const Table = ({ policies, headers }) => {
                 <td className="whitespace-normal text-justify px-4 py-2 text-gray-700 break-words max-w-xs">
                   {policy.policyDescription}
                 </td>
+
+                <td className="whitespace-normal px-4 py-2 text-gray-700 break-words max-w-xs">
+                  {policy.typeOfLegislation}
+                </td>
                 <td className="whitespace-normal px-4 py-2 text-gray-700 break-words max-w-xs">
                   {policy.levelOfLegislation}
                 </td>
                 <td className="whitespace-normal px-4 py-2 text-gray-700 break-words max-w-xs">
-                  {policy.typeOfLegislation}
+                  {policy.policyTypeArea.asistedReturn
+                    ? "Asisted Return, "
+                    : ""}
+                  {policy.policyTypeArea.borderManagement
+                    ? "Border Management, "
+                    : ""}
+                  {policy.policyTypeArea.coercedEnforcedReturn
+                    ? "Coerced Enforced Return, "
+                    : ""}
+                  {policy.policyTypeArea.generalAsylum
+                    ? "General Asylum, "
+                    : ""}
+                  {policy.policyTypeArea.irregularity ? "Irregularity, " : ""}
+                  {policy.policyTypeArea.massExpulsion
+                    ? "Mass Expulsion, "
+                    : ""}
+                  {policy.policyTypeArea.preRemovalDetention
+                    ? "Pre-Removal Detention, "
+                    : ""}
+                  {policy.policyTypeArea.pushback ? "Pushback, " : ""}
+                  {policy.policyTypeArea.residence ? "Residence, " : ""}
+                  {policy.policyTypeArea.voluntaryReturn
+                    ? "Voluntary Return, "
+                    : ""}
+                  {policy.policyTypeArea.other ? "Other, " : ""}
                 </td>
                 <td className="whitespace-normal text-justify px-4 py-2 text-gray-700 break-words max-w-xs">
                   {policy.notes}

@@ -28,7 +28,7 @@ const MapChart = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="w-8/12 h-full border-solid border-2 border-gray-400 px-6 py-0 m-6 border-r-4 rounded">
+    <div className="w-full h-full border-solid border-2 border-gray-400 px-0 py-0 m-6 border-r-4 rounded">
       <ModalComponent
         handleOpen={handleOpen}
         handleClose={handleClose}
