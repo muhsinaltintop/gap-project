@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 const Table = ({ policies, headers }) => {
-  console.log("policies:", policies.length);
   return policies.length === 0 ? (
     "Plase select a Country, Start Year, End Year or enter a policy term or simply click the Search button to list all the policies..."
   ) : (

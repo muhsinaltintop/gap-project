@@ -4,8 +4,8 @@ const PDFViewer = ({ filename }) => {
       <object
         class="pdf"
         data={`../../../pdfs/${filename}.pdf`}
-        width="800"
-        height="600"
+        width="1200"
+        height="800"
       ></object>
     </div>
   );
