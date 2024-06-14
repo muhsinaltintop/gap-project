@@ -19,7 +19,6 @@ const LinkToGap = () => {
         <Link href={"https://zenodo.org/records/10790795"}>
           <Button
             label={"Read Full Report"}
-            onClick={"#"}
             icon={false}
             font={"font-normal"}
           />
