@@ -16,7 +16,7 @@ const LinkToGap = () => {
         </Link>
       </div>
       <div className="mt-1 align-end text-center">
-        <Link href={"https://zenodo.org/records/10790795"}>
+        <Link href={"https://zenodo.org/records/10790795"} target={"_blank"}>
           <Button
             label={"Read Full Report"}
             icon={false}
