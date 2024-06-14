@@ -1,9 +1,11 @@
 import ChartComponent from "@/app/_components/ChartComponent";
-import data from "../../../public/_mocks_/dublin_returns.json";
-const page = () => {
+import { getDublinReturns } from "@/app/_utils/GlobalApi";
+
+const page = async () => {
+  const dublinReturns = await getDublinReturns();
   return (
     <div>
-      <ChartComponent data={data} />
+      <ChartComponent data={dublinReturns} />
     </div>
   );
 };

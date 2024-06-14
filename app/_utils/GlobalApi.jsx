@@ -5,7 +5,6 @@ const fetchData = async (endpoint, options = {}) => {
     cache: "no-store",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${API_KEY}`,
     },
   };
 
@@ -26,8 +25,13 @@ const fetchData = async (endpoint, options = {}) => {
 };
 
 const getCountryList = async () => {
-  const data = await fetchData("/countries");
-  return data.data;
+  const data = await fetchData("/countries?populate=*");
+  return data;
 };
 
-export { getCountryList };
+const getDublinReturns = async () => {
+  const data = await fetchData("/dublin-returns?populate=*");
+  return data;
+};
+
+export { getCountryList, getDublinReturns };

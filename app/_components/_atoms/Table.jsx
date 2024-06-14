@@ -15,9 +15,6 @@ const Table = ({ policies, headers }) => {
     filename: "GAPs Policy Lagislation",
     sheet: "Countries",
   });
-  {
-    console.log("ref", tableRef);
-  }
 
   return policies.length === 0 ? (
     "Plase select a Country, Start Year, End Year or enter a policy term or simply click the Search button to list all the policies..."
@@ -28,16 +25,18 @@ const Table = ({ policies, headers }) => {
           ref={tableRef}
           className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm"
         >
-          <tr>
-            {headers.map((header, index) => (
-              <th
-                key={index}
-                className="whitespace-nowrap px-4 py-2 font-bold text-gray-900"
-              >
-                {header.label}
-              </th>
-            ))}
-          </tr>
+          <thead>
+            <tr>
+              {headers.map((header, index) => (
+                <th
+                  key={index}
+                  className="whitespace-nowrap px-4 py-2 font-bold text-gray-900"
+                >
+                  {header.label}
+                </th>
+              ))}
+            </tr>
+          </thead>
 
           <tbody className="divide-y divide-gray-200">
             {policies.map((policy, index) => (

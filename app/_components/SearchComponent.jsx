@@ -6,7 +6,7 @@ import SearchBarComponent from "./SearchBarComponent";
 import Button from "../_components/_atoms/Button";
 import TableComponent from "./TableComponent";
 
-const SearchComponent = ({ data }) => {
+const SearchComponent = ({ data, countryList }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
 
   const handleCountryChange = (country) => {
@@ -60,6 +60,7 @@ const SearchComponent = ({ data }) => {
       <h2 className="flex font-bold text-2xl mb-4">Policy/Legislation:</h2>
       <div className="flex flex-col gap-4">
         <CountrySelect
+          countryList={countryList}
           selectedCountries={selectedCountries}
           onSelect={(country) => handleCountryChange(country)}
         />

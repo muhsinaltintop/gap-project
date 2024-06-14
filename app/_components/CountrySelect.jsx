@@ -1,7 +1,7 @@
 import CheckBox from "./_atoms/CheckBox";
 import countryList from "../../public/_mocks_/countryList.json";
 
-const CountrySelect = ({ selectedCountries, onSelect }) => {
+const CountrySelect = ({ countryList, selectedCountries, onSelect }) => {
   return (
     <div>
       <h3 className="font-bold">Select the Countries</h3>
