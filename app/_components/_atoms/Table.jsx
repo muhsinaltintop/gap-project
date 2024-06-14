@@ -15,6 +15,9 @@ const Table = ({ policies, headers }) => {
     filename: "GAPs Policy Lagislation",
     sheet: "Countries",
   });
+  {
+    console.log("ref", tableRef);
+  }
 
   return policies.length === 0 ? (
     "Plase select a Country, Start Year, End Year or enter a policy term or simply click the Search button to list all the policies..."
