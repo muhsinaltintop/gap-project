@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://gap-project-eight.vercel.app/api";
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
