@@ -8,12 +8,14 @@ const mainText =
 export default function Home() {
   return (
     <div className="w-full text-justify">
-      <PlainText text={mainText} />
+      <div className="mx-6 mt-6 ">
+        <PlainText text={mainText} />
+      </div>
       <div className="grid grid-cols-1 gap-1 lg:grid-cols-3 lg:gap-8">
-        <div className="h-100 rounded-lg lg:col-span-2">
+        <div className="mx-6 mt-6 h-100 rounded-lg lg:col-span-2">
           <Map />
         </div>
-        <div className="h-100 rounded-lg mt-6">
+        <div className="mx-6 mt-6">
           <LinkToGap />
         </div>
       </div>

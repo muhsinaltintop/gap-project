@@ -51,6 +51,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        buttonYellow: {
+          DEFAULT: "#fdce18",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

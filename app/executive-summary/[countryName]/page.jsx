@@ -9,12 +9,12 @@ const page = ({ params }) => {
 
   return (
     <div className="w-9/12 m-10">
+      {console.log("country:", country)}
       <h1 className="text-xl font-bold">
         {params.countryName} Executive Summary
       </h1>
-
       <div className="w-9/12 align-justify text-justify ">
-        <PlainText text={country.executiveSummary}></PlainText>
+        <PlainText text={country?.executiveSummary}></PlainText>
       </div>
     </div>
   );

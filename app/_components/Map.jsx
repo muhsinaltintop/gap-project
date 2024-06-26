@@ -28,14 +28,14 @@ const MapChart = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="w-full h-full border-solid border-2 border-gray-400 px-0 py-0 m-6 border-r-4 rounded">
+    <div className="w-full h-full border-solid border-2 border-gray-400 border-r-4 rounded">
       <ModalComponent
         handleOpen={handleOpen}
         handleClose={handleClose}
         open={open}
         selectedCountry={selectedCountry}
       />
-      <ComposableMap className="w-full h-80">
+      <ComposableMap className="w-full h-96">
         <ZoomableGroup center={[-20, 35]} zoom={2.8}>
           <Geographies geography="/features.json">
             {({ geographies }) =>

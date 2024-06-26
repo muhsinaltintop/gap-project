@@ -5,7 +5,7 @@ import { getCountryList } from "../_utils/GlobalApi";
 const PolicyLegislationPage = async () => {
   const countryList = await getCountryList();
   return (
-    <div>
+    <div className="w-9/12">
       <SearchComponent data={policies} countryList={countryList} />
     </div>
   );

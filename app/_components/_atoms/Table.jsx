@@ -17,7 +17,7 @@ const Table = ({ policies, headers }) => {
   });
 
   return policies.length === 0 ? (
-    "Plase select a Country, Start Year, End Year or enter a policy term or simply click the Search button to list all the policies..."
+    "Please select a Country, Start Year, End Year or enter a policy term or simply click the Search button to list all the policies."
   ) : (
     <div className="overflow-x-auto">
       <div className="w-full overflow-x-auto ">
@@ -30,9 +30,11 @@ const Table = ({ policies, headers }) => {
               {headers.map((header, index) => (
                 <th
                   key={index}
-                  className="whitespace-nowrap px-4 py-2 font-bold text-gray-900"
+                  className="whitespace-nowrap px-4 py-2 font-bold text-gray-900 bg-secondary text-left"
                 >
-                  {header.label}
+                  {header.label.split(" ").slice(0, -1).join(" ")}
+                  <br />
+                  {header.label.split(" ").slice(-1)}
                 </th>
               ))}
             </tr>
@@ -79,10 +81,6 @@ const Table = ({ policies, headers }) => {
                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                   {policy.day}/{policy.month}/{policy.year}
                 </td>
-                <td className="whitespace-normal text-justify px-4 py-2 text-gray-700 break-words max-w-xs">
-                  {policy.policyDescription}
-                </td>
-
                 <td className="whitespace-normal px-4 py-2 text-gray-700 break-words max-w-xs">
                   {policy.typeOfLegislation}
                 </td>
@@ -116,7 +114,10 @@ const Table = ({ policies, headers }) => {
                     : ""}
                   {policy.policyTypeArea.other ? "Other, " : ""}
                 </td>
-                <td className="whitespace-normal text-justify px-4 py-2 text-gray-700 break-words max-w-xs">
+                <td className="whitespace-normal  px-4 py-2 text-gray-700 break-words w-lg">
+                  {policy.policyDescription}
+                </td>
+                <td className="whitespace-normal  px-4 py-2 text-gray-700 break-words max-w-xs">
                   {policy.notes}
                 </td>
               </tr>

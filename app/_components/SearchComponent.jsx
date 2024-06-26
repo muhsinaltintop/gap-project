@@ -56,8 +56,26 @@ const SearchComponent = ({ data, countryList }) => {
   };
 
   return (
-    <div className="mx-4 first-line:flex flex-col">
+    <div className="mx-4 first-line:flex flex-col ">
       <h2 className="flex font-bold text-2xl mb-4">Policy/Legislation:</h2>
+      <p className="font-light">*Last Updated 26/06/2024</p>
+
+      <p className="text-justify ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at
+        eum dignissimos atque sint qui amet nihil cupiditate harum officiis?
+        Necessitatibus non explicabo architecto eveniet itaque labore quaerat
+        provident tenetur? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptatibus at eum dignissimos atque sint qui amet nihil
+        cupiditate harum officiis? Necessitatibus non explicabo architecto
+        eveniet itaque labore quaerat provident tenetur?Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Voluptatibus at eum dignissimos atque
+        sint qui amet nihil cupiditate harum officiis? Necessitatibus non
+        explicabo architecto eveniet itaque labore quaerat provident
+        tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus at eum dignissimos atque sint qui amet nihil cupiditate
+        harum officiis? Necessitatibus non explicabo architecto eveniet itaque
+        labore quaerat provident tenetur?
+      </p>
       <div className="flex flex-col gap-4">
         <CountrySelect
           countryList={countryList}

@@ -4,13 +4,13 @@ import Button from "./_atoms/Button";
 
 const LinkToGap = () => {
   return (
-    <div>
+    <div className="w-full h-full">
       <div>
         <Link href={"#"}>
           <Image
             alt={"gaps project cover"}
-            width={600}
-            height={400}
+            width={800}
+            height={600}
             src={"/gaps_project_cover.png"}
           />
         </Link>

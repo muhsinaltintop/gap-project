@@ -22,7 +22,10 @@ function Header() {
     { id: 4, name: "Twitter", path: "/", icon: <Twitter /> },
   ];
   return (
-    <div className="flex items-center justify-between p-4 shadow-sm">
+    <div
+      className="flex items-center justify-between p-4 shadow-sm"
+      id="MainContent"
+    >
       <div className="flex items-center gap-10">
         <Link href="/">
           <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={0} />

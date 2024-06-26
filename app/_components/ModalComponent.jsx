@@ -43,11 +43,11 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
           </div>
 
           <div className="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-widest">
+            <p className="text-2xl font-bold uppercase tracking-widest">
               {selectedCountry?.countryName}
             </p>
             <span className=" flex-row text-xl">
-              <h2 className="text-2xl font-bold">Executive Summary</h2>
+              <h2 className="text-xl font-bold">Executive Summary</h2>
               <div className="overflow-hidden max-h-40 transition-all duration-500 group-open:max-h-[1000px]">
                 <PlainText text={selectedCountry?.executiveSummary} />
               </div>
@@ -68,6 +68,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     <Button
                       label={"Return Policy Timeline"}
                       font={"font-bold"}
+                      randomCSS={"bg-buttonYellow text-black"}
                     />
                   </Link>
                 ) : (
@@ -80,7 +81,11 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     target="_blank"
                     href={`/return-flow-chart/${selectedCountry?.countryName}`}
                   >
-                    <Button label={"Return Flow Chart"} font={"font-bold"} />
+                    <Button
+                      label={"Return Flow Chart"}
+                      font={"font-bold"}
+                      randomCSS={"bg-buttonYellow text-black"}
+                    />
                   </Link>
                 ) : (
                   ""
@@ -92,7 +97,11 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     target="_blank"
                     href={`/actor-return-diagram/${selectedCountry?.countryName}`}
                   >
-                    <Button label={"Actor Return Diagram"} font={"font-bold"} />
+                    <Button
+                      label={"Actor Return Diagram"}
+                      font={"font-bold"}
+                      randomCSS={"bg-buttonYellow text-black"}
+                    />
                   </Link>
                 ) : (
                   ""
