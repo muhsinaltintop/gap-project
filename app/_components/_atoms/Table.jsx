@@ -2,8 +2,9 @@
 import React, { useRef } from "react";
 import { useDownloadExcel } from "react-export-table-to-excel";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import { CircleHelp, ExternalLink } from "lucide-react";
 import Button from "./Button";
+import { Tooltip } from "@mui/material";
 
 // import DownloadExcel from "./DownloadExcel";
 
@@ -20,6 +21,14 @@ const Table = ({ policies, headers }) => {
     "Please select a Country, Start Year, End Year or enter a policy term or simply click the Search button to list all the policies."
   ) : (
     <div className="overflow-x-auto">
+      <div className="mb-2 flex justify-end">
+        <Button
+          label={"Download"}
+          onClick={onDownload}
+          customCSS={"bg-primary text-white"}
+          icon={true}
+        />
+      </div>
       <div className="w-full overflow-x-auto ">
         <table
           ref={tableRef}
@@ -32,9 +41,14 @@ const Table = ({ policies, headers }) => {
                   key={index}
                   className="whitespace-nowrap px-4 py-2 font-bold text-gray-900 bg-secondary text-left"
                 >
-                  {header.label.split(" ").slice(0, -1).join(" ")}
-                  <br />
-                  {header.label.split(" ").slice(-1)}
+                  <span className="flex items-center">
+                    {header.label.split(" ").slice(0, -1).join(" ")}
+                    <br />
+                    {header.label.split(" ").slice(-1)}{" "}
+                    <Tooltip key={index} title={"this will be changed"}>
+                      <CircleHelp className="size-3" color="#0d7dff" />
+                    </Tooltip>
+                  </span>
                 </th>
               ))}
             </tr>
@@ -124,7 +138,6 @@ const Table = ({ policies, headers }) => {
             ))}
           </tbody>
         </table>
-        <Button label={"Download as Excel"} onClick={onDownload} icon={false} />
       </div>
     </div>
   );

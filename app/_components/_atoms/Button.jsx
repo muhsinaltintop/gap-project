@@ -1,25 +1,19 @@
-const Button = ({ label, icon, onClick, font, randomCSS }) => {
+const Button = ({ label, icon, onClick, font, customCSS }) => {
   return (
     <button
-      className={`w-40 inline-flex items-center gap-1 rounded border  px-4 py-3 focus:outline-none focus:ring active:text-primary 
-        ${randomCSS}`}
+      className={`flex font-bold items-center gap-1 rounded border  px-4 py-3 focus:outline-none focus:ring active:text-primary shadow-sm
+        ${customCSS}`}
       onClick={onClick}
     >
       <span className={`text-sm ${font} text-center`}> {label} </span>
       {icon && (
         <svg
-          className="size-5 rtl:rotate-180"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+          className="h-5 w-5"
+          viewBox="0 0 512 512"
+          fill="currentcolor"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          />
+          <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
         </svg>
       )}
     </button>

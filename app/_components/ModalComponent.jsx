@@ -58,7 +58,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 <div className="truncate text-primary">Read More</div>
               </Link>
             </span>
-            <div className="flex-col mt-4 align-sub">
+            <div className="flex mt-4 align-sub justify-evenly">
               <span className="font-black m-2">
                 {selectedCountry?.returnPolicyTimeline ? (
                   <Link
@@ -67,8 +67,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                   >
                     <Button
                       label={"Return Policy Timeline"}
-                      font={"font-bold"}
-                      randomCSS={"bg-buttonYellow text-black"}
+                      customCSS={"bg-buttonYellow text-black font-bold"}
                     />
                   </Link>
                 ) : (
@@ -83,8 +82,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                   >
                     <Button
                       label={"Return Flow Chart"}
-                      font={"font-bold"}
-                      randomCSS={"bg-buttonYellow text-black"}
+                      customCSS={"bg-buttonYellow text-black font-bold"}
                     />
                   </Link>
                 ) : (
@@ -99,8 +97,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                   >
                     <Button
                       label={"Actor Return Diagram"}
-                      font={"font-bold"}
-                      randomCSS={"bg-buttonYellow text-black"}
+                      customCSS={"bg-buttonYellow text-black font-bold"}
                     />
                   </Link>
                 ) : (
@@ -111,7 +108,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
             {["United Kingdom"].includes(selectedCountry?.countryName) ? (
               ""
             ) : (
-              <a
+              <Link
                 className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
                 href={
                   ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
@@ -123,7 +120,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 target="_blank"
               >
                 {`${selectedCountry?.countryName} Country Profile on GAP`}
-              </a>
+              </Link>
             )}
           </div>
         </section>

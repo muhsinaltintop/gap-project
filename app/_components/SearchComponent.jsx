@@ -88,7 +88,12 @@ const SearchComponent = ({ data, countryList }) => {
           onStartYearChange={handleStartYearChange}
           onEndYearChange={handleEndYearChange}
         />
-        <Button label={"Filter"} onClick={handleSearch} icon={false} />
+        <Button
+          label={"Filter"}
+          onClick={handleSearch}
+          icon={false}
+          customCSS={"bg-primary w-20 content-center text-white"}
+        />
         <SearchBarComponent
           title="Search with Key Terms..."
           value={searchTerm}
@@ -97,7 +102,12 @@ const SearchComponent = ({ data, countryList }) => {
           }}
           placeholder="Enter a policy term..."
         />
-        <Button label={"Search"} onClick={handleSearch} icon={false} />
+        <Button
+          label={"Search"}
+          onClick={handleSearch}
+          icon={false}
+          customCSS={"bg-primary w-20 text-white"}
+        />
 
         <TableComponent policies={filteredPolicies} />
       </div>

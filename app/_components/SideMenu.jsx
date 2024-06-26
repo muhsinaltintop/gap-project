@@ -4,26 +4,31 @@ const SideMenu = () => {
   const leftMenu = [
     {
       id: 1,
+      name: "GAP's Data Repository",
+      path: "/",
+    },
+    {
+      id: 2,
       name: "Country Profile",
       path: "/country-profile",
     },
     {
-      id: 2,
+      id: 3,
       name: "Policy/Legislation Mapping",
       path: "/policy-legislation-map",
     },
     {
-      id: 3,
+      id: 4,
       name: "Return Infrastructure",
       path: "/return-infrastructure",
     },
     {
-      id: 4,
+      id: 5,
       name: "International Cooperation",
       path: "/international-cooperation",
     },
     {
-      id: 5,
+      id: 6,
       name: "Statistics",
       path: "/",
       submenu: [
@@ -72,6 +77,11 @@ const SideMenu = () => {
           path: "/",
         },
       ],
+    },
+    {
+      id: 7,
+      name: "Country List",
+      path: "/country-list",
     },
   ];
   return (
