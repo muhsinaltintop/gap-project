@@ -5,11 +5,12 @@ import Link from "next/link";
 import { CircleHelp, ExternalLink } from "lucide-react";
 import Button from "./Button";
 import { Tooltip } from "@mui/material";
-
-// import DownloadExcel from "./DownloadExcel";
+import data from "../../../public/_mocks_/data_description.json";
 
 const Table = ({ policies, headers }) => {
   const tableRef = useRef(null);
+
+  console.log("data for description", data);
 
   const { onDownload } = useDownloadExcel({
     currentTableRef: tableRef.current,
@@ -45,7 +46,7 @@ const Table = ({ policies, headers }) => {
                     {header.label.split(" ").slice(0, -1).join(" ")}
                     <br />
                     {header.label.split(" ").slice(-1)}{" "}
-                    <Tooltip key={index} title={"this will be changed"}>
+                    <Tooltip key={index} title={header.description}>
                       <CircleHelp className="size-3" color="#0d7dff" />
                     </Tooltip>
                   </span>
