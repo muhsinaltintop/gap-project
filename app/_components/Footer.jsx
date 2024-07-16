@@ -95,7 +95,7 @@ const Footer = () => {
           Data Repository created by{" "}
           <Link href={"#"}>
             <span className="font-bold">
-              Zeynep Şahin Mencütek & Fatma Yılmaz{" "}
+              Zeynep Şahin Mencütek & - Fatma Yılmaz Elmas
             </span>
           </Link>
         </p>

@@ -20,11 +20,6 @@
     "description": "the Date when the Policy Announced"
   },
   {
-    "label": "Policy Type/Area",
-    "accessor": "policyTypeArea",
-    "description": "It is categorising return related legislation according to its focus or scope. Legislations could be related to pre-return stage such as asylum procedures, irregularity residence criteria and pre-removal detentions. They could also be about procedures during return, such as forced or assisted returns or mass expulsions."
-  },
-  {
     "label": "Type of Legislation",
     "accessor": "tyepOfLegislation",
     "description": "How the legislation is officially identified: Act, Agreement, Decree, Guidelines, Law, Order."
@@ -33,6 +28,11 @@
     "label": "Level of Legislation",
     "accessor": "levelOfLegislation",
     "description": "No Description"
+  },
+  {
+    "label": "Policy Type/Area",
+    "accessor": "policyTypeArea",
+    "description": "It is categorising return related legislation according to its focus or scope. Legislations could be related to pre-return stage such as asylum procedures, irregularity residence criteria and pre-removal detentions. They could also be about procedures during return, such as forced or assisted returns or mass expulsions."
   },
   {
     "label": "Policy Description",

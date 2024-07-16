@@ -9,8 +9,8 @@ const SideMenu = () => {
     },
     {
       id: 2,
-      name: "Country Profile",
-      path: "/country-profile",
+      name: "Country List",
+      path: "/country-list",
     },
     {
       id: 3,
@@ -77,11 +77,6 @@ const SideMenu = () => {
           path: "/",
         },
       ],
-    },
-    {
-      id: 7,
-      name: "Country List",
-      path: "/country-list",
     },
   ];
   return (
