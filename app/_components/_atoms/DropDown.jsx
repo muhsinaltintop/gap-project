@@ -15,7 +15,7 @@ const DropDown = ({ label, options, value, onChange }) => {
       <select
         name="DropDownSelect"
         id="DropDownSelect"
-        className="mt-1.5 w-min rounded-lg border-gray-300 text-gray-700 sm:text-sm"
+        className="mt-1.5 p-1 w-min border-solid border-black border-2 text-gray-700 sm:text-sm"
         value={value}
         onChange={handleChange}
       >

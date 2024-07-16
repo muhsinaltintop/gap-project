@@ -14,7 +14,7 @@ const SearchBar = ({ title, placeholder, value, onChange }) => {
           type="text"
           id="Search"
           placeholder={placeholder}
-          className="w-full rounded-md border-gray-200 pl-2 py-2.5 pe-10 shadow-sm sm:text-sm"
+          className="w-full rounded-md border-solid border-black border-2 pl-2 py-2.5 pe-10 shadow-sm sm:text-sm"
         />
 
         <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
