@@ -1,84 +1,15 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import { CircleHelp, ExternalLink } from "lucide-react";
-import Button from "./Button";
+
 import { Tooltip } from "@mui/material";
-import jsPDF from "jspdf";
-import autoTable from "jspdf-autotable";
-import logoWatermark from "@/public/logoWatermark";
-import GSDidotRegular from "../../../public/fonts/GFSDidot-Regular.jsx";
+
+import PdfDownloader from "./PdfDownloader";
 
 const Table = ({ policies, headers }) => {
   const tableRef = useRef(null);
 
-  const downloadPDF = () => {
-    const doc = new jsPDF("p", "mm");
-    doc.addFileToVFS("GFSDidot-Regular.jsx", GSDidotRegular);
-    doc.addFont("GFSDidot-Regular.jsx", "GSDidotRegular", "normal");
-    doc.setFont("GSDidotRegular");
 
-    // Define the columns for the PDF table
-    const columns = headers.map((header) => ({
-      header: header.label,
-      dataKey: header.dataKey, // Assuming you have a dataKey for each header
-    }));
-
-    // Prepare rows data
-    const rows = policies.map((policy) => [
-      policy.country,
-      policy.policyName,
-      policy.originalPolicyName,
-      `${policy.day}/${policy.month}/${policy.year}`,
-      policy.typeOfLegislation,
-      policy.levelOfLegislation,
-      formatPolicyTypeArea(policy.policyTypeArea),
-      policy.policyDescription,
-      policy.notes,
-    ]);
-
-    // AutoTable options
-    const options = {
-      startY: 20,
-      margin: { top: 10 },
-      styles: { overflow: "linebreak", fontSize: 8 },
-      headStyles: { fillColor: [41, 128, 185], textColor: [255, 255, 255] },
-      columnStyles: {
-        0: { fontStyle: "normal", columnWidth: 15 },
-        1: { fontStyle: "normal", columnWidth: 20 },
-        2: { fontStyle: "normal", columnWidth: 20 },
-        3: { fontStyle: "normal", columnWidth: 20 },
-        4: { fontStyle: "normal", columnWidth: 20 },
-        5: { fontStyle: "normal", columnWidth: 20 },
-        6: { fontStyle: "normal", columnWidth: 20 },
-        7: { fontStyle: "normal", columnWidth: 20 },
-        8: { fontStyle: "normal", columnWidth: 20 },
-      },
-    };
-
-    // Add watermark function
-    const addWatermark = (doc, imgData) => {
-      const totalPages = doc.internal.getNumberOfPages();
-      for (let i = 1; i <= totalPages; i++) {
-        doc.setPage(i);
-        doc.addImage(imgData, "PNG", 50, 80, 125, 50, undefined, "NONE", {
-          angle: 45,
-          align: "center",
-        }); // Adjust the position and size as needed
-      }
-    };
-
-    // Add content using autoTable plugin
-    autoTable(doc, {
-      head: [columns.map((col) => col.header)],
-      body: rows,
-      ...options,
-    });
-
-    addWatermark(doc, logoWatermark);
-
-    // Save the PDF
-    doc.save("GAPs_Policy_Legislation.pdf");
-  };
 
   // Helper function to format policy type area
   const formatPolicyTypeArea = (policyTypeArea) => {
@@ -104,18 +35,13 @@ const Table = ({ policies, headers }) => {
   ) : (
     <div className="overflow-x-auto">
       <div className="mb-2 flex justify-end">
-        <Button
-          label={"Download PDF"}
-          onClick={downloadPDF}
-          customCSS={"bg-primary text-white"}
-          icon={true}
-        />
+        <PdfDownloader headers={headers} policies={policies}/>
       </div>
       <div className="w-full overflow-x-auto">
         <table
           ref={tableRef}
           className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm"
-        >
+          >
           <thead>
             <tr>
               {headers.map((header, index) => (
@@ -137,6 +63,7 @@ const Table = ({ policies, headers }) => {
           </thead>
 
           <tbody className="divide-y divide-gray-200">
+              
             {policies.map((policy, index) => (
               <tr key={index}>
                 <td className="whitespace-nowrap px-4 py-2 font-bold text-gray-900">
