@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     textAlign: 'center', // Center align header text
   },
   headerCell: {
+    fontSize: '10px',
     padding: 5,
     borderStyle: 'solid',
     borderColor: '#000',
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
   },
   cellText: {
     margin: 5,
+    fontSize: '9px'
   },
 });
 
@@ -77,7 +79,7 @@ const ReportPDF = ({ policies, headers }) => {
 
   return (
     <Document>
-      <Page style={styles.page}>
+      <Page style={styles.page} orientation='landscape'>
         <View style={styles.table}>
           {/* Header Row */}
           <View style={styles.tableRow}>
@@ -98,7 +100,7 @@ const ReportPDF = ({ policies, headers }) => {
                 <Text style={styles.cellText}>{policy.policyName}</Text>
               </View>
               <View style={styles.tableCell}>
-                <Text style={styles.cellText}>{policy.originalPolicyName}</Text>
+                <Text style={policy.country === "Greece" ? [styles.cellText, styles.greek] : styles.cellText}>{policy.originalPolicyName}</Text>
               </View>
               <View style={styles.tableCell}>
                 <Text style={styles.cellText}>{`${policy.day}/${policy.month}/${policy.year}`}</Text>
