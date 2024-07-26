@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PlainText from "./_components/_atoms/PlainText";
 import LinkToGap from "./_components/LinkToGap";
 import Map from "./_components/Map";
@@ -9,21 +10,31 @@ const mainText = (
       quantitative data on national return regimes by structuring them into five
       main categories:
     </p>
-    <ul>
+    <ul className="mt-4 mb-4">
       <li>
-        <strong>Profile</strong>
+        <Link className="font-bold text-primary" href={"/country-list"}>
+        Profile
+        </Link>
       </li>
       <li>
-        <strong>Legislation</strong>
+        <Link className="font-bold text-primary" href={"/policy-legislation-map"}>
+        Legislation
+        </Link>
       </li>
       <li>
-        <strong>Infrastructure</strong>
+        <Link className="font-bold text-primary" href={"/return-infrastructure"}>
+        Infrastructure
+        </Link>
       </li>
       <li>
-        <strong>International Cooperation</strong>
+        <Link className="font-bold text-primary" href={"/international-cooperation"}>
+        International Cooperation
+        </Link>
       </li>
       <li>
-        <strong>Descriptive Statistics</strong>
+        <Link className="font-bold text-primary" href={"/statistics"}>
+        Descriptive Statistics
+        </Link>
       </li>
     </ul>
     <p>
