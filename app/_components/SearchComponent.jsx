@@ -5,9 +5,13 @@ import SelectYearsComponent from "./SelectYearsComponent";
 import SearchBarComponent from "./SearchBarComponent";
 import Button from "../_components/_atoms/Button";
 import TableComponent from "./TableComponent";
+import { usePathname } from "next/navigation";
 
-const SearchComponent = ({ data, countryList }) => {
+const SearchComponent = ({ data, countryList, headers }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
+  const pathName = usePathname();
+
+  console.log(pathName);
 
   const handleCountryChange = (country) => {
     if (selectedCountries.includes(country)) {
@@ -57,7 +61,7 @@ const SearchComponent = ({ data, countryList }) => {
 
   return (
     <div className="mx-4 first-line:flex flex-col ">
-      <h2 className="flex font-bold text-2xl mb-4">Policy/Legislation:</h2>
+      <h2 className="flex font-bold text-2xl mb-4">{(pathName === "/policy-legislation-map") ? "Policy/Legislation": (pathName === "/return-infrastructure") ?  "Return Infrastructure" : "" }</h2>
       <p className="font-light">*Last Updated 26/06/2024</p>
 
       <p className="text-justify ">
@@ -109,7 +113,7 @@ const SearchComponent = ({ data, countryList }) => {
           customCSS={"bg-primary w-20 text-white"}
         />
 
-        <TableComponent policies={filteredPolicies} />
+        <TableComponent policies={filteredPolicies} headers={headers} pathName={pathName} />
       </div>
     </div>
   );

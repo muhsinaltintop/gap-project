@@ -1,0 +1,82 @@
+[
+  {
+    "label": "Country",
+    "accessor": "countryName",
+    "description": "Country Name"
+  },
+  {
+    "label": "Policy Title",
+    "accessor": "policyName",
+    "description": "Policy Title in English"
+  },
+  {
+    "label": "Actors Involved",
+    "accessor": "actorsInvolved",
+    "description": "The actors involved to policy"
+  },
+  {
+    "label": "Duration",
+    "accessor": "duration",
+    "description": "Duration for policy implementation."
+  },
+  {
+    "label": "Summary",
+    "accessor": "summary",
+    "description": "Summary of Return Infrastructure"
+  },
+  {
+    "label": "Area Scale Implementation",
+    "accessor": "areaScaleImplementation",
+    "description": "No Description"
+  },
+  {
+    "label": "Policy Type/Area",
+    "accessor": "policyTypeArea",
+    "description": "It is categorising return related legislation according to its focus or scope. Legislations could be related to pre-return stage such as asylum procedures, irregularity residence criteria and pre-removal detentions. They could also be about procedures during return, such as forced or assisted returns or mass expulsions."
+  },
+  {
+    "label": "Target Group",
+    "accessor": "targetGroup",
+    "description": "No Description"
+  },
+  { "label": "Target Origin Country Region", 
+    "accessor": "targetOriginCountryRegion", 
+    "description": "No Description" 
+  },
+  {
+    "label": "Specific",
+    "accessor": "specific",
+    "description": "No Description"
+  },
+  {
+    "label": "Exceptions",
+    "accessor": "exceptions",
+    "description": "No Description"
+  },
+  {
+    "label": "Digital Infrastructures Technologies",
+    "accessor": "digitalInfrastructuresTechnologies",
+    "description": "No Description"
+  },
+  {
+    "label": "Material Infrastructure",
+    "accessor": "materialInfrastructure",
+    "description": "No Description"
+  },
+  {
+    "label": "Notes Budget",
+    "accessor": "notesBudget",
+    "description": "No Description"
+  },
+  {
+    "label": "Offical Website",
+    "accessor": "officialWebsite",
+    "description": "No Description"
+  },
+  {
+    "label": "Program Evaluation",
+    "accessor": "programEvaluation",
+    "description": "No Description"
+  }
+
+]

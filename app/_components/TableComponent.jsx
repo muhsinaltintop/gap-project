@@ -1,11 +1,11 @@
 import Table from "./_atoms/Table";
-import headers from "../../public/_mocks_/data_description.json";
 
 
-const TableComponent = ({ policies }) => {
+
+const TableComponent = ({ policies, headers, pathName }) => {
   return (
     <div>
-         <Table policies={policies} headers={headers} />
+         <Table policies={policies} headers={headers} pathName={pathName}/>
     </div>
   );
 };
