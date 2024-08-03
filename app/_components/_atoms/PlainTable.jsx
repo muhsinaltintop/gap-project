@@ -17,10 +17,10 @@ const PlainTable = ({ policies, headersData }) => {
             <div className="mb-2 flex justify-end">
                 <PdfDownloader headers={headers} policies={policies} />
             </div>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto rotate-180">
                 <table
                     ref={tableRef}
-                    className="divide-y-2 divide-gray-200 bg-white text-sm table-fixed"
+                    className="divide-y-2 divide-gray-200 bg-white text-sm table-fixed rotate-180"
                 >
                     <thead>
                         <tr>
@@ -41,16 +41,16 @@ const PlainTable = ({ policies, headersData }) => {
                             ))}
                         </tr>
                     </thead>
-                    <tbody className="divide-y divide-gray-200">
+                    <tbody className="divide-y divide-gray-200 align-top">
                         {policies.map((policy, rowIndex) => (
-                            <tr key={rowIndex} className='items-start'>
+                            <tr key={rowIndex}>
                                 {headers.map((header, colIndex) => (
                                     <td
                                         key={colIndex}
-                                        className={`px-4 py-2 items-start ${header.width}`}
+                                        className={`px-4 py-2 ${header.width}`}
                                     >
                                         {header.accessor === 'policyName' && policy.urlEnglish ? (
-                                            <span className="flex items-start">
+                                            <span className="flex items-center">
                                             {policy.policyName}
                                             {policy?.urlEnglish ? (
                                               <Link
