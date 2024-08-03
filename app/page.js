@@ -5,6 +5,7 @@ import Map from "./_components/Map";
 
 const mainText = (
   <>
+  <p className="text-sm">*Last Updated on 03.08.2024</p>
     <p>
       The GAPs Data Repository provides an overview of available qualitative and
       quantitative data on national return regimes by structuring them into five
@@ -52,9 +53,9 @@ const mainText = (
       authentication and data logging. These enable systematic organisation,
       storage, and retrieval of data during and after the project.
     </p>
-    <p>
-      For viewing the entire data set or to contribute data entries please
-      contact the coordinators of Horizon Europe project GAPs.
+    <p className="mt-2 text-sm">
+      For viewing the entire data set or to contribute data entries please 
+      <span className="text-primary"><Link href={"https://www.returnmigration.eu/contact-gaps"} target="_blank"> contact</Link></span> the coordinators of Horizon Europe project GAPs.
     </p>
   </>
 );
@@ -62,16 +63,17 @@ const mainText = (
 export default function Home() {
   return (
     <div className="w-full text-justify">
-      <div className="w-9/12 justify-around mx-6 mt-6 ">
-        <PlainText text={mainText} />
-      </div>
-      <div className="grid grid-cols-1 gap-1 lg:grid-cols-3 lg:gap-8">
-        <div className="mx-6 mt-6 h-100 rounded-lg lg:col-span-2">
-          <Map />
+      <div className="grid grid-cols-1 gap-1 lg:grid-cols-5 lg:gap-8">
+        <div className="justify-around mx-6 mt-6 lg:col-span-3">
+          <PlainText text={mainText} />
         </div>
-        <div className="mx-6 mt-6">
+        
+        <div className="mx-6 mt-6 col-span-2">
           <LinkToGap />
         </div>
+      </div>
+      <div className="mx-6 mt-6 h-100 rounded-lg">
+        <Map />
       </div>
     </div>
   );

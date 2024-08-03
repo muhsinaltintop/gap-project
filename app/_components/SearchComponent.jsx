@@ -11,8 +11,6 @@ const SearchComponent = ({ data, countryList, headers }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
   const pathName = usePathname();
 
-  console.log(pathName);
-
   const handleCountryChange = (country) => {
     if (selectedCountries.includes(country)) {
       setSelectedCountries(selectedCountries.filter((c) => c !== country));
@@ -35,22 +33,31 @@ const SearchComponent = ({ data, countryList, headers }) => {
   const [filteredPolicies, setFilteredPolicies] = useState([]);
 
   const handleSearch = () => {
+
+
     let filtered = data.flatMap((country) => {
+     
+
       if (
         selectedCountries.length === 0 ||
         selectedCountries.includes(country.countryName)
       ) {
+    
+
         return country.policies
           .filter((policy) => {
-            const policyYear = parseInt(policy.year);
-            return (
+            const policyDate = new Date(policy.announcedYear);
+            const policyYear = policyDate.getFullYear();
+            const matchesYear =
               (!startYear || policyYear >= parseInt(startYear)) &&
-              (!endYear || policyYear <= parseInt(endYear)) &&
-              (searchTerm === "" ||
-                policy.policyName
-                  .toLowerCase()
-                  .includes(searchTerm.toLowerCase()))
-            );
+              (!endYear || policyYear <= parseInt(endYear));
+            const matchesTerm =
+              searchTerm === "" ||
+              policy.policyName.toLowerCase().includes(searchTerm.toLowerCase());
+
+        
+
+            return matchesYear && matchesTerm;
           })
           .map((policy) => ({ country: country.countryName, ...policy }));
       }
@@ -60,10 +67,15 @@ const SearchComponent = ({ data, countryList, headers }) => {
   };
 
   return (
-    <div className="mx-4 first-line:flex flex-col ">
-      <h2 className="flex font-bold text-2xl mb-4">{(pathName === "/policy-legislation-map") ? "Policy/Legislation": (pathName === "/return-infrastructure") ?  "Return Infrastructure" : "" }</h2>
+    <div className="mx-4 first-line:flex flex-col">
+      <h2 className="flex font-bold text-2xl mb-4">
+        {pathName === "/policy-legislation-map"
+          ? "Policy/Legislation"
+          : pathName === "/return-infrastructure"
+          ? "Return Infrastructure"
+          : ""}
+      </h2>
       <p className="font-light">*Last Updated 26/06/2024</p>
-
       <p className="text-justify ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at
         eum dignissimos atque sint qui amet nihil cupiditate harum officiis?
@@ -113,7 +125,11 @@ const SearchComponent = ({ data, countryList, headers }) => {
           customCSS={"bg-primary w-20 text-white"}
         />
 
-        <TableComponent policies={filteredPolicies} headers={headers} pathName={pathName} />
+        <TableComponent
+          policies={filteredPolicies}
+          headers={headers}
+          pathName={pathName}
+        />
       </div>
     </div>
   );

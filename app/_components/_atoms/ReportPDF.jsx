@@ -81,22 +81,6 @@ const styles = StyleSheet.create({
 
 const ReportPDF = ({ policies, headers }) => {
 
-  const formatPolicyTypeArea = (policyTypeArea) => {
-    let formatted = "";
-    if (policyTypeArea.asistedReturn) formatted += "Asisted Return, ";
-    if (policyTypeArea.borderManagement) formatted += "Border Management, ";
-    if (policyTypeArea.coercedEnforcedReturn) formatted += "Coerced Enforced Return, ";
-    if (policyTypeArea.generalAsylum) formatted += "General Asylum, ";
-    if (policyTypeArea.irregularity) formatted += "Irregularity, ";
-    if (policyTypeArea.massExpulsion) formatted += "Mass Expulsion, ";
-    if (policyTypeArea.preRemovalDetention) formatted += "Pre-Removal Detention, ";
-    if (policyTypeArea.pushback) formatted += "Pushback, ";
-    if (policyTypeArea.residence) formatted += "Residence, ";
-    if (policyTypeArea.voluntaryReturn) formatted += "Voluntary Return, ";
-    if (policyTypeArea.other) formatted += "Other, ";
-    return formatted.trim().replace(/,$/, ""); // Remove trailing comma
-  };
-
   const getCurrentDate = () => {
     const now = new Date();
     return `${now.getDate()}/${now.getMonth() + 1}/${now.getFullYear()}`;
@@ -128,7 +112,7 @@ const ReportPDF = ({ policies, headers }) => {
                 <Text style={policy.country === "Greece" ? [styles.cellText, styles.greek] : styles.cellText}>{policy.originalPolicyName}</Text>
               </View>
               <View style={[styles.tableCell, styles.col4]}>
-                <Text style={styles.cellText}>{`${policy.day}/${policy.month}/${policy.year}`}</Text>
+                <Text style={styles.cellText}>{policy.announcedYear}</Text>
               </View>
               <View style={[styles.tableCell, styles.col5]}>
                 <Text style={styles.cellText}>{policy.typeOfLegislation}</Text>
@@ -137,7 +121,7 @@ const ReportPDF = ({ policies, headers }) => {
                 <Text style={styles.cellText}>{policy.levelOfLegislation}</Text>
               </View>
               <View style={[styles.tableCell, styles.col7]}>
-                <Text style={styles.cellText}>{formatPolicyTypeArea(policy.policyTypeArea)}</Text>
+                <Text style={styles.cellText}>{policy.policyTypeArea}</Text>
               </View>
               <View style={[styles.tableCell, styles.col8]}>
                 <Text style={styles.cellText}>{policy.policyDescription}</Text>

@@ -30,7 +30,7 @@ const CountryCard = ({ country }) => {
           className="group relative block overflow-hidden"
         >
           <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-            Country Profile On Gap
+            Country Profile On GAPs
           </button>
         </Link>
         <Link

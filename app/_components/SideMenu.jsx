@@ -4,7 +4,7 @@ const SideMenu = () => {
   const leftMenu = [
     {
       id: 1,
-      name: "GAP's Data Repository",
+      name: "GAPs Data Repository",
       path: "/",
     },
     {

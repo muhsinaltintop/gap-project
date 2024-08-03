@@ -11,7 +11,7 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "GAP's Policy Search App",
+  title: "GAPs Policy Search App",
   description: "14 Country, Different Immigraion Policy Areas",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           <Header />
         </div>
         <div className="w-4/12 mx-auto my-4 text-xl font-bold text-center bg-primary border rounded-lg text-white">
-          {"GAP's DATA REPOSITORY"}
+          {"GAPs DATA REPOSITORY"}
         </div>
         <div className="flex w-12/12">
           <SideMenu />

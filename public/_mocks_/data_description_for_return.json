@@ -1,82 +1,74 @@
 [
   {
     "label": "Country",
-    "accessor": "countryName",
-    "description": "Country Name"
+    "accessor": "country",
+    "description": "Country Name",
+    "width" : "w-2"
   },
   {
     "label": "Policy Title",
     "accessor": "policyName",
-    "description": "Policy Title in English"
+    "description": "Policy Title in English",
+    "width" : "w-4"
   },
   {
     "label": "Actors Involved",
     "accessor": "actorsInvolved",
-    "description": "The actors involved to policy"
+    "description": "The actors involved to policy",
+    "width" : "w-4"
   },
   {
     "label": "Duration",
     "accessor": "duration",
-    "description": "Duration for policy implementation."
+    "description": "Duration for policy implementation.",
+    "width" : "w-2"
   },
   {
     "label": "Summary",
     "accessor": "summary",
-    "description": "Summary of Return Infrastructure"
+    "description": "Summary of Return Infrastructure",
+    "width" : "w-8"
   },
   {
     "label": "Area Scale Implementation",
     "accessor": "areaScaleImplementation",
-    "description": "No Description"
+    "description": "No Description",
+    "width" : "w-2"
   },
   {
     "label": "Policy Type/Area",
     "accessor": "policyTypeArea",
-    "description": "It is categorising return related legislation according to its focus or scope. Legislations could be related to pre-return stage such as asylum procedures, irregularity residence criteria and pre-removal detentions. They could also be about procedures during return, such as forced or assisted returns or mass expulsions."
+    "description": "It is categorising return related legislation according to its focus or scope. Legislations could be related to pre-return stage such as asylum procedures, irregularity residence criteria and pre-removal detentions. They could also be about procedures during return, such as forced or assisted returns or mass expulsions.",
+    "width" : "w-2"
   },
   {
     "label": "Target Group",
     "accessor": "targetGroup",
-    "description": "No Description"
+    "description": "No Description",
+    "width" : "w-2"
   },
   { "label": "Target Origin Country Region", 
     "accessor": "targetOriginCountryRegion", 
-    "description": "No Description" 
+    "description": "No Description",
+    "width" : "w-2"
   },
   {
     "label": "Specific",
     "accessor": "specific",
-    "description": "No Description"
-  },
-  {
-    "label": "Exceptions",
-    "accessor": "exceptions",
-    "description": "No Description"
-  },
-  {
-    "label": "Digital Infrastructures Technologies",
-    "accessor": "digitalInfrastructuresTechnologies",
-    "description": "No Description"
-  },
-  {
-    "label": "Material Infrastructure",
-    "accessor": "materialInfrastructure",
-    "description": "No Description"
-  },
-  {
-    "label": "Notes Budget",
-    "accessor": "notesBudget",
-    "description": "No Description"
+    "description": "No Description",
+    "width" : "w-2"
   },
   {
     "label": "Offical Website",
     "accessor": "officialWebsite",
-    "description": "No Description"
+    "description": "No Description",
+    "width" : "w-2"
   },
   {
     "label": "Program Evaluation",
     "accessor": "programEvaluation",
-    "description": "No Description"
+    "description": "No Description",
+    "width" : "w-2"
   }
 
 ]
