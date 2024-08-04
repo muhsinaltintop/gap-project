@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const CountryCard = ({ country }) => {
   return (
-    <div className="flex items-end gap-4 mt-4">
+    <div className="flex items-end gap-4 m-4">
   <Image
     src={`/${country.countryName}.png`}
     width={500}
     height={64}
     alt=""
-    className="size-36 rounded-lg object-cover"
+    className="size-36 rounded-full object-cover bg-slate-200 p-4"
   />
 
   <div>
