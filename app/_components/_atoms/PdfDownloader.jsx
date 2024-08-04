@@ -5,7 +5,7 @@ import { HardDriveDownload, Loader2 } from 'lucide-react'
 import Button from './Button'
 import ReportPDF from './ReportPDF'
 
-const PdfDownloader = ({policies, headers}) => {
+const PdfDownloader = ({policies, headers, pathName}) => {
     const [isClient, setIsClient] =useState(false)
 
     useEffect(()=>{
@@ -16,7 +16,7 @@ const PdfDownloader = ({policies, headers}) => {
   return isClient ? (
     <PDFDownloadLink
     fileName={`gaps_report.pdf`}
-    document={<ReportPDF headers={headers} policies={policies}/>}
+    document={<ReportPDF headers={headers} policies={policies} pathName={pathName}/>}
     
     >
         <Button label={"Download PDF"} icon={

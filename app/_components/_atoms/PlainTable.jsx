@@ -4,7 +4,7 @@ import { Tooltip } from '@mui/material';
 import { CircleHelp, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
-const PlainTable = ({ policies, headersData }) => {
+const PlainTable = ({ policies, headersData, pathName }) => {
     const tableRef = useRef(null);
 
     // JSON'dan gelen `headers` verisini işleyin
@@ -15,7 +15,7 @@ const PlainTable = ({ policies, headersData }) => {
     ) : (
         <div className="overflow-x-auto">
             <div className="mb-2 flex justify-end">
-                <PdfDownloader headers={headers} policies={policies} />
+                <PdfDownloader headers={headers} policies={policies} pathName={pathName} />
             </div>
             <div className="overflow-x-auto rotate-180">
                 <table

@@ -44,6 +44,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',// Center align header text
   },
+
+  tableHeader: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    fontSize: '12px',
+    marginVertical: '3px',
+  },
+
   headerCell: {
     backgroundColor: '#e0e0e0',
     fontSize: '10px',
@@ -79,7 +87,7 @@ const styles = StyleSheet.create({
   col9: { flex: 8 },
 });
 
-const ReportPDF = ({ policies, headers }) => {
+const ReportPDF = ({ policies, headers, pathName }) => {
 
   const getCurrentDate = () => {
     const now = new Date();
@@ -90,7 +98,7 @@ const ReportPDF = ({ policies, headers }) => {
     <Document>
       <Page style={styles.page} orientation='landscape'>
         <View style={styles.table}>
-          
+          <Text style={styles.tableHeader}>{pathName === "/policy-legislation-map" ? (`Return Related Legislation and Policy Mapping`): ""}</Text>
           <View style={styles.tableRow}>
             {headers?.map((header, indexHeader) => (
               <View key={indexHeader} style={[styles.tableCell, styles.headerCell, styles[`col${indexHeader + 1}`]]}>
