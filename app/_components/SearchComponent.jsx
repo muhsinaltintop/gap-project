@@ -76,8 +76,11 @@ const SearchComponent = ({ data, countryList, headers }) => {
           : ""}
       </h2>
       <p className="font-light">*Last Updated 26/06/2024</p>
-      <p className="text-justify ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at
+
+      { pathName === "/policy-legislation-map"
+          ? <div className="text-justify">
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at
         eum dignissimos atque sint qui amet nihil cupiditate harum officiis?
         Necessitatibus non explicabo architecto eveniet itaque labore quaerat
         provident tenetur? Lorem ipsum dolor sit amet consectetur adipisicing
@@ -91,7 +94,22 @@ const SearchComponent = ({ data, countryList, headers }) => {
         Voluptatibus at eum dignissimos atque sint qui amet nihil cupiditate
         harum officiis? Necessitatibus non explicabo architecto eveniet itaque
         labore quaerat provident tenetur?
-      </p>
+          </p>
+          </div>
+          : pathName === "/return-infrastructure"
+          ?  
+        <div>
+          <p>Return Migration Infrastructure maps the programs and projects launched by state agencies or
+            international organisations to enable the return of people to their country of origin or who
+            migrate to a country willing to receive them.</p> 
+            <p>
+            This section examines how return migration governance is put in practice, including how
+            different actors collaborate or work against each other, and what discrepancies (or indeed
+            ‘GAPS’) emerge and maintain to exist in their daily operation of return migration, in Europe and
+            beyond. Positioning the Return Migration Infrastructure as the meso-level, all micro-level
+            analysis on migrant decisions, their aspirations and experiences is out of scope.</p>
+        </div>
+          : ""}
       <div className="flex flex-col gap-4">
         <CountrySelect
           countryList={countryList}

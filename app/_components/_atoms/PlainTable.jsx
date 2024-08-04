@@ -41,7 +41,7 @@ const PlainTable = ({ policies, headersData }) => {
                             ))}
                         </tr>
                     </thead>
-                    <tbody className="divide-y divide-gray-200 align-top">
+                    <tbody className="divide-y divide-black align-top">
                         {policies.map((policy, rowIndex) => (
                             <tr key={rowIndex}>
                                 {headers.map((header, colIndex) => (
