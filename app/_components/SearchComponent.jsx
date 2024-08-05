@@ -99,15 +99,9 @@ const SearchComponent = ({ data, countryList, headers }) => {
           : pathName === "/return-infrastructure"
           ?  
         <div>
-          <p>Return Migration Infrastructure maps the programs and projects launched by state agencies or
-            international organisations to enable the return of people to their country of origin or who
-            migrate to a country willing to receive them.</p> 
-            <p>
-            This section examines how return migration governance is put in practice, including how
-            different actors collaborate or work against each other, and what discrepancies (or indeed
-            ‘GAPS’) emerge and maintain to exist in their daily operation of return migration, in Europe and
-            beyond. Positioning the Return Migration Infrastructure as the meso-level, all micro-level
-            analysis on migrant decisions, their aspirations and experiences is out of scope.</p>
+          <p>
+            Return Migration Infrastructure maps the programs and projects launched by returning state’ agencies or international organisations (e.g.) to enable the return of people to their country of origin or who migrate to a country willing to receive them. It also covers programs designed for readmission and reintegration of returnees in the country of origin. Mapping of actors, targets, and types of these programs and projects is of importance to understand how return migration governance is put into practice by returning states and how it is operated in the county of origin.
+          </p>
         </div>
           : ""}
       <div className="flex flex-col gap-4">
