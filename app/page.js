@@ -54,7 +54,7 @@ organized presentation for those interested in return related data:
     <p>
     To learn more about the types of data, selection criteria, scope, coverage, data quality and assurance, archiving and presentation, roles and responsibilities in data curation, and the technical data dictionary codebook, please see the full report: <Link href={"https://zenodo.org/records/10790795"} target="_blank" className="text-primary"> D1.2 GAPs Data Repository on return: Guideline, data samples and codebook</Link>. 
     </p>
-    <p className="mt-2 text-sm">
+    <p>
     GAPs Data Repository is a living platform, please
       <span className="text-primary"><Link href={"https://www.returnmigration.eu/contact-gaps"} target="_blank"> contact</Link></span> the Horizon Europe project GAPs coordinators to contribute data entries and/or for any queries.
     </p>
