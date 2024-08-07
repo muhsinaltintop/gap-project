@@ -110,58 +110,58 @@ const CountryCard = ({ country }) => {
                 <Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Stock of Irregular Migrant
                 </Link>
                 <Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Asylum Application
                 </Link>
                 <Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Entry Refusals and Pushbacks
                 </Link>
                 <Link
                   href={`/statistics/dublin-returns`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Dublin Returns
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   TCNs/Foreign Nationals Ordered to Leave
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Returns By Type
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Returns By Citizenship
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Alternative/Various Categories(National)
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
                   Readmitted Citizens
                 </Link>
