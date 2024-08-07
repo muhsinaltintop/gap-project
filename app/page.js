@@ -17,22 +17,22 @@ quantitative, qualitative, and visual data into five main categories, ensuring a
 organized presentation for those interested in return related data:
     </p>
     <ul className="mt-4 mb-4 text-xl">
-      <li className="float-left mr-8">
+      <li className="mr-8">
         <Link className="font-bold text-primary" href={"/country-list"}>
         Profile
         </Link>
       </li>
-      <li className="float-left mr-8">
+      <li className="mr-8">
         <Link className="font-bold text-primary" href={"/policy-legislation-map"}>
         Legislation
         </Link>
       </li>
-      <li className="float-left mr-8">
+      <li className="mr-8">
         <Link className="font-bold text-primary" href={"/return-infrastructure"}>
         Infrastructure
         </Link>
       </li>
-      <li className="float-left mr-8">
+      <li className="mr-8">
         <Link className="font-bold text-primary" href={"/international-cooperation"}>
         International Cooperation
         </Link>

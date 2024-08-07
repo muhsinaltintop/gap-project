@@ -61,29 +61,29 @@ const CountryCard = ({ country }) => {
         </Link>
         <Link
           target="_blank"
-          href={`/actor-return-diagram/${country?.countryName}`}
+          href={`/policy-legislation-map/`}
           className="group relative block overflow-hidden"
         >
           <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-            Actor Return Diagram
+            Policy/Legislation
           </button>
         </Link>
         <Link
           target="_blank"
-          href={`/actor-return-diagram/${country?.countryName}`}
+          href={`/return-infrastructure`}
           className="group relative block overflow-hidden"
         >
           <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-            Actor Return Diagram
+          Return Infrastructure
           </button>
         </Link>
         <Link
           target="_blank"
-          href={`/actor-return-diagram/${country?.countryName}`}
+          href={`/statistics`}
           className="group relative block overflow-hidden"
         >
           <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-            Actor Return Diagram
+            Statistics
           </button>
         </Link>
     </div>
