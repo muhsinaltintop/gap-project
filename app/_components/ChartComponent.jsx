@@ -60,10 +60,9 @@ const ChartComponent = () => {
     selectedCountries.includes(country.countryName)
   );
 
-  let chartComponent;
-  if (selectedChartType === "bar") {
-    chartComponent = (
-      <BarChart width={1260} height={500} data={filteredData}>
+
+    const chartComponent = (
+      <BarChart width={1000} height={600} data={filteredData} className="mt-6">
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="Year" />
         <YAxis />
@@ -72,61 +71,16 @@ const ChartComponent = () => {
         {filteredCountries.map((country, index) => (
           <Bar key={index} dataKey={country.countryName} fill={country.color} />
         ))}
-      </BarChart>
-    );
-  } else {
-    chartComponent = (
-      <ScatterChart
-        margin={{
-          top: 20,
-          right: 20,
-          bottom: 20,
-          left: 20,
-        }}
-      >
-        <Legend />
-        <CartesianGrid />
-        <XAxis type="year" dataKey="Year" name="stature" unit="" />
-        <YAxis type="number" />
-        <Tooltip cursor={{ strokeDasharray: "3 3" }} />
-        {filteredCountries.map((country, index) => (
-          <Scatter
-            key={index}
-            name={country.countryName}
-            data={filteredData}
-            dataKey={country.countryName}
-            fill={country.color}
-          />
-        ))}
-      </ScatterChart>
-    );
-  }
+      </BarChart>)
 
   return (
-    <div>
+    <div className="m-10">
       <div>
-        <h3>Data Set</h3>
-        <label>
-          <input
-            type="radio"
-            value="data1"
-            checked={selectedDataSet === "data1"}
-            onChange={() => handleDataSetChange("data1")}
-          />
-          Dublin Returns
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="data2"
-            checked={selectedDataSet === "data2"}
-            onChange={() => handleDataSetChange("data2")}
-          />
-          Stock of Irregular Migrants
-        </label>
+        <h3 className="text-primary text-xl font-bold ">Dublin Retruns</h3>
+
       </div>
-      <div>
-        <h3>Country</h3>
+      <div className="mt-4">
+        <h3>Select Countries:</h3>
         {Object.keys(data[0]).map((key) => {
           if (key !== "Year") {
             return (
@@ -144,31 +98,12 @@ const ChartComponent = () => {
         })}
       </div>
       <div>
-        <h3>Chart Type</h3>
-        <label>
-          <input
-            type="radio"
-            value="bar"
-            checked={selectedChartType === "bar"}
-            onChange={() => handleChartTypeChange("bar")}
-          />
-          Bar Chart
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="scatter"
-            checked={selectedChartType === "scatter"}
-            onChange={() => handleChartTypeChange("scatter")}
-          />
-          Scatter Chart
-        </label>
+
       </div>
-      <h2>Chart:</h2>
       <ResponsiveContainer
         className="downloadimage"
-        width={"100%"}
-        height={300}
+        width={1000}
+        height={500}
       >
         {chartComponent}
       </ResponsiveContainer>

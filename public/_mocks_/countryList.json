@@ -2,7 +2,7 @@
   {
     "id": 1,
     "countryName": "Germany",
-    "color": "#f7c800"
+    "color": "black"
   },
   {
     "id": 2,
@@ -12,7 +12,7 @@
   {
     "id": 3,
     "countryName": "Greece",
-    "color": "#055eb1"
+    "color": "pink"
   },
   {
     "id": 4,
@@ -22,7 +22,7 @@
   {
     "id": 5,
     "countryName": "Netherlands",
-    "color": "#a91b27"
+    "color": "purple"
   },
   {
     "id": 6,
@@ -67,6 +67,6 @@
   {
     "id": 14,
     "countryName": "United Kingdom",
-    "color": "#c8102e"
+    "color": "green"
   }
 ]
