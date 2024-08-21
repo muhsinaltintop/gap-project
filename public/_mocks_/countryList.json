@@ -1,72 +1,72 @@
 [
   {
     "id": 1,
-    "countryName": "Germany",
+    "countryName": "germany",
     "color": "#000000"
   },
   {
     "id": 2,
-    "countryName": "Sweden",
+    "countryName": "sweden",
     "color": "#f6c600"
   },
   {
     "id": 3,
-    "countryName": "Greece",
+    "countryName": "greece",
     "color": "#0d5baa"
   },
   {
     "id": 4,
-    "countryName": "Poland",
+    "countryName": "poland",
     "color": "#690000"
   },
   {
     "id": 5,
-    "countryName": "Netherlands",
+    "countryName": "netherlands",
     "color": "#02017d"
   },
   {
     "id": 6,
-    "countryName": "Turkey",
+    "countryName": "turkey",
     "color": "#02017d"
   },
   {
     "id": 7,
-    "countryName": "Iraq",
+    "countryName": "iraq",
     "color": "#660099"
   },
   {
     "id": 8,
-    "countryName": "Jordan",
+    "countryName": "jordan",
     "color": "#3a1800"
   },
   {
     "id": 9,
-    "countryName": "Afghanistan",
+    "countryName": "afghanistan",
     "color": "#fc6601"
   },
   {
     "id": 10,
-    "countryName": "Nigeria",
+    "countryName": "nigeria",
     "color": "#00834e"
   },
   {
     "id": 11,
-    "countryName": "Morocco",
+    "countryName": "morocco",
     "color": "#013220"
   },
   {
     "id": 12,
-    "countryName": "Tunisia",
+    "countryName": "tunisia",
     "color": "#ab00f6"
   },
   {
     "id": 13,
-    "countryName": "Canada",
+    "countryName": "canada",
     "color": "#fa8072"
   },
   {
     "id": 14,
-    "countryName": "United Kingdom",
+    "countryName": "unitedKingdom",
     "color": "#1d2023"
   }
 ]

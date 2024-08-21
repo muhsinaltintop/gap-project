@@ -35,7 +35,7 @@ const SideMenu = () => {
         {
           id: 1,
           name: "Stock of Irregular Migrants",
-          path: "/",
+          path: "/statistics/stock-of-irregular-migrants",
         },
         {
           id: 2,
@@ -50,7 +50,7 @@ const SideMenu = () => {
         {
           id: 4,
           name: "Dublin Returns",
-          path: "statistics/dublin-returns",
+          path: "/statistics/dublin-returns",
         },
         {
           id: 5,

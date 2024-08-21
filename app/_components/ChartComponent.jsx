@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import { saveSvgAsPng } from "save-svg-as-png";
 import {
@@ -14,10 +14,8 @@ import {
 
 import countries from "../../public/_mocks_/countryList.json";
 
-const ChartComponent = () => {
+const ChartComponent = ({ data }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
-  const [selectedChartType, setSelectedChartType] = useState("bar");
-  const [selectedDataSet, setSelectedDataSet] = useState("data1");
 
   const handleCountryChange = (country) => {
     const index = selectedCountries.indexOf(country);
@@ -30,56 +28,45 @@ const ChartComponent = () => {
     }
   };
 
-  const handleChartTypeChange = (chartType) => {
-    setSelectedChartType(chartType);
-  };
-
-  const handleDataSetChange = (dataSet) => {
-    setSelectedDataSet(dataSet);
-  };
-
   // Filter the data based on the selectedCountries state and the selected data set
-  const filteredData =
-    selectedDataSet === "data1"
-      ? data.filter((entry) =>
-          selectedCountries.every((country) =>
-            Object.keys(entry).includes(country)
-          )
-        )
-      : data2.filter((entry) =>
-          selectedCountries.every((country) =>
-            Object.keys(entry).includes(country)
-          )
-        );
+  const filteredData = data
+    .filter(entry =>
+      selectedCountries.every(country =>
+        Object.keys(entry).includes(country)
+      )
+    )
+    .map(entry => {
+      let filteredEntry = { year: entry.year }; // Start with the year
+      selectedCountries.forEach(country => {
+        filteredEntry[country] = entry[country]; // Add only the selected countries
+      });
+      return filteredEntry;
+    });
 
+  console.log("filtered:", filteredData);
+  
   // Filter the countries based on the selectedCountries state
   const filteredCountries = countries.filter((country) =>
     selectedCountries.includes(country.countryName)
   );
 
-
-    const chartComponent = (
-      <BarChart width={1000} height={600} data={filteredData} className="mt-6">
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="Year" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        {filteredCountries.map((country, index) => (
-          <Bar key={index} dataKey={country.countryName} fill={country.color} />
-        ))}
-      </BarChart>)
+  // Formatter function for the legend
+  const formatLegend = (value) => {
+    if (value === "unitedKingdom") {
+      return "United Kingdom";
+    }
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  };
 
   return (
     <div className="m-10">
       <div>
-        <h3 className="text-primary text-xl font-bold ">Dublin Returns</h3>
-
+        <h3 className="text-primary text-xl font-bold">Dublin Returns</h3>
       </div>
       <div className="mt-4">
         <h3>Select Countries:</h3>
         {Object.keys(data[0]).map((key) => {
-          if (key !== "Year") {
+          if (key !== "id" && key !== "year") {
             return (
               <label key={key} className="mr-3 align-middle">
                 <input
@@ -89,21 +76,23 @@ const ChartComponent = () => {
                   onChange={() => handleCountryChange(key)}
                   className="align-middle mr-1"
                 />
-                {key}
+                {key === "unitedKingdom" ? "United Kingdom" : key.charAt(0).toUpperCase() + key.slice(1)}
               </label>
             );
           }
         })}
       </div>
-      <div>
-
-      </div>
-      <ResponsiveContainer
-        className="downloadimage"
-        width={1000}
-        height={500}
-      >
-        {chartComponent}
+      <ResponsiveContainer className="downloadimage" width={1000} height={500}>
+        <BarChart width={1000} height={600} data={filteredData} className="mt-6">
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="year" />
+          <YAxis />
+          <Tooltip />
+          <Legend formatter={formatLegend} />
+          {filteredCountries.map((country, index) => (
+            <Bar key={index} dataKey={country.countryName} fill={country.color} />
+          ))}
+        </BarChart>
       </ResponsiveContainer>
       <button
         className="m-4"
