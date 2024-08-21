@@ -46,7 +46,7 @@ organized presentation for those interested in return related data:
     <p>
     Each category, especially statistics, comprises multiple sub-categories. These categories have
     been determined by referring to the literature review, existing migration datasets, and insights
-    from empirical data collected from  <Link href={"/country-list"} target="_blank" className="text-primary"> 14 countries </Link>.  The selection of categories and sub-categories is based on their relevance to understanding return and readmission policies and practices, as well as considerations of data accessibility, reliability, clarity, and comparability.
+    from empirical data collected from  <Link href={"/country-list"} target="_blank" className="text-primary"> 14 countries</Link>.  The selection of categories and sub-categories is based on their relevance to understanding return and readmission policies and practices, as well as considerations of data accessibility, reliability, clarity, and comparability.
     </p>
     <p>
     Data collection in 2023 and 2024 is carried out by national experts of the <Link href={"https://www.returnmigration.eu/team"} target="_blank" className="text-primary">GAPs Project consortium</Link>, entries are realized through REDCap Software ensuring a secure web connection with authentication and data logging as well as enabling systematic organisation, storage, and retrieval of data. The accuracy of the data is based on the national experts and the quality of original data sources consulted during the data collection phase.
@@ -56,7 +56,7 @@ organized presentation for those interested in return related data:
     </p>
     <p>
     GAPs Data Repository is a living platform, please
-      <span className="text-primary"><Link href={"https://www.returnmigration.eu/contact-gaps"} target="_blank"> contact</Link></span> the Horizon Europe project GAPs coordinators to contribute data entries and/or for any queries.
+      <span className="text-primary"><Link href={"https://www.returnmigration.eu/contact-gaps"} target="_blank"> contact</Link></span> the Horizon Europe project GAPs coordinators to contribute data entries or for any queries and comments.
     </p>
     <p className="text-sm mt-2">*Last Updated on 03.08.2024</p>
   </>

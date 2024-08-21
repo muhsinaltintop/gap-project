@@ -96,7 +96,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                     href={`/actor-return-diagram/${selectedCountry?.countryName}`}
                   >
                     <Button
-                      label={"Actor Return Diagram"}
+                      label={"Actor Diagram"}
                       customCSS={"bg-buttonYellow text-black font-bold"}
                     />
                   </Link>

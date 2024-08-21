@@ -5,7 +5,7 @@ const page = ({ params }) => {
   return (
     <div>
       <h1 className="text-xl font-bold">
-        {params.countryName} Actor Return Diagram
+        {params.countryName} Actor Diagram
       </h1>
 
       <PDFViewer filename={`${params.countryName}_ard`} />

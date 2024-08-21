@@ -9,7 +9,7 @@ const SideMenu = () => {
     },
     {
       id: 2,
-      name: "Country List",
+      name: "Country Profiles & Infographics",
       path: "/country-list",
     },
     {

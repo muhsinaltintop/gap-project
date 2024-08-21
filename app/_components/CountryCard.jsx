@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 const CountryCard = ({ country }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -35,7 +36,7 @@ const CountryCard = ({ country }) => {
       />
 
       <div>
-        <h3 className="text-lg/tight font-medium text-gray-900">{country.countryName}</h3>
+        <h3 className="text-lg/tight font-bold text-gray-900">{country.countryName}</h3>
 
         <div className="grid grid-cols-4 gap-x-4 mt-0.5 text-gray-700">
           <Link
@@ -47,63 +48,63 @@ const CountryCard = ({ country }) => {
                 : `https://www.returnmigration.eu/countries-${country?.countryName.toLowerCase()}`
             }
             target="_blank"
-            className="group relative block overflow-hidden"
+            className="group relative block"
           >
-            <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-              Country Profile On GAPs
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+              Country Profile on GAPs
             </button>
           </Link>
           <Link
             href={`/return-policy-timeline/${country?.countryName}`}
             target="_blank"
-            className="group relative block overflow-hidden"
+            className="group relative block"
           >
-            <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
               Return Policy Timeline
             </button>
           </Link>
           <Link
             target="_blank"
             href={`/return-flow-chart/${country?.countryName}`}
-            className="group relative block overflow-hidden"
+            className="group relative block"
           >
-            <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-              Return Flow Chart
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+              Return Procedures Flow Chart
             </button>
           </Link>
           <Link
             target="_blank"
             href={`/actor-return-diagram/${country?.countryName}`}
-            className="group relative block overflow-hidden"
+            className="group relative block"
           >
-            <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
-              Actor Return Diagram
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+              Actor Diagram
             </button>
           </Link>
           <Link
             target="_blank"
             href={`/policy-legislation-map/`}
-            className="group relative block overflow-hidden"
+            className="group relative block"
           >
-            <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
+            <button className="block rounded bg-yellow-600 text-white font-bold mt-2 h-12 w-60 p-2 text-sm transition hover:scale-105">
               Policy/Legislation
             </button>
           </Link>
           <Link
             target="_blank"
             href={`/return-infrastructure`}
-            className="group relative block overflow-hidden"
+            className="group relative block"
           >
-            <button className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105">
+            <button className="block rounded bg-yellow-600 text-white mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
               Return Infrastructure
             </button>
           </Link>
           <div className="relative" ref={dropdownRef}> {/* Ensure this has relative positioning and ref */}
             <button
-              className="block w-full rounded bg-yellow-400 p-4 mt-2 text-sm font-medium transition hover:scale-105"
+              className="block rounded bg-yellow-600 text-white mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105"
               onClick={toggleDropdown}
             >
-              Statistics
+              Statistics <span className="float-right"><ChevronDown /></span> 
             </button>
             {isDropdownOpen && (
               <div className="absolute mt-2 w-full rounded bg-white shadow-lg z-50"> {/* Added z-50 here */}

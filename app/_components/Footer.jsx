@@ -39,10 +39,21 @@ const Footer = () => {
               />
             </div>
 
-            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
-            </p>
+            <div className="flex flex-center mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+              <div>
+                <Image src="/eu-flag.png" width="40" height="30" alt="eu-flag"/>
+              </div>
+              <div>
+              <h3 className="font-bold text-lg">Funding</h3>     
+              <p className="font-bold">Awarding body:</p>
+              <p>European Union</p>
+              <p>Horizon Europe Research Programme</p>
+              <p>HORIZON-CL2-2022-TRANSFORMATIONS-01-09</p>
+              <p>Project Reference: 101094341</p>
+              <p>Project Duration:  36 Months</p>
+
+              </div>
+            </div>
           </div>
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
@@ -95,7 +106,7 @@ const Footer = () => {
           Data Repository created by{" "}
           <Link href={"#"}>
             <span className="font-bold">
-              Zeynep Şahin Mencütek & - Fatma Yılmaz Elmas
+              Dr. Zeynep Şahin Mencütek & Dr. Fatma Yılmaz Elmas
             </span>
           </Link>
         </p>
