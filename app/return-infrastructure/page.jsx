@@ -7,7 +7,7 @@ import TransformReturns from "../_components/TransformReturns";
 const ReturnInfrastructure = async () => {
   const countryList = await getCountryList();
   const transformedReturns = TransformReturns(returnInfrastructure)
-  return <div className="w-9/12">
+  return <div className="w-full mx-6">
     <SearchComponent data={transformedReturns} countryList={countryList} headers={headersForReturn}/>
   </div>;
 };

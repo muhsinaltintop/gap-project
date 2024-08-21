@@ -4,7 +4,7 @@ import { getDublinReturns } from "@/app/_utils/GlobalApi";
 const page = async () => {
   const dublinReturns = await getDublinReturns();
   return (
-    <div>
+    <div className="w-full mx-6">
       <ChartComponent data={dublinReturns} />
     </div>
   );

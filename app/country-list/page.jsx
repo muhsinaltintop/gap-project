@@ -4,7 +4,7 @@ import countryProfileData from "../../public/_mocks_/countryProfile.json";
 
 const page = () => {
   return (
-    <div className="country-list w-12/12 grid grid-cols-1">
+    <div className="country-list w-full grid grid-cols-1 mx-6">
       {countryProfileData.map((country, index) => (
         <div key={index}>
           <CountryCard country={country} />

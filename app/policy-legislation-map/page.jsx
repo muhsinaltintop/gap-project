@@ -9,7 +9,7 @@ const PolicyLegislationPage = async () => {
   const countryList = await getCountryList();
   const transformedPolicies = TransformPolicies(policies)
   return (
-    <div className="w-9/12">
+    <div className="w-full mx-6">
       <SearchComponent data={transformedPolicies} countryList={countryList} headers={headersForPolicy} />
     </div>
   );

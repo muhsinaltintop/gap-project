@@ -1,7 +1,7 @@
 import React from "react";
 
 const InternationalCooperation = () => {
-  return <div>International Cooperation</div>;
+  return <div className="w-full mx-6">International Cooperation</div>;
 };
 
 export default InternationalCooperation;

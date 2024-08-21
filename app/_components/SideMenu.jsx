@@ -80,11 +80,11 @@ const SideMenu = () => {
     },
   ];
   return (
-    <div className="flex h-screen flex-col justify-between border-e bg-white w-64 overflow-y-auto">
+    <div className="flex h-max flex-col justify-between shadow-xl bg-white max-w-54 overflow-y-auto">
       <div className="px-4 py-6">
         <ul className="mt-6 space-y-1">
           {leftMenu.map((menuItem) => (
-            <li key={menuItem.id}>
+            <li key={menuItem.id} >
               {menuItem.submenu ? (
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">

@@ -9,9 +9,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
-  ScatterChart,
-  Scatter,
+  ResponsiveContainer
 } from "recharts";
 import data from "../../public/_mocks_/dublin_returns.json";
 import data2 from "../../public/_mocks_/stock_of_im.json";
@@ -76,7 +74,7 @@ const ChartComponent = () => {
   return (
     <div className="m-10">
       <div>
-        <h3 className="text-primary text-xl font-bold ">Dublin Retruns</h3>
+        <h3 className="text-primary text-xl font-bold ">Dublin Returns</h3>
 
       </div>
       <div className="mt-4">
@@ -84,12 +82,13 @@ const ChartComponent = () => {
         {Object.keys(data[0]).map((key) => {
           if (key !== "Year") {
             return (
-              <label key={key}>
+              <label key={key} className="mr-3 align-middle">
                 <input
                   type="checkbox"
                   value={key}
                   checked={selectedCountries.includes(key)}
                   onChange={() => handleCountryChange(key)}
+                  className="align-middle mr-1"
                 />
                 {key}
               </label>

@@ -16,7 +16,7 @@ const mainText = (
 quantitative, qualitative, and visual data into five main categories, ensuring a unified and
 organized presentation for those interested in return related data:
     </p>
-    <ul className="mt-4 mb-4 text-xl">
+    <ul className="mt-2 mb-2 ml-4">
       <li className="mr-8">
         <Link className="font-bold text-primary" href={"/country-list"}>
         Profile
