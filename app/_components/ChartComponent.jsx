@@ -11,8 +11,7 @@ import {
   Legend,
   ResponsiveContainer
 } from "recharts";
-import data from "../../public/_mocks_/dublin_returns.json";
-import data2 from "../../public/_mocks_/stock_of_im.json";
+
 import countries from "../../public/_mocks_/countryList.json";
 
 const ChartComponent = () => {

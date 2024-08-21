@@ -34,4 +34,9 @@ const getDublinReturns = async () => {
   return data;
 };
 
-export { getCountryList, getDublinReturns };
+const getStockOfIrregularMigrants = async () => {
+  const data = await fetchData("/stock-of-irregular-migrants?populate=*")
+  return data;
+}
+
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants };

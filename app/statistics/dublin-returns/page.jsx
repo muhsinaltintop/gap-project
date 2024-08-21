@@ -1,5 +1,5 @@
-import ChartComponent from "@/app/_components/ChartComponent";
-import { getDublinReturns } from "@/app/_utils/GlobalApi";
+import ChartComponent from "../../_components/ChartComponent";
+import { getDublinReturns } from "../../_utils/GlobalApi";
 
 const page = async () => {
   const dublinReturns = await getDublinReturns();
