@@ -42,10 +42,8 @@ const ChartComponent = ({ data }) => {
       });
       return filteredEntry;
     });
-
-  console.log("filtered:", filteredData);
   
-  // Filter the countries based on the selectedCountries state
+  
   const filteredCountries = countries.filter((country) =>
     selectedCountries.includes(country.countryName)
   );
@@ -82,7 +80,7 @@ const ChartComponent = ({ data }) => {
           }
         })}
       </div>
-      <ResponsiveContainer className="downloadimage" width={1000} height={500}>
+      <div className="downloadimage" width={1000} height={500}>
         <BarChart width={1000} height={600} data={filteredData} className="mt-6">
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
@@ -93,7 +91,7 @@ const ChartComponent = ({ data }) => {
             <Bar key={index} dataKey={country.countryName} fill={country.color} />
           ))}
         </BarChart>
-      </ResponsiveContainer>
+      </div>
       <button
         className="m-4"
         onClick={() =>
