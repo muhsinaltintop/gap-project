@@ -8,7 +8,7 @@ const ReturnInfrastructure = async () => {
   const countryList = await getCountryList();
   const transformedReturns = TransformReturns(returnInfrastructure)
   return <div className="w-9/12">
-    <SearchComponent data={transformedReturns} countryList={countryList} headers={headersForReturn}></SearchComponent>
+    <SearchComponent data={transformedReturns} countryList={countryList} headers={headersForReturn}/>
   </div>;
 };
 

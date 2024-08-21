@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   col9: { flex: 8 },
 });
 
-const ReportPDF = ({ policies, headers, pathName }) => {
+const ReportPDF = ({ policies, headers, pathName, selectedCountries }) => {
 
   const getCurrentDate = () => {
     const now = new Date();
@@ -96,9 +96,9 @@ const ReportPDF = ({ policies, headers, pathName }) => {
 
   return (
     <Document>
-      <Page style={styles.page} orientation='landscape'>
+       <Page style={styles.page} orientation='landscape'>
         <View style={styles.table}>
-          <Text style={styles.tableHeader}>{pathName === "/policy-legislation-map" ? (`Return Related Legislation and Policy Mapping`): ""}</Text>
+          <Text style={styles.tableHeader}>{pathName === "/policy-legislation-map" ? (`Return Related Legislation and Policy Mapping (${selectedCountries})`): ""}</Text>
           <View style={styles.tableRow}>
             {headers?.map((header, indexHeader) => (
               <View key={indexHeader} style={[styles.tableCell, styles.headerCell, styles[`col${indexHeader + 1}`]]}>

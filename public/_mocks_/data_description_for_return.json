@@ -3,72 +3,72 @@
     "label": "Country",
     "accessor": "country",
     "description": "Country Name",
-    "width" : "w-2"
+    "width" : "w-1/24"
   },
   {
     "label": "Policy Title",
     "accessor": "policyName",
     "description": "Policy Title in English",
-    "width" : "w-4"
+    "width" : "w-1/12"
   },
   {
     "label": "Actors Involved",
     "accessor": "actorsInvolved",
     "description": "The actors involved to policy",
-    "width" : "w-4"
+    "width" : "w-1/12"
   },
   {
     "label": "Duration",
     "accessor": "duration",
     "description": "Duration for policy implementation.",
-    "width" : "w-2"
+    "width" : "w-1/12"
   },
   {
     "label": "Summary",
     "accessor": "summary",
     "description": "Summary of Return Infrastructure",
-    "width" : "w-8"
+    "width" : "w-5/24"
   },
   {
     "label": "Area Scale Implementation",
     "accessor": "areaScaleImplementation",
     "description": "No Description",
-    "width" : "w-2"
+    "width" : "w-1/24"
   },
   {
     "label": "Policy Type/Area",
     "accessor": "policyTypeArea",
     "description": "It is categorising return related legislation according to its focus or scope. Legislations could be related to pre-return stage such as asylum procedures, irregularity residence criteria and pre-removal detentions. They could also be about procedures during return, such as forced or assisted returns or mass expulsions.",
-    "width" : "w-2"
+    "width" : "w-1/24"
   },
   {
     "label": "Target Group",
     "accessor": "targetGroup",
     "description": "No Description",
-    "width" : "w-2"
+    "width" : "w-1/8"
   },
   { "label": "Target Origin Country Region", 
     "accessor": "targetOriginCountryRegion", 
     "description": "No Description",
-    "width" : "w-2"
+    "width" : "w-1/24"
   },
   {
     "label": "Specific",
     "accessor": "specific",
     "description": "No Description",
-    "width" : "w-2"
+    "width" : "w-1/12"
   },
   {
     "label": "Offical Website",
     "accessor": "officialWebsite",
     "description": "No Description",
-    "width" : "w-2"
+    "width" : "w-1/12"
   },
   {
     "label": "Program Evaluation",
     "accessor": "programEvaluation",
     "description": "No Description",
-    "width" : "w-2"
+    "width" : "w-1/12"
   }
 
 ]

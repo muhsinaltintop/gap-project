@@ -141,6 +141,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
           policies={filteredPolicies}
           headers={headers}
           pathName={pathName}
+          selectedCountries={selectedCountries}
         />
       </div>
     </div>
