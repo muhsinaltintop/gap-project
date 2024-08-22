@@ -49,4 +49,29 @@ const getPushBacks = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks };
+const getTcnForeignNationals = async () => {
+  const data = await fetchData("/tcn-foreign-nationals-ordered-to-leave?populate=*")
+  return data;
+}
+
+const getReturnByType = async () => {
+  const data = await fetchData("/return-by-type?populate=*")
+  return data;
+}
+
+const getReturnByCitizenship = async () => {
+  const data = await fetchData("/return-by-citizenship?populate=*")
+  return data;
+}
+
+const getAlternativeVariousCategories = async () => {
+  const data = await fetchData("/alternative-various-categories?populate=*")
+  return data;
+}
+
+const getReadmittedCitizens = async () => {
+  const data = await fetchData("/alternative-various-categories?populate=*")
+  return data;
+}
+
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnForeignNationals, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens };
