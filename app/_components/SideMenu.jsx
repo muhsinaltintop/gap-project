@@ -45,7 +45,7 @@ const SideMenu = () => {
         {
           id: 3,
           name: "Entry Refusals and Pushbacks",
-          path: "/entry-refusals-pushbacks",
+          path: "statistics/entry-refusals-pushbacks",
         },
         {
           id: 4,
