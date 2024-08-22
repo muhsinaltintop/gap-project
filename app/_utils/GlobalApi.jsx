@@ -39,4 +39,9 @@ const getStockOfIrregularMigrants = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants };
+const getAsylumApplications = async () => {
+  const data = await fetchData("/asylum-applications?populate=*")
+  return data;
+}
+
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications };

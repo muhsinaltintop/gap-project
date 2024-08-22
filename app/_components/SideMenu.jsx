@@ -40,7 +40,7 @@ const SideMenu = () => {
         {
           id: 2,
           name: "Asylum Applications",
-          path: "/",
+          path: "/statistics/asylum-applications",
         },
         {
           id: 3,
