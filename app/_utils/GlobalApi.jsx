@@ -60,7 +60,7 @@ const getReturnByType = async () => {
 }
 
 const getReturnByCitizenship = async () => {
-  const data = await fetchData("/return-by-citizenship?populate=*")
+  const data = await fetchData("/returns-by-citizenship?populate=*")
   return data;
 }
 
@@ -70,7 +70,7 @@ const getAlternativeVariousCategories = async () => {
 }
 
 const getReadmittedCitizens = async () => {
-  const data = await fetchData("/alternative-various-categories?populate=*")
+  const data = await fetchData("/readmitted-citizens?populate=*")
   return data;
 }
 
