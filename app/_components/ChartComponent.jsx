@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { saveSvgAsPng } from "save-svg-as-png";
 import {
@@ -9,12 +9,14 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer
 } from "recharts";
 
+
 import countries from "../../public/_mocks_/countryList.json";
+import PageTitle from "./_atoms/PageTitle";
 
 const ChartComponent = ({ data }) => {
+  
   const [selectedCountries, setSelectedCountries] = useState([]);
 
   const handleCountryChange = (country) => {
@@ -30,36 +32,44 @@ const ChartComponent = ({ data }) => {
 
   // Filter the data based on the selectedCountries state and the selected data set
   const filteredData = data
-    .filter(entry =>
-      selectedCountries.every(country =>
+    .filter((entry) =>
+      selectedCountries.every((country) =>
         Object.keys(entry).includes(country)
       )
     )
-    .map(entry => {
+    .map((entry) => {
       let filteredEntry = { year: entry.year }; // Start with the year
-      selectedCountries.forEach(country => {
+      selectedCountries.forEach((country) => {
         filteredEntry[country] = entry[country]; // Add only the selected countries
       });
       return filteredEntry;
     });
-  
-  
+
   const filteredCountries = countries.filter((country) =>
     selectedCountries.includes(country.countryName)
   );
 
-  // Formatter function for the legend
+  // Formatter function for the legend and checkboxes
   const formatLegend = (value) => {
-    if (value === "unitedKingdom") {
-      return "United Kingdom";
+    switch (value) {
+      case "unitedKingdom":
+        return "United Kingdom";
+      case "russianFederation":
+        return "Russian Federation";
+      case "bosniaAndHerzegowina":
+        return "Bosnia and Herzegowina";
+      case "otherTotal":
+        return "Other Total";
+      default:
+        return value.charAt(0).toUpperCase() + value.slice(1);
     }
-    return value.charAt(0).toUpperCase() + value.slice(1);
   };
 
   return (
     <div className="m-10">
+      
       <div>
-        <h3 className="text-primary text-xl font-bold">Dublin Returns</h3>
+        <PageTitle/>
       </div>
       <div className="mt-4">
         <h3>Select Countries:</h3>
@@ -74,7 +84,7 @@ const ChartComponent = ({ data }) => {
                   onChange={() => handleCountryChange(key)}
                   className="align-middle mr-1"
                 />
-                {key === "unitedKingdom" ? "United Kingdom" : key.charAt(0).toUpperCase() + key.slice(1)}
+                {formatLegend(key)}
               </label>
             );
           }
@@ -85,7 +95,7 @@ const ChartComponent = ({ data }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
-          <Tooltip />
+          <Tooltip/>
           <Legend formatter={formatLegend} />
           {filteredCountries.map((country, index) => (
             <Bar key={index} dataKey={country.countryName} fill={country.color} />

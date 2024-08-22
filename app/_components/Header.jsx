@@ -11,8 +11,7 @@ function Header() {
     { id: 3, name: "Country Profiles", path: "/" },
     { id: 4, name: "Publications", path: "/" },
     { id: 5, name: "GAPs News", path: "/" },
-    { id: 6, name: "Contact", path: "/" },
-    { id: 7, name: "GAPs News", path: "/" },
+    { id: 6, name: "Contact", path: "/" }
   ];
 
   const Social = [

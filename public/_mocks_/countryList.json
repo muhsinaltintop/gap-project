@@ -68,5 +68,71 @@
     "id": 14,
     "countryName": "unitedKingdom",
     "color": "#707983"
+  },
+  {
+    "id": 15,
+    "countryName": "kosovo",
+    "color": "#1e90ff"
+  },
+  {
+    "id": 16,
+    "countryName": "albania",
+    "color": "#ff4500"
+  },
+  {
+    "id": 17,
+    "countryName": "serbia",
+    "color": "#ffd700"
+  },
+  {
+    "id": 18,
+    "countryName": "macedonia",
+    "color": "#32cd32"
+  },
+  {
+    "id": 19,
+    "countryName": "russianFederation",
+    "color": "#ff6347"
+  },
+  {
+    "id": 20,
+    "countryName": "bosniaAndHerzegowina",
+    "color": "#8a2be2"
+  },
+  {
+    "id": 21,
+    "countryName": "romania",
+    "color": "#deb887"
+  },
+  {
+    "id": 22,
+    "countryName": "georgia",
+    "color": "#5f9ea0"
+  },
+  {
+    "id": 23,
+    "countryName": "ukraine",
+    "color": "#d2691e"
+  },
+  {
+    "id": 24,
+    "countryName": "syria",
+    "color": "#ff7f50"
+  },
+  {
+    "id": 25,
+    "countryName": "moldova",
+    "color": "#6495ed"
+  },
+  {
+    "id": 26,
+    "countryName": "algeria",
+    "color": "#ff1493"
+  },
+  {
+    "id": 27,
+    "countryName": "otherTotal",
+    "color": "#d2d2d2"
+  
   }
 ]

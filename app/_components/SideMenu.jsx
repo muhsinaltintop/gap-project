@@ -30,7 +30,7 @@ const SideMenu = () => {
     {
       id: 6,
       name: "Statistics",
-      path: "/statistics",
+      path: "/",
       submenu: [
         {
           id: 1,
@@ -45,7 +45,7 @@ const SideMenu = () => {
         {
           id: 3,
           name: "Entry Refusals and Pushbacks",
-          path: "/statistics/entry-refusals-pushbacks",
+          path: "/statistics/entry-refusals-and-pushbacks",
         },
         {
           id: 4,
@@ -60,12 +60,12 @@ const SideMenu = () => {
         {
           id: 6,
           name: "Returns by Type",
-          path: "/statistics/return-by-type"
+          path: "/statistics/returns-by-type"
         },
         {
           id: 7,
           name: "Returns by Citizenship",
-          path: "/statistics/return-by-citizenship",
+          path: "/statistics/returns-by-citizenship",
         },
         {
           id: 8,

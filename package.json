@@ -28,7 +28,7 @@
     "react-export-table-to-excel": "^1.0.6",
     "react-simple-maps": "^3.0.0",
     "react-table": "^7.8.0",
-    "recharts": "^2.12.7",
+    "recharts": "^2.13.0-alpha.4",
     "save-svg-as-png": "^1.4.17",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
