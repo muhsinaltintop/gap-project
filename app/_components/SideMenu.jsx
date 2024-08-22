@@ -30,7 +30,7 @@ const SideMenu = () => {
     {
       id: 6,
       name: "Statistics",
-      path: "/",
+      path: "/statistics",
       submenu: [
         {
           id: 1,
@@ -45,7 +45,7 @@ const SideMenu = () => {
         {
           id: 3,
           name: "Entry Refusals and Pushbacks",
-          path: "statistics/entry-refusals-pushbacks",
+          path: "/statistics/entry-refusals-pushbacks",
         },
         {
           id: 4,
@@ -55,26 +55,27 @@ const SideMenu = () => {
         {
           id: 5,
           name: "TCNs/Foreign Nationals Ordered to Leave",
-          path: "/",
+          path: "/statistics/tcn-foreign-nationals-ordered-to-leave",
         },
         {
           id: 6,
           name: "Returns by Type",
+          path: "/statistics/return-by-type"
         },
         {
           id: 7,
           name: "Returns by Citizenship",
-          path: "/",
+          path: "/statistics/return-by-citizenship",
         },
         {
           id: 8,
           name: "Alternative/Various Categories (National)",
-          path: "/",
+          path: "/statistics/alternative-various-categories",
         },
         {
           id: 9,
           name: "Readmitted Citizens",
-          path: "/",
+          path: "/statistics/readmitted-citizens",
         },
       ],
     },
