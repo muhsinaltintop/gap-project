@@ -59,8 +59,13 @@ const getReturnByType = async () => {
   return data;
 }
 
-const getReturnByCitizenship = async () => {
-  const data = await fetchData("/returns-by-citizenship?populate=*")
+const getReturnByCitizenshipGe = async () => {
+  const data = await fetchData("/returns-by-citizenship-ge?populate=*")
+  return data;
+}
+
+const getReturnByCitizenshipGr = async () => {
+  const data = await fetchData("/returns-by-citizenship-gr?populate=*")
   return data;
 }
 
@@ -74,4 +79,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnForeignNationals, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnForeignNationals, getReturnByType, getReturnByCitizenshipGe, getReturnByCitizenshipGr, getAlternativeVariousCategories, getReadmittedCitizens };
