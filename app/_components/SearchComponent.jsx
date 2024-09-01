@@ -80,20 +80,13 @@ const SearchComponent = ({ data, countryList, headers }) => {
       { pathName === "/policy-legislation-map"
           ? <div className="text-justify">
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at
-        eum dignissimos atque sint qui amet nihil cupiditate harum officiis?
-        Necessitatibus non explicabo architecto eveniet itaque labore quaerat
-        provident tenetur? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Voluptatibus at eum dignissimos atque sint qui amet nihil
-        cupiditate harum officiis? Necessitatibus non explicabo architecto
-        eveniet itaque labore quaerat provident tenetur?Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Voluptatibus at eum dignissimos atque
-        sint qui amet nihil cupiditate harum officiis? Necessitatibus non
-        explicabo architecto eveniet itaque labore quaerat provident
-        tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptatibus at eum dignissimos atque sint qui amet nihil cupiditate
-        harum officiis? Necessitatibus non explicabo architecto eveniet itaque
-        labore quaerat provident tenetur?
+          The section has been developed by national immigration experts to address national-level return legislation and policies in the countries covered in the GAPs project. It maps national legislations which set out the principles of public policy on asylum, border management, residence, deportation and return. It also covers the regulations which are designed to implement these principles, bringing legislation into effect. The legislation and regulations can take the form of entitled acts, laws, statutes, directives, decisions, guidelines, administrative rules and others. They are a kind of binding laws. Legal arrangements on international agreements will be presented in another section, International Cooperation. 
+          </p>
+          <p>
+          Each entry includes direct links to the official and translated versions of legislation and regulations, the relevant date, type, policy area, basic description, and additional notes. Descriptions of the entries are also included at the top of the table as well. A key feature of this section is its robust search functionality. Policy legislations can be searched by entering the issuing country name, start/end year or key terms. This provides a chronological view of entries and facilitates cross-country comparisons. All entries can also be downloaded as PDF/Excel documents.
+          </p>
+          <p>
+          Use the dropdown menus or the search tool below to find a specific policy. 
           </p>
           </div>
           : pathName === "/return-infrastructure"
@@ -103,7 +96,14 @@ const SearchComponent = ({ data, countryList, headers }) => {
             Return Migration Infrastructure maps the programs and projects launched by returning state’ agencies or international organisations to enable the return of people to their country of origin or who migrate to a country willing to receive them. It also covers programs designed for readmission and reintegration of returnees in the country of origin. Mapping of actors, targets, and types of these programs and projects is of importance to understand how return migration governance is put into practice by returning states and how it is operated in the county of origin.
           </p>
         </div>
-          : ""}
+          : "/international-cooperation" ? 
+          <div>
+            <p>This section has been developed to capture international cooperation instruments on return and readmission procedures, particularly since 2015. These include standard bilateral readmission agreements as well as non-standard return cooperation instruments and arrangements, such as deals, statements, standard operating procedures, joint ways forward on migration issues and joint declarations.
+            </p>
+            <p>Each entry includes the names of the signatories, the year of signature or type of cooperation instrument, web links to the original agreement if available. International cooperation items can be searched by entering the signing countries, relevant date or key terms. All entries can also be downloaded as a PDF/Excel document.
+            </p>
+          </div> 
+          : "" }
       <div className="flex flex-col gap-4">
         <CountrySelect
           countryList={countryList}
