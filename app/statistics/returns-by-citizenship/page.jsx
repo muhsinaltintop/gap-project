@@ -5,7 +5,7 @@ const page = async () => {
   const returnByCitizenship = await getReturnByCitizenshipGe();
   return (
     <div className="w-full mx-6">
-      <ChartComponent data={returnByCitizenship} />
+      <ChartComponent data={returnByCitizenship} title="Return by Citizenship"/>
     </div>
   );
 };

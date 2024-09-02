@@ -15,7 +15,7 @@ import {
 import countries from "../../public/_mocks_/countryList.json";
 import PageTitle from "./_atoms/PageTitle";
 
-const ChartComponent = ({ data }) => {
+const ChartComponent = ({ data, title }) => {
   
   const [selectedCountries, setSelectedCountries] = useState([]);
 
@@ -69,7 +69,7 @@ const ChartComponent = ({ data }) => {
     <div className="m-10">
       
       <div>
-        <PageTitle/>
+       <PageTitle title={title}/>
       </div>
       <div className="mt-4">
         <h3>Select Countries:</h3>

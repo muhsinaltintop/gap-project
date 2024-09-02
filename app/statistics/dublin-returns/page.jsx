@@ -5,7 +5,7 @@ const page = async () => {
   const dublinReturns = await getDublinReturns();
   return (
     <div className="w-full mx-6">
-      <ChartComponent data={dublinReturns} />
+      <ChartComponent data={dublinReturns} title="Dublin Returns" />
     </div>
   );
 };
