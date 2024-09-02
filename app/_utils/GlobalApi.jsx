@@ -44,6 +44,11 @@ const getAsylumApplications = async () => {
   return data;
 }
 
+const getTps = async () => {
+  const data = await fetchData("/tps?populate=*")
+  return data;
+}
+
 const getPushBacks = async () => {
   const data = await fetchData("/entry-refusals-pushbacks?populate=*")
   return data;
@@ -79,4 +84,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnForeignNationals, getReturnByType, getReturnByCitizenshipGe, getReturnByCitizenshipGr, getAlternativeVariousCategories, getReadmittedCitizens };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnForeignNationals, getReturnByType, getReturnByCitizenshipGe, getReturnByCitizenshipGr, getAlternativeVariousCategories, getReadmittedCitizens, getTps };
