@@ -32,7 +32,7 @@ const CountryCard = ({ country }) => {
         width={500}
         height={64}
         alt=""
-        className="size-36 rounded-full object-cover bg-slate-200 p-4"
+        className="size-36 rounded-full object-cover bg-slate-200 p-4 mr-2"
       />
 
       <div>
@@ -50,7 +50,7 @@ const CountryCard = ({ country }) => {
             target="_blank"
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
               Country Profile on GAPs
             </button>
           </Link>
@@ -59,7 +59,7 @@ const CountryCard = ({ country }) => {
             target="_blank"
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
               Return Policy Timeline
             </button>
           </Link>
@@ -68,7 +68,7 @@ const CountryCard = ({ country }) => {
             href={`/return-flow-chart/${country?.countryName}`}
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
               Return Procedures Flow Chart
             </button>
           </Link>
@@ -77,7 +77,7 @@ const CountryCard = ({ country }) => {
             href={`/actor-return-diagram/${country?.countryName}`}
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-400 mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
               Actor Diagram
             </button>
           </Link>
@@ -86,7 +86,7 @@ const CountryCard = ({ country }) => {
             href={`/policy-legislation-map/`}
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-600 text-white font-bold mt-2 h-12 w-60 p-2 text-sm transition hover:scale-105">
+            <button className="block rounded bg-yellow-600 text-white font-bold mt-2 h-12 w-48 p-2 text-sm transition hover:scale-105">
               Policy/Legislation
             </button>
           </Link>
@@ -95,13 +95,13 @@ const CountryCard = ({ country }) => {
             href={`/return-infrastructure`}
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-600 text-white mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105">
+            <button className="block rounded bg-yellow-600 text-white mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
               Return Infrastructure
             </button>
           </Link>
           <div className="relative" ref={dropdownRef}> {/* Ensure this has relative positioning and ref */}
             <button
-              className="block rounded bg-yellow-600 text-white mt-2 h-12 w-60 p-2 text-sm font-bold transition hover:scale-105"
+              className="block rounded bg-yellow-600 text-white mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105"
               onClick={toggleDropdown}
             >
               Statistics <span className="float-right"><ChevronDown /></span> 
