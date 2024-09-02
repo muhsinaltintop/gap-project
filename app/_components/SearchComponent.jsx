@@ -6,6 +6,7 @@ import SearchBarComponent from "./SearchBarComponent";
 import Button from "../_components/_atoms/Button";
 import TableComponent from "./TableComponent";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const SearchComponent = ({ data, countryList, headers }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -81,7 +82,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
       { pathName === "/policy-legislation-map"
           ? <div className="text-justify text-sm">
           <p className="mt-1">
-          The section has been developed by national immigration experts to address national-level return legislation and policies in the countries covered in the GAPs project. It maps national legislations which set out the principles of public policy on asylum, border management, residence, deportation and return. It also covers the regulations which are designed to implement these principles, bringing legislation into effect. The legislation and regulations can take the form of entitled acts, laws, statutes, directives, decisions, guidelines, administrative rules and others. They are a kind of binding laws. Legal arrangements on international agreements will be presented in another section, International Cooperation. 
+          The section has been developed by national immigration experts to address national-level return legislation and policies in the countries covered in the GAPs project. It maps national legislations which set out the principles of public policy on asylum, border management, residence, deportation and return. It also covers the regulations which are designed to implement these principles, bringing legislation into effect. The legislation and regulations can take the form of entitled acts, laws, statutes, directives, decisions, guidelines, administrative rules and others. They are a kind of binding laws. Legal arrangements on international agreements will be presented in another section, <Link className="text-primary font-bold" href="/international-cooperation">International Cooperation</Link>. 
           </p>
           <p className="mt-2">
           Each entry includes direct links to the official and translated versions of legislation and regulations, the relevant date, type, policy area, basic description, and additional notes. Descriptions of the entries are also included at the top of the table as well. A key feature of this section is its robust search functionality. Policy legislations can be searched by entering the issuing country name, start/end year or key terms. This provides a chronological view of entries and facilitates cross-country comparisons. All entries can also be downloaded as PDF/Excel documents.

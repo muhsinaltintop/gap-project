@@ -7,7 +7,6 @@ const page = async () => {
     <div className="w-full mx-6">
       <ChartComponent data={asylumApplications} title="Asylum Application" />
       <ChartComponent data={asylumApplications} title="Temprorary Protection Status"/>
-
     </div>
   );
 };
