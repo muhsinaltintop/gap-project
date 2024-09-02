@@ -60,6 +60,8 @@ const ChartComponent = ({ data, title }) => {
         return "Bosnia and Herzegowina";
       case "otherTotal":
         return "Other Total";
+      case "turkey":
+        return "Türkiye"
       default:
         return value.charAt(0).toUpperCase() + value.slice(1);
     }
