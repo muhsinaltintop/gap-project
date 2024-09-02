@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const SideMenu = () => {
@@ -81,21 +82,21 @@ const SideMenu = () => {
     },
   ];
   return (
-    <div className="flex h-max flex-col justify-between shadow-xl bg-white max-w-54 overflow-y-auto">
+    <div className="flex h-max flex-col justify-between max-w-54 overflow-y-auto">
       <div className="px-4 py-6">
         <ul className="mt-6 space-y-1">
           {leftMenu.map((menuItem) => (
-            <li key={menuItem.id} >
+            <li className="shadow-md bg-primary-light rounded-lg" key={menuItem.id} >
               {menuItem.submenu ? (
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                    <span className="text-sm font-medium">{menuItem.name}</span>
+                    <span className="text-md font-bold text-primary">{menuItem.name}</span>
                     <span className="shrink-0 transition duration-300 group-open:-rotate-180">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
+                        fill="#0d7dff"
                       >
                         <path
                           fillRule="evenodd"
@@ -108,23 +109,23 @@ const SideMenu = () => {
                   <ul className="mt-2 space-y-1 px-4">
                     {menuItem.submenu.map((submenuItem) => (
                       <li key={submenuItem.id}>
-                        <a
+                        <Link
                           href={submenuItem.path}
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                          className="block rounded-lg px-4 py-2 text-md font-bold text-primary hover:bg-gray-100 hover:text-gray-700"
                         >
                           {submenuItem.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
                 </details>
               ) : (
-                <a
+                <Link
                   href={menuItem.path}
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  className="block rounded-lg px-4 py-2 text-md font-bold text-primary hover:bg-gray-100 hover:text-gray-700"
                 >
                   {menuItem.name}
-                </a>
+                </Link>
               )}
             </li>
           ))}

@@ -4,7 +4,7 @@ import LinkToGap from "./_components/LinkToGap";
 import Map from "./_components/Map";
 
 const mainText = (
-  <>
+  <div className="text-sm">
     <p>
     GAPs Data Repository offers an overview of available qualitative and quantitative data on
   national return regimes. It is launched in 2024 as an output of the Horizon Europe project
@@ -59,18 +59,18 @@ organized presentation for those interested in return related data:
       <span className="text-primary"><Link href={"https://www.returnmigration.eu/contact-gaps"} target="_blank"> contact</Link></span> the Horizon Europe project GAPs coordinators to contribute data entries or for any queries and comments.
     </p>
     <p className="text-sm mt-2">*Last Updated on 03.08.2024</p>
-  </>
+  </div>
 );
 
 export default function Home() {
   return (
     <div className="w-full text-justify">
-      <div className="grid grid-cols-1 gap-1 lg:grid-cols-6 lg:gap-8">
+      <div className="grid grid-cols-1 gap-1 lg:grid-cols-6 lg:gap-2">
         <div className="justify-around mx-6 mt-6 lg:col-span-4">
           <PlainText text={mainText} />
         </div>
         
-        <div className="mx-6 mt-6 col-span-2">
+        <div className="mr-6 mt-6 col-span-2">
           <LinkToGap />
         </div>
       </div>

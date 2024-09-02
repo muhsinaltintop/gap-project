@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
           {"GAPs DATA REPOSITORY"}
         </div>
         <div className="flex w-12/12">
-          <SideMenu />
+          <div className="w-80">
+            <SideMenu />
+          </div>
           {children}
           <SpeedInsights />
         </div>
