@@ -64,9 +64,20 @@ const getReturnByType = async () => {
   return data;
 }
 
-const getReturnByCitizenship = async (code) => {
-  const data = await fetchData(`/returns-by-citizenship-${code}?populate=*`)
-  return data;
+const getReturnByCitizenship = async (countryCode) => {
+  try { 
+    const response = await fetchData(`/returns-by-citizenship-${countryCode}?populate=*`)
+
+    if(!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error in getReturnByCitizenship:", error);
+    return undefined;
+  }
 }
 
 const getAlternativeVariousCategories = async () => {

@@ -9,13 +9,28 @@ export async function GET(request) {
     const [rows] = await db.execute(query);
     db.release();
 
-    return NextResponse.json(rows);
+    // Yanıtınıza CORS başlıklarını ekleyin
+    const response = NextResponse.json(rows);
+    response.headers.set("Access-Control-Allow-Origin", "*"); // * tüm domainlere izin verir, dilerseniz spesifik bir domain yazabilirsiniz.
+    response.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+    response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
+    return response;
   } catch (error) {
     return NextResponse.json(
       {
-        error: error,
+        error: error.message,
       },
       { status: 500 }
     );
   }
+}
+
+// Preflight OPTIONS isteğini yönetin
+export async function OPTIONS() {
+  const response = new NextResponse(null, { status: 204 });
+  response.headers.set("Access-Control-Allow-Origin", "*");
+  response.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  return response;
 }
