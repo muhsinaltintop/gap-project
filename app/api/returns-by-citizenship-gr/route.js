@@ -9,28 +9,40 @@ export async function GET(request) {
     const [rows] = await db.execute(query);
     db.release();
 
-    // Yanıtınıza CORS başlıklarını ekleyin
-    const response = NextResponse.json(rows);
-    response.headers.set("Access-Control-Allow-Origin", "*"); // * tüm domainlere izin verir, dilerseniz spesifik bir domain yazabilirsiniz.
-    response.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-    response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    const response = new NextResponse(JSON.stringify(rows), {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*", // Burada istediğiniz domaini belirtebilirsiniz.
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
 
     return response;
   } catch (error) {
-    return NextResponse.json(
-      {
+    return new NextResponse(
+      JSON.stringify({
         error: error.message,
-      },
-      { status: 500 }
+      }),
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
     );
   }
 }
 
-// Preflight OPTIONS isteğini yönetin
 export async function OPTIONS() {
-  const response = new NextResponse(null, { status: 204 });
-  response.headers.set("Access-Control-Allow-Origin", "*");
-  response.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  return response;
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
 }
