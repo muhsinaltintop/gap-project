@@ -133,6 +133,40 @@
     "id": 27,
     "countryName": "otherTotal",
     "color": "#d2d2d2"
-  
+  },
+  {
+    "id": 28,
+    "countryName": "asia",
+    "color": "#ff5733"
+  },
+  {
+    "id": 29,
+    "countryName": "turkiye",
+    "color": "#02017d"
+  },
+  {
+    "id": 30,
+    "countryName": "pakistan",
+    "color": "#006400"
+  },
+  {
+    "id": 31,
+    "countryName": "iran",
+    "color": "#8b0000"
+  },
+  {
+    "id": 32,
+    "countryName": "bangladesh",
+    "color": "#2e8b57"
+  },
+  {
+    "id": 33,
+    "countryName": "egypt",
+    "color": "#8b4513"
+  },
+  {
+    "id": 34,
+    "countryName": "india",
+    "color": "#ff4500"
   }
 ]

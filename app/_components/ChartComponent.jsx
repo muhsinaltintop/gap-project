@@ -18,6 +18,8 @@ import PageTitle from "./_atoms/PageTitle";
 const ChartComponent = ({ data, title }) => {
   
   const [selectedCountries, setSelectedCountries] = useState([]);
+  console.log("data inside chart:", data)
+  
 
   const handleCountryChange = (country) => {
     const index = selectedCountries.indexOf(country);
