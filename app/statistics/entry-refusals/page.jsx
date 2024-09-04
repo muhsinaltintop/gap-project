@@ -5,7 +5,7 @@ const page = async () => {
   const pushbacks = await getPushBacks();
   return (
     <div className="w-full mx-6">
-      <ChartComponent data={pushbacks} title="Entry Refusals and Pushbacks" />
+      <ChartComponent data={pushbacks} title="Entry Refusals" />
     </div>
   );
 };

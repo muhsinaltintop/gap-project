@@ -50,7 +50,7 @@ const getTps = async () => {
 }
 
 const getPushBacks = async () => {
-  const data = await fetchData("/entry-refusals-pushbacks?populate=*")
+  const data = await fetchData("/entry-refusals?populate=*")
   return data;
 }
 

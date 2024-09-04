@@ -127,7 +127,7 @@ const CountryCard = ({ country }) => {
                   target="_blank"
                   className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
-                  Entry Refusals and Pushbacks
+                  Entry Refusals
                 </Link>
                 <Link
                   href={`/statistics/dublin-returns`}
