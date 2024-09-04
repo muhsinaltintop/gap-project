@@ -4,7 +4,7 @@ import pool from "@/lib/mysql";
 export async function GET(request) {
   try {
     const origin = request.headers.get("origin");
-    const allowedOrigins = ['https://gap-project-eight.vercel.app', 'http://localhost:3000'];
+    const allowedOrigins = ['*'];
 
     // CORS kontrolü: sadece izin verilen kökenlere izin veriyoruz
     if (!allowedOrigins.includes(origin)) {
