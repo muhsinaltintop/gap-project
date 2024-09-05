@@ -54,10 +54,23 @@ const getPushBacks = async () => {
   return data;
 }
 
-const getTcnReturnDesicionForIrregulars = async () => {
-  const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*")
-  return data;
-}
+const getTcnReturnDesicionForIrregulars = async (countryKey) => {
+  console.log("Country Key:", countryKey);
+  
+  const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
+
+  // Sadece belirtilen ülkeye ait tüm verileri döndür
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey]
+  }));
+
+  console.log("Filtered Data:", filteredData);
+  
+  return filteredData;
+};
+
+
 
 const getReturnByType = async () => {
   const data = await fetchData("/return-by-type?populate=*")
