@@ -54,8 +54,8 @@ const getPushBacks = async () => {
   return data;
 }
 
-const getTcnForeignNationals = async () => {
-  const data = await fetchData("/tcn-foreign-nationals-ordered-to-leave?populate=*")
+const getTcnReturnDesicionForIrregulars = async () => {
+  const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*")
   return data;
 }
 
@@ -79,4 +79,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnForeignNationals, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnReturnDesicionForIrregulars, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps };

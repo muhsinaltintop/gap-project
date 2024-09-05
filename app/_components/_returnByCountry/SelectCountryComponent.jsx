@@ -1,8 +1,8 @@
 import React from 'react'
 import DropDown from '../_atoms/DropDown'
-import countries from "../../_components/_returnByCountry/returnCountries.json"
 
-const SelectCountryComponent = ({ country, onCountryChange
+
+const SelectCountryComponent = ({ country, countries, onCountryChange
 
 }) => {
   return (

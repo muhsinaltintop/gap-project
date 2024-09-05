@@ -4,6 +4,7 @@ import { getReturnByCitizenship } from "../../_utils/GlobalApi";
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import ChartComponent from "@/app/_components/ChartComponent";
 import { usePathname } from "next/navigation";
+import countries from "../../_components/_returnByCountry/returnCountries.json"
 
 const Page = () => {
   const [countryCode, setCountryCode] = useState("");
@@ -42,16 +43,15 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
-      <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange}/>
+      <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={countries}/>
       
       {loading && <p>Loading data...</p>} {/* Yükleme durumu */}
       {error && <p>Error fetching data</p>} {/* Hata mesajı */}
-      
-      {/* Seçilen ülke kodunu ve verileri gösteriyoruz */}
+
       {countryCode &&  !loading && !error && (
         <div>
           {
-            data.length > 0 ? <ChartComponent data={data} title={`Return by Citizenship - ${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : "asdasd"
+            data.length > 0 ? <ChartComponent data={data} title={`Return by Citizenship - ${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : ""
           }
         </div>
       )}
