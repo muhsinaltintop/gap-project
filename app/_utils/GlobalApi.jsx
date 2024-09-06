@@ -108,18 +108,21 @@ export const getReturnSource = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-return-source?populate=*");
   const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase());
+  console.log("fD:", filteredData);
+  
   return filteredData;
 };
 
 export const fetchAllData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
-    const [api1Data, api2Data, api3Data, api4Data, api5Data] = await Promise.all([
+    const [api1Data, api2Data, api3Data, api4Data, api5Data, api6Data] = await Promise.all([
       getTcnReturnDesicionForIrregulars(countryCode),
       getReturnFollowingOrder(countryCode),
       getReturnNegativeAsylum(countryCode),
       getReturnedMinors(countryCode),
-      getReturnTotal(countryCode)
+      getReturnTotal(countryCode),
+      getReturnSource(countryCode)
 
     ]);
 
@@ -130,7 +133,18 @@ export const fetchAllData = async (countryCode) => {
       returnFollowingOrder: api2Data[index]?.value || "N/A", 
       returnNegativeAsylum: api3Data[index]?.value || "N/A",
       returnedMinors: api4Data[index]?.value || "N/A",
-      returnTotal: api5Data[index]?.value || "N/A"
+      returnTotal: api5Data[index]?.value || "N/A",
+      sourceReturnDecisionsIrregular: api6Data?.sourceReturnDecisionsIrregular || "N/A",
+      sourceReturnFollowingOrder: api6Data?.sourceReturnedFollowingOrder || "N/A",
+      sourceReturnNegativeAsylum: api6Data?.sourceReturnNegativeAsylum || "N/A",
+      sourceReturnedMinors: api6Data?.sourceReturnedMinors || "N/A",
+      sourceTotalOrderReturn: api6Data?.sourceTotalOrderReturn || "N/A",
+      // URL bilgileri
+      urlReturnDecisionsIrregular: api6Data?.urlReturnDecisionsIrregular || "N/A",
+      urlReturnFollowingOrder: api6Data?.urlReturnedFollowingOrder || "N/A",
+      urlReturnNegativeAsylum: api6Data?.urlReturnNegativeAsylum || "N/A",
+      urlReturnedMinors: api6Data?.urlReturnedMinors || "N/A",
+      urlTotalOrderReturn: api6Data?.urlTotalOrderReturn || "N/A"
     }));
 
     return merged;

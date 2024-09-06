@@ -9,6 +9,7 @@ import PageTitle from "@/app/_components/_atoms/PageTitle";
 const DataTable = ({ mergedData }) => {
   return (
     <table className="table-auto border-collapse border border-gray-500 mt-4">
+      {console.log("mD:", mergedData)}
       <thead>
         <tr>
           <th className="border border-gray-600 px-4 py-2">Year</th>
@@ -22,14 +23,23 @@ const DataTable = ({ mergedData }) => {
       <tbody>
         {mergedData.map((row, index) => (
           <tr key={index}>
-            <td className="border border-gray-600 px-4 py-2">{row.year}</td>
+            <td className="border border-gray-600 px-4 py-2">{row.year} </td>
             <td className="border border-gray-600 px-4 py-2">{row.returnDesicionsForIrregulars}</td>
             <td className="border border-gray-600 px-4 py-2">{row.returnFollowingOrder}</td>
             <td className="border border-gray-600 px-4 py-2">{row.returnNegativeAsylum}</td>
             <td className="border border-gray-600 px-4 py-2">{row.returnedMinors}</td>
             <td className="border border-gray-600 px-4 py-2">{row.returnTotal}</td>
           </tr>
+          
         ))}
+        <tr>
+          <td className="border border-gray-600 px-4 py-2 font-bold">Source</td>
+          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnDecisionsIrregular || "N/A"}</td>
+          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnFollowingOrder || "N/A"}</td>
+          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnNegativeAsylum || "N/A"}</td>
+          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnedMinors || "N/A"}</td>
+          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceTotalOrderReturn || "N/A"}</td>
+        </tr>
       </tbody>
     </table>
   );
