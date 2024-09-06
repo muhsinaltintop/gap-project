@@ -54,20 +54,72 @@ const getPushBacks = async () => {
   return data;
 }
 
-const getTcnReturnDesicionForIrregulars = async (countryKey) => {
-  console.log("Country Key:", countryKey);
-  
-  const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
+// GlobalApi.js
 
-  // Sadece belirtilen ülkeye ait tüm verileri döndür
+export const getTcnReturnDesicionForIrregulars = async (countryKey) => {
+  const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey]
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
   }));
-
-  console.log("Filtered Data:", filteredData);
-  
   return filteredData;
+};
+
+export const getReturnFollowingOrder = async (countryKey) => {
+  // Diğer API'lerden veri çekmek için benzer bir yapı
+  const data = await fetchData("/tcn-return-following-order?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+
+export const getReturnNegativeAsylum = async (countryKey) => {
+  // Üçüncü API'den veri çekmek için benzer bir yapı
+  const data = await fetchData("/tcn-return-negative-asylum?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+export const getReturnedMinors = async (countryKey) => {
+  // Üçüncü API'den veri çekmek için benzer bir yapı
+  const data = await fetchData("/tcn-returned-minors?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+
+
+export const fetchAllData = async (countryCode) => {
+  try {
+    // Birden fazla API'den veri çekiyoruz
+    const [api1Data, api2Data, api3Data, api4Data] = await Promise.all([
+      getTcnReturnDesicionForIrregulars(countryCode),
+      getReturnFollowingOrder(countryCode),
+      getReturnNegativeAsylum(countryCode),
+      getReturnedMinors(countryCode),
+
+    ]);
+
+    // Verileri yıllara göre birleştiriyoruz
+    const merged = api1Data.map((item, index) => ({
+      year: item.year,
+      returnDesicionsForIrregulars: item.value,
+      returnFollowingOrder: api2Data[index]?.value || "N/A", // Eğer veri yoksa "N/A"
+      returnNegativeAsylum: api3Data[index]?.value || "N/A",
+      returnedMinors: api4Data[index]?.value || "N/A",
+    }));
+
+    return merged;
+  } catch (err) {
+    console.error("Error fetching data: ", err);
+    throw err; // Hata yakalanırsa dışarıya atılır
+  }
 };
 
 
@@ -92,4 +144,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getTcnReturnDesicionForIrregulars, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps };
