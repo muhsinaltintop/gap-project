@@ -13,10 +13,11 @@ const DataTable = ({ mergedData }) => {
       <thead>
         <tr>
           <th className="border border-gray-600 px-4 py-2">Year</th>
-          <th className="border border-gray-600 px-4 py-2">Return Desicions for Irregular Migrants</th>
-          <th className="border border-gray-600 px-4 py-2">Return Following Order</th>
-          <th className="border border-gray-600 px-4 py-2">Return Negative Asylum</th>
-          <th className="border border-gray-600 px-4 py-2">Returned Minors</th>
+          <th className="border border-gray-600 px-4 py-2">Return Desicions Issued for Irregular Migrants</th>
+          <th className="border border-gray-600 px-4 py-2">TCNs/Foreign Nationals Returned Following an Order to Leave</th>
+          <th className="border border-gray-600 px-4 py-2">Return Decision Issued Upon Negative Asylum Applications</th>
+          <th className="border border-gray-600 px-4 py-2">Third Country Unaccompanied Minors Returned Following an Order to Leave</th>
+          <th className="border border-gray-600 px-4 py-2">Total</th>
         </tr>
       </thead>
       <tbody>
@@ -27,6 +28,7 @@ const DataTable = ({ mergedData }) => {
             <td className="border border-gray-600 px-4 py-2">{row.returnFollowingOrder}</td>
             <td className="border border-gray-600 px-4 py-2">{row.returnNegativeAsylum}</td>
             <td className="border border-gray-600 px-4 py-2">{row.returnedMinors}</td>
+            <td className="border border-gray-600 px-4 py-2">{row.returnTotal}</td>
           </tr>
         ))}
       </tbody>

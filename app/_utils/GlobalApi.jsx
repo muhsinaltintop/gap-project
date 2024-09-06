@@ -94,15 +94,25 @@ export const getReturnedMinors = async (countryKey) => {
   return filteredData;
 };
 
+export const getReturnTotal = async (countryKey) => {
+  // Üçüncü API'den veri çekmek için benzer bir yapı
+  const data = await fetchData("/tcn-returned-minors?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
 
 export const fetchAllData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
-    const [api1Data, api2Data, api3Data, api4Data] = await Promise.all([
+    const [api1Data, api2Data, api3Data, api4Data, api5Data] = await Promise.all([
       getTcnReturnDesicionForIrregulars(countryCode),
       getReturnFollowingOrder(countryCode),
       getReturnNegativeAsylum(countryCode),
       getReturnedMinors(countryCode),
+      getReturnTotal(countryCode)
 
     ]);
 
@@ -110,9 +120,10 @@ export const fetchAllData = async (countryCode) => {
     const merged = api1Data.map((item, index) => ({
       year: item.year,
       returnDesicionsForIrregulars: item.value,
-      returnFollowingOrder: api2Data[index]?.value || "N/A", // Eğer veri yoksa "N/A"
+      returnFollowingOrder: api2Data[index]?.value || "N/A", 
       returnNegativeAsylum: api3Data[index]?.value || "N/A",
       returnedMinors: api4Data[index]?.value || "N/A",
+      returnTotalMinors: api5Data[index]?.value || "N/A"
     }));
 
     return merged;
