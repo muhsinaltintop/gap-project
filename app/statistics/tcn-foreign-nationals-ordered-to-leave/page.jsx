@@ -4,10 +4,11 @@ import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCou
 import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
 import { fetchAllData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
+import PageTitle from "@/app/_components/_atoms/PageTitle";
 
 const DataTable = ({ mergedData }) => {
   return (
-    <table className="table-auto border-collapse border border-gray-500">
+    <table className="table-auto border-collapse border border-gray-500 mt-4">
       {console.log(mergedData)      }
       <thead>
         <tr>
@@ -65,14 +66,18 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
-      <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
-      {loading && <p>Loading data...</p>}
-      {error && <p>Error fetching data</p>}
-      {countryCode && !loading && !error && (
-        <div>
-          {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
-        </div>
-      )}
+      <PageTitle title="TCN Foreign Nationals Ordered to Leave"/>
+
+      <div className="mt-2">
+        <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
+        {loading && <p>Loading data...</p>}
+        {error && <p>Error fetching data</p>}
+        {countryCode && !loading && !error && (
+          <div>
+            {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
