@@ -9,7 +9,6 @@ import PageTitle from "@/app/_components/_atoms/PageTitle";
 const DataTable = ({ mergedData }) => {
   return (
     <table className="table-auto border-collapse border border-gray-500 mt-4">
-      {console.log(mergedData)      }
       <thead>
         <tr>
           <th className="border border-gray-600 px-4 py-2">Year</th>
@@ -69,7 +68,6 @@ const Page = () => {
   return (
     <div className="w-full mx-6">
       <PageTitle title="TCN Foreign Nationals Ordered to Leave"/>
-
       <div className="mt-2">
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}

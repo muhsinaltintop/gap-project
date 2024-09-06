@@ -96,7 +96,7 @@ export const getReturnedMinors = async (countryKey) => {
 
 export const getReturnTotal = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
-  const data = await fetchData("/tcn-returned-minors?populate=*");
+  const data = await fetchData("/tcn-return-total?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
     value: item[countryKey] == -1  ? "N/A" : item[countryKey]
@@ -123,7 +123,7 @@ export const fetchAllData = async (countryCode) => {
       returnFollowingOrder: api2Data[index]?.value || "N/A", 
       returnNegativeAsylum: api3Data[index]?.value || "N/A",
       returnedMinors: api4Data[index]?.value || "N/A",
-      returnTotalMinors: api5Data[index]?.value || "N/A"
+      returnTotal: api5Data[index]?.value || "N/A"
     }));
 
     return merged;
