@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
 import { fetchAllData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import PageTitle from "@/app/_components/_atoms/PageTitle";
+import Link from "next/link";
 
 const DataTable = ({ mergedData }) => {
   return (
@@ -34,12 +35,58 @@ const DataTable = ({ mergedData }) => {
         ))}
         <tr>
           <td className="border border-gray-600 px-4 py-2 font-bold">Source</td>
-          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnDecisionsIrregular || "N/A"}</td>
-          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnFollowingOrder || "N/A"}</td>
-          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnNegativeAsylum || "N/A"}</td>
-          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceReturnedMinors || "N/A"}</td>
-          <td className="border border-gray-600 px-4 py-2">{mergedData[0]?.sourceTotalOrderReturn || "N/A"}</td>
+          <td className="border border-gray-600 px-4 py-2">
+            {mergedData[0]?.urlReturnDecisionsIrregular != "N/A" || undefined ? (
+              <Link href={mergedData[0]?.urlReturnDecisionsIrregular}>
+                {mergedData[0]?.sourceReturnDecisionsIrregular}
+              </Link>
+            ) : (
+              "N/A"
+            )}
+          </td>
+          <td className="border border-gray-600 px-4 py-2">
+            {console.log(mergedData)}
+            {mergedData[0]?.urlReturnFollowingOrder != "N/A" || undefined ? (
+                <Link href={mergedData[0]?.urlReturnFollowingOrder}>
+                  {mergedData[0]?.sourceReturnFollowingOrder}
+                </Link>
+              ) : (
+                "N/A"
+              )}
+          </td>
+          <td className="border border-gray-600 px-4 py-2">
+            {mergedData[0]?.urlReturnNegativeAsylum != "N/A" || undefined ? (
+                <Link href={mergedData[0]?.urlReturnNegativeAsylum}>
+                  {mergedData[0]?.sourceReturnNegativeAsylum}
+                </Link>
+              ) : (
+                "N/A"
+              )}
+          </td>
+          <td className="border border-gray-600 px-4 py-2">
+              {mergedData[0]?.urlReturnedMinors != "N/A" || undefined ? (
+                <Link href={mergedData[0]?.urlReturnedMinors}>
+                  {mergedData[0]?.sourceReturnedMinors}
+                </Link>
+              ) : (
+                "N/A"
+              )}
+          </td>
+          <td className="border border-gray-600 px-4 py-2">
+            {mergedData[0]?.urlTotalOrderReturn != "N/A" || undefined ? (
+                <Link href={mergedData[0]?.urlTotalOrderReturn}>
+                  {mergedData[0]?.sourceTotalOrderReturn}
+                </Link>
+              ) : (
+                "N/A"
+              )}
+          </td>
         </tr>
+        <tr>
+          <td>Notes: </td>
+          <td>{mergedData[0].additionalNote}</td>
+        </tr>
+
       </tbody>
     </table>
   );

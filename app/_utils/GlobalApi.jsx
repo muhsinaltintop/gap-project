@@ -144,7 +144,8 @@ export const fetchAllData = async (countryCode) => {
       urlReturnFollowingOrder: api6Data?.urlReturnedFollowingOrder || "N/A",
       urlReturnNegativeAsylum: api6Data?.urlReturnNegativeAsylum || "N/A",
       urlReturnedMinors: api6Data?.urlReturnedMinors || "N/A",
-      urlTotalOrderReturn: api6Data?.urlTotalOrderReturn || "N/A"
+      urlTotalOrderReturn: api6Data?.urlTotalOrderReturn || "N/A",
+      additionalNote: api6Data?.addtionalNote || "N/A"
     }));
 
     return merged;
