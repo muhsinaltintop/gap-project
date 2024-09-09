@@ -9,84 +9,80 @@ import Link from "next/link";
 
 const DataTable = ({ mergedData }) => {
   return (
-    <table className="table-auto border-collapse border border-gray-500 mt-4">
-      {console.log("mD:", mergedData)}
+    <table className="table-auto border-collapse w-full mt-4 shadow-lg">
       <thead>
-        <tr>
-          <th className="border border-gray-600 px-4 py-2">Year</th>
-          <th className="border border-gray-600 px-4 py-2">Return Desicions Issued for Irregular Migrants</th>
-          <th className="border border-gray-600 px-4 py-2">TCNs/Foreign Nationals Returned Following an Order to Leave</th>
-          <th className="border border-gray-600 px-4 py-2">Return Decision Issued Upon Negative Asylum Applications</th>
-          <th className="border border-gray-600 px-4 py-2">Third Country Unaccompanied Minors Returned Following an Order to Leave</th>
-          <th className="border border-gray-600 px-4 py-2">Total</th>
+        <tr className="bg-gray-200">
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Return Desicions Issued for Irregular Migrants</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">TCNs/Foreign Nationals Returned Following an Order to Leave</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Return Decision Issued Upon Negative Asylum Applications</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Third Country Unaccompanied Minors Returned Following an Order to Leave</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Total</th>
         </tr>
       </thead>
       <tbody>
         {mergedData.map((row, index) => (
-          <tr key={index}>
-            <td className="border border-gray-600 px-4 py-2">{row.year} </td>
-            <td className="border border-gray-600 px-4 py-2">{row.returnDesicionsForIrregulars}</td>
-            <td className="border border-gray-600 px-4 py-2">{row.returnFollowingOrder}</td>
-            <td className="border border-gray-600 px-4 py-2">{row.returnNegativeAsylum}</td>
-            <td className="border border-gray-600 px-4 py-2">{row.returnedMinors}</td>
-            <td className="border border-gray-600 px-4 py-2">{row.returnTotal}</td>
+          <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+            <td className="border border-gray-300 px-4 py-2">{row.year}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnDesicionsForIrregulars}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnFollowingOrder}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnNegativeAsylum}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnedMinors}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnTotal}</td>
           </tr>
-          
         ))}
-        <tr>
-          <td className="border border-gray-600 px-4 py-2 font-bold">Source</td>
-          <td className="border border-gray-600 px-4 py-2">
+        <tr className="bg-gray-200">
+          <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
+          <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlReturnDecisionsIrregular != "N/A" || undefined ? (
-              <Link href={mergedData[0]?.urlReturnDecisionsIrregular}>
+              <Link href={mergedData[0]?.urlReturnDecisionsIrregular} className="text-blue-500 hover:underline">
                 {mergedData[0]?.sourceReturnDecisionsIrregular}
               </Link>
             ) : (
               "N/A"
             )}
           </td>
-          <td className="border border-gray-600 px-4 py-2">
-            {console.log(mergedData)}
+          <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlReturnFollowingOrder != "N/A" || undefined ? (
-                <Link href={mergedData[0]?.urlReturnFollowingOrder}>
-                  {mergedData[0]?.sourceReturnFollowingOrder}
-                </Link>
-              ) : (
-                "N/A"
-              )}
+              <Link href={mergedData[0]?.urlReturnFollowingOrder} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceReturnFollowingOrder}
+              </Link>
+            ) : (
+              "N/A"
+            )}
           </td>
-          <td className="border border-gray-600 px-4 py-2">
+          <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlReturnNegativeAsylum != "N/A" || undefined ? (
-                <Link href={mergedData[0]?.urlReturnNegativeAsylum}>
-                  {mergedData[0]?.sourceReturnNegativeAsylum}
-                </Link>
-              ) : (
-                "N/A"
-              )}
+              <Link href={mergedData[0]?.urlReturnNegativeAsylum} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceReturnNegativeAsylum}
+              </Link>
+            ) : (
+              "N/A"
+            )}
           </td>
-          <td className="border border-gray-600 px-4 py-2">
-              {mergedData[0]?.urlReturnedMinors != "N/A" || undefined ? (
-                <Link href={mergedData[0]?.urlReturnedMinors}>
-                  {mergedData[0]?.sourceReturnedMinors}
-                </Link>
-              ) : (
-                "N/A"
-              )}
+          <td className="border border-gray-300 px-4 py-2">
+            {mergedData[0]?.urlReturnedMinors != "N/A" || undefined ? (
+              <Link href={mergedData[0]?.urlReturnedMinors} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceReturnedMinors}
+              </Link>
+            ) : (
+              "N/A"
+            )}
           </td>
-          <td className="border border-gray-600 px-4 py-2">
+          <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlTotalOrderReturn != "N/A" || undefined ? (
-                <Link href={mergedData[0]?.urlTotalOrderReturn}>
-                  {mergedData[0]?.sourceTotalOrderReturn}
-                </Link>
-              ) : (
-                "N/A"
-              )}
+              <Link href={mergedData[0]?.urlTotalOrderReturn} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceTotalOrderReturn}
+              </Link>
+            ) : (
+              "N/A"
+            )}
           </td>
         </tr>
-        <tr>
-          <td>Notes: </td>
-          <td>{mergedData[0].additionalNote}</td>
+        <tr className="bg-gray-100">
+          <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
+          <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote || "No notes available"}</td>
         </tr>
-
       </tbody>
     </table>
   );
