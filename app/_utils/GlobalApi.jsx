@@ -107,7 +107,9 @@ const getReturnTotal = async (countryKey) => {
 const getReturnSource = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-return-source?populate=*");
-  const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase())
+  const filteredData = data.find(item => item.country.split(' ').join('').toLowerCase() === countryKey.toLowerCase())
+  console.log(filteredData);
+  
   
   return filteredData;
 };
