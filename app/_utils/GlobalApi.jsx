@@ -244,6 +244,8 @@ const getAlternative = async (countryKey) => {
     year: item.year,
     value: item[countryKey] == -1  ? "N/A" : item[countryKey]
   }));
+  console.log("fD alt:", filteredData);
+  
   return filteredData;
 }
 
@@ -251,6 +253,7 @@ const getAlternativeSource = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/alternative-source?populate=*");
   const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase())
+  console.log("fD altSoruce:", filteredData);
   
   return filteredData;
 };

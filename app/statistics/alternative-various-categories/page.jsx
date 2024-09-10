@@ -10,6 +10,7 @@ import Link from "next/link";
 const DataTable = ({ mergedData }) => {
   return (
     <table className="table-auto border-collapse w-full mt-4 shadow-lg">
+      {console.log("mD:", mergedData)}
       <thead>
         <tr className="bg-gray-200">
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
