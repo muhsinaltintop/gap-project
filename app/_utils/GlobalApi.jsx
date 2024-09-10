@@ -56,7 +56,7 @@ const getPushBacks = async () => {
 
 // GlobalApi.js
 
-export const getTcnReturnDesicionForIrregulars = async (countryKey) => {
+const getTcnReturnDesicionForIrregulars = async (countryKey) => {
   const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
@@ -65,7 +65,7 @@ export const getTcnReturnDesicionForIrregulars = async (countryKey) => {
   return filteredData;
 };
 
-export const getReturnFollowingOrder = async (countryKey) => {
+const getReturnFollowingOrder = async (countryKey) => {
   // Diğer API'lerden veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-return-following-order?populate=*");
   const filteredData = data.map(item => ({
@@ -75,7 +75,7 @@ export const getReturnFollowingOrder = async (countryKey) => {
   return filteredData;
 };
 
-export const getReturnNegativeAsylum = async (countryKey) => {
+const getReturnNegativeAsylum = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-return-negative-asylum?populate=*");
   const filteredData = data.map(item => ({
@@ -84,7 +84,7 @@ export const getReturnNegativeAsylum = async (countryKey) => {
   }));
   return filteredData;
 };
-export const getReturnedMinors = async (countryKey) => {
+const getReturnedMinors = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-returned-minors?populate=*");
   const filteredData = data.map(item => ({
@@ -94,7 +94,7 @@ export const getReturnedMinors = async (countryKey) => {
   return filteredData;
 };
 
-export const getReturnTotal = async (countryKey) => {
+const getReturnTotal = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-return-total?populate=*");
   const filteredData = data.map(item => ({
@@ -104,16 +104,15 @@ export const getReturnTotal = async (countryKey) => {
   return filteredData;
 };
 
-export const getReturnSource = async (countryKey) => {
+const getReturnSource = async (countryKey) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
   const data = await fetchData("/tcn-return-source?populate=*");
-  const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase());
-  console.log("fD:", filteredData);
+  const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase())
   
   return filteredData;
 };
 
-export const fetchAllData = async (countryCode) => {
+const fetchAllData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
     const [api1Data, api2Data, api3Data, api4Data, api5Data, api6Data] = await Promise.all([
@@ -155,8 +154,6 @@ export const fetchAllData = async (countryCode) => {
   }
 };
 
-
-
 const getReturnByType = async () => {
   const data = await fetchData("/return-by-type?populate=*")
   return data;
@@ -177,4 +174,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, fetchAllData };
