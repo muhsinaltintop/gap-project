@@ -3,7 +3,7 @@
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
-import { getAllRbtData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
+import { getAllAlternativeData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import PageTitle from "@/app/_components/_atoms/PageTitle";
 import Link from "next/link";
 
@@ -14,54 +14,22 @@ const DataTable = ({ mergedData }) => {
         <tr className="bg-gray-200">
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Voluntary Return</th>
-          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Enforced Return</th>
-          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Assisted Return</th>
-          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Total</th>
+
         </tr>
       </thead>
       <tbody>
         {mergedData.map((row, index) => (
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.assistedReturn}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.totalReturn}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.alternative}</td>
           </tr>
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
           <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlVoluntaryReturn != "N/A" || undefined ? (
-              <Link href={mergedData[0]?.urlVoluntaryReturn} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceVoluntaryReturn}
-              </Link>
-            ) : (
-              "N/A"
-            )}
-          </td>
-          <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlEnforcedReturn != "N/A" || undefined ? (
-              <Link href={mergedData[0]?.urlEnforcedReturn} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceEnforcedReturn}
-              </Link>
-            ) : (
-              "N/A"
-            )}
-          </td>
-          <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlAssistedReturn != "N/A" || undefined ? (
-              <Link href={mergedData[0]?.urlAssistedReturn} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceAssistedReturn}
-              </Link>
-            ) : (
-              "N/A"
-            )}
-          </td>
-          <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlTotalReturn != "N/A" || undefined ? (
-              <Link href={mergedData[0]?.urlTotalReturn} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceTotalReturn}
+            {mergedData[0]?.urlAlternative != "N/A" || undefined ? (
+              <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceAlternative}
               </Link>
             ) : (
               "N/A"
@@ -94,7 +62,7 @@ const Page = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const mergedData = await getAllRbtData(countryCode); // Tüm verileri çekiyoruz
+        const mergedData = await getAllAlternativeData(countryCode); // Tüm verileri çekiyoruz
         setData(mergedData); // Gelen veriyi state'e kaydediyoruz
       } catch (err) {
         console.error("Error fetching data: ", err);
@@ -109,7 +77,7 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
-      <PageTitle title="Return Type of TCN/Foreign Nationals Ordered to Leave"/>
+      <PageTitle title="Alternative"/>
       <div className="mt-2">
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
