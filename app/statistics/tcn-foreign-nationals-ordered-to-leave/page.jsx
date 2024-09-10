@@ -3,7 +3,7 @@
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
-import { fetchAllData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
+import { getAllTcnData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import PageTitle from "@/app/_components/_atoms/PageTitle";
 import Link from "next/link";
 
@@ -105,7 +105,7 @@ const Page = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const mergedData = await fetchAllData(countryCode); // Tüm verileri çekiyoruz
+        const mergedData = await getAllTcnData(countryCode); // Tüm verileri çekiyoruz
         setData(mergedData); // Gelen veriyi state'e kaydediyoruz
       } catch (err) {
         console.error("Error fetching data: ", err);

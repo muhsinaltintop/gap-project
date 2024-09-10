@@ -112,7 +112,7 @@ const getReturnSource = async (countryKey) => {
   return filteredData;
 };
 
-const fetchAllData = async (countryCode) => {
+const getAllTcnData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
     const [api1Data, api2Data, api3Data, api4Data, api5Data, api6Data] = await Promise.all([
@@ -154,9 +154,86 @@ const fetchAllData = async (countryCode) => {
   }
 };
 
-const getReturnByType = async () => {
-  const data = await fetchData("/return-by-type?populate=*")
-  return data;
+const getVoluntaryReturn = async (countryKey) => {
+  const data = await fetchData("/rbt-voluntary?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+
+const getEnforcedReturn = async (countryKey) => {
+  const data = await fetchData("/rbt-enforced?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+
+const getAssistedReturn = async (countryKey) => {
+  const data = await fetchData("/rbt-assisted?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+
+const getTotalReturn = async (countryKey) => {
+  const data = await fetchData("/rbt-total?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+};
+
+const getSourceReturn = async (countryKey) => {
+  // Üçüncü API'den veri çekmek için benzer bir yapı
+  const data = await fetchData("/rbt-source?populate=*");
+  const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase())
+  
+  return filteredData;
+};
+
+const getAllRbtData = async (countryCode) => {
+  try {
+    // Birden fazla API'den veri çekiyoruz
+    const [api1Data, api2Data, api3Data, api4Data, api5Data] = await Promise.all([
+      getVoluntaryReturn(countryCode),
+      getEnforcedReturn(countryCode),
+      getAssistedReturn(countryCode),
+      getTotalReturn(countryCode),
+      getSourceReturn(countryCode)
+
+    ]);
+
+    
+    const merged = api1Data.map((item, index) => ({
+      year: item.year,
+      voluntaryReturn: item.value,
+      enforcedReturn: api2Data[index]?.value || "N/A", 
+      assistedReturn: api3Data[index]?.value || "N/A",
+      totalReturn: api4Data[index]?.value || "N/A",
+      sourceVoluntaryReturn: api5Data?.sourceVoluntaryReturn || "N/A",
+      sourceEnforcedReturn: api5Data?.sourceEnforcedReturn || "N/A",
+      sourceAssistedReturn: api5Data?.sourceAssistedReturn || "N/A",
+      sourceTotalReturn: api5Data?.sourceTotal || "N/A",
+      //URL bilgileri
+      urlVoluntaryReturn: api5Data?.urlVoluntaryReturn || "N/A",
+      urlEnforcedReturn: api5Data?.urlEnforcedReturn || "N/A",
+      urlAssistedReturn: api5Data?.urlAssistedReturn || "N/A",
+      urlTotalReturn: api5Data?.urlTotal || "N/A",
+      additionalNote: api5Data?.notes || "N/A"
+    }));
+
+    return merged;
+  } catch (err) {
+    console.error("Error fetching data: ", err);
+    throw err;
+  }
 }
 
 const getReturnByCitizenship = async (code) => {
@@ -174,4 +251,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByType, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, fetchAllData };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData };
