@@ -238,6 +238,50 @@ const getAllRbtData = async (countryCode) => {
   }
 }
 
+const getAlternative = async (countryKey) => {
+  const data = await fetchData("/alternative?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+  }));
+  return filteredData;
+}
+
+const getAlternativeSource = async (countryKey) => {
+  // Üçüncü API'den veri çekmek için benzer bir yapı
+  const data = await fetchData("/alternative-source?populate=*");
+  const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase())
+  
+  return filteredData;
+};
+
+const getAllAlternativeData = async (countryCode) => {
+  try {
+    // Birden fazla API'den veri çekiyoruz
+    const [api1Data, api2Data] = await Promise.all([
+      getAlternative(countryCode),
+      getAlternativeSource(countryCode)
+
+    ]);
+
+    
+    const merged = api1Data.map((item, index) => ({
+      year: item.year,
+      alternative: item.value,
+      sourceAlternative: api2Data?.source || "N/A",
+      urlAlternative: api2Data?.url || "N/A",
+      //URL bilgileri
+      category: api2Data.category,
+      additionalNote: api2Data?.additionalNotes || "N/A"
+    }));
+
+    return merged;
+  } catch (err) {
+    console.error("Error fetching data: ", err);
+    throw err;
+  }
+}
+
 const getReturnByCitizenship = async (code) => {
   const data = await fetchData(`/returns-by-citizenship-${code}?populate=*`)
   return data;
@@ -253,4 +297,4 @@ const getReadmittedCitizens = async () => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData };
