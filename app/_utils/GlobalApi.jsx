@@ -60,7 +60,7 @@ const getTcnReturnDesicionForIrregulars = async (countryKey) => {
   const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -70,7 +70,7 @@ const getReturnFollowingOrder = async (countryKey) => {
   const data = await fetchData("/tcn-return-following-order?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -80,7 +80,7 @@ const getReturnNegativeAsylum = async (countryKey) => {
   const data = await fetchData("/tcn-return-negative-asylum?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -89,7 +89,7 @@ const getReturnedMinors = async (countryKey) => {
   const data = await fetchData("/tcn-returned-minors?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -99,7 +99,7 @@ const getReturnTotal = async (countryKey) => {
   const data = await fetchData("/tcn-return-total?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -131,22 +131,22 @@ const getAllTcnData = async (countryCode) => {
     const merged = api1Data.map((item, index) => ({
       year: item.year,
       returnDesicionsForIrregulars: item.value,
-      returnFollowingOrder: api2Data[index]?.value || "N/A", 
-      returnNegativeAsylum: api3Data[index]?.value || "N/A",
-      returnedMinors: api4Data[index]?.value || "N/A",
-      returnTotal: api5Data[index]?.value || "N/A",
-      sourceReturnDecisionsIrregular: api6Data?.sourceReturnDecisionsIrregular || "N/A",
-      sourceReturnFollowingOrder: api6Data?.sourceReturnedFollowingOrder || "N/A",
-      sourceReturnNegativeAsylum: api6Data?.sourceReturnNegativeAsylum || "N/A",
-      sourceReturnedMinors: api6Data?.sourceReturnedMinors || "N/A",
-      sourceTotalOrderReturn: api6Data?.sourceTotalOrderReturn || "N/A",
+      returnFollowingOrder: api2Data[index]?.value || "n/a", 
+      returnNegativeAsylum: api3Data[index]?.value || "n/a",
+      returnedMinors: api4Data[index]?.value || "n/a",
+      returnTotal: api5Data[index]?.value || "n/a",
+      sourceReturnDecisionsIrregular: api6Data?.sourceReturnDecisionsIrregular || "n/a",
+      sourceReturnFollowingOrder: api6Data?.sourceReturnedFollowingOrder || "n/a",
+      sourceReturnNegativeAsylum: api6Data?.sourceReturnNegativeAsylum || "n/a",
+      sourceReturnedMinors: api6Data?.sourceReturnedMinors || "n/a",
+      sourceTotalOrderReturn: api6Data?.sourceTotalOrderReturn || "n/a",
       // URL bilgileri
-      urlReturnDecisionsIrregular: api6Data?.urlReturnDecisionsIrregular || "N/A",
-      urlReturnFollowingOrder: api6Data?.urlReturnedFollowingOrder || "N/A",
-      urlReturnNegativeAsylum: api6Data?.urlReturnNegativeAsylum || "N/A",
-      urlReturnedMinors: api6Data?.urlReturnedMinors || "N/A",
-      urlTotalOrderReturn: api6Data?.urlTotalOrderReturn || "N/A",
-      additionalNote: api6Data?.addtionalNote || "N/A"
+      urlReturnDecisionsIrregular: api6Data?.urlReturnDecisionsIrregular || "n/a",
+      urlReturnFollowingOrder: api6Data?.urlReturnedFollowingOrder || "n/a",
+      urlReturnNegativeAsylum: api6Data?.urlReturnNegativeAsylum || "n/a",
+      urlReturnedMinors: api6Data?.urlReturnedMinors || "n/a",
+      urlTotalOrderReturn: api6Data?.urlTotalOrderReturn || "n/a",
+      additionalNote: api6Data?.addtionalNote || "n/a"
     }));
 
     return merged;
@@ -160,7 +160,7 @@ const getVoluntaryReturn = async (countryKey) => {
   const data = await fetchData("/rbt-voluntary?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -169,7 +169,7 @@ const getEnforcedReturn = async (countryKey) => {
   const data = await fetchData("/rbt-enforced?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -178,7 +178,7 @@ const getAssistedReturn = async (countryKey) => {
   const data = await fetchData("/rbt-assisted?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -187,7 +187,7 @@ const getTotalReturn = async (countryKey) => {
   const data = await fetchData("/rbt-total?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -216,19 +216,19 @@ const getAllRbtData = async (countryCode) => {
     const merged = api1Data.map((item, index) => ({
       year: item.year,
       voluntaryReturn: item.value,
-      enforcedReturn: api2Data[index]?.value || "N/A", 
-      assistedReturn: api3Data[index]?.value || "N/A",
-      totalReturn: api4Data[index]?.value || "N/A",
-      sourceVoluntaryReturn: api5Data?.sourceVoluntaryReturn || "N/A",
-      sourceEnforcedReturn: api5Data?.sourceEnforcedReturn || "N/A",
-      sourceAssistedReturn: api5Data?.sourceAssistedReturn || "N/A",
-      sourceTotalReturn: api5Data?.sourceTotal || "N/A",
+      enforcedReturn: api2Data[index]?.value || "n/a", 
+      assistedReturn: api3Data[index]?.value || "n/a",
+      totalReturn: api4Data[index]?.value || "n/a",
+      sourceVoluntaryReturn: api5Data?.sourceVoluntaryReturn || "n/a",
+      sourceEnforcedReturn: api5Data?.sourceEnforcedReturn || "n/a",
+      sourceAssistedReturn: api5Data?.sourceAssistedReturn || "n/a",
+      sourceTotalReturn: api5Data?.sourceTotal || "n/a",
       //URL bilgileri
-      urlVoluntaryReturn: api5Data?.urlVoluntaryReturn || "N/A",
-      urlEnforcedReturn: api5Data?.urlEnforcedReturn || "N/A",
-      urlAssistedReturn: api5Data?.urlAssistedReturn || "N/A",
-      urlTotalReturn: api5Data?.urlTotal || "N/A",
-      additionalNote: api5Data?.notes || "N/A"
+      urlVoluntaryReturn: api5Data?.urlVoluntaryReturn || "n/a",
+      urlEnforcedReturn: api5Data?.urlEnforcedReturn || "n/a",
+      urlAssistedReturn: api5Data?.urlAssistedReturn || "n/a",
+      urlTotalReturn: api5Data?.urlTotal || "n/a",
+      additionalNote: api5Data?.notes || "n/a"
     }));
 
     return merged;
@@ -242,7 +242,7 @@ const getAlternative = async (countryKey) => {
   const data = await fetchData("/alternative?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "N/A" : item[countryKey]
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
   console.log("fD alt:", filteredData);
   
@@ -271,11 +271,11 @@ const getAllAlternativeData = async (countryCode) => {
     const merged = api1Data.map((item, index) => ({
       year: item.year,
       alternative: item.value,
-      sourceAlternative: api2Data?.source || "N/A",
-      urlAlternative: api2Data?.url || "N/A",
+      sourceAlternative: api2Data?.source || "n/a",
+      urlAlternative: api2Data?.url || "n/a",
       //URL bilgileri
       category: api2Data.category,
-      additionalNote: api2Data?.additionalNotes || "N/A"
+      additionalNote: api2Data?.additionalNotes || "n/a"
     }));
 
     return merged;

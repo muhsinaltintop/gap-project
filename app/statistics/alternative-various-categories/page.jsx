@@ -28,18 +28,22 @@ const DataTable = ({ mergedData }) => {
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
           <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlAlternative != "N/A" || undefined ? (
+            {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
               <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
                 {mergedData[0]?.sourceAlternative}
               </Link>
             ) : (
-              "N/A"
+              "n/a"
             )}
           </td>
         </tr>
         <tr className="bg-gray-100">
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
           <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote || "No notes available"}</td>
+        </tr>
+        <tr>
+        <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
+        <td className="border border-gray-300 px-4 py-2" colSpan="5">Data is not avalible.</td>
         </tr>
       </tbody>
     </table>
