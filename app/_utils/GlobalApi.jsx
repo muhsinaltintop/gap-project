@@ -285,8 +285,8 @@ const getAllAlternativeData = async (countryCode) => {
   }
 }
 
-const getReturnByCitizenship = async (code) => {
-  const data = await fetchData(`/returns-by-citizenship-${code}?populate=*`)
+const getReturnByCitizenship = async (code, selectedYear) => {
+  const data = await fetchData(`/returns-by-citizenship-${code}?year=${selectedYear}populate=*`)
   return data;
 }
 

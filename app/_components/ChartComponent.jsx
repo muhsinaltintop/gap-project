@@ -1,5 +1,5 @@
-"use client";
-import React, { useState } from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import { saveSvgAsPng } from "save-svg-as-png";
 import {
   BarChart,
@@ -11,13 +11,11 @@ import {
   Legend,
 } from "recharts";
 
-
 import countries from "../../public/_mocks_/countryList.json";
 import PageTitle from "./_atoms/PageTitle";
 
 const ChartComponent = ({ data, title }) => {
-  
-  const [selectedCountries, setSelectedCountries] = useState([]); 
+  const [selectedCountries, setSelectedCountries] = useState([]);
 
   const handleCountryChange = (country) => {
     const index = selectedCountries.indexOf(country);
@@ -49,6 +47,16 @@ const ChartComponent = ({ data, title }) => {
     selectedCountries.includes(country.countryName)
   );
 
+  // useEffect to automatically select all countries when the title includes "Return by Citizenship"
+  useEffect(() => {
+    if (title.includes("Return by Citizenship")) {
+      const allCountryKeys = Object.keys(data[0]).filter(
+        (key) => key !== "id" && key !== "year"
+      );
+      setSelectedCountries(allCountryKeys); // Set all countries as selected
+    }
+  }, [title, data]);
+
   // Formatter function for the legend and checkboxes
   const formatLegend = (value) => {
     switch (value) {
@@ -61,7 +69,7 @@ const ChartComponent = ({ data, title }) => {
       case "otherTotal":
         return "Other Total";
       case "turkey":
-        return "Türkiye"
+        return "Türkiye";
       default:
         return value.charAt(0).toUpperCase() + value.slice(1);
     }
@@ -69,35 +77,37 @@ const ChartComponent = ({ data, title }) => {
 
   return (
     <div className="m-10">
-      
       <div>
-       <PageTitle title={title}/>
+        <PageTitle title={title} />
       </div>
-      <div className="mt-4">
-        <h3>Select Countries:</h3>
-        {Object.keys(data[0]).map((key) => {
-          if (key !== "id" && key !== "year") {
-            return (
-              <label key={key} className="mr-3 align-middle">
-                <input
-                  type="checkbox"
-                  value={key}
-                  checked={selectedCountries.includes(key)}
-                  onChange={() => handleCountryChange(key)}
-                  className="align-middle mr-1"
-                />
-                {formatLegend(key)}
-              </label>
-            );
-          }
-        })}
-      </div>
+      {!title.includes("Return by Citizenship") && (
+        <div className="mt-4">
+          <h3>Select Countries:</h3>
+          {Object.keys(data[0]).map((key) => {
+            if (key !== "id" && key !== "year") {
+              return (
+                <label key={key} className="mr-3 align-middle">
+                  <input
+                    type="checkbox"
+                    value={key}
+                    checked={selectedCountries.includes(key)}
+                    onChange={() => handleCountryChange(key)}
+                    className="align-middle mr-1"
+                  />
+                  {formatLegend(key)}
+                </label>
+              );
+            }
+            return null;
+          })}
+        </div>
+      )}
       <div className="downloadimage" width={1000} height={500}>
         <BarChart width={1000} height={600} data={filteredData} className="mt-6">
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
-          <Tooltip/>
+          <Tooltip />
           <Legend formatter={formatLegend} />
           {filteredCountries.map((country, index) => (
             <Bar key={index} dataKey={country.countryName} fill={country.color} />
