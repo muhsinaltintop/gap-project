@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "title": "Stock of Irregular Migrants",
+        "originalData": "https://redcap.link/GAPsdatarepository_stock_of_irregular_migrants "
+    },
+    {
+        "id": 2,
+        "title": "Asylum Applications",
+        "originalData": "https://redcap.link/GAPsdatarepository_asylumapplications"
+    },
+    {
+        "id": 3,
+        "title": "Entry Refusals and Pushbacks",
+        "originalData": "https://redcap.link/GAPsdatarepository_refusals_and_pushbacks"
+    },
+    {
+        "id": 4,
+        "title": "Dublin Returns",
+        "originalData": "https://redcap.link/GAPsdatarepository_dublinreturns"
+    },
+    {
+        "id": 5,
+        "title": "TCNs/Foreign Nationals Ordered to Leave",
+        "originalData": "https://redcap.link/GAPsdatarepository_TCNs_orderedtoleave"
+    },
+    {
+        "id": 6,
+        "title": "Returns by Type",
+        "originalData": "https://redcap.link/GAPsdatarepository_returnsbytype"
+    },
+    {
+        "id": 7,
+        "title": "Returns by Citizenship",
+        "originalData": "https://redcap.link/GAPsdatarepository_returnsbycitizenship"
+    },
+    {
+        "id": 8,
+        "title": "Alternative/Various Return Categories (National)",
+        "originalData": "https://redcap.link/GAPsdatarepository_alternative_nationalreturndata"
+    },
+    {
+        "id": 9,
+        "title": "Readmitted Citizens",
+        "originalData": "https://redcap.link/GAPsdatarepository_readmittedcitizens"
+    }
+
+]

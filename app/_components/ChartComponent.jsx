@@ -13,10 +13,12 @@ import {
 
 import countries from "../../public/_mocks_/countryList.json";
 import PageTitle from "./_atoms/PageTitle";
+import originalData from "../../public/_mocks_/originalData.json"
+import Link from "next/link";
 
 const ChartComponent = ({ data, title }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
-
+  const [source, setSource] = useState([])
   const handleCountryChange = (country) => {
     const index = selectedCountries.indexOf(country);
     if (index === -1) {
@@ -55,6 +57,10 @@ const ChartComponent = ({ data, title }) => {
       );
       setSelectedCountries(allCountryKeys); // Set all countries as selected
     }
+    
+    const foundData = originalData.find(item => item.title.includes(title));
+    setSource(foundData || 'No results found');
+    
   }, [title, data]);
 
   // Formatter function for the legend and checkboxes
@@ -114,6 +120,14 @@ const ChartComponent = ({ data, title }) => {
           ))}
         </BarChart>
       </div>
+      <div className="font-bold">
+            Original Data:{" "} 
+            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal  text-primary">
+
+            {source?.title}
+            </span>
+            </Link>
+      </div>
       <button
         className="m-4"
         onClick={() =>
@@ -125,8 +139,9 @@ const ChartComponent = ({ data, title }) => {
           )
         }
       >
-        download
+        Download
       </button>
+      
     </div>
   );
 };
