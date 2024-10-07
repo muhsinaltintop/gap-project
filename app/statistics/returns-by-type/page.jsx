@@ -113,8 +113,7 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
-      <PageTitle title="Return Type of TCN/Foreign Nationals Ordered to Leave"/>
-      <div className="mt-2">
+      
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
@@ -123,7 +122,7 @@ const Page = () => {
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
           </div>
         )}
-      </div>
+      
     </div>
   );
 };

@@ -122,10 +122,8 @@ const Page = () => {
     fetchData();
   }, [countryCode]);
 
-  return (
-    <div className="w-full mx-6">
-      <PageTitle title="TCN Foreign Nationals Ordered to Leave"/>
-      <div className="mt-2">
+  return (  
+      <div className="w-full mx-6">
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
@@ -135,7 +133,6 @@ const Page = () => {
           </div>
         )}
       </div>
-    </div>
   );
 };
 

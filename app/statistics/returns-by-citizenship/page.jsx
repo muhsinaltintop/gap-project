@@ -64,7 +64,7 @@ const Page = () => {
       {countryCode && selectedYear && !loading && !error && (
         <div>
           {
-            data.length > 0 ? <ChartComponent data={data} title={`Return by Citizenship - ${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : ""
+            data.length > 0 ? <ChartComponent data={data} title={`${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : ""
           }
         </div>
       )}
