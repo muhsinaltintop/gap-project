@@ -83,9 +83,7 @@ const ChartComponent = ({ data, title }) => {
 
   return (
     <div className="m-10">
-      <div>
-        <PageTitle title={title} />
-      </div>
+
       {!title.includes("Return by Citizenship") && (
         <div className="mt-4">
           <h3>Select Countries:</h3>

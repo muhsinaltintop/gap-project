@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function TabNavigation({ tabs }) {
@@ -13,14 +14,16 @@ export default function TabNavigation({ tabs }) {
     <div>
       {/* Mobile Dropdown */}
       <div className="sm:hidden">
+      
         <label htmlFor="Tab" className="sr-only">Tab</label>
-
+    
         <select
           id="Tab"
           className="w-full rounded-md border-gray-200"
           value={selectedTab}
           onChange={(e) => setSelectedTab(e.target.value)}
         >
+
           {tabs.map(tab => (
             <option key={tab.label} value={tab.label}>
               {tab.label}
@@ -31,12 +34,12 @@ export default function TabNavigation({ tabs }) {
 
       {/* Desktop Tabs */}
       <div className="hidden sm:block">
-        <nav className="flex gap-6" aria-label="Tabs">
+        <nav className="flex" aria-label="Tabs">
           {tabs.map(tab => (
-            <a
+            <Link
               key={tab.label}
               href="#"
-              onClick={() => setSelectedTab(tab.label)}
+              onClick={(e) => {e.preventDefault(); setSelectedTab(tab.label)}}
               className={`shrink-0 rounded-lg p-2 text-sm font-medium ${
                 selectedTab === tab.label
                   ? 'bg-sky-100 text-sky-600'
@@ -44,7 +47,7 @@ export default function TabNavigation({ tabs }) {
               }`}
             >
               {tab.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
