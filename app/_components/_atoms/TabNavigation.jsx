@@ -40,7 +40,7 @@ export default function TabNavigation({ tabs }) {
               key={tab.label}
               href="#"
               onClick={(e) => {e.preventDefault(); setSelectedTab(tab.label)}}
-              className={`shrink-0 rounded-lg p-2 text-sm font-medium ${
+              className={`shrink-0 max-w-xs rounded-lg p-2 text-sm font-medium ${
                 selectedTab === tab.label
                   ? 'bg-sky-100 text-sky-600'
                   : 'text-gray-500 hover:bg-gray-50 hover:text-gray-700'
