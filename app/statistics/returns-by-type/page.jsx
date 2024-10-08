@@ -99,7 +99,7 @@ const Page = () => {
 
       <div className="my-2">Voluntary Return refers to the situation in which the third-country national (TCN) has voluntarily complied with the obligation to return (i.e. no enforcement procedure had to be launched) and this departure is confirmed, for example, by information received from the border authority or consular authorities in the country of origin or other authorities such as IOM or any other organizations implementing a program to assist migrants to return to a third country (definition based on Art 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link>).</div>
       </div> },
-    { label: 'Enforced Return (Removal) ', content: <div>
+    { label: 'Enforced Return (Removal) ', content: <div className="max-w-6xl text-sm text-justify">
       <div className="my-2">
       Enforced return (removal) refers to the situation in which TCN is subject to the enforcement of the obligation to return (the enforcement procedure has been launched) (definition based on Art 3.5 and 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link>).
       </div>
@@ -154,14 +154,18 @@ const Page = () => {
             <div className="mt-4">
             <TabNavigation tabs={tabs}/>
             </div>
-            <div className="my-2"><span className="font-bold">Note:</span> GAPs consortium does NOT agree with some definition used in Eurostat and national sources, particularly the definition of &quot;voluntary return&quot; (because there is an obligation to return), but we use the term to avoid possible confusions with data drawn from data sources (Eurostat and national statistics). GAPs will use its own conceptualization for other WPs but not for the development of data repository</div>
+            <div className="text-sm">
+              <div className="my-2"><span className="font-bold">Note:</span> GAPs consortium does NOT agree with some definition used in Eurostat and national sources, particularly the definition of &quot;voluntary return&quot; (because there is an obligation to return), but we use the term to avoid possible confusions with data drawn from data sources (Eurostat and national statistics). GAPs will use its own conceptualization for other WPs but not for the development of data repository</div>
 
-            <div className="my-2 font-bold">Spontaneous Returns of Refugees:</div>
-            <div className="my-2">
-              This category refers to the number of people who are recorded as having left the country without receiving any support and assistance from the national authorities. This is often the case for refugees or those under temporary protection status. 
-            </div>
-            <div className="my-2">
-              If a country icn the dataset has a number of spontaneous returns, the data is given in a separate table below.
+              <div className="my-2 font-bold">Spontaneous Returns of Refugees:</div>
+
+
+              <div className="my-2">
+                This category refers to the number of people who are recorded as having left the country without receiving any support and assistance from the national authorities. This is often the case for refugees or those under temporary protection status. 
+              </div>
+              <div className="my-2">
+                If a country icn the dataset has a number of spontaneous returns, the data is given in a separate table below.
+              </div>
             </div>
             </div>
 
