@@ -6,7 +6,7 @@ const page = async () => {
   const stockOfIrregularMigrants = await getStockOfIrregularMigrants();
 
   const tabs = [
-    { label: 'Notes on Stock of Irregular Migrants', content: <div className="w-9/12 text-sm">
+    { label: 'Note on Stock of Irregular Migrants', content: <div className="max-w-6xl text-sm">
 
       <div className="my-2">Stock of Irregular Migrants data contains statistics mainly on the Third Country Nationals found to be illegally present in the country in question.</div>
       <div className="my-2">The primary source is the available Eurostat data. If there is no available data or any relevant category for those non-EU countries, the numbers refer to any available open national data which corresponds to number of &quot;foreign nationals&quot; subject to the removal. </div>
@@ -26,7 +26,7 @@ const page = async () => {
 
       </div>
       </div> },
-    { label: 'Note on Multiple Data:', content: <div className="w-9/12 text-sm">
+    { label: 'Note on Multiple Data:', content: <div className="max-w-6xl text-sm">
       <div className="my-2">
       Data repository combines data from multiple sources in terms of level of sources (e.g. national or European) and source of the data (official data/census, report, input of administrative documents in different levels, media outlets etc.). 
       </div>
