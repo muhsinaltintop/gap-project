@@ -6,8 +6,10 @@ import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
 import { getAllRbtData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import PageTitle from "@/app/_components/_atoms/PageTitle";
 import Link from "next/link";
+import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 
 const DataTable = ({ mergedData }) => {
+  
   return (
     <table className="table-auto border-collapse w-full mt-4 shadow-lg">
       <thead>
@@ -92,6 +94,35 @@ const Page = () => {
     setError(null);
   };
 
+  const tabs = [
+    { label: 'Note on Voluntary Return(Voluntary Departure)', content: <div className="max-w-6xl text-sm text-justify">
+
+      <div className="my-2">Voluntary Return refers to the situation in which the third-country national (TCN) has voluntarily complied with the obligation to return (i.e. no enforcement procedure had to be launched) and this departure is confirmed, for example, by information received from the border authority or consular authorities in the country of origin or other authorities such as IOM or any other organizations implementing a program to assist migrants to return to a third country (definition based on Art 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link>).</div>
+      </div> },
+    { label: 'Enforced Return (Removal) ', content: <div>
+      <div className="my-2">
+      Enforced return (removal) refers to the situation in which TCN is subject to the enforcement of the obligation to return (the enforcement procedure has been launched) (definition based on Art 3.5 and 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link>).
+      </div>
+        <div className="my-2">
+          <span className="font-bold">Note:</span> GAPS consortium uses the term of coerced returns to refer enforced returns.
+        </div>
+      </div> },
+    
+    { label: "Assisted Return", content: 
+      <div className="max-w-6xl text-sm text-justify">
+
+      <div className="my-2">Assisted Return refers to the situation in which TCN was assisted to return by logistical, financial and/or other material assistance. He/she is the beneficiary of a national or EU MS cooperative program to encourage return and to provide reintegration assistance. The TCN received an <span className="font-bold">(i)</span> in-kind assistance prior to departure (e.g. purchase of plane tickets) and/or <span className="font-bold">(ii)</span> in-cash allowances at the point of departure/upon arrival and/or <span className="font-bold">(iii)</span> in-kind or in-cash reintegration assistance.</div>
+      <div className="my-2">
+        <span className="underline">Please note</span> that beneficiaries of assisted return programs are mostly TCN who voluntarily return but some may also have been returned by force Definition based on Art 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link> and <Link href={'http://bookshop.europa.eu/en/asylum-and-migration-glossary-2.0-pbDR3212081/ nnn0000'} target="_blank" className="text-primary">Asylum and Migration Glossary 2.0</Link>.
+      </div>
+      </div>
+      },
+      { label: "Total", content: <div className="max-w-6xl text-sm text-justify">
+        <div className="my-2">Total number <span className="underline">may be larger than the sum of three categories</span> may be larger than the sum of three categories because of Other concluded return which refers to the situation in which one can reasonably presume that the third country national was returned based on some assumptions (some information are missing and the departure is not confirmed by the information from the border authority).</div>
+        
+      </div> },
+  ];
+
   useEffect(() => {
     if (!countryCode) return;
 
@@ -120,9 +151,21 @@ const Page = () => {
         {countryCode && !loading && !error && (
           <div>
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
-          </div>
+            <div className="mt-4">
+            <TabNavigation tabs={tabs}/>
+            </div>
+            <div className="my-2"><span className="font-bold">Note:</span> GAPs consortium does NOT agree with some definition used in Eurostat and national sources, particularly the definition of &quot;voluntary return&quot; (because there is an obligation to return), but we use the term to avoid possible confusions with data drawn from data sources (Eurostat and national statistics). GAPs will use its own conceptualization for other WPs but not for the development of data repository</div>
+
+            <div className="my-2 font-bold">Spontaneous Returns of Refugees:</div>
+            <div className="my-2">
+              This category refers to the number of people who are recorded as having left the country without receiving any support and assistance from the national authorities. This is often the case for refugees or those under temporary protection status. 
+            </div>
+            <div className="my-2">
+              If a country icn the dataset has a number of spontaneous returns, the data is given in a separate table below.
+            </div>
+            </div>
+
         )}
-      
     </div>
   );
 };
