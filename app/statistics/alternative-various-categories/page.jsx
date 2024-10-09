@@ -2,7 +2,7 @@
 
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
-import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
+import alternativeVariousCountries from "../../../public/_mocks_/alternativeVariousCountries"
 import { getAllAlternativeData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import Link from "next/link";
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
@@ -96,16 +96,13 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
-      <div className="mt-2">
-        {console.log("cC", countryCode)}
-        
-        <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
+      <div className="mt-2">    
+        <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={alternativeVariousCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
         {countryCode && !loading && !error && (
           <div>
             <div>
-              {console.log("data:", data)}
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
             </div>
             <div className="my-4">
