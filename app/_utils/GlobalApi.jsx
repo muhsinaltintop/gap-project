@@ -291,8 +291,8 @@ const getAlternativeVariousCategories = async () => {
   return data;
 }
 
-const getReadmittedCitizens = async () => {
-  const data = await fetchData("/readmitted-citizens?populate=*")
+const getReadmittedCitizens = async (countryCode) => {
+  const data = await fetchData(`/readmitted-citizens?country=${countryCode}`)
   return data;
 }
 
