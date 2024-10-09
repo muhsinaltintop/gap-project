@@ -4,7 +4,6 @@ import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCou
 import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
 import { getAllRbtData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
-import PageTitle from "@/app/_components/_atoms/PageTitle";
 import Link from "next/link";
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 

@@ -1,14 +1,192 @@
-import ChartComponent from "../../_components/ChartComponent";
-// import { getReadmittedCitizens } from "../../_utils/GlobalApi";
+"use client";
 
-const page = async () => {
-  // const readmittedCitizens = await getReadmittedCitizens();
+import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
+import { useEffect, useState } from "react";
+import readmittedCountries from "../../../public/_mocks_/readmittedCountries";
+import { getReadmittedCitizens } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
+import Link from "next/link";
+import TabNavigation from "@/app/_components/_atoms/TabNavigation";
+
+const DataTable = ({ mergedData }) => {
+  return (
+    <table className="table-auto border-collapse w-full mt-4 shadow-lg">
+      <thead>
+        <tr className="bg-gray-200">
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Germany</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Poland</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Iraq</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Jordan</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Nigeria</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Morocco</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Tunisia</th>
+        </tr>
+      </thead>
+      <tbody>
+        {mergedData.map((row, index) => (
+          <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+            <td className="border border-gray-300 px-4 py-2">{row.year}</td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.germany} 
+              {row.germany_source && (
+                <Link href={row.germany_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.poland} 
+              {row.poland_source && (
+                <Link href={row.poland_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.iraq} 
+              {row.iraq_source && (
+                <Link href={row.iraq_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.jordan} 
+              {row.jordan_source && (
+                <Link href={row.jordan_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.nigeria} 
+              {row.nigeria_source && (
+                <Link href={row.nigeria_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.morocco} 
+              {row.morocco_source && (
+                <Link href={row.morocco_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              {row.tunisia} 
+              {row.tunisia_source && (
+                <Link href={row.tunisia_source} className="text-blue-500 hover:underline">
+                  Source
+                </Link>
+              )}
+            </td>
+          </tr>
+        ))}
+        <tr className="bg-gray-200">
+          <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
+          <td colSpan="7" className="border border-gray-300 px-4 py-2">
+            Data sources for each country are provided as links in the respective cells.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+};
+
+
+const Page = () => {
+  const [countryCode, setCountryCode] = useState("");
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleCountryChange = (countryCode) => {
+    setCountryCode(countryCode);
+    setError(null);
+  };
+
+  const tabs = [
+    { label: 'Note on Voluntary Return(Voluntary Departure)', content: <div className="max-w-6xl text-sm text-justify">
+
+      <div className="my-2">Voluntary Return refers to the situation in which the third-country national (TCN) has voluntarily complied with the obligation to return (i.e. no enforcement procedure had to be launched) and this departure is confirmed, for example, by information received from the border authority or consular authorities in the country of origin or other authorities such as IOM or any other organizations implementing a program to assist migrants to return to a third country (definition based on Art 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link>).</div>
+      </div> },
+    { label: 'Enforced Return (Removal) ', content: <div className="max-w-6xl text-sm text-justify">
+      <div className="my-2">
+      Enforced return (removal) refers to the situation in which TCN is subject to the enforcement of the obligation to return (the enforcement procedure has been launched) (definition based on Art 3.5 and 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link>).
+      </div>
+        <div className="my-2">
+          <span className="font-bold">Note:</span> GAPS consortium uses the term of coerced returns to refer enforced returns.
+        </div>
+      </div> },
+    
+    { label: "Assisted Return", content: 
+      <div className="max-w-6xl text-sm text-justify">
+
+      <div className="my-2">Assisted Return refers to the situation in which TCN was assisted to return by logistical, financial and/or other material assistance. He/she is the beneficiary of a national or EU MS cooperative program to encourage return and to provide reintegration assistance. The TCN received an <span className="font-bold">(i)</span> in-kind assistance prior to departure (e.g. purchase of plane tickets) and/or <span className="font-bold">(ii)</span> in-cash allowances at the point of departure/upon arrival and/or <span className="font-bold">(iii)</span> in-kind or in-cash reintegration assistance.</div>
+      <div className="my-2">
+        <span className="underline">Please note</span> that beneficiaries of assisted return programs are mostly TCN who voluntarily return but some may also have been returned by force Definition based on Art 3.8 <Link href={'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:348:0098:0107:EN:PDF'} target="_blank" className="text-primary">Directive 115/2008/EC</Link> and <Link href={'http://bookshop.europa.eu/en/asylum-and-migration-glossary-2.0-pbDR3212081/ nnn0000'} target="_blank" className="text-primary">Asylum and Migration Glossary 2.0</Link>.
+      </div>
+      </div>
+      },
+      { label: "Total", content: <div className="max-w-6xl text-sm text-justify">
+        <div className="my-2">Total number <span className="underline">may be larger than the sum of three categories</span> may be larger than the sum of three categories because of Other concluded return which refers to the situation in which one can reasonably presume that the third country national was returned based on some assumptions (some information are missing and the departure is not confirmed by the information from the border authority).</div>
+        
+      </div> },
+  ];
+
+  useEffect(() => {
+    if (!countryCode) return;
+
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const mergedData = await getReadmittedCitizens(countryCode); // Tüm verileri çekiyoruz
+        setData(mergedData); // Gelen veriyi state'e kaydediyoruz
+      } catch (err) {
+        console.error("Error fetching data: ", err);
+        setError(err); // Hata yakalama
+      } finally {
+        setLoading(false); // İstek tamamlandığında loading'i false yap
+      }
+    };
+
+    fetchData();
+  }, [countryCode]);
+
   return (
     <div className="w-full mx-6">
-      Readmitted Citizens will be ready.
-      {/* <ChartComponent data={readmittedCitizens} /> */}
+      
+        <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={readmittedCountries} />
+        {loading && <p>Loading data...</p>}
+        {error && <p>Error fetching data</p>}
+        {countryCode && !loading && !error && (
+          <div>
+            {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
+            <div className="mt-4">
+              console.log(countryCode)
+              
+            <TabNavigation tabs={tabs}/>
+            </div>
+            <div className="text-sm">
+              <div className="my-2"><span className="font-bold">Note:</span> GAPs consortium does NOT agree with some definition used in Eurostat and national sources, particularly the definition of &quot;voluntary return&quot; (because there is an obligation to return), but we use the term to avoid possible confusions with data drawn from data sources (Eurostat and national statistics). GAPs will use its own conceptualization for other WPs but not for the development of data repository</div>
+
+              <div className="my-2 font-bold">Spontaneous Returns of Refugees:</div>
+
+
+              <div className="my-2">
+                This category refers to the number of people who are recorded as having left the country without receiving any support and assistance from the national authorities. This is often the case for refugees or those under temporary protection status. 
+              </div>
+              <div className="my-2">
+                If a country icn the dataset has a number of spontaneous returns, the data is given in a separate table below.
+              </div>
+            </div>
+            </div>
+
+        )}
     </div>
   );
 };
 
-export default page;
+export default Page;
