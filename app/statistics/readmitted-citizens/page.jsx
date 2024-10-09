@@ -31,9 +31,9 @@ const DataTable = ({ mergedData, country }) => {
                     : "N/A"}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
-                  {row[sourceKeys[i]] && row[sourceKeys[i]] !== "n/a" ? (
+                  {row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
                     <Link href={row[sourceKeys[i]]} className="text-blue-500 hover:underline" target="_blank">
-                      Source
+                      {row[sourceKeys[i]]}
                     </Link>
                   ) : (
                     "N/A"
