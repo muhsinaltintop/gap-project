@@ -8,6 +8,7 @@ import Link from "next/link";
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 
 const DataTable = ({ mergedData }) => {
+  {console.log(mergedData)}
   return (
     <table className="table-auto border-collapse w-full mt-4 shadow-lg">
       <thead>
