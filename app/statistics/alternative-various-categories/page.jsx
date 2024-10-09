@@ -4,13 +4,12 @@ import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCou
 import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
 import { getAllAlternativeData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
-import PageTitle from "@/app/_components/_atoms/PageTitle";
 import Link from "next/link";
+import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 
 const DataTable = ({ mergedData }) => {
   return (
     <table className="table-auto border-collapse w-full mt-4 shadow-lg">
-      {console.log("mD:", mergedData)}
       <thead>
         <tr className="bg-gray-200">
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
@@ -61,6 +60,21 @@ const Page = () => {
     setError(null);
   };
 
+  const tabs = [
+    { label: 'Note on Alternative/Various Categories(National)', content: <div className="max-w-6xl text-sm text-justify">
+
+      <div className="my-2">This section contains any related national category/type of official (annual) data on return, under different headings (e.g. &quot;deportation&quot;, &quot;removal&quot;, &quot;repatriation&quot;) than that collected in the previous categories of the Repository.  
+      </div>
+      <div className="my-2">
+      When national statistics do not fit the previous categories, alternatives are indicated in the table below. 
+      </div>
+      </div> },
+    { label: null, content: null },
+    
+    { label: null, content: null },
+    { label: null, content: null },
+  ];
+
   useEffect(() => {
     if (!countryCode) return;
 
@@ -82,14 +96,21 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
-      <PageTitle title="Alternative"/>
       <div className="mt-2">
+        {console.log("cC", countryCode)}
+        
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
         {countryCode && !loading && !error && (
           <div>
+            <div>
+              {console.log("data:", data)}
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
+            </div>
+            <div className="my-4">
+              <TabNavigation tabs={tabs} />
+            </div>
           </div>
         )}
       </div>

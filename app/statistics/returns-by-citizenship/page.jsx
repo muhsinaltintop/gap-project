@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import countries from "../../_components/_returnByCountry/returnCountries.json";
 import DropDown from "@/app/_components/_atoms/DropDown";
 import returnYears from "../../../public/_mocks_/returnYears";
+import TabNavigation from "@/app/_components/_atoms/TabNavigation";
+import Link from "next/link";
 
 const Page = () => {
   const [countryCode, setCountryCode] = useState("");
@@ -24,6 +26,21 @@ const Page = () => {
     setSelectedYear(year);
     setError(null); // Hata mesajını sıfırlıyoruz
   };
+
+  const tabs = [
+    { label: 'Note on Returns by Citizenship', content: <div className="max-w-6xl text-sm text-justify">
+
+      <div className="my-2">This section contains statistics on the number of TCNs/foreign nationals who have left the territory by citizenship. The top ten countries for each year are listed specifically in the table below, other nationalities are given in total. 
+      </div>
+      <div className="my-4 text-xs">
+      * Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal. 
+      </div>
+      </div> },
+    { label: null, content: null },
+    
+    { label: null, content: null },
+    { label: null, content: null },
+  ];
   
   useEffect(() => {
     if (!countryCode || !selectedYear) return; // Eğer ülke veya yıl seçilmemişse istek yapma
@@ -63,9 +80,15 @@ const Page = () => {
 
       {countryCode && selectedYear && !loading && !error && (
         <div>
-          {
-            data.length > 0 ? <ChartComponent data={data} title={`${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : ""
-          }
+
+          <div>
+            {
+              data.length > 0 ? <ChartComponent data={data} title={`${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : ""
+            }
+          </div>
+          <div className="my-2">
+          <TabNavigation tabs={tabs} />
+          </div>
         </div>
       )}
     </div>
