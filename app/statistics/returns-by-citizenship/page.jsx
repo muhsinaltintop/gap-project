@@ -30,11 +30,8 @@ const Page = () => {
   const tabs = [
     { label: 'Note on Returns by Citizenship', content: <div className="max-w-6xl text-sm text-justify">
 
-      <div className="my-2">This section contains statistics on the number of TCNs/foreign nationals who have left the territory by citizenship. The top ten countries for each year are listed specifically in the table below, other nationalities are given in total. 
-      </div>
-      <div className="my-4 text-xs">
-      * Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal. 
-      </div>
+      
+      
       </div> },
     { label: null, content: null },
     
@@ -68,6 +65,8 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
+      <div className="my-2 max-w-6xl">This section contains statistics on the number of TCNs/foreign nationals who have left the territory by citizenship. The top ten countries for each year are listed specifically in the table below, other nationalities are given in total. 
+      </div>
       <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={countries}/>
       <DropDown
         label="Please Select Year"
@@ -87,7 +86,9 @@ const Page = () => {
             }
           </div>
           <div className="my-2">
-          <TabNavigation tabs={tabs} />
+          <div className="my-2 max-w-6xl text-justify">
+      * Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal. 
+      </div>
           </div>
         </div>
       )}

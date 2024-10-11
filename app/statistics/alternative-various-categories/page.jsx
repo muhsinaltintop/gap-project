@@ -61,21 +61,6 @@ const Page = () => {
     setError(null);
   };
 
-  const tabs = [
-    { label: 'Note on Alternative/Various Categories(National)', content: <div className="max-w-6xl text-sm text-justify">
-
-      <div className="my-2">This section contains any related national category/type of official (annual) data on return, under different headings (e.g. &quot;deportation&quot;, &quot;removal&quot;, &quot;repatriation&quot;) than that collected in the previous categories of the Repository.  
-      </div>
-      <div className="my-2">
-      When national statistics do not fit the previous categories, alternatives are indicated in the table below. 
-      </div>
-      </div> },
-    { label: null, content: null },
-    
-    { label: null, content: null },
-    { label: null, content: null },
-  ];
-
   useEffect(() => {
     if (!countryCode) return;
 
@@ -97,6 +82,13 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
+      <div className="my-4 max-w-6xl">
+              <div className="my-2">This section contains any related national category/type of official (annual) data on return, under different headings (e.g. &quot;deportation&quot;, &quot;removal&quot;, &quot;repatriation&quot;) than that collected in the previous categories of the Repository.  
+              </div>
+              <div className="my-2">
+              When national statistics do not fit the previous categories, alternatives are indicated in the table below. 
+              </div>
+            </div>
       <div className="mt-2">    
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={alternativeVariousCountries} />
         {loading && <p>Loading data...</p>}
@@ -106,9 +98,7 @@ const Page = () => {
             <div>
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
             </div>
-            <div className="my-4">
-              <TabNavigation tabs={tabs} />
-            </div>
+            
           </div>
         )}
       </div>

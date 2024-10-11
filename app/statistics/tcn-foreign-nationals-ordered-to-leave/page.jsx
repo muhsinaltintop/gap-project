@@ -157,6 +157,9 @@ const Page = () => {
 
   return (  
       <div className="w-full mx-6">
+        <div className="my-2">
+        This section contains five different, but related categories  indicated below: 
+        </div>
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
@@ -165,9 +168,7 @@ const Page = () => {
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
           </div>
         )}
-        <div className="my-2">
-        This section contains five different, but related categories  indicated below: 
-        </div>
+        
         {data.length > 0 ? <TabNavigation tabs={tabs} /> : ""}
 
       </div>

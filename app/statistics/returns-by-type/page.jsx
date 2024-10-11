@@ -163,7 +163,7 @@ const Page = () => {
                 This category refers to the number of people who are recorded as having left the country without receiving any support and assistance from the national authorities. This is often the case for refugees or those under temporary protection status. 
               </div>
               <div className="my-2">
-                If a country icn the dataset has a number of spontaneous returns, the data is given in a separate table below.
+                If a country in the dataset has a number of spontaneous returns, the data is given in a separate table below.
               </div>
             </div>
             </div>

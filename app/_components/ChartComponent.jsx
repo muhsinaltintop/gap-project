@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import { saveSvgAsPng } from "save-svg-as-png";
 import {
   BarChart,
   Bar,
@@ -10,11 +9,12 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { Tooltip as MuiTooltip } from '@mui/material';
 
 import countries from "../../public/_mocks_/countryList.json";
-import PageTitle from "./_atoms/PageTitle";
 import originalData from "../../public/_mocks_/originalData.json"
 import Link from "next/link";
+import { CircleHelp } from "lucide-react";
 
 const ChartComponent = ({ data, title }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -106,7 +106,7 @@ const ChartComponent = ({ data, title }) => {
           })}
         </div>
       )}
-      <div className="downloadimage" width={1000} height={500}>
+      <div width={1000} height={500}>
         <BarChart width={1000} height={600} data={filteredData} className="mt-6">
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
@@ -118,34 +118,29 @@ const ChartComponent = ({ data, title }) => {
           ))}
         </BarChart>
       </div>
-      <div className="flex font-bold justify-between">
-        <div>
+      <div className="flex font-bold justify-between mt-4">
+        <div className="flex gap-1">
 
-            Original Data:{" "} 
-            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal  text-primary">
+            Original Data:
+            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal text-primary">
 
             {source?.title}
             </span>
             </Link>
+            <MuiTooltip title="The above data are secondary data compiled from different sources. Please click here to see
+the original sources and access the raw data for the entire dataset. You will also find all
+appendixes and attached original files, if available, stored in the REDCap for the Data
+Repository via the public report link.">
+            <CircleHelp className="size-3" color="#0d7dff" />
+            </MuiTooltip>
         </div>
-        <div>
-          
-          National Experts
+        <div className="font-bold text-primary">
+          <Link href={'/data-entry-teams'}>
+          Data Entry Teams  
+          </Link>
         </div>
       </div>
-      <button
-        className="m-4"
-        onClick={() =>
-          saveSvgAsPng(
-            document
-              .getElementsByClassName("downloadimage")[0]
-              .getElementsByTagName("svg")[0],
-            "recharts.png"
-          )
-        }
-      >
-        Download
-      </button>
+
       
     </div>
   );

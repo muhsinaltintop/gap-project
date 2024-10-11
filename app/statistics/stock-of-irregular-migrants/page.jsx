@@ -38,7 +38,7 @@ const page = async () => {
   ];
   return (
     <div className="w-full mx-6">
-      <div className="my-2">Stock of Irregular Migrants data contains statistics mainly on the Third Country Nationals found to be illegally present in the country in question.</div>
+      <div className="my-2 max-w-6xl">Stock of Irregular Migrants data contains statistics mainly on the Third Country Nationals found to be illegally present in the country in question.</div>
       <ChartComponent data={stockOfIrregularMigrants} title="Stock of Irregular Migrants" />
       <TabNavigation tabs={tabs} />
     </div>

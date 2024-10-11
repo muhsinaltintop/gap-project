@@ -8,8 +8,7 @@ const page = async () => {
   const tabs = [
     { label: 'Note on Dublin Returns', content: <div className="max-w-6xl text-sm text-justify">
 
-      <div className="my-2">This section contains number of third country nationals found to be illegally present who are subjected to the transferred from one Member State to another under the mechanism established by the Dublin Regulation (Council Regulation (EC) No 343/2003 and (EC) No 1560/2003).</div>
-      </div> },
+            </div> },
     { label: null, content: null },
     
     { label: null, content: <div>Archive Content</div> },
@@ -18,7 +17,8 @@ const page = async () => {
 
   return (
     <div className="w-full mx-6">
-      <TabNavigation tabs={tabs}/>
+      <div className="my-2 max-w-6xl">This section contains number of third country nationals found to be illegally present who are subjected to the transferred from one Member State to another under the mechanism established by the Dublin Regulation (Council Regulation (EC) No 343/2003 and (EC) No 1560/2003).</div>
+
       <ChartComponent data={dublinReturns} title="Dublin Returns" />
     </div>
   );
