@@ -6,10 +6,6 @@ import Link from "next/link";
 const page = async () => {
   const pushbacks = await getPushBacks();
   const tabs = [
-    { label: 'Note on Entry Refusals and Pushbacks', content: <div className="max-w-6xl text-sm text-justify">
-
-      <div className="my-2">This section contains two types of statistical data: (1) TCNs/foreign nationals* refused entry at the border and (2) pushbacks.</div>
-      </div> },
     { label: 'Note on Entry Refusals', content: <div className="max-w-6xl text-sm text-justify">
       <div className="my-2">
       The statistics contains number of refusals during entries to a country (of those not having valid visa or residence permit or having entry ban) at the border crossing points. This data can be counted by refusals at each crossing point (by land, sea or airport refusals).  
@@ -34,6 +30,7 @@ const page = async () => {
   ];
   return (
     <div className="w-full mx-6">
+      <div className="my-2">This section contains two types of statistical data: (1) TCNs/foreign nationals* refused entry at the border and (2) pushbacks.</div>
       <ChartComponent data={pushbacks} title="Entry Refusals" />
       <TabNavigation tabs={tabs} />
     </div>

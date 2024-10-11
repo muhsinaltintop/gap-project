@@ -7,8 +7,6 @@ const page = async () => {
 
   const tabs = [
     { label: 'Note on Stock of Irregular Migrants', content: <div className="max-w-6xl text-sm text-justify">
-
-      <div className="my-2">Stock of Irregular Migrants data contains statistics mainly on the Third Country Nationals found to be illegally present in the country in question.</div>
       <div className="my-2">The primary source is the available Eurostat data. If there is no available data or any relevant category for those non-EU countries, the numbers refer to any available open national data which corresponds to number of &quot;foreign nationals&quot; subject to the removal. </div>
       <div className="my-2">
       The detailed explanation for the available data:
@@ -40,6 +38,7 @@ const page = async () => {
   ];
   return (
     <div className="w-full mx-6">
+      <div className="my-2">Stock of Irregular Migrants data contains statistics mainly on the Third Country Nationals found to be illegally present in the country in question.</div>
       <ChartComponent data={stockOfIrregularMigrants} title="Stock of Irregular Migrants" />
       <TabNavigation tabs={tabs} />
     </div>

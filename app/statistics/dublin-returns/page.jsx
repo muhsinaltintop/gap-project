@@ -18,8 +18,8 @@ const page = async () => {
 
   return (
     <div className="w-full mx-6">
-      <ChartComponent data={dublinReturns} title="Dublin Returns" />
       <TabNavigation tabs={tabs}/>
+      <ChartComponent data={dublinReturns} title="Dublin Returns" />
     </div>
   );
 };

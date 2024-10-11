@@ -27,10 +27,10 @@ const page = async () => {
 
   return (
     <div className="w-full mx-6">
+      <TabNavigation tabs={tabs} />
       <ChartComponent data={asylumApplications} title="Asylum Application" />
       <PageTitle title="Temprorary Protection Status"/>  
       <ChartComponent data={tps} title="Temprorary Protection Status"/>
-      <TabNavigation tabs={tabs} />
     </div>
   );
 };
