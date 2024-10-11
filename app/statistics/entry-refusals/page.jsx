@@ -21,12 +21,8 @@ const page = async () => {
       </div>
     </div> },
     
-    { label: 'Note on Pushbacks', content: <div className="max-w-6xl text-sm text-justify">
-      <div className="my-2">Pushback is defined as the practice by states and supra-state institutions of (1) removing migrants at or near borders from their territory (2) forcibly and (3) before they officially enter that territory, which implies that they are obstructing access to the applicable legal and procedural frameworks of that territory. 
-      </div>
-      <div className="my-2">Due to lack of official data, available statistics include data from NGOs or watchdogs.</div>
-      </div> },
-    { label: null, content: <div>Notifications Content</div> },
+    { label: null, content: null },
+    { label: null, content: null },
   ];
   return (
     <div className="w-full mx-6">
