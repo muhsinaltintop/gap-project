@@ -118,13 +118,20 @@ const ChartComponent = ({ data, title }) => {
           ))}
         </BarChart>
       </div>
-      <div className="font-bold">
+      <div className="flex font-bold justify-between">
+        <div>
+
             Original Data:{" "} 
             <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal  text-primary">
 
             {source?.title}
             </span>
             </Link>
+        </div>
+        <div>
+          
+          National Experts
+        </div>
       </div>
       <button
         className="m-4"

@@ -41,17 +41,32 @@ const Footer = () => {
                 
           </div>
           <div className="mt-4 mr-24 text-right text-sm text-gray-500">
+            <div>
+
           Data Repository created by {" "}
                 <Link href={"#"}>
                   <span className="font-bold">
                     Dr. Zeynep Şahin Mencütek & Dr. Fatma Yılmaz Elmas
                   </span>
                 </Link>
-                <br />
+            </div>
+            <div>
+
+                
                Web application created by {" "}
                <Link href={"#"}>
                  <span className="font-bold">Muhsin Altıntop</span>
                </Link>
+            </div>
+
+            <div>
+              Data Collected By <Link href={'/data-entry-teams'}>
+              <span className="font-bold text-primary">
+
+              National Teams
+              </span>
+              </Link>
+            </div>
           </div>
 
         </div>
