@@ -46,7 +46,13 @@ const Page = () => {
       setLoading(true); // İstek başlarken loading'i true yap
       try {
         const result = await getReturnByCitizenship(countryCode, selectedYear); // Asenkron veri alma
-        setData(result); // Gelen veriyi güncelle
+        
+        const filteredData = result.map(item =>
+          Object.fromEntries(
+            Object.entries(item).filter(([key, value]) => value !== 0 || key === 'id' || key === 'year')
+          )
+        );
+        setData(filteredData); // Gelen veriyi güncelle
       } catch (err) {
         console.error("Error fetching data: ", err);
         setError(err); // Hata yakalama
@@ -80,11 +86,16 @@ const Page = () => {
       {countryCode && selectedYear && !loading && !error && (
         <div>
 
-          <div>
-            {
-              data.length > 0 ? <ChartComponent data={data} title={`${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`}/> : ""
-            }
-          </div>
+<div>
+  {data.length > 0 ? (
+    data.every(item => Object.keys(item).length === 2 && item.id && item.year) ? (
+      <p className="text-primary text-xl my-20">No data found...</p>
+    ) : (
+      <ChartComponent data={data} title={`${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`} />
+    )
+  ) : ""}
+</div>
+
           <div className="my-2">
           <div className="my-2 max-w-6xl text-justify">
       * Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal. 
