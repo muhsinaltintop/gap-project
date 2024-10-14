@@ -111,7 +111,7 @@ const ChartComponent = ({ data, title }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
-          <Tooltip />
+          <Tooltip formatter={(value, name, props) => [value, formatLegend(name)]} />
           <Legend formatter={formatLegend} />
           {filteredCountries.map((country, index) => (
             <Bar key={index} dataKey={country.countryName} fill={country.color} />
