@@ -73,7 +73,6 @@ const Page = () => {
       setLoading(true);
       try {
         const mergedData = await getReadmittedCitizens(countryCode); // Seçilen ülkeye göre veri çekiyoruz
-        console.log("Fetched Data: ", mergedData); // Veri kontrolü için eklendi
         setData(mergedData); // Gelen veriyi state'e kaydediyoruz
       } catch (err) {
         console.error("Error fetching data: ", err);
