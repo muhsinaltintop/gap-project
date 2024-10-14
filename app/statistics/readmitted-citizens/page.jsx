@@ -9,6 +9,7 @@ import Link from "next/link";
 const DataTable = ({ mergedData, country }) => {
   const yearKeys = Object.keys(mergedData[0]).filter(key => key.startsWith('year_'));
   const sourceKeys = Object.keys(mergedData[0]).filter(key => key.startsWith('source_'));
+  const referenceKeys = Object.keys(mergedData[0]).filter(key => key.startsWith('reference')) 
 
   return (
     <table className="table-auto border-collapse w-full mt-4 shadow-lg">
@@ -33,7 +34,7 @@ const DataTable = ({ mergedData, country }) => {
                 <td className="border border-gray-300 px-4 py-2">
                   {row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
                     <Link href={row[sourceKeys[i]]} className="text-blue-500 hover:underline" target="_blank">
-                      {row[sourceKeys[i]]}
+                      {row[referenceKeys]}
                     </Link>
                   ) : (
                     "N/A"
