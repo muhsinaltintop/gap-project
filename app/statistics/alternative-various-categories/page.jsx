@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import alternativeVariousCountries from "../../../public/_mocks_/alternativeVariousCountries"
 import { getAllAlternativeData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import Link from "next/link";
+import { Tooltip as MuiTooltip } from '@mui/material';
+import { CircleHelp } from "lucide-react";
+import originalData from "../../../public/_mocks_/originalData.json"
 
 const DataTable = ({ mergedData }) => {
   return (
@@ -53,6 +56,7 @@ const Page = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const source = originalData.find(entry => entry.title ==="Alternative/Various Return Categories (National)")
 
   const handleCountryChange = (countryCode) => {
     setCountryCode(countryCode);
@@ -79,7 +83,7 @@ const Page = () => {
   }, [countryCode]);
 
   return (
-    <div className="w-full mx-6">
+    <div className="w-9/10 mx-6">
       <div className="my-4 max-w-6xl">
               <div className="my-2">This section contains any related national category/type of official (annual) data on return, under different headings (e.g. &quot;deportation&quot;, &quot;removal&quot;, &quot;repatriation&quot;) than that collected in the previous categories of the Repository.  
               </div>
@@ -95,6 +99,28 @@ const Page = () => {
           <div>
             <div>
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
+            <div className="flex font-bold justify-between mt-4 mb-4">
+            <div className="flex gap-1">
+
+            Original Data:
+            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal text-primary">
+
+            {source?.title}
+            </span>
+            </Link>
+              <MuiTooltip title="The above data are secondary data compiled from different sources. Please click here to see
+  the original sources and access the raw data for the entire dataset. You will also find all
+  appendixes and attached original files, if available, stored in the REDCap for the Data
+  Repository via the public report link.">
+            <CircleHelp className="size-3" color="#0d7dff" />
+            </MuiTooltip>
+        </div>
+        <div className="font-bold text-primary">
+          <Link href={'/data-entry-teams'}>
+          Data Entry Teams  
+          </Link>
+        </div>
+            </div>
             </div>
             
           </div>

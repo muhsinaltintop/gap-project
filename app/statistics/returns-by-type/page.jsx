@@ -1,11 +1,13 @@
 "use client";
-
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
 import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
 import { getAllRbtData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import Link from "next/link";
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
+import { Tooltip as MuiTooltip } from '@mui/material';
+import originalData from "../../../public/_mocks_/originalData.json"
+import { CircleHelp } from "lucide-react";
 
 const DataTable = ({ mergedData }) => {
   
@@ -88,6 +90,8 @@ const Page = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const source = originalData.find(entry => entry.title ==="Returns by Type")
+
   const handleCountryChange = (countryCode) => {
     setCountryCode(countryCode);
     setError(null);
@@ -142,7 +146,7 @@ const Page = () => {
   }, [countryCode]);
 
   return (
-    <div className="w-full mx-6">
+    <div className="w-9/10 mx-6">
       
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
@@ -151,6 +155,28 @@ const Page = () => {
           <div>
             {data.length > 0 ? <DataTable mergedData={data} /> : <p>No data available</p>}
             <div className="mt-4">
+            <div className="flex font-bold justify-between mt-4 mb-4">
+            <div className="flex gap-1">
+
+            Original Data:
+            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal text-primary">
+
+            {source?.title}
+            </span>
+            </Link>
+            <MuiTooltip title="The above data are secondary data compiled from different sources. Please click here to see
+the original sources and access the raw data for the entire dataset. You will also find all
+appendixes and attached original files, if available, stored in the REDCap for the Data
+Repository via the public report link.">
+            <CircleHelp className="size-3" color="#0d7dff" />
+            </MuiTooltip>
+        </div>
+        <div className="font-bold text-primary">
+          <Link href={'/data-entry-teams'}>
+          Data Entry Teams  
+          </Link>
+        </div>
+            </div>
             <TabNavigation tabs={tabs}/>
             </div>
             <div className="text-sm">

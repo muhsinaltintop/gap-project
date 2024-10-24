@@ -3,11 +3,9 @@ import { useEffect, useState } from "react";
 import { getReturnByCitizenship } from "../../_utils/GlobalApi";
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import ChartComponent from "@/app/_components/ChartComponent";
-import { usePathname } from "next/navigation";
 import countries from "../../_components/_returnByCountry/returnCountries.json";
 import DropDown from "@/app/_components/_atoms/DropDown";
 import returnYears from "../../../public/_mocks_/returnYears";
-import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 import Link from "next/link";
 
 const Page = () => {
@@ -70,7 +68,7 @@ const Page = () => {
   }, [countryCode, selectedYear]);
 
   return (
-    <div className="w-full mx-6">
+    <div className="w-9/10 mx-6">
       <div className="my-2 max-w-6xl">This section contains statistics on the number of TCNs/foreign nationals who have left the territory by citizenship. The top ten countries for each year are listed specifically in the table below, other nationalities are given in total. 
       </div>
       <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={countries}/>
@@ -91,7 +89,7 @@ const Page = () => {
     data.every(item => Object.keys(item).length === 2 && item.id && item.year) ? (
       <p className="text-primary text-xl my-20">No data found...</p>
     ) : (
-      <ChartComponent data={data} title={`${countryCode === "gr" ? "Greece" : countryCode === "ge" ? "Germany" : "Country Name"}`} />
+      <ChartComponent data={data} title={"Returns by Citizenship"} />
     )
   ) : ""}
 </div>

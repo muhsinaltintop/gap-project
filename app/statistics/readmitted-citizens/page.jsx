@@ -1,10 +1,12 @@
 "use client";
-
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
 import readmittedCountries from "../../../public/_mocks_/readmittedCountries";
 import { getReadmittedCitizens } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import Link from "next/link";
+import { Tooltip as MuiTooltip } from '@mui/material';
+import { CircleHelp } from "lucide-react";
+import originalData from "../../../public/_mocks_/originalData.json"
 
 const DataTable = ({ mergedData, country }) => {
   const yearKeys = Object.keys(mergedData[0]).filter(key => key.startsWith('year_'));
@@ -60,6 +62,7 @@ const Page = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const source = originalData.find(entry => entry.title ==="Readmitted Citizens")
 
   const handleCountryChange = (countryCode) => {
     setCountryCode(countryCode);
@@ -93,6 +96,28 @@ const Page = () => {
       {countryCode && !loading && !error && (
         <div>
           {data.length > 0 ? <DataTable mergedData={data} country={countryCode} /> : <p>No data available</p>}
+          <div className="flex font-bold justify-between mt-4 mb-4">
+            <div className="flex gap-1">
+
+            Original Data:
+            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal text-primary">
+
+            {source?.title}
+            </span>
+            </Link>
+              <MuiTooltip title="The above data are secondary data compiled from different sources. Please click here to see
+  the original sources and access the raw data for the entire dataset. You will also find all
+  appendixes and attached original files, if available, stored in the REDCap for the Data
+  Repository via the public report link.">
+            <CircleHelp className="size-3" color="#0d7dff" />
+            </MuiTooltip>
+        </div>
+        <div className="font-bold text-primary">
+          <Link href={'/data-entry-teams'}>
+          Data Entry Teams  
+          </Link>
+        </div>
+            </div>
         </div>
       )}
     </div>
