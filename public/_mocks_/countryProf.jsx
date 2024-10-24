@@ -144,8 +144,8 @@ const countryProfileData = [
 <div key="16" className="mt-2">The details of these materials, laws, rulings, and various regulations for this report were gathered from available literature, selected data, statistics, and policies from some sources that preferred to remain anonymous. Some information was provided to the research team through interviews and meetings with stakeholders, as well as from reports and documents from international organizations.</div>
     ],
     "returnPolicyTimeline": true,
-    "returnFlowChart": false,
-    "actorReturnDiagram": false
+    "returnFlowChart": true,
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Jordan",
