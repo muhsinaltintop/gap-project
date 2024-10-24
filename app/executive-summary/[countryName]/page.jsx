@@ -1,6 +1,6 @@
 import React from "react";
 import PlainText from "@/app/_components/_atoms/PlainText";
-import countryProfileData from "../../../public/_mocks_/countryProfile.json";
+import countryProfileData from "../../../public/_mocks_/countryProf";
 
 const page = ({ params }) => {
   const country = countryProfileData?.find(
@@ -12,6 +12,7 @@ const page = ({ params }) => {
         <h1 className="text-xl font-bold">
         {params.countryName} Executive Summary
       </h1>
+      {console.log(countryProfileData)}
       <div className="w-9/12 align-justify text-justify ">
         <PlainText text={country?.executiveSummary}></PlainText>
       </div>
