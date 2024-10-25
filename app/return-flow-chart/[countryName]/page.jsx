@@ -5,7 +5,7 @@ const page = ({ params }) => {
   return (
     <div>
       <h1 className="text-xl font-bold">
-        {params.countryName} Return Policy Timeline
+        {params.countryName} Return Flow Chart
       </h1>
 
       <PDFViewer filename={`${params.countryName}_rfc`} />

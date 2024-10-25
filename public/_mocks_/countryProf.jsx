@@ -27,7 +27,7 @@ const countryProfileData = [
        <div key="8" className="mt-2">Sweden entered into 15 bilateral readmission agreements with various countries, both within and outside the EU, starting with Germany in 1956, as indicated by the schedule in an official document4 provided through communication with the Migration Agency. These countries include Iraq, Bulgaria, Cyprus, Estonia, France, Kosovo, Croatia, Estonia, Latvia, Lithuania, Romania, Switzerland, Germany, and Vietnam. Furthermore, from 2008 to 2022, Sweden has been a party to 18 EU and bilateral agreements, extending to countries such as Ukraine, Turkey, Sri Lanka, Serbia, Russia, Pakistan, Montenegro, Moldova, North Macedonia, Macao, Cape Verde, Hong Kong, Georgia, Bosnia, Belarus, Azerbaijan, Armenia, and Albania</div>
     ],
     "returnPolicyTimeline": true,
-    "returnFlowChart": false,
+    "returnFlowChart": true,
     "actorReturnDiagram": true
   },
   {
@@ -68,7 +68,7 @@ const countryProfileData = [
       <div key="11" className="mt-2">- failure to ensure sufficient transparency in monitoring the implementation of return decisions, in particular by preventing the Ombudsman from monitoring.</div>
     ],
     "returnPolicyTimeline": true,
-    "returnFlowChart": false,
+    "returnFlowChart": true,
     "actorReturnDiagram": true
   },
   {
@@ -150,17 +150,20 @@ const countryProfileData = [
   {
     "countryName": "Jordan",
     "euMember": false,
-    "executiveSummary": "",
-    "returnPolicyTimeline": false,
+    "executiveSummary": [<div key="1" className="mt-2">By Rasha Istaiteyeh, Marah.Almalalha and Rola Jaber</div>, 
+    <div key="2" className="mt-2">Jordan has developed a diplomatic initiative to encourage the voluntary return of Syrian refugees. However, collaboration between international stakeholders remains limited, and efforts to promote voluntary return have not been effective. The return policies are unclear to Syrian refugees, who often lack access to relevant information.</div>,
+    <div key="3" className="mt-2">The decision for Syrian refugees to return largely depends on the political stability in Syria. Additionally, the infrastructure in Syria is weak and underdeveloped, further discouraging returns. In Jordan, there is no enforced return or irregular migration of Syrian refugees. There have been 69,417 recorded cases of spontaneous returns from 2016 to 2023 and 243,610 asylum applications between 2015 and June 2024. Data on assisted returns, readmitted citizens, entry refusals and pushbacks, foreign nationals ordered to leave, and alternative or various returns is not available. Dublin returns do not apply to Jordan.</div>
+],
+    "returnPolicyTimeline": true,
     "returnFlowChart": false,
-    "actorReturnDiagram": false
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Afghanistan",
     "euMember": false,
     "executiveSummary": [
-      "For the majority of Afghan migration is a panacea for all socio-political and economic ills of the society.  In other words, people perceive migration as the best coping mechanism against  the day-to-day livelihood challenges ranging from family conflicts, physical insecurity, political instability and socioeconomic hardships. For example, Ahmad, a returnee respondent from Mazar-e Sharif who left Afghanistan in 2018, found out-migration as the best solution against the life threats caused by a conflict with powerful figures in his locality. Similarly, for Fawad, a returnee who left Afghanistan for Germany in 2019, out-migration was a life-saving strategy to escape assassination attempts, in one of which his brother-in-law lost his life. Lack of or absence of reliable and trustworthy legal institutions and functioning safeguard systems, particularly in rural areas force Afghans to opt out-migration as a life-saving mechanism to overcome security challenges that they face in their routine day-to-day activities.",
-      "Data from the field observations indicate that a range of psychological factors  (some may have root in trauma felt in early childhood due to war and its associated challenges) from feeling inconsequential, inability to attract family and social attraction, depression, post traumatic syndrome (PTSD), anxiety, and sentiments of proving oneself capable of achieving success in life have significant contribution in navigating aspiration for migration as a life saving coping mechanism. Lack of economic opportunity, lack or no social services, and ambiguities surrounding political situations have left Afghan families with no prospects for the future. Thus, for Afghan families too migration is perceived as an ideal life-saving strategy to (i) protect children from physical and psychological harm and (ii) secure economic insurance for the families."
+      <div key="1" className="mt-2">For the majority of Afghan migration is a panacea for all socio-political and economic ills of the society.  In other words, people perceive migration as the best coping mechanism against  the day-to-day livelihood challenges ranging from family conflicts, physical insecurity, political instability and socioeconomic hardships. For example, Ahmad, a returnee respondent from Mazar-e Sharif who left Afghanistan in 2018, found out-migration as the best solution against the life threats caused by a conflict with powerful figures in his locality. Similarly, for Fawad, a returnee who left Afghanistan for Germany in 2019, out-migration was a life-saving strategy to escape assassination attempts, in one of which his brother-in-law lost his life. Lack of or absence of reliable and trustworthy legal institutions and functioning safeguard systems, particularly in rural areas force Afghans to opt out-migration as a life-saving mechanism to overcome security challenges that they face in their routine day-to-day activities.</div>,
+      <div key="2" className="mt-2">Data from the field observations indicate that a range of psychological factors  (some may have root in trauma felt in early childhood due to war and its associated challenges) from feeling inconsequential, inability to attract family and social attraction, depression, post traumatic syndrome (PTSD), anxiety, and sentiments of proving oneself capable of achieving success in life have significant contribution in navigating aspiration for migration as a life saving coping mechanism. Lack of economic opportunity, lack or no social services, and ambiguities surrounding political situations have left Afghan families with no prospects for the future. Thus, for Afghan families too migration is perceived as an ideal life-saving strategy to (i) protect children from physical and psychological harm and (ii) secure economic insurance for the families.</div>
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
@@ -169,19 +172,19 @@ const countryProfileData = [
   {
     "countryName": "Nigeria",
     "euMember": false,
-    "executiveSummary": "",
-    "returnPolicyTimeline": false,
-    "returnFlowChart": false,
-    "actorReturnDiagram": false
+    "executiveSummary": [<div key="1" className="mt-2">Nigeria&apos;s approach to return and reintegration governance is characterized by a multi-layered framework that engages various actors across international, national, subnational, and civil society levels. International organisations such as IOM, ICMPD and GIZ, provide crucial support for Nigeria&apos;s return and reintegration initiatives by offering resources and expertise to enhance effectiveness of the initiatives. Key federal government agencies involved in managing the return and reintegration processes in Nigeria include the National Commission for Refugees, Migrants, and Internally Displaced Persons (NCFRMI) which is the coordinating agency, the Federal Ministry of Humanitarian Affairs and Poverty Alleviation (FMHAPA), the Ministry of Foreign Affairs (MFA), the Federal Ministry of Justice (FMOJ), the National Emergency Management Agency (NEMA), the Nigeria Immigration Service (NIS), the National Agency for the Prohibition of Trafficking in Persons (NAPTIP), the Federal Ministry of Women Affairs and Social Development (FMWASD), the Federal Ministry of Health (FMOH) and the Federal Ministry of Labour and Employment (FMLE). These agencies collaborate to implement policies and programs that ensure the safe return and successful reintegration of migrants. At the subnational level, state governments, especially in Lagos, Edo, Delta, and Kano actively participate in return and reintegration activities. However, the return and successful reintegration of migrants varies across the states, with some states demonstrating a more proactive approach than others. Furthermore, some state agencies and civil society organizations (CSOs) form Case Management Expert Teams and Monitoring and Evaluation Teams to assess the effectiveness of reintegration programs in their respective states. This collaboration between the different state and non-state actors at various levels of engagement ensures that the reintegration needs of returnees are adequately addressed. While local partners of the European Reintegration Support Organisation (ERSO) network sometimes travel abroad to promote the benefits of Assisted Voluntary Return (AVR) to failed asylum seekers, returnees are expected to receive immediate support upon arrival, CSOs including advocacy groups, also play a vital role in supporting returnees. Their activities often overlap, thereby re-enforcing and enhancing the overall support framework. The return process of Nigerian returnees consists of four stages: Pre-departure, Arrival, Reintegration, and Monitoring and Evaluation. The reintegration stage focuses on providing psychosocial support, vocational training, and family reunification efforts while the monitoring and evaluation track the progress of returnees, ensuring sustainable reintegration. Thus, this comprehensive multi-actor framework illustrates Nigeria&apos;s commitment to facilitating effective return and reintegration processes. By leveraging the strengths of various stakeholders, Nigeria aims to create a robust support system for returnees, ensuring their successful reintegration into society and addressing the complexities of migration challenges.</div>],
+    "returnPolicyTimeline": true,
+    "returnFlowChart": true,
+    "actorReturnDiagram": true
   },
   {
     "countryName": "Morocco",
     "euMember": false,
     "executiveSummary": [
-      "Context: Return migration is a critical aspect of migration dynamics. Positioned on the two main routes of irregular migration to Europe, Morocco serves as a transit point for migrants traveling through the Western Mediterranean route, linking Morocco with the Spanish mainland, the Balearic Islands, andthe two occupied Moroccan enclaves of Ceuta and Melilla, as well as the Western African Atlantic route connecting the coasts of West African countries to the Canary Islands. This geographical significance necessitates reinforced border control, contributing to continuous arrests and pushbacks by national authorities.",
-      "With an estimate of more than 100,000 irregular migrants living in its territory, Morocco faces significant challenges in managing migration flows, including return to countries of origin, and protecting migrants&apos; rights. Additionally, Morocco is an essential partner for the EU in migration management, particularly in combating irregular migration and border control. Cooperation between the EU and Morocco is crucial for addressing common migration challenges and promoting regional development.",
-      "Despite adopting progressive migration policies, including a ‘’New immigration policy’’ in 2013, the National Strategy for Immigration and Asylum (SNIA), Morocco still faces internal challenges in migration, including protecting migrants&apos; rights and integrating them into Moroccan society. Bridging these gaps and developing more effective approaches to return migration requires extensive research and collaboration among Moroccan authorities, civil society, international organizations, and development partners. This collaboration is essential to develop policies and programs that meet migrants&apos; needs and advocate for dignified and safe return migration.",
-      "As a key member of the GAPs project, the case of Morocco is central to the studied migration dynamics. Its pivotal role in migration routes to Europe strengthens its involvement in proposing governance and cooperation models for return migration."
+      <div key="1" className="mt-2">Context: Return migration is a critical aspect of migration dynamics. Positioned on the two main routes of irregular migration to Europe, Morocco serves as a transit point for migrants traveling through the Western Mediterranean route, linking Morocco with the Spanish mainland, the Balearic Islands, andthe two occupied Moroccan enclaves of Ceuta and Melilla, as well as the Western African Atlantic route connecting the coasts of West African countries to the Canary Islands. This geographical significance necessitates reinforced border control, contributing to continuous arrests and pushbacks by national authorities.</div>,
+      <div key="2" className="mt-2">With an estimate of more than 100,000 irregular migrants living in its territory, Morocco faces significant challenges in managing migration flows, including return to countries of origin, and protecting migrants&apos; rights. Additionally, Morocco is an essential partner for the EU in migration management, particularly in combating irregular migration and border control. Cooperation between the EU and Morocco is crucial for addressing common migration challenges and promoting regional development.</div>,
+      <div key="3" className="mt-2">Despite adopting progressive migration policies, including a ‘’New immigration policy’’ in 2013, the National Strategy for Immigration and Asylum (SNIA), Morocco still faces internal challenges in migration, including protecting migrants&apos; rights and integrating them into Moroccan society. Bridging these gaps and developing more effective approaches to return migration requires extensive research and collaboration among Moroccan authorities, civil society, international organizations, and development partners. This collaboration is essential to develop policies and programs that meet migrants&apos; needs and advocate for dignified and safe return migration.</div>,
+      <div key="4" className="mt-2">As a key member of the GAPs project, the case of Morocco is central to the studied migration dynamics. Its pivotal role in migration routes to Europe strengthens its involvement in proposing governance and cooperation models for return migration.</div>
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
@@ -191,9 +194,43 @@ const countryProfileData = [
     "countryName": "Tunisia",
     "euMember": false,
     "executiveSummary": [
-      "Placeholder paragraph 1",
-      "Placeholder paragraph 2",
-      "Placeholder paragraph 3"
+    <div key="1" className="mt-2">This comprehensive executive summary provides an in-depth analysis of Tunisian return migration, drawing extensively on data meticulously compiled by Manel Kacem from Eurostat and Frontex, alongside critical insights from Hanen Ben Othman&apos;s article on the GAPs website and Emna Garbaa’s findings from the Italian National Guarantor of Liberties Annual Reports</div>,
+        <div key="2" className="mt-2">**** Manel Kacem&apos;s Analysis: Detailed Statistical Overview</div>,
+        
+        <div key="3" className="mt-2">Manel Kacem&apos;s rigorous work with Eurostat and Frontex data sheds light on the multifaceted aspects of Tunisian return migration. The analysis spans from 2014 to 2023, offering a granular view of the migration trends, with key emphasis on returnees. </div>,
+        
+        <div key="4" className="mt-2">- **Overall Trends**: The data illustrates a fluctuating pattern in the number of returnees, with a notable peak in 2022 at 23,690, indicating the dynamic nature of migration flows. </div>,
+        
+        <div key="5" className="mt-2">- **Country-Specific Returns**:</div>,
+         <div key="6" className="mt-2">- **From All EU + Associated Countries**: The number of returnees saw a steady increase from 11,260 in 2021 to 23,690 in 2022, followed by a slight decrease to 14,075 in 2023. </div>,
+          <div key="7" className="mt-2">- **From France**: A predominant source, with returnees constituting 74% of all returns in 2021, decreasing to 44% in 2022, and rebounding to 62% in 2023. </div>,
+          <div key="8" className="mt-2">- **From Italy and Austria**: Italy&apos;s returnees increased from 10% in 2021 to 19% in 2023. Austria saw a significant spike to 32% in 2022, emphasizing the variance in return patterns. </div>,
+        
+        <div key="9" className="mt-2">- **Demographic Details**: Overwhelmingly, more than 97% of returnees are male, predominantly aged between 18 and 34, highlighting a youth-centric demographic in Tunisian migration trends. </div>,
+        
+        <div key="10" className="mt-2">- **Return Decisions and Enforcements**: There&apos;s a marked increase in return decisions, reaching 29,594 in 2021, with effective returns also showing a corresponding upward trend. </div>,
+        
+        <div key="11" className="mt-2">****Hanen Ben Othman&apos;s Insights: Contextualizing Migration</div>,
+        
+        <div key="12" className="mt-2">Hanen Ben Othman&apos;s analysis offers a contextual backdrop to the statistical data, emphasizing Tunisia&apos;s evolving role in Mediterranean migration as both a source and a transit country. The article highlights the legal and humanitarian challenges faced by migrants and underscores the imperative for policies that respect human rights and adhere to international law. </div>,
+        
+        <div key="13" className="mt-2">Synthesis and Policy Implications</div>,
+        
+        <div key="14" className="mt-2">The synthesis of Manel Kacem&apos;s detailed statistical analysis with Hanen Ben Othman&apos;s contextual insights presents a nuanced picture of Tunisian return migration. The data not only reflects the complex dynamics of migration flows but also the demographic profiles of the returnees and the varying contributions of different EU countries to these trends. </div>,
+        
+        <div key="15" className="mt-2">Policy recommendations include: </div>,
+        <div key="16" className="mt-2">- **Enhancing Legal Frameworks**: Strengthening migration laws and practices to align with international human rights standards. </div>,
+        <div key="17" className="mt-2">- **Collaborative Approaches**: Promoting regional and international cooperation to manage migration flows effectively, ensuring the protection and rights of migrants. </div>,
+        <div key="18" className="mt-2">- **Addressing Root Causes**: Implementing comprehensive strategies to tackle the underlying factors driving migration, such as economic instability and lack of opportunities. </div>,
+        
+        <div key="19" className="mt-2">****Emna Garbaa&apos;s synthesis of the data recollected from The Italian National Guarantor annual Parliamentary reports from 2019 to 2022: </div>,
+        
+        <div key="20" className="mt-2">In 2019, Italy organized 66 charter flights to Tunisia, repatriating 2,116 individuals. This was part of a broader effort that included returns to Nigeria and Egypt, with 5 and 3 flights respectively. The report also highlights the administrative detention concerns within maritime operations, emphasizing the need for a reliable legal basis for detaining repatriated citizens. </div>,
+         <div key="21" className="mt-2">Combining the numerical data from 2019 and 2022: - In 2019, 2,116 individuals were repatriated to Tunisia via 66 charter flights.. - In 2021, 1,221 people were transferred to CPRs (Custody and Repatriation Centers) and received orders for forced return, with Tunisians (1,049) and Egyptians (170) being the primary nationalities repatriated. Tunisia was the top countries for forced returns, having 1,945 out of 3,420 forced returns. - The report also notes 16 Tunisian forced return flights compared to 8 Egyptian ones. These figures underscore the scale of Italy&apos;s forced return operations and highlight the focus on specific nationalities, especially Tunisians. The reports also raise concerns about the human rights situation in the countries of return, particularly Egypt, due to its alarming human rights records. </div>,
+        
+        
+        <div key="22" className="mt-2">In conclusion, this executive summary underscores the complexities of Tunisian return migration, calling for informed, humane, and collaborative policy responses. The detailed statistics from Manel Kacem&apos;s work, combined with Hanen Ben Othman&apos;s contextual analysis, and Emna Garbaa’s synthesis from the Italian perspective provide a solid foundation for understanding and addressing the challenges of migration involving Tunisia. </div>
+        
     ],
     "returnPolicyTimeline": true,
     "returnFlowChart": true,
@@ -203,13 +240,14 @@ const countryProfileData = [
     "countryName": "Canada",
     "euMember": false,
     "executiveSummary": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula magna eget tellus consectetur, at fermentum sem consectetur. Phasellus tincidunt purus eu magna sagittis, nec tristique velit posuere. Nullam auctor sem nec justo venenatis, quis fermentum lorem consequat. Nulla facilisi. Donec in urna ac dui interdum venenatis. Sed auctor, ante quis convallis vestibulum, nunc ex consequat velit, nec convallis quam turpis a velit. Phasellus malesuada velit non odio ultrices, nec convallis sem suscipit.",
-      "Fusce ullamcorper sapien et mauris dapibus feugiat. Sed interdum risus ac tellus aliquam, in luctus purus scelerisque. Nunc rutrum, mauris at convallis fermentum, sapien lacus iaculis libero, eu bibendum dui velit vel nisi. In vehicula tellus ac libero malesuada, vitae vulputate risus luctus. Proin nec ipsum ultricies, consequat enim non, consectetur libero. Pellentesque non gravida nulla.",
-      "Maecenas ac est nec leo congue posuere. Vivamus eget ligula vitae mi interdum varius. Integer lacinia, nunc sit amet gravida convallis, ipsum purus pharetra diam, eget condimentum velit arcu nec justo. Nam ac tortor vitae nunc tincidunt fermentum. Suspendisse ut libero eu dolor congue placerat. Nulla facilisi. Cras molestie libero sed dolor fermentum, nec molestie enim varius."
+      <div key="1" className="mt-2">Younes Ahouga</div>,
+<div key="2" className="mt-2">Toronto Metropolitan University</div>,
+
+<div key="3" className="mt-2">This report examines the legal and institutional frameworks and operational infrastructure concerned with returning rejected asylum seekers and other unauthorized migrants from Canada. The analysis shows that the construction of the legal framework that regulates the Canadian return policy has been largely driven by security and counterterrorism concerns. The report also outlines gaps in the legal and institutional frameworks, operational infrastructure, and international cooperation that sustain the return of foreign nationals. These gaps threaten the human rights of asylum seekers and migrants, highlight the operational difficulties in tracking the status of removal orders, and reflect the lack of cooperation of some countries of origin. To address these gaps, the report suggests de-securitizing the Canadian return policy, establishing an independent oversight body for the Canada Border Services Agency, providing return and reintegration assistance to rejected asylum seekers, and concluding bilateral readmission agreements with countries of origin.</div>
     ],
-    "returnPolicyTimeline": false,
+    "returnPolicyTimeline": true,
     "returnFlowChart": false,
-    "actorReturnDiagram": false
+    "actorReturnDiagram": true
   },
   {
     "countryName": "United Kingdom",
