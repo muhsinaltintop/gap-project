@@ -245,9 +245,9 @@ const countryProfileData = [
 
 <div key="3" className="mt-2">This report examines the legal and institutional frameworks and operational infrastructure concerned with returning rejected asylum seekers and other unauthorized migrants from Canada. The analysis shows that the construction of the legal framework that regulates the Canadian return policy has been largely driven by security and counterterrorism concerns. The report also outlines gaps in the legal and institutional frameworks, operational infrastructure, and international cooperation that sustain the return of foreign nationals. These gaps threaten the human rights of asylum seekers and migrants, highlight the operational difficulties in tracking the status of removal orders, and reflect the lack of cooperation of some countries of origin. To address these gaps, the report suggests de-securitizing the Canadian return policy, establishing an independent oversight body for the Canada Border Services Agency, providing return and reintegration assistance to rejected asylum seekers, and concluding bilateral readmission agreements with countries of origin.</div>
     ],
-    "returnPolicyTimeline": true,
+    "returnPolicyTimeline": false,
     "returnFlowChart": false,
-    "actorReturnDiagram": true
+    "actorReturnDiagram": false
   },
   {
     "countryName": "United Kingdom",
