@@ -75,7 +75,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
           ? "Policy/Legislation"
           : pathName === "/return-infrastructure"
           ? "Return Infrastructure"
-          : ""}
+          : pathName === "/international-cooperation"? "International Cooperation" :""}
       </h2>
       <p className="font-light">*Last Updated 26/06/2024</p>
 

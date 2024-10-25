@@ -7,7 +7,7 @@ import {
   ZoomableGroup,
 } from "react-simple-maps";
 import { Tooltip } from "@mui/material";
-import countryProfileData from "../../public/_mocks_/countryProf.jsx";
+import countryProfileData from "../../public/_mocks_/countryProfile.jsx";
 import ModalComponent from "./ModalComponent";
 
 const MapChart = () => {
