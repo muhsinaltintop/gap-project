@@ -1,6 +1,6 @@
 import React from "react";
 import CountryCard from "../_components/CountryCard";
-import countryProfileData from "../../public/_mocks_/countryProfile.json";
+import countryProfileData from "../../public/_mocks_/countryProfile.jsx";
 
 const page = () => {
   return (
