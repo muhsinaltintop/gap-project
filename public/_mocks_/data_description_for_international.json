@@ -18,13 +18,13 @@
     "width" : "w-4"
   },
   {
-    "label": "signatoryState",
+    "label": "Signatory State",
     "accessor": "signatoryState",
     "description": "signatoryState",
     "width" : "w-4"
   },
   {
-    "label": "signatureDate",
+    "label": "Signature Date",
     "accessor": "signatureDate",
     "description": "signatureDate",
     "width" : "w-4"
@@ -36,15 +36,9 @@
     "width" : "w-4"
   },
   {
-    "label": "negotiationStartDate",
+    "label": "Negotiation Start Date",
     "accessor": "negotiationStartDate",
     "description": "negotiationStartDate",
-    "width" : "w-8"
-  },
-  {
-    "label": "url",
-    "accessor": "url",
-    "description": "url",
     "width" : "w-8"
   },
   { 
