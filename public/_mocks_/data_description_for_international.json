@@ -3,13 +3,13 @@
     "label": "Country",
     "accessor": "country",
     "description": "Country Name",
-    "width" : "w-2"
+    "width" : "w-4"
   },
   {
     "label": "Policy Title",
     "accessor": "policyName",
     "description": "Policy Title in English",
-    "width" : "w-4"
+    "width" : "w-8"
   },
   {
     "label": "Type of Biletral Agreement",
@@ -20,37 +20,37 @@
   {
     "label": "Signatory State",
     "accessor": "signatoryState",
-    "description": "signatoryState",
+    "description": "Signatory State",
     "width" : "w-4"
   },
   {
     "label": "Signature Date",
     "accessor": "signatureDate",
-    "description": "signatureDate",
+    "description": "Signature Date",
     "width" : "w-4"
   },
   {
-    "label": "entryIntoForceDate",
+    "label": "Entry Into Force Date",
     "accessor": "entryIntoForceDate",
-    "description": "entryIntoForceDate",
+    "description": "Entry Into Force Date",
     "width" : "w-4"
   },
   {
     "label": "Negotiation Start Date",
     "accessor": "negotiationStartDate",
-    "description": "negotiationStartDate",
-    "width" : "w-8"
+    "description": "Negotiation Start Date",
+    "width" : "w-4"
   },
   { 
-    "label": "mediaCovarageUrl",
-    "accessor": "mediaCovarageUrl",
-    "description": "mediaCovarageUrl",
-    "width" : "w-8" 
+    "label": "Media CoverageUrl",
+    "accessor": "mediaCoverageUrl",
+    "description": "Url for Media Coverage",
+    "width" : "w-4" 
   },
   { 
-    "label": "note",
+    "label": "Note",
     "accessor": "note",
-    "description": "note",
-    "width" : "w-8" 
+    "description": "Notes on Policies",
+    "width" : "w-4" 
   }
 ]

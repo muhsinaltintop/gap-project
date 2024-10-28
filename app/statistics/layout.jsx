@@ -11,7 +11,6 @@ export default function StatisticsLayout({ children, params }) {
     
     return (
       <div>
-        {console.log("params:", params)}
         <div className="ml-4 mb-8">
         <PageTitle title={title}/>  
         </div>      

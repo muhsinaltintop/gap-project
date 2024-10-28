@@ -12,7 +12,6 @@ const page = ({ params }) => {
         <h1 className="text-xl font-bold">
         {params.countryName} Executive Summary
       </h1>
-      {console.log(countryProfileData)}
       <div className="w-9/12 align-justify text-justify ">
         <PlainText text={country?.executiveSummary}></PlainText>
       </div>

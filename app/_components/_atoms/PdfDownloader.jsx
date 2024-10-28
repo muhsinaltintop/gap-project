@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { PDFDownloadLink } from '@react-pdf/renderer'
 import { HardDriveDownload, Loader2 } from 'lucide-react'
 import Button from './Button'
-import ReportPDF from './ReportPDF'
+import ReportPDFPolicyLegislation from './ReportPDFPolicyLegislation'
+import ReportPDFReturnInfrastructure from './ReportPDFReturnInfrastructure'
+import ReportPDFInternational from './ReportPDFInternational'
 
 const PdfDownloader = ({policies, headers, pathName, selectedCountries}) => {
     const [isClient, setIsClient] =useState(false)
@@ -15,8 +17,8 @@ const PdfDownloader = ({policies, headers, pathName, selectedCountries}) => {
 
   return isClient ? (
     <PDFDownloadLink
-    fileName={pathName === "/policy-legislation-map" ? (`GAP_Policy_Mapping_(${selectedCountries})`): "gaps_report"}
-    document={<ReportPDF headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />}
+    fileName={pathName === "/policy-legislation-map" ? (`GAP_Policy_Mapping_(${selectedCountries})`): pathName === "/return-infrastructure" ? (`GAP_Return_Infrastructure_(${selectedCountries})`) : pathName === "/international-cooperation" ? (`GAP_International_Cooperation_(${selectedCountries})`) : "gaps_report"}
+    document={pathName === "/policy-legislation-map" ? (<ReportPDFPolicyLegislation headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/return-infrastructure" ? (<ReportPDFReturnInfrastructure headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/international-cooperation" ? (<ReportPDFInternational headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : ""}
     
     >
         <Button label={"Download PDF"} icon={

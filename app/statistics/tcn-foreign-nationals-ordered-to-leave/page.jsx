@@ -163,7 +163,6 @@ const Page = () => {
 
   return (  
       <div className="w-9/10 mx-6">
-        {console.log("pN:", source)}
         <div className="my-2">
         This section contains five different, but related categories  indicated below: 
         </div>

@@ -76,18 +76,19 @@ const styles = StyleSheet.create({
     paddingTop: 10,
   },
 
-  col1: { flex: 3 },
-  col2: { flex: 7 },
-  col3: { flex: 7 },
-  col4: { flex: 4 },
-  col5: { flex: 4 },
-  col6: { flex: 4 },
-  col7: { flex: 6 },
-  col8: { flex: 11 },
-  col9: { flex: 8 },
+    col1: { flex: 3 },
+    col2: { flex: 7 },
+    col3: { flex: 7 },
+    col4: { flex: 4 },
+    col5: { flex: 4 },
+    col6: { flex: 4 },
+    col7: { flex: 6 },
+    col8: { flex: 11 },
+    col9: { flex: 8 },
+    col10: { flex: 8 }
 });
 
-const ReportPDF = ({ policies, headers, pathName, selectedCountries }) => {
+const ReportPDFInternational = ({ policies, headers, selectedCountries }) => {
 
   const getCurrentDate = () => {
     const now = new Date();
@@ -98,7 +99,7 @@ const ReportPDF = ({ policies, headers, pathName, selectedCountries }) => {
     <Document>
        <Page style={styles.page} orientation='landscape'>
         <View style={styles.table}>
-          <Text style={styles.tableHeader}>{pathName === "/policy-legislation-map" ? (`Return Related Legislation and Policy Mapping (${selectedCountries})`): ""}</Text>
+          <Text style={styles.tableHeader}>{ (`International Cooperation (${selectedCountries})`)}</Text>
           <View style={styles.tableRow}>
             {headers?.map((header, indexHeader) => (
               <View key={indexHeader} style={[styles.tableCell, styles.headerCell, styles[`col${indexHeader + 1}`]]}>
@@ -110,34 +111,34 @@ const ReportPDF = ({ policies, headers, pathName, selectedCountries }) => {
           {/* Data Rows */}
           {policies.map((policy, index) => (
             <View key={index} style={styles.tableRow}>
-              <View style={[styles.tableCell, styles.col1]}>
-                <Text style={styles.cellText}>{policy.country}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col2]}>
-                <Text style={styles.cellText}>{policy.policyName}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col3]}>
-                <Text style={policy.country === "Greece" ? [styles.cellText, styles.greek] : styles.cellText}>{policy.originalPolicyName}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col4]}>
-                <Text style={styles.cellText}>{policy.announcedYear}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col5]}>
-                <Text style={styles.cellText}>{policy.typeOfLegislation}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col6]}>
-                <Text style={styles.cellText}>{policy.levelOfLegislation}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col7]}>
-                <Text style={styles.cellText}>{policy.policyTypeArea}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col8]}>
-                <Text style={styles.cellText}>{policy.policyDescription}</Text>
-              </View>
-              <View style={[styles.tableCell, styles.col9]}>
-                <Text style={styles.cellText}>{policy.notes}</Text>
-              </View>
+            <View style={[styles.tableCell, styles.col1]}>
+              <Text style={styles.cellText}>{policy.country}</Text>
             </View>
+            <View style={[styles.tableCell, styles.col2]}>
+              <Text style={styles.cellText}>{policy.policyName}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col3]}>
+              <Text style={styles.cellText}>{policy.typeOfBiletralAgreement}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col4]}>
+              <Text style={styles.cellText}>{policy.signatoryState}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col5]}>
+              <Text style={styles.cellText}>{policy.signatureDate}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col6]}>
+              <Text style={styles.cellText}>{policy.entryIntoForceDate}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col7]}>
+              <Text style={styles.cellText}>{policy.negotiationStartDate}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col8]}>
+              <Text style={styles.cellText}>{policy.mediaCoverageUrl}</Text>
+            </View>
+            <View style={[styles.tableCell, styles.col9]}>
+              <Text style={styles.cellText}>{policy.note}</Text>
+            </View>
+          </View>
           ))}
         </View>
         <Text style={styles.footer}>Document downloaded on {getCurrentDate()} from https://www.returnmigration.eu/</Text>
@@ -146,4 +147,4 @@ const ReportPDF = ({ policies, headers, pathName, selectedCountries }) => {
   );
 };
 
-export default ReportPDF;
+export default ReportPDFInternational;
