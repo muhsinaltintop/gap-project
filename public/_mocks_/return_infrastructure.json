@@ -177,7 +177,7 @@
   },
   {
     
-    "policyName": "Germany: R�ckkehrf�rderprogramme REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programm, 2015, expanded with the StarthilfePlus programme for reintegration 2017",
+    "policyName": "Germany: Rückkehrförderprogramme REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programm, 2015, expanded with the StarthilfePlus programme for reintegration 2017",
     "policyTypeArea": {
       "assistedReturn": true,
       "borderManagement": false,
@@ -376,7 +376,7 @@
     "all": false,
     "specific": true,
     "exceptions": false},
-    "specific": "Benin, Burkina Faso, China, Colombia, C�te d'Ivoire, Guinea Bissau, Mali, Niger, Russian Federation, Senegal, Sierra Leone, Sudan, Togo, Algeria*, Armenia*, Bangladesh*, DR Congo (Kinshasa)*, Egypt*, Ethiopia*, The Gambia*, Ghana*, Guinea*, India*, Iraq*, Cameroon*, Kenya*, Mongolia*, Morocco*, Nigeria*, Pakistan*, Sri Lanka*, Tajikistan, Tunisia*, Turkey* and Vietnam*, Azerbaijan**, Iran**, Lebanon**,  Bosnia-Herzegovina***, Montenegro***, Albania****, Georgia****, Moldova****, Macedonia****, Serbia****",
+    "specific": "Benin, Burkina Faso, China, Colombia, Cote d'Ivoire, Guinea Bissau, Mali, Niger, Russian Federation, Senegal, Sierra Leone, Sudan, Togo, Algeria*, Armenia*, Bangladesh*, DR Congo (Kinshasa)*, Egypt*, Ethiopia*, The Gambia*, Ghana*, Guinea*, India*, Iraq*, Cameroon*, Kenya*, Mongolia*, Morocco*, Nigeria*, Pakistan*, Sri Lanka*, Tajikistan, Tunisia*, Turkey* and Vietnam*, Azerbaijan**, Iran**, Lebanon**,  Bosnia-Herzegovina***, Montenegro***, Albania****, Georgia****, Moldova****, Macedonia****, Serbia****",
     "exceptions": "",
     "digitalInfrastructuresTechnologies": "",
     "materialInfrastructure": "",
@@ -431,7 +431,7 @@
       "massExpulsion": false,
       "preRemovalDetention": false
     },
-    "actorsInvolved": "Baden-W�rttemberg, Berlin, Bremen, Lower Saxony, North Rhine-Westphalia (only voluntary returnees), Saxony, Saxony-Anhalt, Schleswig-Holstein, Thuringia (only voluntary returnees)  BAMF",
+    "actorsInvolved": "Baden-Württemberg, Berlin, Bremen, Lower Saxony, North Rhine-Westphalia (only voluntary returnees), Saxony, Saxony-Anhalt, Schleswig-Holstein, Thuringia (only voluntary returnees)  BAMF",
     "summary": "The project offers reintegration support after your return to Kosovo to enable you to sustainably reintegrate in your country of origin.",
     "areaScaleImplementation":
       {"global": false,
@@ -467,7 +467,7 @@
       "preRemovalDetention": false
     },
     "actorsInvolved": "Funded by BAMF and implemented by GIZ",
-    "summary": "The project focuses in particular on the often very demanding initial phase immediately after arrival in Albania. It helps those returning to settle in more easily and to generate individual prospects for a new beginning. To this end, the bridge component offers personal support based on trust as well as various counselling services and benefits in kind.   For persons with long-term toleration (at least 2 years), reintegration support under JRS has been available since January 1, 2023. Therefore, as of May 01, 2023 (cut-off date: departure), they are excluded from support under the bridging component Albania.   only the following states are participating in the program: Baden-W�rttemberg, Bavaria, Berlin, Brandenburg, Bremen, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.",
+    "summary": "The project focuses in particular on the often very demanding initial phase immediately after arrival in Albania. It helps those returning to settle in more easily and to generate individual prospects for a new beginning. To this end, the bridge component offers personal support based on trust as well as various counselling services and benefits in kind.   For persons with long-term toleration (at least 2 years), reintegration support under JRS has been available since January 1, 2023. Therefore, as of May 01, 2023 (cut-off date: departure), they are excluded from support under the bridging component Albania.   only the following states are participating in the program: Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.",
     "areaScaleImplementation":
       {"global": false,
       "EU": false,
@@ -502,7 +502,7 @@
       "preRemovalDetention": false
     },
     "actorsInvolved": "BMZ and GIZ",
-    "summary": "On behalf of the German Federal Ministry for Economic Cooperation and Development (BMZ), the Deutsche Gesellschaft f�r Internationale Zusammenarbeit (GIZ) GmbH operates so-called \"Centers for Migration and Development\" in various countries, which accompany returnees during their reintegration  The centers advise and support you if you have returned from Germany, Europe or other countries to one of the following countries and need assistance with your local social and economic reintegration",
+    "summary": "On behalf of the German Federal Ministry for Economic Cooperation and Development (BMZ), the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH operates so-called \"Centers for Migration and Development\" in various countries, which accompany returnees during their reintegration  The centers advise and support you if you have returned from Germany, Europe or other countries to one of the following countries and need assistance with your local social and economic reintegration",
     "areaScaleImplementation":
       {"global": false,
       "EU": false,
@@ -1630,7 +1630,7 @@
       "preRemovalDetention": false
     },
     "actorsInvolved": "IOM, Presidency of Migration Management, Provincial Directorates of Migration Management,  Law Enforcement Units, Removal Centers, NGOs",
-    "summary": "Assisted Voluntary Return and Reintegration (AVRR) has been a core activity of IOM T�rkiye since 2009 and is integral to ensuring a comprehensive approach to migration management. The AVRR programme facilitates the regular return and reintegration of migrants who are unable or unwilling to remain in host or transit countries and wish to return voluntarily to their countries of origin. The programme provides a safe and supportive pathway for them to return and rebuild their lives. However, considering the housing conditions, and reports of forced return at removal centers, increased internal controls of irregular migration, and increased number of charter flights, we argue that IOM's AVRR program in T�rkiye is utilized as a tool of forced returns in some instances.",
+    "summary": "Assisted Voluntary Return and Reintegration (AVRR) has been a core activity of IOM Türkiye since 2009 and is integral to ensuring a comprehensive approach to migration management. The AVRR programme facilitates the regular return and reintegration of migrants who are unable or unwilling to remain in host or transit countries and wish to return voluntarily to their countries of origin. The programme provides a safe and supportive pathway for them to return and rebuild their lives. However, considering the housing conditions, and reports of forced return at removal centers, increased internal controls of irregular migration, and increased number of charter flights, we argue that IOM's AVRR program in Türkiye is utilized as a tool of forced returns in some instances.",
     "areaScaleImplementation":
       {"global": false,
       "EU": false,
@@ -2533,7 +2533,7 @@
     "exceptions": "",
     "digitalInfrastructuresTechnologies": "",
     "materialInfrastructure": "",
-    "notesBudget": "FNOs departing under the FRS are eligible for a resettlement grant. To encourage early departure, a higher amount is paid to someone who applies whilst still in custody. The current values of the grants are up to:    � �1,500 where the application is made whilst the FNO is serving their custodial sentence.   � �1,500 for qualifying family members.   � �750 for FNOs who apply after completing their custodial sentence.    � �750 for FNOs who have received a conviction overseas.   � �750 for FNOs with UK non-custodial convictions.",
+    "notesBudget": "FNOs departing under the FRS are eligible for a resettlement grant. To encourage early departure, a higher amount is paid to someone who applies whilst still in custody. The current values of the grants are up to:    • £1,500 where the application is made whilst the FNO is serving their custodial sentence.   • £1,500 for qualifying family members.   • £750 for FNOs who apply after completing their custodial sentence.    • £750 for FNOs who have received a conviction overseas.   • £750 for FNOs with UK non-custodial convictions.",
     "officialWebsite": "https://assets.publishing.service.gov.uk/media/65846a65ed3c34000d3bfd77/The+Facilitated+Return+Scheme+_FRS_.pdf",
     "programEvaluation": "",
     "complete": true
@@ -2603,7 +2603,7 @@
     "exceptions": "",
     "digitalInfrastructuresTechnologies": "",
     "materialInfrastructure": "",
-    "notesBudget": "The United Kingdom organizes management and travel support: Passport, tickets, ... plus a financial support of up to �3,000 to be used in home country.",
+    "notesBudget": "The United Kingdom organizes management and travel support: Passport, tickets, ... plus a financial support of up to £3,000 to be used in home country.",
     "officialWebsite": "https://assets.publishing.service.gov.uk/media/60b0bdb8e90e0732b589dfe7/voluntary-and-assisted-returns_v4.0-gov-uk.pdf",
     "programEvaluation": "",
     "complete": true
@@ -2638,7 +2638,7 @@
     "exceptions": "",
     "digitalInfrastructuresTechnologies": "",
     "materialInfrastructure": "",
-    "notesBudget": "Programme document total value: �4.2m.   18-19 period budget allocation: ODA: �2.7m / Non-ODA: �0m\"  ",
+    "notesBudget": "Programme document total value: £4.2m.   18-19 period budget allocation: ODA: £2.7m / Non-ODA: £0m\"  ",
     "officialWebsite": "https://assets.publishing.service.gov.uk/media/5bf57258ed915d182bfa1ca9/MIGN_Reintegration_and_Support_for_Returnees_Programme_Summary_FY_1819.odt#:~:text=The%20Programme%20places%20emphasis%20on,and%20fair%20institutions%20for%20all.",
     "programEvaluation": "",
     "complete": true
@@ -2673,7 +2673,7 @@
     "exceptions": "",
     "digitalInfrastructuresTechnologies": "",
     "materialInfrastructure": "",
-    "notesBudget": "During the VARRP 2005 programme year the maximum value of reintegration assistance available to returnees had risen from �1,000 to �3,000.    Complete budget not known, but this number serves as an example to infer further data.",
+    "notesBudget": "During the VARRP 2005 programme year the maximum value of reintegration assistance available to returnees had risen from £1,000 to £3,000.    Complete budget not known, but this number serves as an example to infer further data.",
     "officialWebsite": "https://assets.publishing.service.gov.uk/media/5a7a40d5e5274a319e778f19/horr39-report.pdf",
     "programEvaluation": "",
     "complete": true
