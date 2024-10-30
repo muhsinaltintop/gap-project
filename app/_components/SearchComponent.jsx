@@ -9,6 +9,9 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const SearchComponent = ({ data, countryList, headers }) => {
+  const sortedCountryData = countryList.sort((a, b) => 
+    a.countryName.localeCompare(b.countryName)
+  );
   const [selectedCountries, setSelectedCountries] = useState([]);
   const pathName = usePathname();
 
@@ -108,7 +111,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
           : "" }
       <div className="flex flex-col gap-4">
         <CountrySelect
-          countryList={countryList}
+          countryList={sortedCountryData}
           selectedCountries={selectedCountries}
           onSelect={(country) => handleCountryChange(country)}
         />
