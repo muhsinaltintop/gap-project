@@ -1,23 +1,22 @@
 const TransformInternational = (data) => {
     const formatDate = (inputDate) => {
         if (inputDate === "N/A" || inputDate === "n/a") {
-            return "N/A";
+            return "n/a";
           }
         
-          // Tarihi Date nesnesine dönüştür
           const date = new Date(inputDate);
         
-          // Geçersiz tarih durumunda "N/A" döndür
+         
           if (isNaN(date.getTime())) {
-            return "N/A";
+            return "n/a";
           }
         
-          // Geçerli bir tarih için formatı ayarla
+         
           const day = date.getDate();
-          const month = date.getMonth() + 1; // Aylar 0-11 arası olduğundan +1 ekliyoruz
+          const month = date.getMonth() + 1;
           const year = date.getFullYear();
         
-          // Formatı istediğiniz gibi düzenleyin
+         
           return `${day}/${month}/${year}`;
     }
 
@@ -26,7 +25,6 @@ const TransformInternational = (data) => {
         const signatureDate = formatDate(policy.signatureDate);
         const entryIntoForceDate = formatDate(policy.entryIntoForceDate);
         const negotiationStartDate = formatDate(policy.negotiationStartDate)
-  
   
         return {
             policyName:policy.policyName,

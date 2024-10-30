@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "countryName": "germany",
-    "color": "#000000"
-  },
-  {
-    "id": 2,
-    "countryName": "sweden",
-    "color": "#f6c600"
-  },
-  {
-    "id": 3,
-    "countryName": "greece",
-    "color": "#0d5baa"
-  },
-  {
-    "id": 4,
-    "countryName": "poland",
-    "color": "#690000"
-  },
-  {
-    "id": 5,
-    "countryName": "netherlands",
-    "color": "#02017d"
-  },
-  {
-    "id": 6,
-    "countryName": "turkey",
-    "color": "#02017d"
-  },
-  {
-    "id": 7,
-    "countryName": "iraq",
-    "color": "#660099"
-  },
-  {
-    "id": 8,
-    "countryName": "jordan",
-    "color": "#3a1800"
-  },
-  {
-    "id": 9,
     "countryName": "afghanistan",
     "color": "#fc6601"
   },
   {
-    "id": 10,
+    "id": 2,
+    "countryName": "canada",
+    "color": "#fa8072"
+  },
+  {
+    "id": 3,
+    "countryName": "germany",
+    "color": "#000000"
+  },
+  {
+    "id": 4,
+    "countryName": "greece",
+    "color": "#0d5baa"
+  },
+  {
+    "id": 5,
+    "countryName": "iraq",
+    "color": "#660099"
+  },
+  {
+    "id": 6,
+    "countryName": "jordan",
+    "color": "#3a1800"
+  },
+  {
+    "id": 7,
+    "countryName": "morocco",
+    "color": "#013220"
+  },
+  {
+    "id": 8,
+    "countryName": "netherlands",
+    "color": "#02017d"
+  },
+  {
+    "id": 9,
     "countryName": "nigeria",
     "color": "#00834e"
   },
   {
+    "id": 10,
+    "countryName": "poland",
+    "color": "#690000"
+  },
+  {
     "id": 11,
-    "countryName": "morocco",
-    "color": "#013220"
+    "countryName": "sweden",
+    "color": "#f6c600"
   },
   {
     "id": 12,
@@ -61,8 +61,8 @@
   },
   {
     "id": 13,
-    "countryName": "canada",
-    "color": "#fa8072"
+    "countryName": "turkey",
+    "color": "#02017d"
   },
   {
     "id": 14,

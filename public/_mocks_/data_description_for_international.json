@@ -51,6 +51,6 @@
     "label": "Note",
     "accessor": "note",
     "description": "Notes on Policies",
-    "width" : "w-4" 
+    "width" : "w-6" 
   }
 ]

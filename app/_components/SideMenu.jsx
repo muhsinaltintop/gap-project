@@ -15,8 +15,8 @@ const SideMenu = () => {
     },
     {
       id: 3,
-      name: "Policy/Legislation Mapping",
-      path: "/policy-legislation-map",
+      name: "Policy/Legislation",
+      path: "/policy-legislation",
     },
     {
       id: 4,
