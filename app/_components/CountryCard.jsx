@@ -146,13 +146,13 @@ const CountryCard = ({ country }) => {
                   target="_blank"
                   className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
-                  Returns By Type
+                  Returns by Type
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"
                   className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
                 >
-                  Returns By Citizenship
+                  Returns by Citizenship
                 </Link><Link
                   href={`/statistics/#`}
                   target="_blank"

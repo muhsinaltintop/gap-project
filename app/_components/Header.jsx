@@ -27,7 +27,7 @@ function Header() {
     >
       <div className="flex items-center gap-10">
         <Link href="/">
-          <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={0} />
+          <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={100} />
         </Link>
 
         <ul className="md:flex gap-8 hidden">
@@ -45,11 +45,11 @@ function Header() {
       </div>
       <div className="flex gap-1">
         {Social.map((item, index) => (
-          <Link key={index} href={item.path}>
-            <Button className="bg-transparent text-primary hover:bg-primary hover:text-white transition-all ease-in-out">
+          <Button key={index} className="bg-transparent text-primary hover:bg-primary hover:text-white transition-all ease-in-out">
+              <Link  href={item.path}>
               {item.icon}
+              </Link>
             </Button>
-          </Link>
         ))}
       </div>
     </div>

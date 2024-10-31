@@ -18,7 +18,7 @@ const DataTable = ({ mergedData, country }) => {
       <thead>
         <tr className="bg-gray-200">
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
-          <th className="border border-gray-300 px-4 py-2 font-bold text-left">{country}</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">{country.charAt(0).toUpperCase() + country.slice(1)}</th>
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Source</th>
         </tr>
       </thead>
@@ -31,7 +31,7 @@ const DataTable = ({ mergedData, country }) => {
                 <td className="border border-gray-300 px-4 py-2">
                   {row[yearKey] !== undefined && row[yearKey] !== -1 
                     ? row[yearKey] 
-                    : "N/A"}
+                    : "n/a"}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
                   {row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
@@ -39,7 +39,7 @@ const DataTable = ({ mergedData, country }) => {
                       {row[referenceKeys]}
                     </Link>
                   ) : (
-                    "N/A"
+                    "n/a"
                   )}
                 </td>
               </tr>

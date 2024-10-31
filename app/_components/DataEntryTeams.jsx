@@ -11,7 +11,7 @@ const DataEntryTeams = () => {
     <div className='mt-2'> <span className='font-bold'>Greece:</span> Eva Papatzani (PI); George Kandylis (PI); Panos Hatziprokopiou </div>
     <div className='mt-2'> <span className='font-bold'>Iraq:</span> William Warda (PI); Mohamad Noor Ahmad </div>
     <div className='mt-2'> <span className='font-bold'>Jordan:</span> Rasha Istaiteyeh (PI); Marah Almalalha; Rola Jaber </div>
-    <div className='mt-2'> <span className='font-bold'>Morocco:</span> Mehdi Lahlou (PI); Karima BELHAJ </div>
+    <div className='mt-2'> <span className='font-bold'>Morocco:</span> Mehdi Lahlou (PI); Karima Belhaj </div>
     <div className='mt-2'> <span className='font-bold'>Netherlands:</span> Joris Schapendonk (PI)</div>
     <div className='mt-2'> <span className='font-bold'>Nigeria:</span> Ngozi Uzomah (PI); Ignatus Madu (PI) </div>
     <div className='mt-2'> <span className='font-bold'>Poland:</span> Marta Pachocka (PI); Mateusz Krępa</div>

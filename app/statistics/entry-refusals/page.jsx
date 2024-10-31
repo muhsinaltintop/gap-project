@@ -26,7 +26,7 @@ const page = async () => {
   ];
   return (
     <div className="w-full mx-6">
-      <div className="my-2">This section contains two types of statistical data: (1) TCNs/foreign nationals* refused entry at the border and (2) pushbacks.</div>
+      <div className="my-2">This section contains statistical data on TCNs/foreign nationals refused entry at the border.</div>
       <ChartComponent data={pushbacks} title="Entry Refusals" />
       <TabNavigation tabs={tabs} />
     </div>
