@@ -28,6 +28,8 @@ const ChartComponent = ({ data, title, countries }) => {
       setSelectedCountries(newSelectedCountries);
     }
   };
+  console.log("data: ", data);
+  
 
   // Helper function to get the color of a country from the countries array
   const getCountryColor = (countryName) => {

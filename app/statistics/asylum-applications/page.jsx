@@ -1,12 +1,13 @@
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 import ChartComponent from "../../_components/ChartComponent";
-import { getAsylumApplications, getTps } from "../../_utils/GlobalApi";
+import { getAsylumApplications, getCountryList, getTps } from "../../_utils/GlobalApi";
 import PageTitle from "@/app/_components/_atoms/PageTitle";
 
 
 const page = async () => {
   const asylumApplications = await getAsylumApplications();
   const tps = await getTps();
+  const countries = await getCountryList();
 
   const tabs = [
     { label: 'Note on Asylum Application', content: <div className="max-w-6xl text-sm text-justify">
@@ -28,9 +29,9 @@ const page = async () => {
   return (
     <div className="w-full mx-6">
       <TabNavigation tabs={tabs} />
-      <ChartComponent data={asylumApplications} title="Asylum Application" />
-      <PageTitle title="Temprorary Protection Status"/>  
-      <ChartComponent data={tps} title="Temprorary Protection Status"/>
+      <ChartComponent countries={countries} data={asylumApplications} title="Asylum Application" />
+      {/* <PageTitle title="Temprorary Protection Status"/>   */}
+      {/* <ChartComponent countries={countries} data={tps} title="Temprorary Protection Status"/> */}
     </div>
   );
 };
