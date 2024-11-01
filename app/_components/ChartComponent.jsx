@@ -29,6 +29,17 @@ const ChartComponent = ({ data, title, countries }) => {
     }
   };
 
+  // Helper function to get the color of a country from the countries array
+  const getCountryColor = (countryName) => {
+    const country = countries.find((c) => c.countryName === countryName);
+    return country ? country.color : "#8884d8"; // Default color if not specified
+  };
+
+  // Filter countries for checkboxes to show only countries present in data
+  const countriesWithData = countries.filter((country) =>
+    data.some((entry) => entry.country === country.countryName)
+  );
+
   // Filter and map data according to the selected countries and years
   const filteredData = data.length
     ? Object.keys(data[0])
@@ -85,17 +96,16 @@ const ChartComponent = ({ data, title, countries }) => {
       {!title.includes("Return by Citizenship") && (
         <div className="mt-4">
           <h3>Select Countries:</h3>
-          {data.map((entry, index) => (
+          {countriesWithData.map((entry, index) => (
             <label key={index} className="mr-3 align-middle">
-              {console.log("ent:", entry)}
               <input
                 type="checkbox"
-                value={entry.country}
-                checked={selectedCountries.includes(entry.country)}
-                onChange={() => handleCountryChange(entry.country)}
+                value={entry.countryName}
+                checked={selectedCountries.includes(entry.countryName)}
+                onChange={() => handleCountryChange(entry.countryName)}
                 className="align-middle mr-1"
               />
-              {formatLegend(entry.country)}
+              {formatLegend(entry.countryName)}
             </label>
           ))}
         </div>
@@ -105,14 +115,13 @@ const ChartComponent = ({ data, title, countries }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
-          <Tooltip formatter={(value, name, props) => [value, formatLegend(name)]} />
+          <Tooltip formatter={(value, name) => [value, formatLegend(name)]} />
           <Legend formatter={formatLegend} />
-          {console.log("fC:", filteredCountries)}
           {filteredCountries.map((country, index) => (
             <Bar
               key={index}
               dataKey={country.country}
-              fill={country.color || "#8884d8"} // default color if not specified
+              fill={getCountryColor(country.country)} // dynamically get the color
             />
           ))}
         </BarChart>
@@ -136,6 +145,16 @@ Repository via the public report link."
           <Link href={"/data-entry-teams"}>Data Entry Teams</Link>
         </div>
       </div>
+      {filteredCountries.map((entry, index) => (
+        entry.note !== "" && (
+          <div key={index} className="flex text-sm mt-2 items-end">
+            <div style={{ color: getCountryColor(entry.country) }} className="font-bold mr-2 w-24">
+              Note on {formatLegend(entry.country)}: 
+            </div>
+            {entry.note}
+          </div>
+        )
+      ))}
     </div>
   );
 };
