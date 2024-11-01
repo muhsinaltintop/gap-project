@@ -1,10 +1,11 @@
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 import ChartComponent from "../../_components/ChartComponent";
-import { getPushBacks } from "../../_utils/GlobalApi";
+import { getCountryList, getPushBacks } from "../../_utils/GlobalApi";
 import Link from "next/link";
 
 const page = async () => {
   const pushbacks = await getPushBacks();
+  const countries = await getCountryList();
   const tabs = [
     { label: 'Note on Entry Refusals', content: <div className="max-w-6xl text-sm text-justify">
       <div className="my-2">
@@ -27,7 +28,7 @@ const page = async () => {
   return (
     <div className="w-full mx-6">
       <div className="my-2">This section contains statistical data on TCNs/foreign nationals refused entry at the border.</div>
-      <ChartComponent data={pushbacks} title="Entry Refusals" />
+      <ChartComponent countries={countries} data={pushbacks} title="Entry Refusals" />
       <TabNavigation tabs={tabs} />
     </div>
   );
