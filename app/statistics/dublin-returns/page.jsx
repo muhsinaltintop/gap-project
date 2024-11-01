@@ -1,9 +1,10 @@
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 import ChartComponent from "../../_components/ChartComponent";
-import { getDublinReturns } from "../../_utils/GlobalApi";
+import { getCountryList, getDublinReturns } from "../../_utils/GlobalApi";
 
 const page = async () => {
   const dublinReturns = await getDublinReturns();
+  const countries = await getCountryList()
 
   const tabs = [
     { label: 'Note on Dublin Returns', content: <div className="max-w-6xl text-sm text-justify">
@@ -19,7 +20,7 @@ const page = async () => {
     <div className="w-full mx-6">
       <div className="my-2 max-w-6xl">This section contains number of third country nationals found to be illegally present who are subjected to the transferred from one Member State to another under the mechanism established by the Dublin Regulation (Council Regulation (EC) No 343/2003 and (EC) No 1560/2003).</div>
 
-      <ChartComponent data={dublinReturns} title="Dublin Returns" />
+      <ChartComponent countries={countries} data={dublinReturns} title="Dublin Returns" />
     </div>
   );
 };
