@@ -28,6 +28,7 @@ const page = async () => {
   return (
     <div className="w-full mx-6">
       <div className="my-2">This section contains statistical data on TCNs/foreign nationals refused entry at the border.</div>
+      
       <ChartComponent countries={countries} data={pushbacks} title="Entry Refusals" />
       <TabNavigation tabs={tabs} />
     </div>

@@ -110,16 +110,7 @@ const Page = () => {
   };
 
   const tabs = [
-    { label: 'Note on TCNs/Foreign Nationals* Ordered to Leave', content: <div className="max-w-6xl text-sm text-justify">
-
-      <div className="my-2"><span className="font-bold">For EU countries:</span> Third country nationals found to be illegally present who are subject to an administrative or judicial decision or act stating that their stay is illegal and imposing an obligation to leave the territory of the Member State (see Art. 7.1 (a) of the <Link href={'https://ec.europa.eu/eurostat/cache/metadata/en/migr_eil_esms.htm'} target="_blank" className="text-primary">Regulation</Link>). </div>
-
-      <div className="my-2">o	<span className="font-bold">Return decision/ order to leave/ order to expulsion:</span> An administrative or judicial decision or act, stating or declaring the stay of a TCN to be illegal and imposing or stating an obligation to return.</div>
-
-      <div className="my-2"><span className="font-bold">For non-EU countries:</span> Foreigners found to be illegally present who are subject to decision ordering them to leave the territory of the X state.</div>
-
-      <div className="my-4 text-xs">* Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal. </div>
-      </div> },
+    
     { label: "Note on Return Decisions Issued for IRREGULAR Migrants", content: 
       <div className="max-w-6xl text-sm text-justify">
     <div className="my-2">This category could be the case for EU or non-EU states. For the latter category, as many foreigners who would have sought asylum practically do not have access to asylum application or avoid it due to onward migration aims (e.g. Afghans in Turkey). When these migrants are apprehended during their entry, stay, working, or exiting, return/deportation/order to leave decision may be imposed on them. </div></div> },
@@ -166,6 +157,21 @@ const Page = () => {
         <div className="my-2">
         This section contains five different, but related categories  indicated below: 
         </div>
+
+        <div className="max-w-6xl text-sm text-justify">
+
+        <div className="my-2"><span className="font-bold">For EU countries:</span> Third country nationals found to be illegally present who are subject to an administrative or judicial decision or act stating that their stay is illegal and imposing an obligation to leave the territory of the Member State (see Art. 7.1 (a) of the <Link href={'https://ec.europa.eu/eurostat/cache/metadata/en/migr_eil_esms.htm'} target="_blank" className="text-primary">Regulation</Link>). </div>
+
+        <div className="my-2">o	<span className="font-bold">Return decision/ order to leave/ order to expulsion:</span> An administrative or judicial decision or act, stating or declaring the stay of a TCN to be illegal and imposing or stating an obligation to return.</div>
+
+        <div className="my-2"><span className="font-bold">For non-EU countries:</span> Foreigners found to be illegally present who are subject to decision ordering them to leave the territory of the X state.</div>
+
+        <div className="my-4 text-xs">* Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal. </div>
+        </div>
+
+
+
+
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
