@@ -30,8 +30,8 @@ const page = async () => {
     <div className="w-full mx-6">
       <TabNavigation tabs={tabs} />
       <ChartComponent countries={countries} data={asylumApplications} title="Asylum Application" />
-      {/* <PageTitle title="Temprorary Protection Status"/>   */}
-      {/* <ChartComponent countries={countries} data={tps} title="Temprorary Protection Status"/> */}
+      <PageTitle title="Temprorary Protection Status"/>  
+      <ChartComponent countries={countries} data={tps} title="Temprorary Protection Status"/>
     </div>
   );
 };
