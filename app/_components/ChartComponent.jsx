@@ -28,7 +28,6 @@ const ChartComponent = ({ data, title, countries }) => {
       setSelectedCountries(newSelectedCountries);
     }
   };
-  console.log("data: ", data);
   
 
   // Helper function to get the color of a country from the countries array
@@ -117,7 +116,12 @@ const ChartComponent = ({ data, title, countries }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
-          <Tooltip formatter={(value, name) => [value, formatLegend(name)]} />
+          <Tooltip 
+            formatter={(value, name) => [
+              value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "), // 100000'i 100 000 formatına çevir
+              formatLegend(name)
+            ]}
+          />
           <Legend formatter={formatLegend} />
           {filteredCountries.map((country, index) => (
             <Bar
