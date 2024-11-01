@@ -95,22 +95,24 @@ const ChartComponent = ({ data, title, countries }) => {
   return (
     <div className="m-10">
       {!title.includes("Return by Citizenship") && (
-        <div className="mt-4">
-          <h3>Select Countries:</h3>
-          {countriesWithData.map((entry, index) => (
-            <label key={index} className="mr-3 align-middle">
-              <input
-                type="checkbox"
-                value={entry.countryName}
-                checked={selectedCountries.includes(entry.countryName)}
-                onChange={() => handleCountryChange(entry.countryName)}
-                className="align-middle mr-1"
-              />
-              {formatLegend(entry.countryName)}
-            </label>
-          ))}
-        </div>
-      )}
+    <div className="mt-4">
+      <h3>Select Countries:</h3>
+      {countriesWithData
+        .sort((a, b) => a.countryName.localeCompare(b.countryName)) // Alfabetik sıralama
+        .map((entry, index) => (
+          <label key={index} className="mr-3 align-middle">
+            <input
+              type="checkbox"
+              value={entry.countryName}
+              checked={selectedCountries.includes(entry.countryName)}
+              onChange={() => handleCountryChange(entry.countryName)}
+              className="align-middle mr-1"
+            />
+            {formatLegend(entry.countryName)}
+          </label>
+        ))}
+    </div>
+  )}
       <div width={1000} height={500}>
         <BarChart width={1000} height={600} data={filteredData} className="mt-6">
           <CartesianGrid strokeDasharray="3 3" />
