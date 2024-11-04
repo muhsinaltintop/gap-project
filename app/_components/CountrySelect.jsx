@@ -1,5 +1,4 @@
 import CheckBox from "./_atoms/CheckBox";
-import countryList from "../../public/_mocks_/countryList.json";
 
 const CountrySelect = ({ countryList, selectedCountries, onSelect }) => {
   return (
@@ -10,7 +9,7 @@ const CountrySelect = ({ countryList, selectedCountries, onSelect }) => {
           <div key={country.id}>
             <CheckBox
               id={country.countryName}
-              label={country.countryName}
+              label={country.countryName.charAt(0).toUpperCase() + country.countryName.slice(1)}
               checked={selectedCountries.includes(country.countryName)}
               onChange={() => onSelect(country.countryName)}
             />

@@ -44,7 +44,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
 
       if (
         selectedCountries.length === 0 ||
-        selectedCountries.includes(country.countryName)
+        selectedCountries.some((selectedCountry) => selectedCountry.toLowerCase() === country.countryName.toLowerCase())
       ) {
     
 
