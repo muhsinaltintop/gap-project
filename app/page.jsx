@@ -23,7 +23,7 @@ organized presentation for those interested in return related data:
         </Link>
       </li>
       <li className="mr-8">
-        <Link className="font-bold text-primary" href={"/policy-legislation-map"}>
+        <Link className="font-bold text-primary" href={"/policy-legislation"}>
         Legislation
         </Link>
       </li>

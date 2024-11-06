@@ -74,7 +74,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
     <div className="mx-2 first-line:flex flex-col max-w-7xl">
       <div className="w-11/12">
       <h2 className="flex font-bold text-lg mb-4">
-        {pathName === "/policy-legislation-map"
+        {pathName === "/policy-legislation"
           ? "Policy/Legislation"
           : pathName === "/return-infrastructure"
           ? "Return Infrastructure"
@@ -82,7 +82,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
       </h2>
       <p className="font-light">*Last Updated 26/06/2024</p>
 
-      { pathName === "/policy-legislation-map"
+      { pathName === "/policy-legislation"
           ? <div className="text-justify text-sm">
           <p className="mt-1">
           The section has been developed by national immigration experts to address national-level return legislation and policies in the countries covered in the GAPs project. It maps national legislations which set out the principles of public policy on asylum, border management, residence, deportation and return. It also covers the regulations which are designed to implement these principles, bringing legislation into effect. The legislation and regulations can take the form of entitled acts, laws, statutes, directives, decisions, guidelines, administrative rules and others. They are a kind of binding laws. Legal arrangements on international agreements will be presented in another section, <Link className="text-primary font-bold" href="/international-cooperation">International Cooperation</Link>. 
@@ -115,7 +115,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
           selectedCountries={selectedCountries}
           onSelect={(country) => handleCountryChange(country)}
         />
-        {pathName == "/policy-legislation-map" ?
+        {pathName == "/policy-legislation" ?
           <div>
 
             <SelectYearsComponent

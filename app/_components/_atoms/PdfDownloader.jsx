@@ -17,8 +17,8 @@ const PdfDownloader = ({policies, headers, pathName, selectedCountries}) => {
 
   return isClient ? (
     <PDFDownloadLink
-    fileName={pathName === "/policy-legislation-map" ? (`GAP_Policy_Mapping_(${selectedCountries})`): pathName === "/return-infrastructure" ? (`GAP_Return_Infrastructure_(${selectedCountries})`) : pathName === "/international-cooperation" ? (`GAP_International_Cooperation_(${selectedCountries})`) : "gaps_report"}
-    document={pathName === "/policy-legislation-map" ? (<ReportPDFPolicyLegislation headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/return-infrastructure" ? (<ReportPDFReturnInfrastructure headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/international-cooperation" ? (<ReportPDFInternational headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : ""}
+    fileName={pathName === "/policy-legislation" ? (`GAP_Policy_Mapping_(${selectedCountries})`): pathName === "/return-infrastructure" ? (`GAP_Return_Infrastructure_(${selectedCountries})`) : pathName === "/international-cooperation" ? (`GAP_International_Cooperation_(${selectedCountries})`) : "gaps_report"}
+    document={pathName === "/policy-legislation" ? (<ReportPDFPolicyLegislation headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/return-infrastructure" ? (<ReportPDFReturnInfrastructure headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/international-cooperation" ? (<ReportPDFInternational headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : ""}
     
     >
         <Button label={"Download PDF"} icon={

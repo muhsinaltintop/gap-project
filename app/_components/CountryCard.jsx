@@ -83,7 +83,7 @@ const CountryCard = ({ country }) => {
           </Link>
           <Link
             target="_blank"
-            href={`/policy-legislation-map/`}
+            href={`/policy-legislation/`}
             className="group relative block"
           >
             <button className="block rounded bg-yellow-600 text-white font-bold mt-2 h-12 w-48 p-2 text-sm transition hover:scale-105">

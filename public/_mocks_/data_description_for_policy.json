@@ -45,7 +45,7 @@
     "label": "Policy Description",
     "accessor": "policyDescription",
     "description": "No Description",
-    "width" : "w-8y g g         b"
+    "width" : "w-8"
   },
   { 
     "label": "Notes",

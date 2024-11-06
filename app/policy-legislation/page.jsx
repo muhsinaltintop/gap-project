@@ -1,8 +1,11 @@
+import React from "react";
 import headersForPolicy from "../../public/_mocks_/data_description_for_policy.json";
 import policies from "../../public/_mocks_/policies.json";
 import { getCountryList } from "../_utils/GlobalApi";
 import SearchComponent from "../_components/SearchComponent";
 import TransformPolicies from "../_components/TransformPolicies";
+console.log("console:", TransformPolicies);
+
 
 
 const PolicyLegislationPage = async () => {
