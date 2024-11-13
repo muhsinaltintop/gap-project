@@ -34,7 +34,6 @@ const ChartComponent = ({ data, title, countries }) => {
     return country ? country.color : "#8884d8";
   };
 
-  // Filter countries for checkboxes to show only countries present in data
   const countriesWithData = countries.filter((country) =>
     data.some((entry) => entry.country === country.countryName)
   );
