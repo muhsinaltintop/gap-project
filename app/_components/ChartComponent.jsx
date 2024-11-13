@@ -29,11 +29,9 @@ const ChartComponent = ({ data, title, countries }) => {
     }
   };
   
-
-  // Helper function to get the color of a country from the countries array
   const getCountryColor = (countryName) => {
     const country = countries.find((c) => c.countryName === countryName);
-    return country ? country.color : "#8884d8"; // Default color if not specified
+    return country ? country.color : "#8884d8";
   };
 
   // Filter countries for checkboxes to show only countries present in data
