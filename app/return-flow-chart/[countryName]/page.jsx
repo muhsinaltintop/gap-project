@@ -8,7 +8,7 @@ const page = ({ params }) => {
         {params.countryName} Return Flow Chart
       </h1>
 
-      <PDFViewer filename={`${params.countryName}_rfc`} />
+      <PDFViewer filename={`${params.countryName}_rfcl`} />
     </div>
   );
 };

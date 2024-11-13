@@ -8,7 +8,7 @@ const page = ({ params }) => {
         {params.countryName} Actor Diagram
       </h1>
 
-      <PDFViewer filename={`${params.countryName}_ard`} />
+      <PDFViewer filename={`${params.countryName}_ardl`} />
     </div>
   );
 };

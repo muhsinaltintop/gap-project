@@ -8,7 +8,7 @@ const page = ({ params }) => {
         {params.countryName} Return Policy Timeline
       </h1>
 
-      <PDFViewer filename={`${params.countryName}_rpt`} />
+      <PDFViewer filename={`${params.countryName}_rptl`} />
     </div>
   );
 };
