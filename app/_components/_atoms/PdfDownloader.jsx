@@ -14,10 +14,14 @@ const PdfDownloader = ({policies, headers, pathName, selectedCountries}) => {
         setIsClient(true)
     }, [])
 
+    const capitaliseFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+
+    const formattedCountries = selectedCountries.map(capitaliseFirstLetter);
+
 
   return isClient ? (
     <PDFDownloadLink
-    fileName={pathName === "/policy-legislation" ? (`GAP_Policy_Mapping_(${selectedCountries})`): pathName === "/return-infrastructure" ? (`GAP_Return_Infrastructure_(${selectedCountries})`) : pathName === "/international-cooperation" ? (`GAP_International_Cooperation_(${selectedCountries})`) : "gaps_report"}
+    fileName={pathName === "/policy-legislation" ? (`GAP_Policy_Mapping_(${formattedCountries.join(', ')})`): pathName === "/return-infrastructure" ? (`GAP_Return_Infrastructure_(${formattedCountries.join(', ')})`) : pathName === "/international-cooperation" ? (`GAP_International_Cooperation_(${formattedCountries.join(', ')})`) : "gaps_report"}
     document={pathName === "/policy-legislation" ? (<ReportPDFPolicyLegislation headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/return-infrastructure" ? (<ReportPDFReturnInfrastructure headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : pathName === "/international-cooperation" ? (<ReportPDFInternational headers={headers} policies={policies} pathName={pathName} selectedCountries={selectedCountries} />) : ""}
     
     >

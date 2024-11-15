@@ -94,11 +94,17 @@ const ReportPDFPolicyLegislation = ({ policies, headers, selectedCountries }) =>
     return `${now.getDate()}/${now.getMonth() + 1}/${now.getFullYear()}`;
   };
 
+  const capitaliseFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+
+  const formattedCountries = selectedCountries.map(capitaliseFirstLetter);
+
   return (
     <Document>
        <Page style={styles.page} orientation='landscape'>
         <View style={styles.table}>
-          <Text style={styles.tableHeader}>{(`Return Related Legislation and Policy Mapping (${selectedCountries})`)}</Text>
+          <Text style={styles.tableHeader}>
+            {`Return Related Legislation and Policy Mapping (${formattedCountries.join(', ')})`}
+          </Text>
           <View style={styles.tableRow}>
             {headers?.map((header, indexHeader) => (
               <View key={indexHeader} style={[styles.tableCell, styles.headerCell, styles[`col${indexHeader + 1}`]]}>
