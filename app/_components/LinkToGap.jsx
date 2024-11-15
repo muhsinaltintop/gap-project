@@ -11,7 +11,7 @@ const LinkToGap = () => {
             alt={"gaps project cover"}
             width={800}
             height={600}
-            src={"/gaps_project_cover.png"}
+            src={"/gaps_project_cover_2.png"}
           />
         </Link>
       </div>
