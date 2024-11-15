@@ -283,7 +283,7 @@ const countryProfileData = [
    <div key="11" className="mt-2 font-bold">Return and Reintegration Infrastructure: Processes and Procedures</div>,
    <div key="12" className="mt-2">Afghanistan currently lacks a comprehensive infrastructure for facilita ng return processes. To address this gap, United Na ons refugee agencies, notably UNHCR and IOM, play pivotal roles by offering substan al ins tu onal and humanitarian aid throughout the return and reintegra on process. Collabora on between UNHCR and the Ministry of Refugees and Repatria on (MoRR) has led to the iden fica on and priori za on of 20 specific areas known as Priority Areas of Return and Reintegra on (PARRS). These areas encompass various regions within Afghanistan, including Kunduz, Mazar-e Sharif, Jawzjan, Parwan, Kabul, Jalalabad, Daykundi, Herat, and Kandahar provinces.<sup>5</sup></div>,
   <div key="13">
-    <Image src={"/exec-afgan-map.png"} height={600} width={600} alt="report map" />
+    <Image src={"/exec-afghanistan-map.png"} height={600} width={600} alt="report map" />
     <div className="text-xs mt-2">Source: UNHCR: Report on Priority Areas of Return and Reintegra on 
     </div>
   </div>,
