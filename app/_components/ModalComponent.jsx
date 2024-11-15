@@ -52,7 +52,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 <PlainText text={selectedCountry?.executiveSummary} />
               </div>
               <Link
-                href={`/executive-summary/${selectedCountry?.countryName}`}
+                href={selectedCountry?.countryName === "United Kingdom" ? "/executive-summary/unitedKingdom" : `/executive-summary/${selectedCountry?.countryName}`}
                 target="_blank"
               >
                 <div className="truncate text-primary">Read More</div>
