@@ -40,20 +40,15 @@ const CountryCard = ({ country }) => {
 
         <div className="grid grid-cols-4 gap-x-4 mt-0.5 text-gray-700">
           <Link
-            href={
-              ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
-                country?.countryName
-              )
-                ? `https://www.returnmigration.eu/countries_${country?.countryName.toLowerCase()}`
-                : `https://www.returnmigration.eu/countries-${country?.countryName.toLowerCase()}`
-            }
+            href={`/executive-summary/${country?.countryName}`}
             target="_blank"
             className="group relative block"
           >
             <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
-              Country Profile on GAPs
+              Executive Summary
             </button>
           </Link>
+          
           <Link
             href={`/return-policy-timeline/${country?.countryName}`}
             target="_blank"
@@ -169,6 +164,21 @@ const CountryCard = ({ country }) => {
               </div>
             )}
           </div>
+          <Link
+            href={
+              ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
+                country?.countryName
+              )
+                ? `https://www.returnmigration.eu/countries_${country?.countryName.toLowerCase()}`
+                : `https://www.returnmigration.eu/countries-${country?.countryName.toLowerCase()}`
+            }
+            target="_blank"
+            className="group relative block"
+          >
+            <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
+              Country Profile on GAPs
+            </button>
+          </Link>
         </div>
       </div>
     </div>
