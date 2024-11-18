@@ -2,11 +2,13 @@
 import { useEffect, useState } from "react";
 import { getReturnByCitizenship } from "../../_utils/GlobalApi";
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
-import ChartComponent from "@/app/_components/ChartComponent";
+import RbcChartComponent from "../../_components/_returnByCountry/RbcChartComponent";
 import countries from "../../_components/_returnByCountry/returnCountries.json";
 import DropDown from "@/app/_components/_atoms/DropDown";
 import returnYears from "../../../public/_mocks_/returnYears";
-import Link from "next/link";
+import allCountries from "../../../public/_mocks_/countryList.json"
+
+
 
 const Page = () => {
   const [countryCode, setCountryCode] = useState("");
@@ -89,7 +91,7 @@ const Page = () => {
     data.every(item => Object.keys(item).length === 2 && item.id && item.year) ? (
       <p className="text-primary text-xl my-20">No data found...</p>
     ) : (
-      <ChartComponent data={data} title={"Returns by Citizenship"} />
+      <RbcChartComponent data={data} title={"Returns by Citizenship"} countries={allCountries} />
     )
   ) : ""}
 </div>
