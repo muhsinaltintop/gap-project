@@ -40,12 +40,11 @@ const ChartComponent = ({ data, title, countries }) => {
   // dataya göre ülke listesi oluşturma:
   const dataKeys = Object.keys(data[0]);
 
-  console.log("dataKeys", dataKeys);
-  
-
-  const countriesWithData = countries.filter(country =>
-  dataKeys.includes(country.countryName)
-);
+const countriesWithData = title.includes("Returns by Citizenship")
+  ? countries.filter((country) => dataKeys.includes(country.countryName))
+  : countries.filter((country) =>
+      data.some((entry) => entry.country === country.countryName)
+    );
 
   // Filter and map data according to the selected countries and years
   const filteredData = data.length
