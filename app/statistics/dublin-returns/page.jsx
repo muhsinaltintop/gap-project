@@ -11,7 +11,6 @@ const page = async () => {
 
             </div> },
     { label: null, content: null },
-    
     { label: null, content: <div>Archive Content</div> },
     { label: null, content: <div>Notifications Content</div> },
   ];

@@ -14,7 +14,8 @@ import originalData from "../../public/_mocks_/originalData.json";
 import Link from "next/link";
 import { CircleHelp } from "lucide-react";
 
-const ChartComponent = ({ data, title, countries }) => {
+const ChartComponent = ({ data, title, countries }) => {  
+  
   const [selectedCountries, setSelectedCountries] = useState([]);
   const [source, setSource] = useState([]);
 
@@ -33,10 +34,18 @@ const ChartComponent = ({ data, title, countries }) => {
     const country = countries.find((c) => c.countryName === countryName);
     return country ? country.color : "#8884d8";
   };
+  console.log("countries:", countries);
+  console.log("data:", data)
+  
+  // dataya göre ülke listesi oluşturma:
+  const dataKeys = Object.keys(data[0]);
 
-  const countriesWithData = countries.filter((country) =>
-    data.some((entry) => entry.country === country.countryName)
-  );
+  console.log("dataKeys", dataKeys);
+  
+
+  const countriesWithData = countries.filter(country =>
+  dataKeys.includes(country.countryName)
+);
 
   // Filter and map data according to the selected countries and years
   const filteredData = data.length
@@ -94,20 +103,25 @@ const ChartComponent = ({ data, title, countries }) => {
       {!title.includes("Return by Citizenship") && (
     <div className="mt-4">
       <h3>Select Countries:</h3>
+      {console.log("cwd:", countriesWithData)}
       {countriesWithData
-        .sort((a, b) => a.countryName.localeCompare(b.countryName)) // Alfabetik sıralama
-        .map((entry, index) => (
-          <label key={index} className="mr-3 align-middle">
-            <input
-              type="checkbox"
-              value={entry.countryName}
-              checked={selectedCountries.includes(entry.countryName)}
-              onChange={() => handleCountryChange(entry.countryName)}
-              className="align-middle mr-1"
-            />
-            {formatLegend(entry.countryName)}
-          </label>
-        ))}
+  .sort((a, b) => {
+    if (a.countryName === "otherTotal") return 1; // "otherTotal" her zaman sona gider
+    if (b.countryName === "otherTotal") return -1; // "otherTotal" her zaman sona gider
+    return a.countryName.localeCompare(b.countryName); // Diğerleri alfabetik sıralanır
+  })
+  .map((entry, index) => (
+    <label key={index} className="mr-3 align-middle">
+      <input
+        type="checkbox"
+        value={entry.countryName}
+        checked={selectedCountries.includes(entry.countryName)}
+        onChange={() => handleCountryChange(entry.countryName)}
+        className="align-middle mr-1"
+      />
+      {formatLegend(entry.countryName)}
+    </label>
+  ))}
     </div>
   )}
       <div width={1000} height={500}>
