@@ -40,7 +40,7 @@ const CountryCard = ({ country }) => {
 
         <div className="grid grid-cols-4 gap-x-4 mt-0.5 text-gray-700">
           <Link
-            href={`/executive-summary/${country?.countryName}`}
+            href={`/executive-summary/${country?.countryName === "United Kingdom" ? "unitedKingdom" : country?.countryName}`}
             target="_blank"
             className="group relative block"
           >
