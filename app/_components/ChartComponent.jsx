@@ -111,7 +111,6 @@ const ChartComponent = ({ data, title, countries }) => {
     </div>
   )}
       <div width={1000} height={500}>
-        {console.log(filteredData)}
         <BarChart width={1000} height={600} data={filteredData} className="mt-6">
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
