@@ -39,6 +39,11 @@ const getStockOfIrregularMigrants = async () => {
   return data;
 }
 
+const getStockOfIrregularAlternative = async () => {
+  const data = await fetchData("/stock-of-irregular-alternative?populate=*")
+  return data;
+}
+
 const getAsylumApplications = async () => {
   const data = await fetchData("/asylum-applications?populate=*")
   return data;
@@ -296,4 +301,4 @@ const getReadmittedCitizens = async (countryCode) => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative };
