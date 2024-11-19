@@ -1,9 +1,11 @@
 import ChartComponent from "@/app/_components/ChartComponent";
-import { getCountryList, getStockOfIrregularMigrants } from "../../_utils/GlobalApi";
+import { getCountryList, getStockOfIrregularAlternative, getStockOfIrregularMigrants } from "../../_utils/GlobalApi";
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
 
 const page = async () => {
   const stockOfIrregularMigrants = await getStockOfIrregularMigrants();
+  const stockOfIrregularAlternative = await getStockOfIrregularAlternative();
+
   const countries = await getCountryList();
 
   const tabs = [
@@ -41,6 +43,10 @@ const page = async () => {
     <div className="w-full mx-6">
       <div className="my-2 max-w-6xl">Stock of Irregular Migrants data contains statistics mainly on the Third Country Nationals found to be illegally present in the country in question.</div>
       <ChartComponent countries={countries} data={stockOfIrregularMigrants} title="Stock of Irregular Migrants" />
+
+      <h2 className="text-primary text-xl font-bold">Alternative Data for Stock of Irregular Migrants</h2>
+      <ChartComponent countries={countries} data={stockOfIrregularAlternative} title="Stock of Irregular Migrants" />
+
       <TabNavigation tabs={tabs} />
     </div>
   );
