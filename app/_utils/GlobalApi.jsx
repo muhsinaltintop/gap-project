@@ -65,7 +65,7 @@ const getTcnReturnDesicionForIrregulars = async (countryKey) => {
   const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
+    value: item[countryKey] == 0  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -85,7 +85,7 @@ const getReturnNegativeAsylum = async (countryKey) => {
   const data = await fetchData("/tcn-return-negative-asylum?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
+    value: item[countryKey] == 0  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -104,7 +104,7 @@ const getReturnTotal = async (countryKey) => {
   const data = await fetchData("/tcn-return-total?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
+    value: item[countryKey] == 0  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
