@@ -5,7 +5,7 @@ export async function GET(request) {
   try {
     const db = await pool.getConnection();
 
-    const query = "select * from returnNegativeAsylum";
+    const query = "select * from tcn_negative_asylum";
     const [rows] = await db.execute(query);
     db.release();
 
