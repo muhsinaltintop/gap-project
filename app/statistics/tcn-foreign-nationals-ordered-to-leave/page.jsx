@@ -28,11 +28,11 @@ const DataTable = ({ mergedData }) => {
         {mergedData.map((row, index) => (
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnDesicionsForIrregulars}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnFollowingOrder}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnNegativeAsylum}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnedMinors}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnTotal}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnDesicionsForIrregulars ? row.returnDesicionsForIrregulars : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnFollowingOrder ? row.returnFollowingOrder : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnNegativeAsylum ? row.returnNegativeAsylum : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnedMinors ? row.returnedMinors : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnTotal ? row.returnTotal : "n/a"}</td>
           </tr>
         ))}
         <tr className="bg-gray-200">

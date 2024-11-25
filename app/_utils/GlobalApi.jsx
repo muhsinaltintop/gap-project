@@ -75,7 +75,7 @@ const getReturnFollowingOrder = async (countryKey) => {
   const data = await fetchData("/tcn-return-following-order?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
+    value: item[countryKey] == 0  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
@@ -94,7 +94,7 @@ const getReturnedMinors = async (countryKey) => {
   const data = await fetchData("/tcn-returned-minors?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
-    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
+    value: item[countryKey] == 0  ? "n/a" : item[countryKey]
   }));
   return filteredData;
 };
