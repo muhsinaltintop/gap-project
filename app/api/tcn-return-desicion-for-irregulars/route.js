@@ -5,7 +5,7 @@ export async function GET(request) {
   try {
     const db = await pool.getConnection();
 
-    const query = "select * from returnDesicionForIrregulars";
+    const query = "select * from tcn_desicion_for_irregular";
     const [rows] = await db.execute(query);
     db.release();
 
