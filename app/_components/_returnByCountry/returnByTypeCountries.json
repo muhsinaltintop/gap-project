@@ -1,12 +1,18 @@
 [
+    { "value": "afghanistan", "label": "Afghanistan" }, 
     { "value": "canada", "label": "Canada" },
     { "value": "germany", "label": "Germany" },
-    { "value": "greece", "label": "Greece" }, 
+    { "value": "greece", "label": "Greece" },
+    { "value": "iraq", "label": "Iraq" },
+    { "value": "jordan", "label": "Jordan" },
+    { "value": "morocco", "label": "Morocco" },
     { "value": "netherlands", "label": "Netherlands" },
     { "value": "nigeria", "label": "Nigeria" },
     { "value": "poland", "label": "Poland" },
     { "value": "sweden", "label": "Sweden" },
     { "value": "tunisia", "label": "Tunisia" },
+    { "value": "turkey", "label": "Türkiye" },
     { "value": "unitedKingdom", "label": "United Kingdom" }
 
 ]
+  

@@ -1,7 +1,7 @@
 "use client";
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
-import tcnCountries from "../../_components/_returnByCountry/tcnCountries.json";
+import rbtCountries from "../../_components/_returnByCountry/returnByTypeCountries.json";
 import { getAllRbtData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import Link from "next/link";
 import TabNavigation from "@/app/_components/_atoms/TabNavigation";
@@ -26,10 +26,10 @@ const DataTable = ({ mergedData }) => {
         {mergedData.map((row, index) => (
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.assistedReturn}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.totalReturn}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn ? row.voluntaryReturn : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn ? row.enforcedReturn  : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.assistedReturn ? row.assistedReturn  : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.totalReturn ? row.totalReturn  : "n/a"}</td>
           </tr>
         ))}
         <tr className="bg-gray-200">
@@ -148,7 +148,7 @@ const Page = () => {
   return (
     <div className="w-9/10 mx-6">
       
-        <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={tcnCountries} />
+        <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={rbtCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}
         {countryCode && !loading && !error && (
