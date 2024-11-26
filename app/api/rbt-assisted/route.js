@@ -5,7 +5,7 @@ export async function GET(request) {
   try {
     const db = await pool.getConnection();
 
-    const query = "select * from rbtAssisted";
+    const query = "select * from rbt_assisted";
     const [rows] = await db.execute(query);
     db.release();
 
