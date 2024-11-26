@@ -5,7 +5,7 @@ export async function GET(request) {
   try {
     const db = await pool.getConnection();
 
-    const query = "select * from rbtTotal";
+    const query = "select * from rbt_total";
     const [rows] = await db.execute(query);
     db.release();
 
