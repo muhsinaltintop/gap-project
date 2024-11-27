@@ -1,5 +1,6 @@
 [
     { "value": "ge", "label": "Germany" },
-    { "value": "gr", "label": "Greece" }
+    { "value": "gr", "label": "Greece" },
+    { "value": "s", "label": "Sweden" }
 ]
   
