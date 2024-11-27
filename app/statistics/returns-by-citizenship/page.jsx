@@ -29,12 +29,8 @@ const Page = () => {
 
   const tabs = [
     { label: 'Note on Returns by Citizenship', content: <div className="max-w-6xl text-sm text-justify">
-
-      
-      
       </div> },
     { label: null, content: null },
-    
     { label: null, content: null },
     { label: null, content: null },
   ];
