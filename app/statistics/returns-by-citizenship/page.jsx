@@ -42,6 +42,7 @@ const Page = () => {
       setLoading(true); // İstek başlarken loading'i true yap
       try {
         const result = await getReturnByCitizenship(countryCode, selectedYear); // Asenkron veri alma
+        // const yearsDeneme = await  
         
         const filteredData = result.map(item =>
           Object.fromEntries(
@@ -69,6 +70,8 @@ const Page = () => {
     <div className="w-9/10 mx-6">
       <div className="my-2 max-w-6xl">This section contains statistics on the number of TCNs/foreign nationals who have left the territory by citizenship. The top ten countries for each year are listed specifically in the table below, other nationalities are given in total. 
       </div>
+      {console.log(returnYears)
+      }
       <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={countries}/>
       <DropDown
         label="Please Select Year"

@@ -286,10 +286,19 @@ const getAllAlternativeData = async (countryCode) => {
   }
 }
 
-const getReturnByCitizenship = async (code, selectedYear) => {
-  const data = await fetchData(`/returns-by-citizenship-${code}?year=${selectedYear}populate=*`)
+const getReturnByCitizenship = async (code, mode = 'data', selectedYear = null) => {
+  // URL'i mode ve year parametrelerine göre oluştur
+  let url = `/returns-by-citizenship-${code}?mode=${mode}`;
+  
+  // Eğer mode 'data' ve selectedYear varsa, year parametresini ekle
+  if (mode === 'data' && selectedYear) {
+    url += `&year=${selectedYear}`;
+  }
+
+  const data = await fetchData(url);
   return data;
-}
+};
+
 
 const getAlternativeVariousCategories = async () => {
   const data = await fetchData("/alternative-various-categories?populate=*")
