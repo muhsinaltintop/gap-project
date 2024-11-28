@@ -87,6 +87,9 @@ const Page = () => {
 
   return (
     <div className="w-9/10 mx-6">
+      {console.log("CC:", countryCode)}
+      {console.log("CC:", countries)}
+
       <div className="my-2 max-w-6xl">
         This section contains statistics on the number of TCNs/foreign nationals who have left the territory by citizenship. The top ten countries for each year are listed specifically in the table below, other nationalities are given in total.
       </div>

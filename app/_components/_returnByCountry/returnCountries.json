@@ -2,6 +2,7 @@
     { "value": "ge", "label": "Germany" },
     { "value": "gr", "label": "Greece" },
     { "value": "s", "label": "Sweden" },
-    { "value:": "pl", "label": "Poland"}
+    { "value": "pl", "label": "Poland" },
+    { "value": "jo", "label": "Jordan" }
 ]
   
