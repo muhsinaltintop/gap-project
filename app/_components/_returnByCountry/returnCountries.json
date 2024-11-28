@@ -4,7 +4,9 @@
     { "value": "s", "label": "Sweden" },
     { "value": "pl", "label": "Poland" },
     { "value": "jo", "label": "Jordan" },
-    { "value": "ng", "label": "Nigeria" }
+    { "value": "ng", "label": "Nigeria" },
+    { "value": "ma", "label": "Morocco" }
+
 
 ]
   
