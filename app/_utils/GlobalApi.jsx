@@ -288,7 +288,7 @@ const getAllAlternativeData = async (countryCode) => {
 
 const getReturnByCitizenship = async (code, mode = 'data', selectedYear = null) => {
   // URL'i mode ve year parametrelerine göre oluştur
-  let url = `/returns-by-citizenship-${code}?mode=${mode}`;
+  let url = `/returns-by-citizenship${code}?mode=${mode}`;
   
   // Eğer mode 'data' ve selectedYear varsa, year parametresini ekle
   if (mode === 'data' && selectedYear) {
