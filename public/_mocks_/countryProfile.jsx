@@ -259,60 +259,19 @@ resources to rebuild their lives.</div>, <div key="1" className="mt-2"><span cla
     "countryName": "Tunisia",
     "euMember": false,
     "executiveSummary": [
-  <div key="1" className="mt-2">This comprehensive executive summary provides an in-depth analysis of Tunisian return migration, drawing extensively on data meticulously compiled by Manel Kacem from Eurostat and Frontex, alongside critical insights from Hanen Ben Othman&#39;s article on the GAPs website and Emna Garbaa&#39;s findings from the Italian National Guarantor of Liberties Annual Reports.</div>,
+  <div key="1" className="mt-2">TThe Tunisian context in terms of migration is specific, particular and complex. It constitutes the reflection of the political, economic and social situation experienced by our country from 2011, the year of the Arab spring revolution, until this date. The migratory phenomenon became very visible after the Tunisian revolution.</div>,
   
-  <div key="2" className="mt-4"><strong>Manel Kacem&#39;s Analysis: Detailed Statistical Overview</strong></div>,
+  <div key="2" className="mt-4"><strong>What deserves attention is that the approach defended by the political power was a relatively humanitarian approach towards Syrian asylum seekers who came in thousands to seek refuge in Tunisia or even towards illegal migrants coming from Libya through the southern borders following the outbreak of the Libyan armed conflict and the deterioration of the situation in this country. Tunisia did not close its
+  borders and offered these refugees and migrants the necessary assistance. The evolution that has taken place at the level of the legal context hasn’t been up to the challenges. The situation of asylum seekers and refugees is characterized by precariousness in addition to an incomplete legal framework and the lack of an asylum law. The legal texts applicable to migrants are, for their part, very old and incomplete.</strong></div>,
   
-  <div key="3" className="mt-2">Manel Kacem&#39;s rigorous work with Eurostat and Frontex data sheds light on the multifaceted aspects of Tunisian return migration. The analysis spans from 2014 to 2023, offering a granular view of the migration trends, with key emphasis on returnees.</div>,
+  <div key="3" className="mt-2">This humanitarian approach has not persisted and has shifted towards a security approach, particularly over the last five years, both with regard to irregular migrants located in Tunisia and with regard to irregular Tunisian migrants abroad. Regarding irregular migrants living in Tunisia, they are subject to intolerance and discrimination. They are considered a threat to national security as evidenced by the
+  pushbacks towards the Libyan and Algerian borders. There is no possibility for regularization. Tunisia closed the door on regularization of illegal migrants and priority is given to voluntary and/or assisted return.</div>,
   
   <div key="4" className="mt-2">
-    <ul>
-      <li><strong>Overall Trends:</strong> The data illustrates a fluctuating pattern in the number of returnees, with a notable peak in 2022 at 23,690, indicating the dynamic nature of migration flows.</li>
-      
-      <li><strong>Country-Specific Returns:</strong>
-        <ul>
-          <li><strong>From All EU + Associated Countries:</strong> The number of returnees saw a steady increase from 11,260 in 2021 to 23,690 in 2022, followed by a slight decrease to 14,075 in 2023.</li>
-          <li><strong>From France:</strong> A predominant source, with returnees constituting 74% of all returns in 2021, decreasing to 44% in 2022, and rebounding to 62% in 2023.</li>
-          <li><strong>From Italy and Austria:</strong> Italy&#39;s returnees increased from 10% in 2021 to 19% in 2023. Austria saw a significant spike to 32% in 2022, emphasizing the variance in return patterns.</li>
-        </ul>
-      </li>
-      
-      <li><strong>Demographic Details:</strong> Overwhelmingly, more than 97% of returnees are male, predominantly aged between 18 and 34, highlighting a youth-centric demographic in Tunisian migration trends.</li>
-      
-      <li><strong>Return Decisions and Enforcements:</strong> There&#39;s a marked increase in return decisions, reaching 29,594 in 2021, with effective returns also showing a corresponding upward trend.</li>
-    </ul>
+   On the institutional level, we notice the omnipresence of the Ministry of the Interior and the absence of any judicial control. Tunisian courts have limited involvement in monitoring and enforcing migration policies. This lack of judicial engagement underscores significant gaps in Tunisia’s institutional and legal responses to migration challenges.
   </div>,
   
-  <div key="5" className="mt-4"><strong>Hanen Ben Othman&#39;s Insights: Contextualizing Migration</strong></div>,
-  
-  <div key="6" className="mt-2">Hanen Ben Othman&#39;s analysis offers a contextual backdrop to the statistical data, emphasizing Tunisia&#39;s evolving role in Mediterranean migration as both a source and a transit country. The article highlights the legal and humanitarian challenges faced by migrants and underscores the imperative for policies that respect human rights and adhere to international law.</div>,
-  
-  <div key="7" className="mt-4"><strong>Synthesis and Policy Implications</strong></div>,
-  
-  <div key="8" className="mt-2">The synthesis of Manel Kacem&#39;s detailed statistical analysis with Hanen Ben Othman&#39;s contextual insights presents a nuanced picture of Tunisian return migration. The data not only reflects the complex dynamics of migration flows but also the demographic profiles of the returnees and the varying contributions of different EU countries to these trends.</div>,
-  
-  <div key="9" className="mt-2">Policy recommendations include:</div>,
-  
-  <div key="10" className="mt-2">
-    <ul>
-      <li><strong>Enhancing Legal Frameworks:</strong> Strengthening migration laws and practices to align with international human rights standards.</li>
-      <li><strong>Collaborative Approaches:</strong> Promoting regional and international cooperation to manage migration flows effectively, ensuring the protection and rights of migrants.</li>
-      <li><strong>Addressing Root Causes:</strong> Implementing comprehensive strategies to tackle the underlying factors driving migration, such as economic instability and lack of opportunities.</li>
-    </ul>
-  </div>,
-  
-  <div key="11" className="mt-4"><strong>Emna Garbaa&#39;s synthesis of the data recollected from The Italian National Guarantor annual Parliamentary reports from 2019 to 2022</strong></div>,
-  
-  <div key="12" className="mt-2">
-    <ul>
-      <li>In 2019, Italy organized 66 charter flights to Tunisia, repatriating 2,116 individuals. This was part of a broader effort that included returns to Nigeria and Egypt, with 5 and 3 flights respectively. The report also highlights the administrative detention concerns within maritime operations, emphasizing the need for a reliable legal basis for detaining repatriated citizens.</li>
-      <li>In 2019, 2,116 individuals were repatriated to Tunisia via 66 charter flights.</li>
-      <li>In 2021, 1,221 people were transferred to CPRs (Custody and Repatriation Centers) and received orders for forced return, with Tunisians (1,049) and Egyptians (170) being the primary nationalities repatriated. Tunisia was the top country for forced returns, having 1,945 out of 3,420 forced returns.</li>
-      <li>The report also notes 16 Tunisian forced return flights compared to 8 Egyptian ones. These figures underscore the scale of Italy&#39;s forced return operations and highlight the focus on specific nationalities, especially Tunisians. The reports also raise concerns about the human rights situation in the countries of return, particularly Egypt, due to its alarming human rights records.</li>
-    </ul>
-  </div>,
-  
-  <div key="13" className="mt-2">In conclusion, this executive summary underscores the complexities of Tunisian return migration, calling for informed, humane, and collaborative policy responses. The detailed statistics from Manel Kacem&#39;s work, combined with Hanen Ben Othman&#39;s contextual analysis, and Emna Garbaa&#39;s synthesis from the Italian perspective provide a solid foundation for understanding and addressing the challenges of migration involving Tunisia.</div>
+  <div key="5" className="mt-4"><strong>When it comes to the illegal Tunisian migrants, the pressure from the European Union is very visible: Tunisia is among the rare countries which cooperate with European countries in terms of readmission and return of its nationals through a fairly large number of bilateral readmission agreements. The emphasis is placed mainly on forced return with very often a failure of the reintegration of the Tunisian returnees and new attempts at illegal migration towards the European Union.</strong></div>
 ],
 
     "returnPolicyTimeline": true,

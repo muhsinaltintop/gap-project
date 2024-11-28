@@ -198,5 +198,35 @@
     "id": 40,
     "countryName": "sriLanka",
     "color": "#FFA633"
+  },
+  {
+    "id": 41,
+    "countryName": "burkinaFaso",
+    "color": "#FFA633"
+  },
+  {
+    "id": 42,
+    "countryName": "gambia",
+    "color": "#FFA633"
+  },
+  {
+    "id": 43,
+    "countryName": "guinea",
+    "color": "#FFA633"
+  },
+  {
+    "id": 44,
+    "countryName": "liberia",
+    "color": "#FFA633"
+  },
+  {
+    "id": 45,
+    "countryName": "mali",
+    "color": "#FFA633"
+  },
+  {
+    "id": 46,
+    "countryName": "senegal",
+    "color": "#FFA633"
   }
 ]
