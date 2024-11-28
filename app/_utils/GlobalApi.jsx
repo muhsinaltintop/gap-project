@@ -290,7 +290,6 @@ const getAllAlternativeData = async (countryCode) => {
       category: api2Data.category,
       additionalNote: api2Data?.additionalNotes || "n/a"
     }));
-    console.log("getAVC:", api3Data);
     
     return merged;
   } catch (err) {

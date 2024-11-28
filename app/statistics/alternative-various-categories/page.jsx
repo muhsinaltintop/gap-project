@@ -30,7 +30,6 @@ const Page = () => {
       setLoading(true);
       try {
         const mergedData = await getAllAlternativeData(countryCode); // Tüm verileri çekiyoruz
-        console.log("MD:", mergedData);
         
         setData(mergedData); // Gelen veriyi state'e kaydediyoruz
       } catch (err) {
@@ -46,7 +45,6 @@ const Page = () => {
 
   return (
     <div className="w-9/10 mx-6">
-      {console.log("CC:", countryCode)}
       <div className="my-4 max-w-6xl">
               <div className="my-2">This section contains any related national category/type of official (annual) data on return, under different headings (e.g. &quot;deportation&quot;, &quot;removal&quot;, &quot;repatriation&quot;) than that collected in the previous categories of the Repository.  
               </div>
