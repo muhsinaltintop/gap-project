@@ -241,13 +241,18 @@ const getAllRbtData = async (countryCode) => {
   }
 }
 
+const getAvc = async (countryKey) => {
+  const data = await fetchData("/av")
+}
+
+
 const getAlternative = async (countryKey) => {
   const data = await fetchData("/alternative?populate=*");
   const filteredData = data.map(item => ({
     year: item.year,
     value: item[countryKey] == -1  ? "n/a" : item[countryKey]
   }));
-  
+  //bu silinecek
   return filteredData;
 }
 
