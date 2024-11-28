@@ -117,12 +117,22 @@ const DataTable = ({ mergedData, countryCode }) => {
       </thead>
       <tbody>
         {mergedData.map((row, index) => (
-          <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+          
+          countryCode === "germany" ? (<tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
             <td className="border border-gray-300 px-4 py-2">{row.deportation}</td>
             <td className="border border-gray-300 px-4 py-2">{row.illegalEntries}</td>
             <td className="border border-gray-300 px-4 py-2">{row.personsObligedToLeave}</td>
+          </tr>) : countryCode === "netherlands" ? (<tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+            <td className="border border-gray-300 px-4 py-2">{row.year}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.independentReturn}</td>
           </tr>
+
+          ) : countryCode === "nigeria" ? (<tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+            <td className="border border-gray-300 px-4 py-2">{row.year}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.repatriation}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.deportationFigures}</td>
+          </tr>) : ("")
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>

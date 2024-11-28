@@ -281,6 +281,9 @@ const getAllAlternativeData = async (countryCode) => {
       deportation: item.deportation,
       illegalEntries: item.illegalEntries,
       personsObligedToLeave: item.personsObligedToLeave,
+      independentReturn: item.independentReturn,
+      repatriation: item. repatriation,
+      deportationFigures: item.deportationFigures,
       sourceAlternative: api2Data?.source || "n/a",
       urlAlternative: api2Data?.url || "n/a",
       //URL bilgileri
