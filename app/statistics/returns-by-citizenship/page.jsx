@@ -29,11 +29,16 @@ const Page = () => {
 
   // Dropdown için yılları API'den çek
   useEffect(() => {
+    // Eğer countryCode boşsa API çağrısını yapma
+    if (!countryCode) {
+      return;
+    }
+  
     const fetchYears = async () => {
       setLoading(true);
       try {
         const years = await getReturnByCitizenship(countryCode, "years");
-        
+  
         // Years array'ini istediğiniz formata dönüştür
         const formattedYears = years.map((year) => ({
           value: year.toString(),
@@ -50,7 +55,8 @@ const Page = () => {
     };
   
     fetchYears();
-  }, [countryCode]); // Bu sadece component mount olduğunda çalışır
+  }, [countryCode]); // Dependency countryCode
+  
   
 
   // Seçili ülke ve yıl için veriyi API'den çek
