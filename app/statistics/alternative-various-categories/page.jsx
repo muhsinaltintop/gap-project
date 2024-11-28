@@ -15,7 +15,9 @@ const DataTable = ({ mergedData }) => {
       <thead>
         <tr className="bg-gray-200">
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Year</th>
-          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Voluntary Return</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Deportation (Zurückschiebung)</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Illegal Entries</th>
+          <th className="border border-gray-300 px-4 py-2 font-bold text-left">Persons Obliged to Leave the Country</th>
 
         </tr>
       </thead>
@@ -23,11 +25,33 @@ const DataTable = ({ mergedData }) => {
         {mergedData.map((row, index) => (
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.alternative}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.deportation}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.illegalEntries}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.personsObligedToLeave}</td>
           </tr>
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
+          <td className="border border-gray-300 px-4 py-2">
+            {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
+              <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceAlternative}
+              </Link>
+            ) : (
+              "n/a"
+            )}
+          </td>
+          {/* burada source düzenlenecek */}
+          <td className="border border-gray-300 px-4 py-2">
+            {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
+              <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
+                {mergedData[0]?.sourceAlternative}
+              </Link>
+            ) : (
+              "n/a"
+            )}
+          </td>
+          {/* burada source düzenlenecek */}
           <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
               <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
@@ -70,6 +94,8 @@ const Page = () => {
       setLoading(true);
       try {
         const mergedData = await getAllAlternativeData(countryCode); // Tüm verileri çekiyoruz
+        console.log("MD:", mergedData);
+        
         setData(mergedData); // Gelen veriyi state'e kaydediyoruz
       } catch (err) {
         console.error("Error fetching data: ", err);
@@ -84,6 +110,7 @@ const Page = () => {
 
   return (
     <div className="w-9/10 mx-6">
+      {console.log("CC:", countryCode)}
       <div className="my-4 max-w-6xl">
               <div className="my-2">This section contains any related national category/type of official (annual) data on return, under different headings (e.g. &quot;deportation&quot;, &quot;removal&quot;, &quot;repatriation&quot;) than that collected in the previous categories of the Repository.  
               </div>

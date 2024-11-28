@@ -241,10 +241,11 @@ const getAllRbtData = async (countryCode) => {
   }
 }
 
-const getAvc = async (countryKey) => {
-  const data = await fetchData("/av")
+const getAvc = async (countryCode) => {
+  const data = await fetchData(`/avc-${countryCode}?populate=*`);
+  return data;
+  
 }
-
 
 const getAlternative = async (countryKey) => {
   const data = await fetchData("/alternative?populate=*");
@@ -267,23 +268,27 @@ const getAlternativeSource = async (countryKey) => {
 const getAllAlternativeData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
-    const [api1Data, api2Data] = await Promise.all([
+    const [api1Data, api2Data, api3Data] = await Promise.all([
       getAlternative(countryCode),
-      getAlternativeSource(countryCode)
+      getAlternativeSource(countryCode),
+      getAvc(countryCode)
 
     ]);
 
     
-    const merged = api1Data.map((item, index) => ({
+    const merged = api3Data.map((item, index) => ({
       year: item.year,
-      alternative: item.value,
+      deportation: item.deportation,
+      illegalEntries: item.illegalEntries,
+      personsObligedToLeave: item.personsObligedToLeave,
       sourceAlternative: api2Data?.source || "n/a",
       urlAlternative: api2Data?.url || "n/a",
       //URL bilgileri
       category: api2Data.category,
       additionalNote: api2Data?.additionalNotes || "n/a"
     }));
-
+    console.log("getAVC:", api3Data);
+    
     return merged;
   } catch (err) {
     console.error("Error fetching data: ", err);
@@ -315,4 +320,4 @@ const getReadmittedCitizens = async (countryCode) => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative, getAvc };
