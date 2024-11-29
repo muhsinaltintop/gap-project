@@ -3,7 +3,7 @@
 import SelectCountryComponent from "@/app/_components/_returnByCountry/SelectCountryComponent";
 import { useEffect, useState } from "react";
 import alternativeVariousCountries from "../../../public/_mocks_/alternativeVariousCountries"
-import { getAllAlternativeData } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
+import { getAlternativeSource, getAvc } from "../../_utils/GlobalApi"; // GlobalApi'deki fonksiyon
 import Link from "next/link";
 import { Tooltip as MuiTooltip } from '@mui/material';
 import { CircleHelp } from "lucide-react";
@@ -14,6 +14,7 @@ import originalData from "../../../public/_mocks_/originalData.json"
 const Page = () => {
   const [countryCode, setCountryCode] = useState("");
   const [data, setData] = useState([]);
+  const [sourceData, setSourceData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const source = originalData.find(entry => entry.title ==="Alternative/Various Return Categories (National)")
@@ -29,8 +30,7 @@ const Page = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const mergedData = await getAllAlternativeData(countryCode); // Tüm verileri çekiyoruz
-        
+        const mergedData = await getAvc(countryCode); // Tüm verileri çekiyoruz       
         setData(mergedData); // Gelen veriyi state'e kaydediyoruz
       } catch (err) {
         console.error("Error fetching data: ", err);
@@ -42,6 +42,25 @@ const Page = () => {
 
     fetchData();
   }, [countryCode]);
+
+
+  useEffect(()=> {
+    if (!countryCode) return;
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const source = await getAlternativeSource(countryCode)
+        setSourceData(source)
+      } catch (err) {
+        console.error("Error fetching data: ", err);
+        setError(err); // Hata yakalama
+      } finally {
+        setLoading(false); // İstek tamamlandığında loading'i false yap
+      }
+    };
+
+    fetchData()
+  }, [countryCode])
 
   return (
     <div className="w-9/10 mx-6">
@@ -59,7 +78,7 @@ const Page = () => {
         {countryCode && !loading && !error && (
           <div>
             <div>
-            {data.length > 0 ? <DataTable countryCode={countryCode} mergedData={data} /> : <p>No data available</p>}
+            {data.length > 0 ? <DataTable countryCode={countryCode} mergedData={data} sourceData={sourceData} /> : <p>No data available</p>}
             <div className="flex font-bold justify-between mt-4 mb-4">
             <div className="flex gap-1">
 
@@ -93,7 +112,7 @@ const Page = () => {
 
 export default Page;
 
-const DataTable = ({ mergedData, countryCode }) => {
+const DataTable = ({ mergedData, countryCode, sourceData }) => {
   return (
     <table className="table-auto border-collapse w-full mt-4 shadow-lg">
       <thead>
@@ -134,43 +153,17 @@ const DataTable = ({ mergedData, countryCode }) => {
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
-          <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
-              <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceAlternative}
-              </Link>
-            ) : (
-              "n/a"
-            )}
-          </td>
-          {/* burada source düzenlenecek */}
-          <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
-              <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceAlternative}
-              </Link>
-            ) : (
-              "n/a"
-            )}
-          </td>
-          {/* burada source düzenlenecek */}
-          <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlAlternative != "n/a" || undefined ? (
-              <Link href={mergedData[0]?.urlAlternative} className="text-blue-500 hover:underline">
-                {mergedData[0]?.sourceAlternative}
-              </Link>
-            ) : (
-              "n/a"
-            )}
-          </td>
+
+          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2">{<Link href={row.url}>{row.source}</Link>}</td>)
+        )}
+
         </tr>
         <tr className="bg-gray-100">
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
-          <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote || "No notes available"}</td>
+          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2">{row.additionalNotes}</td>))}
         </tr>
 
 
-        {/* buradan sonrası kalacak */}
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
         <td className="border border-gray-300 px-4 py-2" colSpan="5">Data is not avalible.</td>

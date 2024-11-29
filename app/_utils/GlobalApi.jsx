@@ -265,7 +265,6 @@ const getAllAlternativeData = async (countryCode) => {
       
       
     ]);
-    console.log("2:", api2Data)
 
     
     const merged = api1Data.map((item, index) => ({
@@ -282,7 +281,6 @@ const getAllAlternativeData = async (countryCode) => {
       category: api2Data.category,
       additionalNote: api2Data?.additionalNotes || "n/a"
     }));
-    console.log("api2Data:", api2Data);
     
     
     return merged;
@@ -316,4 +314,4 @@ const getReadmittedCitizens = async (countryCode) => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative, getAvc };
+export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative, getAvc, getAlternativeSource };
