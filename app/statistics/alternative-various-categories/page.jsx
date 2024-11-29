@@ -168,6 +168,9 @@ const DataTable = ({ mergedData, countryCode }) => {
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
           <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote || "No notes available"}</td>
         </tr>
+
+
+        {/* buradan sonrası kalacak */}
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
         <td className="border border-gray-300 px-4 py-2" colSpan="5">Data is not avalible.</td>

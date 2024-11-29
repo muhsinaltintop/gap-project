@@ -247,36 +247,28 @@ const getAvc = async (countryCode) => {
   
 }
 
-const getAlternative = async (countryKey) => {
-  const data = await fetchData("/alternative?populate=*");
-  const filteredData = data.map(item => ({
-    year: item.year,
-    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
-  }));
-  //bu silinecek
-  return filteredData;
-}
 
-const getAlternativeSource = async (countryKey) => {
+const getAlternativeSource = async (countryCode) => {
   // Üçüncü API'den veri çekmek için benzer bir yapı
-  const data = await fetchData("/alternative-source?populate=*");
-  const filteredData = data.find(item => item.country.toLowerCase() === countryKey.toLowerCase())
+  const data = await fetchData(`/alternative-source?country=${countryCode}`);
   
-  return filteredData;
+  return data;
 };
 
 const getAllAlternativeData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
-    const [api1Data, api2Data, api3Data] = await Promise.all([
-      getAlternative(countryCode),
-      getAlternativeSource(countryCode),
-      getAvc(countryCode)
+    const [api2Data, api1Data] = await Promise.all([
 
+      getAlternativeSource(countryCode),
+      getAvc(countryCode),
+      
+      
     ]);
+    console.log("2:", api2Data)
 
     
-    const merged = api3Data.map((item, index) => ({
+    const merged = api1Data.map((item, index) => ({
       year: item.year,
       deportation: item.deportation,
       illegalEntries: item.illegalEntries,
@@ -290,6 +282,8 @@ const getAllAlternativeData = async (countryCode) => {
       category: api2Data.category,
       additionalNote: api2Data?.additionalNotes || "n/a"
     }));
+    console.log("api2Data:", api2Data);
+    
     
     return merged;
   } catch (err) {
