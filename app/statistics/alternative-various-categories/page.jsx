@@ -137,30 +137,30 @@ const DataTable = ({ mergedData, countryCode, sourceData }) => {
           
           countryCode === "germany" ? (<tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.deportation}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.illegalEntries}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.personsObligedToLeave}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.deportation === 0 ? "n/a " : row.deportation}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.illegalEntries === 0 ? "n/a " : row.illegalEntries}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.personsObligedToLeave === 0 ? "n/a " : row.personsObligedToLeave}</td>
           </tr>) : countryCode === "netherlands" ? (<tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.independentReturn}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.independentReturn === 0 ? "n/a " : row.independentReturn}</td>
           </tr>
 
           ) : countryCode === "nigeria" ? (<tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.repatriation}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.deportationFigures}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.repatriation === 0 ? "n/a " : row.repatriation}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.deportationFigures === 0 ? "n/a " : row.deportationFigures}</td>
           </tr>) : ("")
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
 
-          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2">{<Link href={row.url}>{row.source}</Link>}</td>)
+          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2 text-primary">{<Link target="_blank" href={row.url}>{row.source === 0 ? "n/a " : row.source}</Link>}</td>)
         )}
 
         </tr>
         <tr className="bg-gray-100">
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
-          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2">{row.additionalNotes}</td>))}
+          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2">{row.additionalNotes === "" ? "n/a " : row.additionalNotes}</td>))}
         </tr>
 
 
