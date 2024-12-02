@@ -121,8 +121,16 @@ const Page = () => {
           </div>
 
           <div className="my-2">
+            {console.log("CC:", countryCode)
+
+            }
+            {countryCode === "nl" ? (
+              <div className="my-2 max-w-6xl text-justify"><span className="text-orange-500 font-bold">* Note on Netherlands:</span> Please note these data come from Dienst Terugkeer en Vertrek (Return And Repatriation Services). This source does not provide exact numbers per citizenship. (Note from web editor, to indicate the numbers, numbers set as 1)</div>
+
+            ): ""}
+
             <div className="my-2 max-w-6xl text-justify">
-              * Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal.
+              Third Country Nationals (TCN) refers to a person who does not have the nationality of one of the EU member states, nor the nationality of one of the countries associated with the EU (Iceland, Liechtenstein, Norway and Switzerland). For the non-EU countries, TCNs corresponds to &quot;foreign nationals&quot; subject to the removal.
             </div>
           </div>
         </div>
