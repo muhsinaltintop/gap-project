@@ -1,0 +1,2821 @@
+[
+  {
+    "countryName": "Germany",
+    "policies" : [
+    {"policyName": "Germany: \"Dublin Return\" ",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Federal Office for Migration and Refugees (BAMF)",
+    "summary": "Asylum seeker is handed over to the EU country of first arrival. In 2022, a total of 4,158 'outgoing transfers' were carried out and Germany received a total of 3,700 'incoming transfers'.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 01.01.2014 (Dublin III Regulation)",
+    "targetGroup": "General",
+    "targetOriginCountryRegion": 
+      {"all": true,
+      "specific": false,
+      "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "EURODAC",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: Return to \"safe country of origin\" ",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "BAMF and AnkER (arrival) centres (accelerated procedures in two federal states: Bavaria, North Rhine-Westphalia)",
+    "summary": "German consitution defines as safe countries of origin the countries 'in which, on the basis of their laws, enforcement practices and general political conditions, it can be safely concluded that neither political persecution nor inhuman or degrading punishment or treatment exists'.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Art. 16a (2), (3) Basic Law was amended in 26.05.1993",
+    "targetGroup": "Migrants from safe third countries",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: 'Return' to a 'Safe third country'",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "German Federal Police at land border",
+    "summary": "A country that is willing to readmit the foreigner is regarded as a 'safe third country' for the asylum seeker.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Sec. 29 (1) (3) Asylum Act was amended to the current version on the 06.08.2016.",
+    "targetGroup": "Asylum seekers, who's asylum application is inadmissible because another state is willing to take the asylum seeker back",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: 'Return' to a 'another third country' (sonstiger Drittstaat)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "",
+    "summary": "Migrants with a return order that cannot return to their country of origin may return to a third country that agrees to receive them (e.g. based on previous residence, partner's nationality). (akin to first country of asylum concept, i.e. where the applicant presumably holds travel document from)",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Sec. 29 (1) (4) Asylum Act is in force in the current version since 06.08.2016.",
+    "targetGroup": "all migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: forced returns",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The main responsibility for forced return measures rests with local and regional foreign-resident authorities  (ZAAB);  counselling centres run by non-governmental organisation;  the authorities of municipalities and districts.",
+    "summary": "forced return refers to the action that is being taken against such person who no longer have the right t stay within Germany and whose period for voluntary return has expired.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "",
+    "targetGroup": "all migrants without a right to stay",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: Rückkehrförderprogramme REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programm, 2015, expanded with the StarthilfePlus programme for reintegration 2017",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Federal Office for Migration and Refugees (BAMF; under Federal Ministry of the Interior, Building and Community (BMI) )",
+    "summary": "\"Program to support return of a) Persons from non-EU countries who are currently in the asylum procedure,  whose asylum application has been rejected and are clearly obliged to leave the country and, who are enpolicyNamed to asylum or have discretionary leave to remain can receive REAG/GARP.  b) Persons from the EU who have become victims of human trafficking or forced prostitution can apply for assistance. \"StarthilfePlus\" programme, which has been expanding the nationwide return assistance programmes REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programme) with an additional financial bonus since the beginning of 2017\"",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 1979 REAG, in 1989 supplemented by GARP, since 2017 StarthilfePlus",
+    "targetGroup": "TCN, whose asylum application has been or clearly will be rejected, EU citizens who have been vicicm to human trafficking",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "Non-EU countries",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "See Annex 4 of the Country Report",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: Perspektive Heimat",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Federal Ministry for Economic Cooperation and Development (BMZ), GIZ, with advice centers in the origin countries (currently a remake/ reform of the mandate and tasks of these centers is underway).",
+    "summary": "The Federal Ministry of the Interior and Community (BMI) and the Federal Ministry for Economic Cooperation and Development (BMZ) have started a joint return initiative designed to promote voluntary return and lasting reintegration in the country of origin. The initiative aims at linking return counselling activities in Germany with economic development activities in the individual countries of origin.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "from 2017",
+    "targetGroup": "migrants who cannot stay in Germany permanently or who want to return to their country of origin voluntarily",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan, Egypt, Albania, Gambia, Ghana, Iraq, Kosovo, Morocco, Nigeria, Pakistan, Senegal, Serbia and Tunisia",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.deutschland.de/en/topic/politics/migration-and-return-the-perspektive-heimat-program",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: Border controls at German-Austrian border (2015 to date)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "German Federal Police",
+    "summary": "NGOs such as PRO ASYL arguing that border controls lead to refusals of entry of would-be asylum seekers in Germany who are denied acdess to an assessment of the BAMF whether Germany might be responsible for handling their asylum application. Independently of the pandemic situation, Germany has regularly re-introduced border controls. The prolongations occurred despite a ruling of the CJEU of 26 April 2022 in which the court states that border controls cannot exceed a duration of 6 months unless there is a new threat justifying a renewed introduction of controls for another six months maximum. A representative of the union of police officers equally criticised the extensions, on the grounds that they do not reduce irregular immigration but rather shift routes to other land borders.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 2015",
+    "targetGroup": "Migrants trying to enter into Germany via Bavaria",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: Return to Greece and Spain",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "German Federal Police",
+    "summary": "In 2018, following a heated political debate, a new procedure was introduced which enables the Federal Police to refuse entry at the border and send persons back to Greece and Spain within 48 hours if they have previously applied for asylum there.55 This procedure is based on administrative regulations and special administrative readmission agreements with the two countries. These returns are therefore not based on the Dublin Regulation, but on a refusal of entry under the (national) notion of 'safe third countries' in combination with administrative arrangements concluded with other EU Member States. Since 2019, it was only applied to persons found at the Austrian-German border, as this was the only border where controls continue to take place: between August 2018 and May 2021, only 50 persons were returned (46 returns to Greece and 4 to Spain) on the basis of the readmission agreements with these countries. No refusals of entry were carried out between May 2021 and the end of 2021, two persons were returned to Spain in 2022.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 2018",
+    "targetGroup": "de jure all migrant trying to enter Germany, de facto only those from Austria",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Germany: intensive search measures in the border area with Poland",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "German Federal Police",
+    "summary": "In 2021, the Federal Police registered 11,228 border crossings 'with a connection to Belarus', the main nationalities of persons crossing into Germany were from Iraq, Syria, Yemen and Afghanistan. The Federal Government did not introduce temporary border controls, and refusals of entry at the German-Polish border are therefore not permitted. The Federal Police conducts 'intensive search measures short of border controls' in the border area. Over the course of 2022, the number of unauthorised border crossings from Poland into Germany decreased, with 8,760 detected crossings (from Iraq, Syria and Egypt).",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2021",
+    "targetGroup": "Those migrants trying to enter Germany from Poland",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "StarthilfePlus - Supplementary Reintegration Support in the country of origin",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "BAMF  IOM is responsible for implementing the reintegration assistance in the destination country.",
+    "summary": "SHP assistance can be granted - depending on nationality (not country of destination) - if voluntary return assistance has been granted at the same time through the REAG/GARP 2.0 program. The SHP benefits are determined by the BAMF together with the REAG/GARP 2.0 assistance.    A) Financial support in the target country (2nd start-up aid) in  - regular amount Support (no *)   - reduced amount Support (*)   B) Reintegration support in the area of housing (**)   C) Reintegration support for people with long-term toleration status (***) , (**** only one-time support)",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "from 2017",
+    "targetGroup": "Asylum seekers who have been rejected or will most likely be rejected and therefore are obliged to leave",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Benin, Burkina Faso, China, Colombia, Cote d'Ivoire, Guinea Bissau, Mali, Niger, Russian Federation, Senegal, Sierra Leone, Sudan, Togo, Algeria*, Armenia*, Bangladesh*, DR Congo (Kinshasa)*, Egypt*, Ethiopia*, The Gambia*, Ghana*, Guinea*, India*, Iraq*, Cameroon*, Kenya*, Mongolia*, Morocco*, Nigeria*, Pakistan*, Sri Lanka*, Tajikistan, Tunisia*, Turkey* and Vietnam*, Azerbaijan**, Iran**, Lebanon**,  Bosnia-Herzegovina***, Montenegro***, Albania****, Georgia****, Moldova****, Macedonia****, Serbia****",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ergaenzende-reintegrationsunterstuetzung-im-zielland-bei-einer-freiwilligen-rueckkehr-mit-reag-garp",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "European Reintegration Programme (EURP) (formerly Joint Reintegration Services (JRS-Programme))",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The BAMF is responsible for coordinating this assistance at the national level",
+    "summary": "The JRS program (\"Joint Reintegration Services\") provides individual reintegration assistance to returnees in their countries of origin.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 01.04.2022",
+    "targetGroup": "TNC, Support is possible for both those returning voluntarily and those who have been repatriated.",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Egypt, Ethiopia, Albania*, Algeria, Armenia, Bangladesh, Gambia, Georgia*, Ghana, Guinea, India, Iraq, Jordan, Cameroon, Kazakhstan, Kenya, Kyrgyzstan, Dem. Rep. Congo (Kinshasa), Morocco, Moldova*, Mongolia, Nepal, Nigeria, North Macedonia*, Pakistan, Palestine, Serbia*, Somalia (with Somaliland), Sri Lanka, Tajikistan, Tunesia, Turkey und Vietnam.",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "funded by Frontex",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/european-reintegration-programme-eurp/",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "URA",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Baden-Württemberg, Berlin, Bremen, Lower Saxony, North Rhine-Westphalia (only voluntary returnees), Saxony, Saxony-Anhalt, Schleswig-Holstein, Thuringia (only voluntary returnees)  BAMF",
+    "summary": "The project offers reintegration support after your return to Kosovo to enable you to sustainably reintegrate in your country of origin.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": true,
+      "local": false
+    },
+    "duration": "2016",
+    "targetGroup": "returnees who resided in German at least six most prior to their return",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Kosovo",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "You can apply for the assistance benefits only at the Return Center in Prishtina",
+    "notesBudget": "See Annex 4 of the country report",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ura",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "URA Albania",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Funded by BAMF and implemented by GIZ",
+    "summary": "The project focuses in particular on the often very demanding initial phase immediately after arrival in Albania. It helps those returning to settle in more easily and to generate individual prospects for a new beginning. To this end, the bridge component offers personal support based on trust as well as various counselling services and benefits in kind.   For persons with long-term toleration (at least 2 years), reintegration support under JRS has been available since January 1, 2023. Therefore, as of May 01, 2023 (cut-off date: departure), they are excluded from support under the bridging component Albania.   only the following states are participating in the program: Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": true,
+      "local": false
+    },
+    "duration": "since 2021",
+    "targetGroup": "Those who have returned to Albania voluntarily or were repatriated",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Albania",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/brueckenkomponente-albanien",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Centre for Migration and Development",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "BMZ and GIZ",
+    "summary": "On behalf of the German Federal Ministry for Economic Cooperation and Development (BMZ), the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH operates so-called \"Centers for Migration and Development\" in various countries, which accompany returnees during their reintegration  The centers advise and support you if you have returned from Germany, Europe or other countries to one of the following countries and need assistance with your local social and economic reintegration",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": true,
+      "local": false
+    },
+    "duration": "since 2017",
+    "targetGroup": "Those who have returned from Germany",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Albania, Egypt, Gambia, Ghana, Iraq, Kosovo, Morocco, Nigeria, Pakistan, Senegal, Serbia and Tunisia.",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/bmz-startfinder/",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "SOLWODI - Help for women",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "SOLWODI and NGOs",
+    "summary": "The aim of the program is to enable single and single-parent women to return and to support their economic and social new start. In cooperation with local non-governmental organizations (NGOs), the program offers holistic as well as individually tailored counseling and support for women in Germany and in the destination countries.  The program offers individual support for return and reintegration. This support can be in the form of contacts to our partner organizations in the target countries or financial.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 1987",
+    "targetGroup": " single or single-parent woman, special need due to difficult life situation, vulnerability",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "SOLWODI Return and Reintegration Project - Coordination Office",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/solwodi-hilfe-fuer-frauen",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Ipso Afghanistan",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "IPSO",
+    "summary": "The International Psychosocial Organization (Ipso) is a German-based humanitarian organisation with a branch in Afghanistan. It is an international non-governmental, non-profit and non-political organisation, which delivers psychosocial counselling services according to best practices to the people in need. The services are open to all people, regardless of which ethnic background, religion, race, gender or political affiliation.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 2008",
+    "targetGroup": "retrunees",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "Psychosocial Counselling and Mental Health Center in Kabul",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ipso-afghanistan",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Caritas Serbia",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Caritas Serbia and counseling centres, institution and authorities in Germany",
+    "summary": "Caritas Serbia is a humanitarian organisation of the Catholic Church and a member of the international Caritas network with national associations in more than 160 countries worldwide. Since 1995, Caritas Serbia has provided humanitarian aid and assistance to people in need, regardless of their nationality, religion or beliefs.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "established in 2017",
+    "targetGroup": "returnees to Serbia",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Serbia",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "Caritas Serbia  Counselling Center for Returnees",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/caritas-serbien",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "AWO Kosovo",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "AWO Nuremberg",
+    "summary": "The primary goal of the return project is the sustainable reintegration of voluntary returnees from Germany to their country of origin, Kosovo.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since January 2007 and a counseling center open in Prishtina in March 2009",
+    "targetGroup": "returnees to Kosovo",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Kosovo",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "The project is funded by the German Federal Foreign Office and the federal state of Bavaria.",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/awo-nuernberg-im-kosovo",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Diakonie Kosova - Return and Reintegration Counselling",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Diakonie Kosova (DiaKos) and the affiliated Diakonie Training Center (DTC)",
+    "summary": "The primary goal of the return project is the sustainable reintegration of returnees from the Free State of Bavaria in their country of origin, Kosovo.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "since 2007 (01 March 2022 until 29 February 2024)",
+    "targetGroup": "returnees to Kosovo",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Kosovo",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.returningfromgermany.de/en/programmes/diakonie-kosova",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Sweden",
+    "policies": [
+    
+    {"policyName": "The Aliens Ordinance (SFS 2006:97)    Utlännings förordning (SFS 2006:97)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency, Migration Courts, Migration Court of Appeal",
+    "summary": "The Aliens Ordinance contains supplementary and, in some cases, more detailed regulations that complement the Aliens Act",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2006",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Act (2022:700) on special control of certain foreigners    Lag (2022:700) om särskild kontroll av vissa utlänningar",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Security Police, Migration Agency, Migration Court of Appeal, the Government",
+    "summary": "The Act specifies the conditions under which a foreign national can be expelled on grounds of national security or if there is reasonable suspicion that they will engage in or participate in terrorist activities. It applies exclusively to individuals currently in Sweden who are not subject to deportation or expulsion under the provisions of the Aliens Act.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2022",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "The Aliens Act (SFS 2005:716) Utlänningslag (SFS 2005:716)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Migration Agency, Migration Courts, Migration Court of Appeal, Police Authority",
+    "summary": "The Aliens Act is the primary piece of legislation regulating migration to Sweden. This Act includes definitions, general regulations, and conditions that must be met for foreigners to be allowed entry, residence, and employment in Sweden. It also encompasses regulations on detention, the enforcement of decisions regarding residence permits, the appeals process, and so on.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2005 (entry into force 2006)",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "The Act on residence permits for students at upper secondary level (2017:353)    Lag (2017:353) om uppehållstillst ånd för studerande på gymnasial nivå",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency, Migration Courts, Migration Court of Appeal",
+    "summary": "The act contains special provisions on residence permits for students at upper secondary school level.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2017",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "The Administrative Procedure Act (2017:900)    Förvaltningslag (2017:900)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Courts, Migration Courts of Appeal",
+    "summary": "The Act is a framework Act on administrative procedure which applies when the Aliens Act does not c},ntain specific provisions.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2017",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "The Temporary Act (2016:752) on temporary restrictions on the possibility of obtaining residence permits in Sweden    den tillfälliga lagen (Lag (2016:752) om tillfälliga begränsningar av möjligheten att få uppehållstillstånd i Sverige",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Migration Agency, Migration Courts, Migration Court of Appeal",
+    "summary": "The temporary law was introduced in connection with the refugee situation in 2015 with the aim of reducing asylum immigration to Sweden. Through the restrictions that were introduced, Sweden's asylum rules were lowered to the minimum level required by EU law and international conventions.2 After the temporary law was introduced in July 2016, the number of asylum seekers coming to Sweden has decreased. In 2017, approximately 26,000 asylum seekers came to Sweden, compared to the refugee situation in 2015, when just under 163,000 people sought asylum.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2006-2021 July",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "The Unaccompanied Minors Guardian Act (2005:429) Lag (2005:429) om god man för ensamkomma nde barn",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency, Migration Courts, Migration Court of Appeal",
+    "summary": "The Act contains provisions on the appointment of a guardian for unaccompanied minors (foreign citizens and stateless persons).",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2005",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Reception of Asylum Seekers Act (LMA) (1994:137) Lag (1994:137) om mottagande av asylsökande m.fl. (LMA)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "The Act contains regulations on housing, social benefits, occupation such as language courses or other activites (not employment) etc. for asylum seekers, persons who have applied for temporary protection, and in special cases.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "1994",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Ordinance on Reception of Asylum Seekers and others (1994:361)    Förordning (1994:361) om mottagande av asylsökande m.fl.",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "The Ordinance contains additional regulations on housing, benefits etc. for asylum seekers and others.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "1994",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Act on health care for asylum seekers and others. (2008:344)     Lag (2008:344) om hälso- och sjukvård åt asylsökande m.fl.",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "The Act contains supplementary regulations regarding the obligations of the regions to provide health care and dental care to asylum seekers, holders of temporary protection permits and persons held  in detention.it also applies to rejected asylum seekers, but not those who are actively avoiding enforcement of a negative asylum decision. The extent of access to health care varies between children and adults.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2008",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Ordinance on health care for asylum seekers etc. (2008:347) Förordning (2008:347) om hälso- och sjukvård åt asylsökande m.fl.",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "The Ordinance establishes that the Swedish Migration Agency must provide information to regions about persons covered by the Act on health care for asylum seekers and others and the manner in which this is to be carried out.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2008",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Ordinance on state compensation for healthcare for asylum seekers (1996:1357) Förordning (1996:1357) om statlig ersättning för hälso- och sjukvård till asylsökande",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "The Ordinance contains provisions on financial compensation to regions for healthcare costs including costs for dental care, as well as to pharmacies for prescription drugs.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "1997",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Ordinance on re-establishme nt support for certain foreigners (2008:778) Förordning (2008:778) om återetablering sstöd för vissa utlänningar",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "The Ordinance regulates access to financial support to aliens having applied for international protection in case of their voluntary return.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2008",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Act (2021:1187) with supplementary provisions to the EU's regulations on the Schengen Information System.    Lag (2021:1187) med kompletterande bestämmelser till EU:s förordningar om Schengens informationssystem",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Agency",
+    "summary": "This regulation supplements  - Regulation (EU) 2018/1860 of the European Parliament and of the Council of 28 November 2018 on the use of the Schengen Information System for the return of third-country nationals staying illegally in the Member States, here referred to as the Return Regulation,      - Regulation (EU) 2018/1861 of the European Parliament and of the Council of 28 November 2018 on the establishment, operation and use of the Schengen Information System (SIS) in the field of entry and exit controls, amending the Convention on the application of the Schengen Agreement",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2021 (entry into force 2023)",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "The Detention Act (2010:611) Häkteslag (2010:611)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Police Authority",
+    "summary": "The Act contains fundamental provisions persons on respect for human dignity held in detention in policy custody premises instead of in Migration Agency detention centres.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2010",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "The Act of Judicial Procedure (RB 1942:740) Rättegångsbalk (1942:740)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Migration Courts, Migration Courts of Appeal",
+    "summary": "The Swedish Code of Judicial Procedure is presented under the topics of court organization, judicial proceedings in general, evidence, lower court proceedings, appellate proceedings, supreme court proceedings, and extraordinary remedies for substantive defects and grave procedural errors.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "1942",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Act (2018:1693) on the police's processing of personal data within the scope of the Criminal Data Act    Lag (2018:1693) om polisens behandling av personuppgifter inom brottsdatalagens område",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Police Authority",
+    "summary": "The law shall apply to the processing of personal data related to national security in the Swedish Security Service's crime-fighting and prosecution activities. When the Swedish Security Service processes personal data that do not pertain to national security for the purpose of combating and prosecuting crimes, the authority shall apply the Crime Data Act and the Police Data Act. Furthermore, consequential amendments are proposed in several other laws.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2018",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+
+  {
+    "countryName": "Greece",
+    "policies":[
+    {"policyName": "Implementation of Assisted Voluntary Returns and Reintegration Measures as well as Operation of Accommodation Center for Applicants of Voluntary Return (IOM AVRR, OCAVRR)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "International Organization for Migration (IOM); Ministry of Migration & Asylum; Ministry of Citizen's Protection; Embassies; Airlines; Athens International Airport Authorities;",
+    "summary": "Through the project \"Implementation of Assisted Voluntary Returns and Reintegration Measures as well as Operation of Accommodation Center for Applicants of Voluntary Return\" IOM is expected to assist in the voluntary return of 17,000 third-country nationals to their countries of origin, to provide in kind reintegration assistance to 1,700 returnees and to accommodate 1,700 assisted voluntary return applicants in the Open Centre.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Renewed from 01-09-2023 until 30-06-2029. Implemented through different funding schemes since 2010 (AVR) & 2015 (OCAVRR)",
+    "targetGroup": "Migrants subject to - and willing to - voluntarily return",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": true},
+    "specific": "",
+    "exceptions": "Exceptions according to the EU, the Greek law and ??? mandate. Particularly, IOM does not implement voluntary returns to Albania and Northern Macedonia. Also, IOM does not support voluntary returns to the Syrian Arab Republic, Afghanistan and Ukraine at this stage.",
+    "digitalInfrastructuresTechnologies": "AVRR & OCAVRR database; security/surveillance systems",
+    "materialInfrastructure": "informative leaflets; video; brochure; advertisments; IOM headquarters in Athens;  Accommodation Center for Applicants of Voluntary Return in Athens; IOM vehicle;",
+    "notesBudget": "Funding:  Home Affairs Funds - with the co-funding by the European Union, Budget: 52.000.000 € (from 01-09-2023 until 30-06-2029)",
+    "officialWebsite": "https://greece.iom.int/implementation-assisted-voluntary-returns-and-reintegration-measures-well-operation-accommodation-center-applicants-voluntary-return  https://greece.iom.int/implementation-assisted-voluntary-returns-including-reintegration-measures-and-operation-open-center-prefecture-attica-applicants-voluntary-return-avrr/ocavrr",
+    "programEvaluation": "",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Forced returns of irregular third-country nationals, implemented by the Hellenic Police, and projects related to the operation of the Pre-Departure (Detention) Centers, run by the Hellenic Police.",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Hellenic Police (Ministry of Citizen Protection); Ministry of Migration & Asylum; Airlines; Airport Authorities; Greek Ombudsman for monitoring the processes; Civil society actors for the provision of health care and medical treatment services in the detention facilities;",
+    "summary": "Forced returns of irregular third-country nationals, implemented by the Hellenic Police, funded by the contribution of AMIF. Project Approval Date: 14/04/2016.   Projects related to the operation of the Pre-Departure (Detention) Centers, run by the Hellenic Police.  For example, the project \"Improvement of Living Conditions in the Pre-Departure Centers\", funded by AMIF, with Hellenic Police as the beneficiary was approved on 13/10/2016, with Union contribution of 59,548,925.99 €. Furthermore, the project \"Reinforcement of Police Services with personnel for providing guarding and operation services in Pre-Departure Detention Centers\", funded by AMIF, with Hellenic Police as the beneficiary, was approved on 29/10/2023, with Union contribution of 14,739,951 €.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "",
+    "targetGroup": "Migrants subject to the forced execution of return decision; detention may also concern asylum seekers",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": true},
+    "specific": "",
+    "exceptions": "Exceptions according to the EU lists and the Greek legal & insitutional framework.",
+    "digitalInfrastructuresTechnologies": "Police databases; security/surveillance systems",
+    "materialInfrastructure": "police vehicles; police departments; airport; detention centers; fences; cameras;",
+    "notesBudget": "Budget of the project \"The application of Forced Returns of irregular Third Country Nationals\" (funded by the contribution of AMIF, approval date: 14/04/2016): 12,152,217.84 €   The project \"Improvement of Living Conditions in the Pre-Departure Centers\", funded by AMIF, with Hellenic Police as the beneficiary was approved on 13/10/2016, with Union contribution of 59,548,925.99 €.   The project \"Reinforcement of Police Services with personnel for providing guarding and operation services in Pre-Departure Detention Centers\", funded by AMIF, with Hellenic Police as the beneficiary  was approved on 29/10/2023, with Union contribution of 14,739,951 €.",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Push-backs",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Hellenic Coast Guard; Frontex; Greek border law enforcement forces; both uniformed personnel and individuals in civilian clothing; Recording Mechanism of Informal Forced Returns of the Greek National Commission for Human Rights for the monitoring;",
+    "summary": "Illegal push-backs both in the Aegean sea and the land borders, particularly at the Evros region",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": true,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "",
+    "targetGroup": "",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Drones, thermal cameras, sensors.",
+    "materialInfrastructure": "Informal detention centers, vehicles, manpower, other building facilities, heavy vehicles, watercrafts, weapons, full faces, bulletproofs, airships",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+
+  {
+    "countryName": "Poland",
+  "policies":[
+    {"policyName": "Assisted Voluntary Returns and Reintegration",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The Office for Foreigners, the Border Guard, IOM",
+    "summary": "A programm assisting FCNs who are willing to leave Poland. Provides help with transport and reintegration.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 2006",
+    "targetGroup": "All migrants ordered to leave the country",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://poland.iom.int/pl/pomoc-w-dobrowolnym-powrocie-i-reintegracji-avrr",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Netherlands",
+    "policies":[
+  {"policyName": "The Cooperation on Migration and Partnerships to Achieve Sustainable Solutions initiative (COMPASS)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Targeting the following countries: Afghanistan, Algeria, Chad, Egypt, Ethiopia, Iraq, Lebanon, Libya, Mali, Morocco, Niger, Nigeria, Sudan and Tunisia.    IOM, Dutch Ministry of Foreign Affairs",
+    "summary": "The International Organization for Migration (IOM) and the Ministry of Foreign Affairs of the Netherlands launched the Cooperation on Migration and Partnerships to Achieve Sustainable Solutions initiative (COMPASS) at the beginning of 2021. COMPASS is a global initiative, in partnership with 14 countries, designed to enhance access to protection-sensitive pathways and empowerment for migrants of all gender and diversity groups, thereby enabling them to contribute to sustainable development outcomes in their communities. It },s not specifically centered around return, but returns and reintegration are inherent parts of different programmes, see for example: https://rodakar.iom.int/stories/reintegration-after-horrors-irregular-migration-and-trafficking-i-am-gradually-regaining-my-dignity",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2021-Now",
+    "targetGroup": "Serve various groups of migrants",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan, Algeria, Chad, Egypt, Ethiopia, Iraq, Lebanon, Libya, Mali, Morocco, Niger, Nigeria, Sudan and Tunisia.",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "Too diverse",
+    "notesBudget": "",
+    "officialWebsite": "https://www.iom.int/compass",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Return and Emigration Assistance from the Netherlands' (REAN)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "IOM (main executing actor), DT&V (repatriation service)",
+    "summary": "This programme runs since 1991 and is one of the main funding programmes for assisted returns. It involves so-called basic departure services (\"basisvertrekondersteuning\"), this includes provision of information/education, assistance with obtaining of travel documents, minor financial assistance upon return (200euro, depending on nationality), special support for vulnerable migrants.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 1991 until now",
+    "targetGroup": "Rejected asylum seekers and irregular migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": true},
+    "specific": "",
+    "exceptions": "A Andorra Australië G Guam M Macao Malta Monaco S San Marino Singapore Slovenië Slowakije Spanje B Bahama's België Brunei Darussalam Bulgarije H Heilige Stoel (Vaticaanstad) Hong Kong Hongarije N Nederland (inclusief Aruba, Curacao en Sint Maarten) Nieuw-Zeeland Noorwegen T Taiwan Tsjechië C Canada Cyprus I Ierland Ijsland Israël Italië O Oostenrijk V Verenigd Koninkrijk3 Verenigd Arabisch Emiraten Verenigde Staten D Denemarken1 Duitsland J Japan P Polen Portugal Z Zuid-Korea Zweden Zwitserland E Estland K Koeweit Kroatië Q Qatar F Finland Frankrijk2 L Letland Liechtenstein Litouwen Luxemburg R Roemenië",
+    "digitalInfrastructuresTechnologies": "not known yet",
+    "materialInfrastructure": "under research",
+    "notesBudget": "",
+    "officialWebsite": "https://www.dienstterugkeerenvertrek.nl/ondersteuning-bij-terugkeer/basisvertrekondersteuning",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Assisted Voluntary Return and Reintegration Programma",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "IOM, DT&V, Frontex FX JRS, European Reintegration Support Organizations Network (ERSO)  NGOs including: Vluchtelingenwerk Nederland, Stichting Goedwerk Foundation, Stichting Rotterdams Ongedocumenteerden Steunpunt (ROS), Stichting Solid Road en Stichting WereldWijd",
+    "summary": "Dutch NGOs carry out reintegration projects based on the Subsidy Scheme for Assisting Independent Departure. To provide reintegration support in the country of origin or destination, IOM and NGOs must in principle use the networks of Frontex FX JRS, ERSO, & IOM.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Ongoing",
+    "targetGroup": "Rejected asylum seekers, irregular migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": true},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Under research",
+    "materialInfrastructure": "Under research",
+    "notesBudget": "2018: 53,69$ million    2019: 53,17$ million   2020: 33, 18$ million   2021: 64,95$ million   2022: 57,91$ million     (NB: This is the aggregate sum of money for REAN and AVRR in the Netherlands. Data about the exact contributed amounts for these programs are not available. The amounts in the funding section are the earmarked contributions from the Dutch government to the IOM)",
+    "officialWebsite": "https://www.dienstterugkeerenvertrek.nl/ondersteuning-bij-terugkeer/herintegratieondersteuning",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "ERRIN (European Return and Reintegration Network)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "ICMPD, BRAC Migration Programme, he Ethiopian Catholic Church Social and Development Commission (ECCSDC), Caritas, AG Care Ghana, European Technology & Training Center (ETTC), Idia Renaissance, Women Empowerment Literacy and Development Organisation (WELDO), International Return & Reintegration Assistance (IRARA), International Return & Reintegration Assistance (IRARA)",
+    "summary": "Supporting returnees after a coerced return.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Ongoing",
+    "targetGroup": "Deported migrants",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan Armenië Bangladesh Ethiopië Gambia Ghana India Irak Nigeria Pakistan Somalië Sri Lanka",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Under research",
+    "materialInfrastructure": "Under research",
+    "notesBudget": "",
+    "officialWebsite": "https://www.dienstterugkeerenvertrek.nl/ondersteuning-bij-terugkeer/ondersteuning-na-gedwongen-vertrek",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "PROMIS",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UNODC, OHCHR",
+    "summary": "Focusing on trafficking and smuggling. Return is marginally present.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": true,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "From 2019 (or earlier?)",
+    "targetGroup": "Victims of human trafficking or smuggling",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "West Africa",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "Funded by Italy and the Netherlands",
+    "officialWebsite": "https://www.unodc.org/unodc/en/frontpage/2019/October/unodc-promis-project-improves-judicial-cooperation-between-africa-and-europe.html",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Turkey",
+    "policies":[
+    {"policyName": "Assisted Voluntary Return and Reintegration Program",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "IOM, Presidency of Migration Management, Provincial Directorates of Migration Management,  Law Enforcement Units, Removal Centers, NGOs",
+    "summary": "Assisted Voluntary Return and Reintegration (AVRR) has been a core activity of IOM Türkiye since 2009 and is integral to ensuring a comprehensive approach to migration management. The AVRR programme facilitates the regular return and reintegration of migrants who are unable or unwilling to remain in host or transit countries and wish to return voluntarily to their countries of origin. The programme provides a safe and supportive pathway for them to return and rebuild their lives. However, considering the housing conditions, and reports of forced return at removal centers, increased internal controls of irregular migration, and increased number of charter flights, we argue that IOM's AVRR program in Türkiye is utilized as a tool of forced returns in some instances.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 2009",
+    "targetGroup": "Irregular migrants,  individuals in the asylum  process whose  applications were  rejected or withdrawn,  stranded migrants, and  victim of trafficking or  other vulnerable  individuals.",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": true},
+    "specific": "Afghan, Pakistan, Mongolia, Uganda, Uzbekistan, Haiti",
+    "exceptions": "Syrians under temporary protection are not included",
+    "digitalInfrastructuresTechnologies": "IOM MigApp, Enhanced traveller record systems, Göç-Net (Migration Database of PMM with restriction codes, finger prints and integrated with various national databases such as law enforcement, justice, population, address, etc.",
+    "materialInfrastructure": "Standardized, AVRR information materials in 10 language, information dissemination at removal centers, and outreach outside of centers, referral mechanism between PMM and IOM",
+    "notesBudget": "AVRR is an activity supported through IPA instrument",
+    "officialWebsite": "https://turkiye.iom.int/assisted-voluntary-return-and-reintegration",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Push Backs in Western Sea and Land Borders",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Hellenic coast guard, Frontext, European Court of Human Rights, Hellenic Police, DG Home, NGOs (ASAM, HRDF, IBC, RRT, etc.), PMM, IOM, UNHCR, UN special rapporteur, Greece Ministry of Migration and Asylum",
+    "summary": "This RMI scrutinizes the push backs from Greece to Turkey. Greece officials announced that 290,933 third country nationals were prevented from entrance in Greece. The prevention is operationalized often in the form of push back through following practices: forcing migrants into rubber boats or life rafts, placement of life rafts, denial of asylum procedures, push backs after arrival, physical violence and use of firearms, removal of engines or petro, ignoring distress calls, criminalization of human rights defenders, deceptive transportation, theft and destruction of property, etc.  A substantial majority of pushback incidents occurred in the Aegean Sea as per the Turkish Coast Guard Command},data: Specifically, in 2020, 305 out of 312 incidents, and in 2021, 625 out of 628 incidents occurred in this area. Geographically, Izmir had the highest number of incidents in 2020 with 103, and also in 2021 with 268 incidents. Other provinces like Mu?la, Ayd?n, Çanakkale, Balıkesir, and Antalya also recorded pushback incidents during these years, with Mu?la having the second highest number of incidents in both years (83 in 2020 and 143 in 2021).    In Turkiye, we look into the situation of migrants who are survivors of pushbacks from Greece. Our geographical entry point is İzmir and Edirne observing sea and land borders with Greece and Bulgaria. We often observe multiple attempts and cycle of migration, especially among non-Syrians who are released with an letter for invitation to leave country. This cycle create informal infrastructures beyond traditional actors' involvement. In the case of pushback RMI,  we see a local economy involved by hotels, taxi drivers, local shop owners and residents of border villages/locals. Basmane area in Izmir as well as border villages are important areas. Since November 2023, government operations increased to deter irregular migration. Operation Shield took place in Basmane in Nov 2023. 1,257 law enforcement personnel involved in tracking down irregular migrants. 170 irregular migrants apprehended. Creation of mobile migration points and increased controls affect also such local RMIs.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": true,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "",
+    "targetGroup": "Third country nationals by Greece",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "From Greece, Bulgaria to Turkiye",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Coast guard and land border surveillance systems, radars, Göç-Net (Migration Database of Turkiye), Integrated Border Management Database",
+    "materialInfrastructure": "Turkish coast guard boats and vessels, informal detention facilities of law enforcement units, PDMM offices, removal centers, mobile migration points, searc and rescue coordination centers of Turkish coast guard command",
+    "notesBudget": "Majority of the material and digital infrastructure of the Turkish migration management is funded under IPA instrument. Please refer to the WP-2 Turkiye country dossier, funding section.",
+    "officialWebsite": "",
+    "programEvaluation": "https://asylumineurope.org/reports/country/greece/asylum-procedure/access-procedure-and-registration/access-territory-and-push-backs/",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Voluntary returns of Syrians",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "PMM, PDMM, Governorates, UNHCR,",
+    "summary": "Spontaneous voluntary returns of Syrians are implemented as part of durable solutions. Syrians can apply to PDMM offices to voluntarily return to Syria. Approximately 25% of voluntary returns taking were monitored by UNHCR to observe voluntariness, sustainability and dignity.    There have been reports of Turkish authorities carrying out deportations and raids on Syrian refugees, sometimes forcibly and sometimes without providing proper legal procedures. These incidents have raised concerns about the protection of refugees and the potential for forced return. The vast majority of returns especially from detention and removal centers are believed not to be voluntary.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 2016",
+    "targetGroup": "Syrians under Temporary Protection",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Syria Arab Republic",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Göç-Net, V-87 codification, Voluntary return form",
+    "materialInfrastructure": "Border crossing points and PDMM facilities at i) Reyhanl? Cilvegözü - Bab Al Hawa ii) Oncup?nar - Bab Al Salame iii) Akcakale - Tel Abyad iv) Karkam?s - Jarablus v) Yayladag? - Keseb",
+    "notesBudget": "National budget",
+    "officialWebsite": "",
+    "programEvaluation": "https://www.berghahnjournals.com/view/journals/migration-and-society/5/1/arms050105.xml",
+    "complete": true
+  },
+  {
+    
+    "policyName": "National Assisted Voluntary Return and Reintegration System (NAVRR)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "ICMPD: technical and operational assistance to the NAVRR program, including support for the development and implementation of policies and programs aimed at promoting the voluntary return and reintegration of migrants.  TRC: Turkish Red Crescent provides pre-return counseling and coordination with the Red Crescents in the origin countries.  TIKA: TIKA engages in reintegration stage, incorporating returnees' needs into community-based development projects, like income generation activities in the origin countries, such as Afghanistan, Pakistan, Bangladesh.   Ministry of Foreign Affairs: Ministry of Foreign Affairs are in charge of bilateral cooperation and diplomatic dialogues with the countries of origin and preparation of travel documents.",
+    "summary": "Article 60(a) LFIP on assisted voluntary return was amended in December 2019 to add that in-kind or cash support can be provided to persons deemed appropriate by the PMM in cases of voluntary return to their country of origin. With the help of ICMPD and funding from the national budget, PMM established its own voluntary returns programme in 2021.  National Assisted Voluntary Return and Reintegration System (NAVRR) is Turkey's official return migration governance framework, providing support and assistance to refugees who wish to return to their home countries voluntarily. The program provides a range of services and support, including travel arrangements, financial assistance, reintegration support, and counseling and guidance. The NAVRR is supported with various actors and coordinated by PMM. With the help of ICMPD and funding from the national budget, PMM established its own voluntary returns programme in 2021.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since September 2021",
+    "targetGroup": "non-Syrians under International Protection, Irregular migrants except Syrian nationals",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan, Pakistan, Bangladesh",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Göç-Net",
+    "materialInfrastructure": "30 removal centers with a total detention capacity of 16,008, 81 provincial and 35 district directorates of PMM, 67 verification centers for the data update of Temporary protection/international protection holders, Coordination and Joint Risk Analysis Center (NACORAC), de-facto detention and reception facilities such as sports halls, temporary accomodation centers, refugee camps, police stations, over 153 mobile migration units for control and verification purposes, Physical and HR layer of border management",
+    "notesBudget": "National Budget + 5,000,000 EUR by Denmark, Norway, Netherlands, UK.",
+    "officialWebsite": "https://www.icmpd.org/our-work/projects/supporting-the-implementation-and-further-strengthening-of-tuerkiye-s-national-assisted-voluntary-return-and-reintegration-system-navrr",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Pushback in Eastern Land Border of Turkey",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Turkish Land Forces, PMM, PDMM offices, TOKI, Ministry of Interior, Border Management Office",
+    "summary": "Turkey's Eastern region's border was closed, but this did not prevent irregular crossings of Afghans and Iranians due to well-connected smuggling networks crossing borders. Pushbacks were prevalent since 2021, and because of increased anti-refugee sentiment in society, some officials explicitly supported pushbacks and referred to them as \"blocking at the border.\"   A security wall corresponding to 80% of the borders with Iran and Syria, spanning 1160 kilometers, has been completed, along with 1234 kilometers of patrol roads. Work on the remaining 20% is ongoing. Along the border, 341 electro-optic towers equipped with high technological capacity have been installed, with 250 on the eastern and 91 on the western borders. This system allows monitoring of 740 kilometers of the eastern border and 350 kilometers of the western border. Additionally, border security is ensured with 284 thermal cameras, 151 elevating towers, 139 armored observation vehicles, and seismic sensor systems. The entry of 203,437 irregular migrants into the country was prevented in 2023.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 2021",
+    "targetGroup": "Irregular migrant",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan, Pakistan, Bangladesh",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Close-up surveillance systems, thermal cameras, land surveillance radar, remote controlled weapon systems, line-length imaging system, seismic and acoustic sensor, wide area surveillance, laser destructive fiber-optic detection, surveillance radar for drone detection, jammers, sensor-triggered sort distance lighting systems",
+    "materialInfrastructure": "Concrete and mobile blocks, two meters wide and three-meters high topped with a one-meter high razor wire, patrol routes, manned and unmanned optic towers, passenger tracks, lighting systems, armored vehicles, land forces command, special police officers, general directorate of security teams, coast guard command unit in Van lake",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Administrative Detention and Deportation for Return",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Ministry of Interior, Presidency of Migration Management, Police & Gendarmerie, Administrative and Constitutional Courts, PDMM officers, Removal Center Management",
+    "summary": "In Turkish law, detention in connection with return is regulated as an administrative act. Governorships are authorised to take administrative detention decisions. Administrative detention is imposed on those who are at risk of flight or disappearance, who violate the rules of entry or exit, who use false or fraudulent documents, who do not leave the country within the time allowed for their departure without an acceptable excuse, who pose a threat to public order, public security or public health (LFIP, Art. 57).  Persons placed under administrative detention are held in removal centres. The duration of administrative detention in removal centres cannot exceed six months. However, this period may be extended for a maximum of six more months if the deportation proceedings cannot be completed due to the foreigner's non-cooperation or failure to provide correct information or documents concerning his/her country of origin (LFIP, Art. 57/3). The governorate regularly assesses the necessity for continued administrative detention on a monthly basis. If necessary, the thirty-day period is waived. Administrative detention shall be terminated immediately for foreigners whose continued detention is not deemed necessary (LFIP, Art. 57/4). The person placed under administrative detention or his or her legal representative or lawyer may appeal against the administrative detention decision to a criminal judge of peace. The application does not suspend the administrative detention. The decision of the criminal judge of peace is final. The person placed under administrative detention or his or her legal representative or lawyer may apply again to the criminal judge of peace claiming that the conditions for administrative detention have disappeared or changed (LFIP, Art. 57/6). Unaccompanied minors are not placed under administrative detention. According to the LFIP (Art. 59), in removal centres, emergency and basic health care services that cannot be paid for by the foreigner are provided free of charge; the foreigner is given access to and consultation with relatives, a notary, a legal representative and a lawyer, as well as access to telephone services; the foreigner is given access to visitors, a consular official of the country of nationality, an official of the United Nations High Commissioner for Refugees; the best interests of children are taken into consideration, families are accommodated in separate places; necessary measures are taken by the Ministry of National Education to ensure that children benefit from education and training; representatives of relevant non-governmental organisations with expertise in the field of migration may visit removal centres with the permission of the PMM. As of May 2023, there are 30 removal centres. The total capacity of these centres is reported to be 16,008",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 2013",
+    "targetGroup": "Irregular migrants, Foreigners Who Are Issued 'Restriction Codes', International Protection Beneficiaries whose Status has been Ceased",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Göç-Net Database, Fingerprint and picture recording, language detection system, enhanced traveller record system, migrant presence monitoring of IOM, refugee status determination procedure, tools, and systems",
+    "materialInfrastructure": "PMM international protection bureaus (decision centers) and mobile decision teams, 30 removal centers with a total detention capacity of 16,008, 81 provincial directorates and 35 district directorates of PMM, 67 verification centers, Coordination and Joint Risk Analysis Centers (NACORAC), Over 153 mobile migration units for verification purposes",
+    "notesBudget": "",
+    "officialWebsite": "https://www.goc.gov.tr/duzensiz-goc-hakkinda",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Readmission / Statement",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Ministry of Foreign Affairs, PMM",
+    "summary": "The countries with which Turkey has readmission agreements are Syria, Greece, Kyrgyzstan, Romania, Romania, Ukraine, Pakistan, Russia, Nigeria, Bosnia-Herzegovina, Yemen, Moldova, Belarus, Montenegro, Kosovo, and Norway. There is also a readmission agreement between Turkey and the EU which entered into force in 2014. These agreements are in the form of international treaties/protocols. However, the agreement between Turkey and the EU is inactive and not currently being enforced for third-country nationals. In addition, the readmission arrangement, known as the EU-Turkey Statement, was implemented on 18 March 2016 but was suspended in 2020 and is not being currently carried on. It is debatable whether this arrangement has a binding character in international law. The reason for this debate is that the arrangement was not concluded in the form of an international treaty.     \"Readmission Agreements\" are the main effective method for international cooperation process on irregular migration. These agreements have made it necessary for the countries to take measure against irregular migration and they have ensured that irregular migrants shall return to the country of origin or the latest transit country in conformity with the protection of human rights and international practices. In other words, readmission agreements ensure that irregular migrants shall return safely to the country of origin or the latest transit country with which the agreement was concluded within the framework of the terms and conditions stated in the agreement.  Turkey has placed an importance on signing Readmission Agreements with countries of transit and destination within the scope of combating irregular migration. In the consequence of activities conducted in this context, Readmission Agreement has been signed between Turkey and Syria, Greece, Kyrgyzstan, Romania, Ukraine, Pakistan, Russia, Nigeria, Bosnia-Herzegovina, Yemen, Moldova, Belarus, Montenegro, Kosovo, Norway and the European Union since 2001. However, there is an agreement between our country and the European Union dated March 18, 2016. Readmission Agreement and Visa Exemption Roadmap have been signed simultaneously with the European Union on 16 December 2013 in Ankara and approved by the Grand National Assembly of Turkey on 25 June 2014. The Law 6547 regarding the approval of the Agreement was published in the Official Gazette No 29044 on 28 June 2014. The Council of Ministers agreed to approve the Agreement on 21.7.2014 in accordance with the Article 3 of Law 244 of 31.5.1963 and it was published in the Official Gazette No 29076 of 2 August 2014. The Readmission Agreement with the European Union entered into force on 1 October 2014 in terms of the readmission of the parties' own citizens and transit provisions. The provisions on the readmission of third country nationals included in the agreement have not yet come into force.  Readmission Agreement and Visa Exemption Roadmap have been signed simultaneously with the European Union on 16 December 2013 in Ankara and approved by the Grand National Assembly of Turkey on 25 June 2014. The Law 6547 regarding the approval of the Agreement was published in the Official Gazette No 29044 on 28 June 2014.The Council of Minister agreed to approve the Agreement on 21.7.2014 in accordance with the Article 3 of Law 244 of 31.5.1963 and it was published in the Official Gazette No 29076 of 2 August 2014. Readmission Agreement with the European Union entered into force on 1 October 2014 concerning the provision regarding their own nationals and it entered into force in order to be the continuation of the readmission agreements previously signed with the EU states. The provisions regarding third country nationals who are stated in Agreement will enter into force three years later.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Since 2000",
+    "targetGroup": "Irregular migrants,  individuals in the asylum  process whose  applications were  rejected or withdrawn,  stranded migrants, and  victim of trafficking or  other vulnerable  individuals.",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "Göç-Net",
+    "materialInfrastructure": "PMM international protection bureaus (decision centers) and mobile decision teams, 30 removal centers with a total detention capacity of 16,008, 81 provincial directorates and 35 district directorates of PMM, 67 verification centers, Coordination and Joint Risk Analysis Centers (NACORAC), Over 153 mobile migration units for verification purposes",
+    "notesBudget": "",
+    "officialWebsite": "https://en.goc.gov.tr/turkey%E2%80%99s-combat-against-irregular-migration",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Iraq",
+    "policies":[
+    {"policyName": "Iraq Crisis Response Plan 2024",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The International Organization for Migration (IOM), the Government of Iraq (GoI)",
+    "summary": "This plan, developed by the International Organization for Migration (IOM), aims to support the Government of Iraq in addressing the needs of migrants, displaced populations, returnees, and host communities. It includes activities related to community stabilization, return facilitation, reintegration support, and data collection.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": true
+    },
+    "duration": "2024",
+    "targetGroup": "Migrants, displaced populations, returnees, and host communities",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Iraq",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://crisisresponse.iom.int/response/iraq-crisis-response-plan-2024",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Jordan",
+    "policies":[
+    {"policyName": "Informal return",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Jordanian Governments, UNHCR, Syrian Government",
+    "summary": "Unlike in other host countries from which Syrian refugees are returning, 'go-and-see' visits are not possible for refugees in Jordan. In the case of Jordan, UNHCR does not have the infrastructure in place, nor the arrangements with the Syrian and Jordanian governments, to facilitate the trips. The Jordanian government has maintained a semblance of diplomatic relations with Syria but not when it comes to arranging go-and-see visits. Furthermore, the very idea of a go-and-see visit is questionable given the continuing insecurity inside Syria, and whether in fact refugees would be able to visit and return.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": true
+    },
+    "duration": "2011-2024",
+    "targetGroup": "Syrian refugees",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Jordan",
+    "exceptions": "Jordan",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "Jordan Syria Borders",
+    "notesBudget": "",
+    "officialWebsite": "https://www.fmreview.org/return/morris",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Syrians return policy",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Jordan Government, UNHCR.",
+    "summary": "despite the reopening of the Jaber-Nasib border crossing in October 2018, the Jordanian government has publicly announced that it does not support Syrians returning at the present time. But while no formal returns programmes have been initiated between the two countries, return preparedness has become a prominent issue in Jordan",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": true,
+      "local": true
+    },
+    "duration": "2018-2024",
+    "targetGroup": "Syrian refugees in Jordan",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Jordan, Syria",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "Borders control",
+    "officialWebsite": "https://www.fmreview.org/return/morris",
+    "programEvaluation": "https://www.fmreview.org/return/morris",
+    "complete": true
+  },
+  {
+    
+    "policyName": "The Jordan Initiative",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The Jordanian Government, The Syrian Government",
+    "summary": "The Jordanian Government announced an engagement with the Syrian government in a political dialogue aimed at resolving the crisis and addressing its humanitarian, security and political ramifications. Through the initiative, Jordan aims to resolve a number of key issues with Syria, including the return of Syrian refugees from Jordan to Syria.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "March 2023 - present",
+    "targetGroup": "Syrian refugees in Jordan",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Syria",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.middleeasteye.net/news/jordan-syria-plan-normalisation-refugees-drugs-militias",
+    "programEvaluation": "https://strategiecs.com/en/analyses/the-jordanian-initiative-opportunities-to-establish-security-in-southern-syria",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Syrian refugees documentation",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UNHCR, Syrian Government",
+    "summary": "For refugees wishing to return, their biggest obstacle is obtaining documentation. Often, Syrian refugees do not have the correct documents to return to Syria, and because such documents are expensive, they are often unable to acquire them, according to the spokesperson.  \"The UNHCR is advocating that the cost of documentation be reduced, so people who want to return can do so,\" Carlisle said.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": true,
+      "local": true
+    },
+    "duration": "2019-2024",
+    "targetGroup": "Syrian refugees in Jordan",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Jordan, Syria",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://jordantimes.com/news/local/20000-syrians-have-returned-home-border-reopening-%E2%80%94-unhcr",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Afghanistan",
+    "policies":[
+      {"policyName": "Return and Reintegration Infrastructure",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": true,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UN migration agencies  Ministry of Refugee and Repatriation",
+    "summary": "In Afghanistan, return infrastructure is limited. UN refugee agencies like UNHCR and IOM provide vital support. Collaborating with the Ministry of Refugees and Repatriation, UNHCR prioritizes 20 areas for return and reintegration, spanning provinces such as Kunduz and Kabul.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "present",
+    "targetGroup": "returnees irrespective of typologies",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "Afghanistan",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://morr.gov.af/index.php/en/node/1832",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Priority Areas of Return and Reintegration",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": true,
+      "massExpulsion": true,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UNHCR and MoRR",
+    "summary": "The Government of the Afghanistan's Ministry of Refugees and Repatriation (MoRR)  and UNHCR have identified 20 priority areas of return and reintegration where  returnees are living side by side with displaced people and local communities. The  the objective is to strengthen essential services and facilities in the PARRs through  an area-based multi-sectoral multi-stakeholder humanitarian-development-peace  investment to support durable solutions and create conducive conditions for the  sustainable reintegration of returnees by working with diverse actors (government,  development actors, private sector, CSOs, CBOs etc.) for Collective Outcomes and  in Delivering as One.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2020",
+    "targetGroup": "Afghan returnees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://reporting.unhcr.org/sites/default/files/Afghanistan-priority-areas-of-return-and-reintegration-August%202020.pdf",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Afghanistan and Neighbouring Countries Crisis Response Plan 2023",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": true,
+      "massExpulsion": true,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "IOM and MoRR",
+    "summary": "With over 2.6 million Afghans driven into  displacement since mid-August 2021, Afghans, and in particular women and  girls, face increasing needs, risks and vulnerabilities in Afghanistan as well as in  neighbouring countries. IOM seeks to addressing the humanitarian and  protection needs of affected populations in the region, whilst strengthening the  resilience of Afghans and host communities to reduce displacement risks and  help people and communities to transition and recover.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2023",
+    "targetGroup": "Afghans displaced population including returnees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://crisisresponse.iom.int/sites/g/files/tmzbdl1481/files/appeal/pdf/Afghanistan_and_Neighbouring_Countries_Crisis_Response_Plan_2023_summary.pdf",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Morocco",
+    "policies":[
+      {
+    "policyName": "The Assisted Voluntary Return and Reintegration programme (AVRR)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "As Morocco is a country of origin, transit, and destination, IOM Morocco implements the AVRR programme in close collaboration with the Moroccan Government, particularly the Ministry of Interior, the Ministry of Foreign Affairs,  African Cooperation, and Moroccan Expatriates, and the diplomatic representations of countries of origin or reception of assisted migrants.",
+    "summary": "Implemented for four decades by the International Organization for Migration (IOM), the Assisted Voluntary Return and Reintegration (AVRR) programme provides humanitarian, administrative, logistical, and financial support to migrants in a vulnerable situation in order to voluntarily return to their country of origin.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": true,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2005",
+    "targetGroup": "Migrants with health problems, Victims of human trafficking, Pregnant women, Single-parent families (father or mother returning alone with their children), Elderly individuals (50 years and older), Minors/unaccompanied foreign minors.",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "https://mena.iom.int/sites/g/files/tmzbdl686/files/documents/2023-03/Rapport_Annuel_EN_AVRR_20230310.pdf",
+    "complete": true
+  }]},
+  {
+    "countryName": "Tunisia",
+    "policies":[
+      {"policyName": "TOUNESNA 1",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The key actors involved in the program mentioned in the article are: - Office français de l'immigration et de l'intégration (OFII): The French Office for Immigration and Integration, responsible for implementing the Tounesna program in Tunisia. - Office des Tunisiens à l'Etranger (OTE): The Office of Tunisians Abroad, which initiated the Tounesna program with the support of the \"ProGreS Migration Tunisie\" program funded by the Emergency Trust Fund.  - Ambassade du Royaume des Pays-Bas en Tunisie: The Embassy of the Kingdom of the Netherlands in Tunisia, providing funding for the Tounesna program.",
+    "summary": "The Tounesna program offers guidance and follow-up support to Tunisian migrants who return to their home country. It aims to help them access their social and economic rights and provides reintegration assistance, such as social reintegration, employment reintegration, and support for entrepreneurship.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "2017-2020",
+    "targetGroup": "returnees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.ofii.fr/reinsertion-des-tunisiens-au-pays-le-dispositif-tounesna-ouvre-une-nouvelle-antenne/",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "TOUNESNA 2",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The Tounesna program is implemented by three public institutions:  - Office of Tunisians Abroad (OTE)  - National Employment and Self-Employment Agency (ANETI)  - General Directorate for Social Promotion (DGPS)",
+    "summary": "Assisted Voluntary Return: The Tounesna program provides assistance and support to Tunisian migrants returning from certain partner European countries, facilitating their social reintegration. It focuses on addressing various needs such as accommodation, healthcare, education, and support for individual}, with specific needs",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "2022-2024",
+    "targetGroup": "returnees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.ofii.fr/reinsertion-des-tunisiens-au-pays-le-dispositif-tounesna-ouvre-une-nouvelle-antenne/",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "ProMiTAD (Protection des migrants en Tunisie et accès aux droits fondamentaux)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The main partners and stakeholders involved in the ProMiTAD program are: Mèdecins du Monde (MDM): A non-governmental organization working in the field of healthcare and humanitarian assistance. Terre d'Asile Tunisie (TAT): A non-governmental organization focusing on refugee protection and assistance. Save the Children (STC): An international non-governmental organization dedicated to child rights and well-being.",
+    "summary": "The ProMiTAD program focuses on two main objectives: Strengthening the capacities of civil society organizations and public institutions to improve access to basic services and integration for migrants. Enhancing cooperation and coordination among stakeholders to ensure better accessibility and care for migrants and vulnerable Tunisians. The program includes activities such as awareness campaigns, the establishment of an integrated multisectoral mechanism for migrant support, capacity-building plans, training sessions, development of advocacy strategies, coordination meetings, conferences, funding support to civil society organizations, and training and coaching for beneficiary organizations.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "2021-2024",
+    "targetGroup": "returnees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://asf.be/project/protection-des-migrants-en-tunisie-et-acces-aux-droits-fondamentaux-promitad/?lang=fr",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "IOM (International Organization for Migration)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UN Agency",
+    "summary": "The IOM in Tunisia focuses on the protection of migrants, integration, and prevention of irregular migration. They provide support and assistance to migrants in terms of information, orientation, legal aid, psychological support, medical assistance, and voluntary return and reintegration programs.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "present-",
+    "targetGroup": "returnees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://tunisia.iom.int/fr/protection-des-migrants",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Ministry of Interior (Direction of Boders and Foreigners)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": true,
+      "massExpulsion": true,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Public Agency",
+    "summary": "The implementation of laws and policies related to immigration enforcement, the repatriation of Tunisian nationals, and the readmission of migrants who have moved irregularly.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "always",
+    "targetGroup": "migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.interieur.gov.tn/fr/",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Ouardia Center",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Public Agency",
+    "summary": "They detain Foreigners who are arrested (or Intercepted/brought from the sea)",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": true
+    },
+    "duration": "present-",
+    "targetGroup": "irregular migrants",
+    "targetOriginCountryRegion": {
+    "all": false,
+    "specific": true,
+    "exceptions": false},
+    "specific": "irregular migrants",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Airports and ports",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Public Agency",
+    "summary": "Reception and registration of rapatriated Tunisian Nationals",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": true,
+      "local": true
+    },
+    "duration": "present-",
+    "targetGroup": "raptriated irregular Tunisian migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "Canada",
+    "policies": [
+      {
+    "policyName": "Global Case Management System (GCMS)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": true,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Immigration Refugees Citizenship Canada (IRCC)    Canada Border Services Agency (CBSA)",
+    "summary": "The GCMS is a database that stores notes generated by IRCC and CBSA officers on foreign nationals. These notes contain information about their names, gender, date of birth, country of birth, address, education, criminality, and medical and travel history. Notes uploaded by  CBSA of},icers specifically document their concerns about the foreign nationals' admissibility or eligibility, criminal records, security risks and their impressions and assessments regarding the foreign  nationals' credibility, truthfulness and compliance with the Immigration and Refugee Protection Act. These notes can also be used as evidence before the Immigration and Refugee Board and the Federal Court. In sum, the GCMS monitors the status of inadmissible foreign nationals and failed refugee protection claimants throughout their detention and removal process.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": false,
+      "federal": true,
+      "local": false
+    },
+    "duration": "2002",
+    "targetGroup": "Inadmissible foreign nationalas and failed refugee protection claimants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "",
+    "programEvaluation": "",
+    "complete": true
+  }]},
+  {
+    "countryName": "United Kingdom",
+    "policies":[
+      {
+    "policyName": "Gateway Protection Programme (GPP)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "State, NGOs, OIM, United Nations and local authorities",
+    "summary": "The UK Gateway Protection Programme (GPP) is a resettlement scheme that aims to provide protection to refugees in need. The program is operated by the United Nations High Commissioner for Refugees (UNHCR) in partnership with the UK government. It focuses on resettling refugees who are particularly vulnerable and cannot be adequately protected in their country of asylum.    The programme offered a legal route for up to 750 refugees to settle in the UK each year.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2004-2020",
+    "targetGroup": "Refugees",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "Regarding the material infrastructure of the UK Gateway Protection Programme, detailed information},about specific infrastructure may not be publicly disclosed due to security and privacy concerns. The program typically involves collaboration between various stakeholders, including the government, local authorities, non-governmental organizations (NGOs), and international agencies.    1. Accommodation Facilities: The UK government may work with local authorities and NGOs to secure suitable accommodation for resettled refugees upon their arrival.  2. Community Support Services: Infrastructure may be in place to provide essential services such as healthcare, education, language training, and employment support to help refugees integrate into the local community.  3. Legal and Administrative Support: The program may involve legal assistance to help refugees navigate the asylum and resettlement processes.  4. Orientation and Integration Programs: Infrastructure for orientation programs to help refugees become familiar with the local culture, society, and legal framework.",
+    "notesBudget": "",
+    "officialWebsite": "https://www.refugeecouncil.org.uk/projects/gateway-protection-programme/#:~:text=The%20Gateway%20Protection%20Programme%20has,refugee%20camps%20across%20the%20globe.",
+    "programEvaluation": "https://www.shu.ac.uk/-/media/home/research/cresr/reports/e/eval-gateway-protection-programme.pdf",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Facilitated Reintegration Scheme (FRS)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": true,
+      "irregularity": false,
+      "massExpulsion": true,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UK Border Agency, International Organization for Migration (IOM) and private sector contributions",
+    "summary": "The primary aim of the scheme is to encourage Foreign National Offenders (FNOs) to leave the UK at the earliest possible opportunity, thereby reducing the resources and costs associated with time spent in prison and immigration detention.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2006-",
+    "targetGroup": "Foreign National Offenders (FNOs) [Specially those willing to return to their countries of origin without pressure or further delay]",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "FNOs departing under the FRS are eligible for a resettlement grant. To encourage early departure, a higher amount is paid to someone who applies whilst still in custody. The current values of the grants are up to:    • £1,500 where the application is made whilst the FNO is serving their custodial sentence.   • £1,500 for qualifying family members.   • £750 for FNOs who apply after completing their custodial sentence.    • £750 for FNOs who have received a conviction overseas.   • £750 for FNOs with UK non-custodial convictions.",
+    "officialWebsite": "https://assets.publishing.service.gov.uk/media/65846a65ed3c34000d3bfd77/The+Facilitated+Return+Scheme+_FRS_.pdf",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Voluntary Return and Reintegration of EE/EA Victims of Trafficking",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UK Border Agency, International Organization for Migration, and private sector contributions",
+    "summary": "\"IOM provides return and reintegration assistance to EE/EA Victims of Trafficking referred by NGOs, police and other stakeholders. In coordination with IOM offices in EE/EA countries, IOM conducts needs and risk assessments, travel arrangements and airport assistance and provision of a reintegration grant\"",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": true,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "1999-2016",
+    "targetGroup": "Victims of trafficking",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://unitedkingdom.iom.int/voluntary-return-and-reintegration-survivors-trafficking",
+    "programEvaluation": "https://migration-control.info/en/wiki/united-kingdom/#footnote-2",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Voluntary Return Service Scheme (VRS)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "The Home Office collaborates with other governmental and non-governmental organizations to implement and administer the Voluntary Return Service. Non-governmental organizations (NGOs) and charities may be involved in providing support services, such as counseling, assistance with travel arrangements, and reintegration support for individuals choosing to return voluntarily to their home countries.",
+    "summary": "The Voluntary Return Service (VRS) in the United Kingdom is a program designed to assist individuals who wish to return to their home countries voluntarily. This program is often aimed at migrants, including those who may have entered the UK illegally or have overstayed their visas.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2014-",
+    "targetGroup": "Illegal inmigrants in the U.K or no-longer Visa holders.",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "The United Kingdom organizes management and travel support: Passport, tickets, ... plus a financial support of up to £3,000 to be used in home country.",
+    "officialWebsite": "https://assets.publishing.service.gov.uk/media/60b0bdb8e90e0732b589dfe7/voluntary-and-assisted-returns_v4.0-gov-uk.pdf",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Reintegration and Support for Returnees Programme",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Home Office (HO), Foreign and Commonwealth Office (FCO), Ministry of Justice (MoJ)",
+    "summary": "\"Activity in the Programme comprises of immediate post-arrival support; basic reintegration support through vocational or educational training and signposting to services; and capacity building through the provision of infrastructure and equipment, and training and expertise\"",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": false,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2017-2019",
+    "targetGroup": "Return migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "Programme document total value: £4.2m.   18-19 period budget allocation: ODA: £2.7m / Non-ODA: £0m\"  ",
+    "officialWebsite": "https://assets.publishing.service.gov.uk/media/5bf57258ed915d182bfa1ca9/MIGN_Reintegration_and_Support_for_Returnees_Programme_Summary_FY_1819.odt#:~:text=The%20Programme%20places%20emphasis%20on,and%20fair%20institutions%20for%20all.",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "The Voluntary Assisted Return and Reintegration Programme (VARRP)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "Co-funded by the UK Border Agency and the ERF, and implemented by the International Organization for Migration (IOM)",
+    "summary": "Series of schemes aimed at alleviating the situation of migrants that have to be removed from the United Kingdom due to various reasons. Within this scheme it can be found support for children, women and small bussiness, among others.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Created in 1999 and permanently stablished in 2002",
+    "targetGroup": "Return migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "During the VARRP 2005 programme year the maximum value of reintegration assistance available to returnees had risen from £1,000 to £3,000.    Complete budget not known, but this number serves as an example to infer further data.",
+    "officialWebsite": "https://assets.publishing.service.gov.uk/media/5a7a40d5e5274a319e778f19/horr39-report.pdf",
+    "programEvaluation": "",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Vulnerable Persons Resettlement Scheme (VPRS)",
+    "policyTypeArea": {
+      "assistedReturn": true,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UK Home Office, Local Authorities, NGOs, United Nations High Commissioner for Refugees (UNHCR) and the International Organization for Migration (IOM).    Healthcare Providers: Given the vulnerability of many individuals resettled through the VPRS, healthcare providers and professionals may be involved in ensuring that refugees receive necessary medical attention and support.",
+    "summary": "The Vulnerable Persons Resettlement Scheme (VPRS) in the United Kingdom is a program designed to offer refuge to vulnerable individuals who have been displaced by conflict or persecution. The scheme focuses on providing a safe and legal route for particularly vulnerable refugees to settle in the UK.",
+    "areaScaleImplementation":
+      {"global": true,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2014-2021",
+    "targetGroup": "Vulnerable migrants who have been displaced by conflict or persecution",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": true,
+    "exceptions": false},
+    "specific": "20.000 Syrians in 2015",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://www.lancashire.gov.uk/resettlement-in-lancashire/resettlement-schemes/vprs-and-vcrs/",
+    "programEvaluation": "https://www.ipsos.com/en-uk/vulnerable-persons-resettlement-scheme-vprs-evaluation-published",
+    "complete": "verified"
+  },
+  {
+    
+    "policyName": "Detention and Fast-Track System",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": false,
+      "forcedReturn": false,
+      "irregularity": true,
+      "massExpulsion": false,
+      "preRemovalDetention": true
+    },
+    "actorsInvolved": "Home Office and former UK Border Agency (Now integrated in the Home Office)",
+    "summary": "The Fast-Track System, also known as the Detained Fast-Track, was a process designed to expedite asylum claims from individuals who were detained. Under the Fast-Track System, asylum claims were processed quickly, often within a short period, to determine whether an individual qualified for asylum protection. The system faced criticism for issues related to the fairness and effectiveness of the asylum determination process, leading to legal challenges and subsequent reforms.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "2000-2015",
+    "targetGroup": "Illegal migrants",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://detentionaction.org.uk/get-involved/detained-fast-track/",
+    "programEvaluation": "https://assets.publishing.service.gov.uk/media/5a7f2671ed915d74e33f4a49/Asylum_A-thematic-inspection-of-Detained-Fast-Track_2012.pdf",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Dubs Scheme (Section 67 of the Immigration Act 2016)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UK Home Office, local authorities, NGOs, United Nations High Commissioner for Refugees (UNHCR) and the International Organization for Migration (IOM), legal representatives and community organizations.",
+    "summary": "The Dubs Scheme, officially known as Section 67 of the Immigration Act 2016, is a provision that allows for the relocation of unaccompanied refugee children to the United Kingdom.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "Launched in 2016, closed in 2017, and re-launched in 2017 again.",
+    "targetGroup": "Children.",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://assets.publishing.service.gov.uk/media/5fe37c528fa8f56af0ac66f5/sect-67-of-the-immigration-act-2016-leave-v3.0ext.pdf",
+    "programEvaluation": "https://www.gov.uk/government/publications/policy-statement-section-67-of-the-immigration-act-2016/factsheet-section-67-of-the-immigration-act-2016",
+    "complete": true
+  },
+  {
+    
+    "policyName": "Asylum Accommodation and Support Contracts (AASC)",
+    "policyTypeArea": {
+      "assistedReturn": false,
+      "borderManagement": true,
+      "forcedReturn": false,
+      "irregularity": false,
+      "massExpulsion": false,
+      "preRemovalDetention": false
+    },
+    "actorsInvolved": "UK Home Office, Commercial service providers, Local authorities, Third-party service providers, Regulatory and Oversight bodies, Advisory groups and stakeholders.",
+    "summary": "Asylum Accommodation and Support Contracts (AASC) in the United Kingdom refer to agreements between the UK government and private service providers to provide accommodation and support services to individuals seeking asylum. These contracts are part of the broader system for accommodating and supporting asylum seekers during the processing of their asylum claims.",
+    "areaScaleImplementation":
+      {"global": false,
+      "EU": false,
+      "national": true,
+      "federal": false,
+      "local": false
+    },
+    "duration": "The most recent AASC contracts were awarded in 2019",
+    "targetGroup": "Asylum seekers",
+    "targetOriginCountryRegion": {
+    "all": true,
+    "specific": false,
+    "exceptions": false},
+    "specific": "",
+    "exceptions": "",
+    "digitalInfrastructuresTechnologies": "",
+    "materialInfrastructure": "",
+    "notesBudget": "",
+    "officialWebsite": "https://asylummatters.org/app/uploads/2019/11/The-Asylum-Accommodation-and-Support-Contracts-A-Guide.pdf",
+    "programEvaluation": "",
+    "complete": true
+  }]}
+]
