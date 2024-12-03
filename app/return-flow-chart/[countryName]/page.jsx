@@ -6,7 +6,6 @@ const Page = ({ params }) => {
   const [loading, setLoading] = useState(true);
   const [pdfExists, setPdfExists] = useState(false);
 
-  // PDF'in var olup olmadığını kontrol eden bir fonksiyon
   const checkPdfExists = async () => {
     try {
       const response = await fetch(`/pdfs/${params.countryName}_ardl.pdf`, {
