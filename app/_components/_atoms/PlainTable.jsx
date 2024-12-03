@@ -7,7 +7,6 @@ import Link from 'next/link';
 const PlainTable = ({ policies, headersData, pathName, selectedCountries }) => {
     const tableRef = useRef(null);
 
-    // JSON'dan gelen `headers` verisini işleyin
     const headers = headersData;
 
     return policies.length === 0 ? (
