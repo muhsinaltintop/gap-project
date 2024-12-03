@@ -10,7 +10,6 @@ const InternationalCooperation = async () => {
   const transformedInternational = TransformInternational(internationalCooperation)
 
     return (
-  
   <div className="w-full mx-6">
     <SearchComponent data={transformedInternational} countryList={countryList} headers={headersForInternational}/>
     </div>
