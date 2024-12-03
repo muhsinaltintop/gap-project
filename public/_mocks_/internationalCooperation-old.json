@@ -3,8 +3,8 @@
     "countryName": "Afghanistan",
     "policies": [
       {
-        "policyName": "Joint Way Forward on migration issues between Afghanistan and the EU ",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "policyName": "Joint Way Forward on Migration Issues Between Afghanistan and the EU ",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Afghanistan",
         "signatureDate": "2016-10-16",
         "entryIntoForceDate": "n/a",
@@ -15,7 +15,7 @@
       },
       {
         "policyName": "Agreement between the government of Islamic Republic of Pakistan, the Transitional Islamic State of Afghanistan and the United Nations High Commissioner for Refugees Governing the Repatriation of Afghan Citizens Living in Pakistan",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Afghanistan and Pakistan",
         "signatureDate": "2003-03-17",
         "entryIntoForceDate": "n/a",
@@ -26,7 +26,7 @@
       },
       {
         "policyName": "EU-Afghanistan Joint Declaration on Migration Cooperation",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Afghanistan",
         "signatureDate": "2021-04-26",
         "entryIntoForceDate": "n/a",
@@ -37,7 +37,7 @@
       },
       {
         "policyName": "Extension of the Agreement Between the Government of Islamic Republic of Pakistan, the Transitional Islamic State of Afghanistan and the United Nations High Commissioner for Refugees Governing the Repatriation of Afghan Citizens Living in Pakistan",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Afghanistan and Pakistan",
         "signatureDate": "2010-05-07",
         "entryIntoForceDate": "n/a",
@@ -48,7 +48,7 @@
       },
       {
         "policyName": "Pakistan-Afghanistan: Tripartite agreement on refugees' voluntary returns extended",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Pakistan and Afghanistan",
         "signatureDate": "n/a",
         "entryIntoForceDate": "n/a",
@@ -59,7 +59,7 @@
       },
       {
         "policyName": "29th Tripartite Commission Meeting between the Government of the Islamic Republics of Afghanistan and Pakistan and UNHCR",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Pakistan and Afghanistan",
         "signatureDate": "2017-11-30",
         "entryIntoForceDate": "n/a",
@@ -70,12 +70,28 @@
       },
       {
         "policyName": "Joint Programme Between The Government of the Islamic Republic of Iran, the Interm Authority of Afghanistan and UNHCR for Voluntary Repatriation of Afghan Refugees and Displaced Persons",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Iran, Afghanistan",
         "signatureDate": "2002-04-03",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
         "urlEnglish": "https://www.refworld.org/legal/agreements/unhcr/2002/en/106942",
+        "mediaCoverageUrl": "n/a",
+        "note": "n/a"
+      }
+    ]
+  },
+  {
+    "countryName": "Canada",
+    "policies": [
+      {
+        "policyName": "n/a",
+        "typeOfBiletralAgreement": "n/a",
+        "signatoryState": "n/a",
+        "signatureDate": "n/a",
+        "entryIntoForceDate": "n/a",
+        "negotiationStartDate": "n/a",
+        "urlEnglish": "n/a",
         "mediaCoverageUrl": "n/a",
         "note": "n/a"
       }
@@ -98,7 +114,7 @@
       {
         "policyName": "Germany-Morocco 2016 ",
         "typeOfBiletralAgreement": "Non-standard readmission arrangement",
-        "signatoryState": "Morocco",
+        "signatoryState": "Morocco ",
         "signatureDate": "n/a",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -190,14 +206,14 @@
         "signatureDate": "1954-05-15",
         "entryIntoForceDate": "1954-06-01",
         "negotiationStartDate": "n/a",
-        "urlEnglish": "n/a ",
+        "urlEnglish": "N/A",
         "mediaCoverageUrl": "n/a",
         "note": "n/a"
       },
       {
         "policyName": "deutsch-esinisches R\u00fcck\u00fcbernahmeabkommen ",
         "typeOfBiletralAgreement": "Standard readmission agreement",
-        "signatoryState": "Estonia",
+        "signatoryState": "Estonia ",
         "signatureDate": "1998-12-16",
         "entryIntoForceDate": "1999-03-01",
         "negotiationStartDate": "n/a",
@@ -241,7 +257,7 @@
       {
         "policyName": "deutsch-kasachisches Abkommen pber die \u00dcbernahme und Durchbef\u00f6rderung von Personsn (R\u00fcck\u00fcbernahmeabkommen) ",
         "typeOfBiletralAgreement": "Standard readmission agreement",
-        "signatoryState": "Kazakhstan",
+        "signatoryState": "Kazakhstan ",
         "signatureDate": "2009-12-10",
         "entryIntoForceDate": "2016-06-01",
         "negotiationStartDate": "n/a",
@@ -351,11 +367,11 @@
       {
         "policyName": "R\u00fcck\u00fcbernahmeabkommen zwischen Deutschland und Schweden (not official Title) ",
         "typeOfBiletralAgreement": "Standard readmission agreement",
-        "signatoryState": "Sweden",
+        "signatoryState": "Sweden ",
         "signatureDate": "1954-05-15",
         "entryIntoForceDate": "1954-06-01",
         "negotiationStartDate": "n/a",
-        "urlEnglish": "n/a ",
+        "urlEnglish": "n/a",
         "mediaCoverageUrl": "n/a",
         "note": "n/a"
       },
@@ -450,7 +466,7 @@
       {
         "policyName": "deutsch-albanischen Vereinbarung \u00fcber die R\u00fcck\u00fcbernahme von Personen (R\u00fcck\u00fcbernahmeabkommen)  Albania (Transit agreement (compulsory repatriation): Transport of Yugoslav nationals to Kosovo",
         "typeOfBiletralAgreement": "Non-standard readmission arrangement",
-        "signatoryState": "Albania",
+        "signatoryState": "Albania ",
         "signatureDate": "2000-01-27",
         "entryIntoForceDate": "2000-04-01",
         "negotiationStartDate": "n/a",
@@ -461,18 +477,18 @@
       {
         "policyName": "Macedonia (Transit agreement (compulsory repatriation): Transport of Yugoslav nationals to Kosovo",
         "typeOfBiletralAgreement": "Non-standard readmission arrangement",
-        "signatoryState": "Macedonia",
+        "signatoryState": "Macedonia ",
         "signatureDate": "1999-10-11",
         "entryIntoForceDate": "1999-10-11",
         "negotiationStartDate": "n/a",
-        "urlEnglish": "n/a ",
+        "urlEnglish": "n/a",
         "mediaCoverageUrl": "n/a",
         "note": "n/a"
       },
       {
         "policyName": "Poland (transit of third-country nationals)",
         "typeOfBiletralAgreement": "Non-standard readmission arrangement",
-        "signatoryState": "Poland",
+        "signatoryState": "Poland ",
         "signatureDate": "2006-03-23",
         "entryIntoForceDate": "2006-08-01",
         "negotiationStartDate": "n/a",
@@ -482,7 +498,7 @@
       },
       {
         "policyName": "Germany-India Holistic Migration Agreement",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "India",
         "signatureDate": "2022-12-05",
         "entryIntoForceDate": "n/a",
@@ -509,8 +525,8 @@
       },
       {
         "policyName": "Memorandum of Understanding (MoU) between the Government of the Hellenic Republic and the Government of the People's Republic of Bangladesh on Migration and Mobility",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
-        "signatoryState": "Bangladesh",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
+        "signatoryState": " Bangladesh",
         "signatureDate": "2022-02-09",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -520,7 +536,7 @@
       },
       {
         "policyName": "Agreement between the Government of the Hellenic Republic and the Government of the Arab Republic of Egypt on the employment of seasonal workers in the agricultural sector",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Egypt",
         "signatureDate": "2022-11-22",
         "entryIntoForceDate": "n/a",
@@ -844,7 +860,7 @@
     "policies": [
       {
         "policyName": "Champion the Global Compact for Safe, Orderly and Regular Migration (GCM)",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Iraq",
         "signatureDate": "n/a",
         "entryIntoForceDate": "n/a",
@@ -861,7 +877,7 @@
       {
         "policyName": "The EU-Jordan Compact  ",
         "typeOfBiletralAgreement": "Non-standard readmission arrangement",
-        "signatoryState": "EU",
+        "signatoryState": "Jordan ",
         "signatureDate": "2024-03-25",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -870,9 +886,20 @@
         "note": "The EU is interested in the Compact as it makes staying in Jordan attractive for Syrian refugees and keeps the option of return to Syria open, thus offering an alternative to onward migration to Europe.  Removing the uncertainties about the duration of the waiver for work permit fees for Syrian refugees is a first step towards making it possible that employers and employees can properly calculate expenditures- if they consider joining the formal labour market of Jordan. International agencies should support the waiver until Syrian refugees can return home as a further way of engagement in sharing Jordan's burden as a host community for Syrian refugees. Once Syrians start to return in large numbers, the government of Jordan should be transparent about the future cost of work permits and provide early information before fees for work permits for Syrians will be re-introduced."
       },
       {
+        "policyName": "Re-entry bans ",
+        "typeOfBiletralAgreement": "Non-standard readmission arrangement",
+        "signatoryState": "Jordan ",
+        "signatureDate": "2024-03-28",
+        "entryIntoForceDate": "n/a",
+        "negotiationStartDate": "n/a",
+        "urlEnglish": "https://www.hrw.org/report/2021/10/20/our-lives-are-death/syrian-refugee-returns-lebanon-and-jordan",
+        "mediaCoverageUrl": "https://www.hrw.org/report/2021/10/20/our-lives-are-death/syrian-refugee-returns-lebanon-and-jordan",
+        "note": "For their part, Lebanon and Jordan should lift all restrictions on Syrian refugees re-entering their countries if they were not able to re-establish themselves inside Syria, or to avail themselves of the protection of the Syrian government. Lebanon should abolish the May 2019 Higher Defense Council decision which provides for the summary deportation of all Syrian refugees who re-enter irregularly after April 2019, and Jordan should stop imposing arbitrary or de facto re-entry bans on Syrian refugees and clarify that Syrians can return to Jordan, and the process for doing so. "
+      },
+      {
         "policyName": "Jordan and EU partnership ",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
-        "signatoryState": "European Union",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
+        "signatoryState": "Jordan ",
         "signatureDate": "2024-06-21",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -882,8 +909,8 @@
       },
       {
         "policyName": "EU-Jordan Aid ",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
-        "signatoryState": "European Union",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
+        "signatoryState": "Jordan, EU",
         "signatureDate": "2024-06-21",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -913,15 +940,15 @@
         "signatoryState": "Morocco",
         "signatureDate": "n/a",
         "entryIntoForceDate": "n/a",
-        "negotiationStartDate": "2000",
+        "negotiationStartDate": 2000,
         "urlEnglish": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:22000A0318(01)",
         "mediaCoverageUrl": "n/a",
         "note": "The European Union (EU) has increasingly sought to tackle irregular migration through  cooperation with third countries. One of the key instruments in this regard have been EU readmission agreements (EURAs), which commit non-EU countries to take back irregular migrants. The European Commission obtained a mandate to negotiate an EURA with Morocco already in 2000, but negotiations have thus far remained inconclusive."
       },
       {
         "policyName": " Morocco-Austria: Joint declaration S 28/02/2023 ",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
-        "signatoryState": "Austria",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
+        "signatoryState": "Austria ",
         "signatureDate": "2023-02-28",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -931,8 +958,8 @@
       },
       {
         "policyName": "Morocco-Belgium: Adoption of a joint declaration ME S 15/04/2024",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
-        "signatoryState": "Belgium",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
+        "signatoryState": "Belgium ",
         "signatureDate": "2024-04-15",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -942,7 +969,7 @@
       },
       {
         "policyName": "Morocco-France: Agreement to Manage Unaccompanied Minors",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "France",
         "signatureDate": "n/a",
         "entryIntoForceDate": "n/a",
@@ -953,7 +980,7 @@
       },
       {
         "policyName": "Morocco-Spain Joint statement adopted at the end of talks between hm King Mohammed vi, President of Spanish government Pedro Sanchez ",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Spain",
         "signatureDate": "2022-04-07",
         "entryIntoForceDate": "n/a",
@@ -964,8 +991,8 @@
       },
       {
         "policyName": "Morocco- Portugal Border and Migration management agreement V 22/10/2004",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
-        "signatoryState": "Portugal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
+        "signatoryState": "Portugal ",
         "signatureDate": "2004-10-22",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
@@ -1134,7 +1161,7 @@
       },
       {
         "policyName": "COMPASS: The Global Cooperation on Migration and Partnerships for Sustainable Solutions",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Afghanistan, Algeria, Chad, Egypt, Ethiopia, Iraq, Lebanon, Libya, Mali, Morocco, Niger, Nigeria, Sudan, Tunisia",
         "signatureDate": "2021-01-01",
         "entryIntoForceDate": "n/a",
@@ -1150,12 +1177,12 @@
     "policies": [
       {
         "policyName": "Memorandum of Understanding between the Swiss Federal Council and the Government of the Federal Republic of Nigeria on Establishment of Migration Partnership",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Switzerland",
         "signatureDate": "2011-02-14",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
-        "urlEnglish": "n/a",
+        "urlEnglish": "file:///C:/Users/USER/Downloads/20110214-mou-NGA-e.pdf",
         "mediaCoverageUrl": "n/a",
         "note": "The areas of cooperation in this MoU include return assistance; readmission and reintegration; prevention of irregular migration; capacity building in immigration administration; assistance to enable identification; border management and control etc. "
       },
@@ -1166,18 +1193,18 @@
         "signatureDate": "2015-03-12",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
-        "urlEnglish": "n/a",
+        "urlEnglish": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://home-affairs.ec.europa.eu/system/files/2022-10/EMN_inventory_for_bilateral_readmission.pdf",
         "mediaCoverageUrl": "n/a",
         "note": "Readmission of citizens of third country. The source of the information is the Belgian Immigration Office."
       },
       {
         "policyName": "Bilateral Readmission Agreement",
         "typeOfBiletralAgreement": "Bilateral implementing protocols to EU readmission agreements",
-        "signatoryState": "Austria",
+        "signatoryState": "Austria ",
         "signatureDate": "2012-08-18",
         "entryIntoForceDate": "n/a",
         "negotiationStartDate": "n/a",
-        "urlEnglish": "n/a",
+        "urlEnglish": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://home-affairs.ec.europa.eu/system/files/2022-10/EMN_INFORM_bilateral_readmission.pdf",
         "mediaCoverageUrl": "n/a",
         "note": "n/a"
       }
@@ -1672,7 +1699,7 @@
       },
       {
         "policyName": "Partnership Agreement between the members of the African, Caribbean and Pacific Group of States, of the one part, and the European Community and its Member States, of the other part, was signed in Cotonou on 23 June 2000.",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "members of the African, Caribbean and Pacific Group of States",
         "signatureDate": "2000-06-23",
         "entryIntoForceDate": "n/a",
@@ -1683,7 +1710,7 @@
       },
       {
         "policyName": "Euro-Mediterranean Agreement establishing an Association between the European Community and its Member States, of the one part, and the People's Democratic Republic of Algeria, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Algeria",
         "signatureDate": "2002-04-22",
         "entryIntoForceDate": "n/a",
@@ -1694,7 +1721,7 @@
       },
       {
         "policyName": "Political Dialogue and Cooperation Agreement between the European Community and its Member States, of the one part, and the Andean Community and its Member Countries (Bolivia, Colombia, Ecuador, Peru and Venezuela), of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Andean Community (Bolivia, Colombia, Ecuador, Peru)",
         "signatureDate": "2003-12-15",
         "entryIntoForceDate": "n/a",
@@ -1705,7 +1732,7 @@
       },
       {
         "policyName": "Framework Agreement EU-Australia",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Australia",
         "signatureDate": "2017-08-17",
         "entryIntoForceDate": "n/a",
@@ -1716,7 +1743,7 @@
       },
       {
         "policyName": "Euro-Mediterranean Agreement establishing an Association between the European Communities and their Member States, of the one part, and the Arab Republic of Egypt, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Egypt",
         "signatureDate": "2001-06-25",
         "entryIntoForceDate": "n/a",
@@ -1727,7 +1754,7 @@
       },
       {
         "policyName": "Cooperation Agreement between the European Community and the Kingdom of Cambodia",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Cambodia",
         "signatureDate": "1997-07-29",
         "entryIntoForceDate": "n/a",
@@ -1738,7 +1765,7 @@
       },
       {
         "policyName": "Strategic Partnership Agreement between the European Union and its Member States, of the one part, and Canada, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Canada",
         "signatureDate": "2016-10-30",
         "entryIntoForceDate": "n/a",
@@ -1749,7 +1776,7 @@
       },
       {
         "policyName": "Agreement establishing an association between the European Community and its Member States, of the one part, and the Republic of Chile, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Chile",
         "signatureDate": "2002-11-18",
         "entryIntoForceDate": "n/a",
@@ -1760,7 +1787,7 @@
       },
       {
         "policyName": "Memorandum of Understanding between the European Community and the National Tourism Administration of the People's Republic of China on visas and other matters relating to tour groups from the People's Republic of China",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "China",
         "signatureDate": "2004-02-12",
         "entryIntoForceDate": "n/a",
@@ -1771,7 +1798,7 @@
       },
       {
         "policyName": "EU-Central America political dialogue and cooperation agreement",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Costarica",
         "signatureDate": "2003-12-15",
         "entryIntoForceDate": "n/a",
@@ -1782,7 +1809,7 @@
       },
       {
         "policyName": "Political Dialogue and Cooperation Agreement between the European Union and its Member States, of the one part, and the Republic of Cuba, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Cuba",
         "signatureDate": "2016-12-12",
         "entryIntoForceDate": "n/a",
@@ -1793,7 +1820,7 @@
       },
       {
         "policyName": "EU-Central America political dialogue and cooperation agreement",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Guatemala, Honduras, Nicaragua, Panama, El Salvador",
         "signatureDate": "2012-12-29",
         "entryIntoForceDate": "n/a",
@@ -1804,7 +1831,7 @@
       },
       {
         "policyName": "Framework Agreement on Comprehensive Partnership and cooperation between the European Community and its Member States, of the one part, and the Republic of Indonesia, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Indonesia",
         "signatureDate": "2009-11-09",
         "entryIntoForceDate": "n/a",
@@ -1815,7 +1842,7 @@
       },
       {
         "policyName": "Partnership and Cooperation Agreement between the European Union and its Member States, of the one part, and the Republic of Iraq, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Iraq",
         "signatureDate": "2012-05-11",
         "entryIntoForceDate": "n/a",
@@ -1826,7 +1853,7 @@
       },
       {
         "policyName": "EU-Japan Strategic Partnership Agreement",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Japan",
         "signatureDate": "2018-07-17",
         "entryIntoForceDate": "n/a",
@@ -1837,7 +1864,7 @@
       },
       {
         "policyName": "Euro-Mediterranean Agreement establishing an Association between the European Communities and their Member States, of the one part, and the Hashemite Kingdom of Jordan, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Jordan",
         "signatureDate": "1997-11-24",
         "entryIntoForceDate": "n/a",
@@ -1848,7 +1875,7 @@
       },
       {
         "policyName": "Enhanced Partnership and Cooperation Agreement between the European Union and its Member States, of the one part, and the Republic of Kazakhstan, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Kazakhstan",
         "signatureDate": "2015-12-21",
         "entryIntoForceDate": "n/a",
@@ -1859,7 +1886,7 @@
       },
       {
         "policyName": "Framework Agreement between the European Union and the Republic of Korea",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "South Korea",
         "signatureDate": "2010-05-10",
         "entryIntoForceDate": "n/a",
@@ -1870,7 +1897,7 @@
       },
       {
         "policyName": "Stabilization and Association Agreement between the European Union and the European Atomic Energy Community, of the one part, and Kosovo, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Kosovo",
         "signatureDate": "2015-10-27",
         "entryIntoForceDate": "n/a",
@@ -1881,7 +1908,7 @@
       },
       {
         "policyName": "Cooperation Agreement between the European Community and the Lao People's Democratic Republic",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Laos",
         "signatureDate": "1997-04-29",
         "entryIntoForceDate": "n/a",
@@ -1892,7 +1919,7 @@
       },
       {
         "policyName": "Euro-Mediterranean Agreement establishing an Association between the European Community and its Member States, of the one part, and the Republic of Lebanon, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Lebanon",
         "signatureDate": "2002-06-17",
         "entryIntoForceDate": "n/a",
@@ -1903,7 +1930,7 @@
       },
       {
         "policyName": "Framework Agreement on Partnership and Cooperation between the European Union and its Member States, of the one part, and Mongolia, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Mongolia",
         "signatureDate": "2013-04-30",
         "entryIntoForceDate": "n/a",
@@ -1914,7 +1941,7 @@
       },
       {
         "policyName": "Partnership Agreement on Relations and Cooperation between the European Union and its Member States, of the one part, and New Zealand, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "New Zealand",
         "signatureDate": "2016-10-05",
         "entryIntoForceDate": "n/a",
@@ -1925,7 +1952,7 @@
       },
       {
         "policyName": "Framework Agreement on Partnership and Cooperation between the European Union and its Member States, of the one part, and the Republic of the Philippines",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Philippines",
         "signatureDate": "2012-07-11",
         "entryIntoForceDate": "n/a",
@@ -1936,7 +1963,7 @@
       },
       {
         "policyName": "Partnership and Cooperation Agreement between the European Union and its Member States, of the one part, and the Republic of Singapore, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Singapore",
         "signatureDate": "2018-10-19",
         "entryIntoForceDate": "n/a",
@@ -1947,7 +1974,7 @@
       },
       {
         "policyName": "Partnership and Cooperation Agreement establishing a partnership between the European Communities and their Member States, of the one part, and the Republic of Tajikistan, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Tajikistan",
         "signatureDate": "2004-10-11",
         "entryIntoForceDate": "n/a",
@@ -1958,7 +1985,7 @@
       },
       {
         "policyName": "Proposal for a Council and Commission Decision on the conclusion of the Partnership and Cooperation Agreement between the European Communities and their Member States and Turkmenistan",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Turkmenistan",
         "signatureDate": "1998-05-25",
         "entryIntoForceDate": "n/a",
@@ -1969,7 +1996,7 @@
       },
       {
         "policyName": "Partnership and Cooperation Agreement establishing a partnership between the European Communities and their Member States, of the one part, and the Republic of Uzbekistan, of the other part, to take account of the accession of the Republic of Croatia to the European Union",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Uzbekistan",
         "signatureDate": "1996-06-21",
         "entryIntoForceDate": "n/a",
@@ -1980,7 +2007,7 @@
       },
       {
         "policyName": "Framework Agreement on Comprehensive Partnership and Cooperation between the European Union and its Member States, of the one part, and the Socialist Republic of Viet Nam, of the other part",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Vietnam",
         "signatureDate": "2012-06-27",
         "entryIntoForceDate": "n/a",
@@ -2287,7 +2314,7 @@
     "policies": [
       {
         "policyName": "Memorandum of Understanding between Belgium and Tunisia",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "Belgium",
         "signatureDate": "2018-07-17",
         "entryIntoForceDate": "n/a",
@@ -2298,7 +2325,7 @@
       },
       {
         "policyName": "Memorandum of Understanding on a strategic and global partnership between the Republic of Tunisia and the European Union ",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "European Union",
         "signatureDate": "2023-07-16",
         "entryIntoForceDate": "n/a",
@@ -2320,7 +2347,7 @@
       },
       {
         "policyName": "EU-Tunisia Mobility Partnership (2014)",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "European Union",
         "signatureDate": "2014-03-03",
         "entryIntoForceDate": "n/a",
@@ -2512,7 +2539,7 @@
       },
       {
         "policyName": "Memorandum of understanding with FRONTEX",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "FRONTEX",
         "signatureDate": "2012-05-28",
         "entryIntoForceDate": "n/a",
@@ -2523,7 +2550,7 @@
       },
       {
         "policyName": "\"Agreement on Combating Cross-Border Organized Crime\" and two Protocols regulating \"Smuggling of Migrant\" and \"Human Trafficking\", annexed to this agreement",
-        "typeOfBiletralAgreement": "Migration/mobility partnership including a provision on the readmission/removal",
+        "typeOfBiletralAgreement": "Migration/Mobility Partnership Including a Provision on the Readmission/Removal",
         "signatoryState": "n/a",
         "signatureDate": "2000-12-13",
         "entryIntoForceDate": "n/a",

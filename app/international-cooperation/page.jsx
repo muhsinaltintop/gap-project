@@ -8,7 +8,8 @@ import TransformInternational from "../_components/TransformInternational";
 const InternationalCooperation = async () => {
   const countryList = await getCountryList();
   const transformedInternational = TransformInternational(internationalCooperation)
-  return (
+
+    return (
   
   <div className="w-full mx-6">
     <SearchComponent data={transformedInternational} countryList={countryList} headers={headersForInternational}/>
