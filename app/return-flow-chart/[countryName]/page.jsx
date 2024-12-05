@@ -28,7 +28,7 @@ const Page = ({ params }) => {
   }
 
   if (!pdfExists) {
-    return <div>No data found for {params.countryName}</div>;
+    return <div>No data found for {params.countryName === "unitedKingdom" ? "United Kingdom" : params.countryName}</div>;
   }
 
   return (

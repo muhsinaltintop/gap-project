@@ -50,7 +50,7 @@ const CountryCard = ({ country }) => {
           </Link>
           
           <Link
-            href={`/return-policy-timeline/${country?.countryName}`}
+            href={`/return-policy-timeline/${country?.countryName === "United Kingdom" ? "unitedKingdom" : country?.countryName}`}
             target="_blank"
             className="group relative block"
           >
@@ -60,7 +60,7 @@ const CountryCard = ({ country }) => {
           </Link>
           <Link
             target="_blank"
-            href={`/return-flow-chart/${country?.countryName}`}
+            href={`/return-flow-chart/${country?.countryName === "United Kingdom" ? "unitedKingdom" : country?.countryName}`}
             className="group relative block"
           >
             <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
@@ -69,7 +69,7 @@ const CountryCard = ({ country }) => {
           </Link>
           <Link
             target="_blank"
-            href={`/actor-return-diagram/${country?.countryName}`}
+            href={`/actor-return-diagram/${country?.countryName === "United Kingdom" ? "unitedKingdom" : country?.countryName}`}
             className="group relative block"
           >
             <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
