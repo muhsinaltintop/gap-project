@@ -128,6 +128,7 @@ const ChartComponent = ({ data, title, countries }) => {
                 value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "),
                 formatLegend(name),
               ]}
+              labelFormatter={(label) => <div className="font-bold text-white bg-primary text-center">{label}</div>}
             />
             <Legend formatter={formatLegend} />
             {sortedSelectedCountries.map((country, index) => (
