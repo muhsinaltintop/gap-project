@@ -44,7 +44,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
 
           <div className="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
             <p className="text-2xl font-bold uppercase tracking-widest">
-              {selectedCountry?.countryName}
+              {selectedCountry?.countryName === "Turkey" ? "TÜRKİYE" : selectedCountry?.countryName}
             </p>
             <span className=" flex-row text-xl">
               <h2 className="text-xl font-bold">Executive Summary</h2>
@@ -119,7 +119,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 }
                 target="_blank"
               >
-                {`${selectedCountry?.countryName} Country Profile on GAP`}
+                {`${selectedCountry?.countryName === "Turkey" ? "TÜRKİYE" : selectedCountry?.countryName} Country Profile on GAP`}
               </Link>
             )}
           </div>

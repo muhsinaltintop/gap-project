@@ -10,7 +10,7 @@ const page = ({ params }) => {
   return (
     <div className="w-9/12 m-10">
         <h1 className="text-xl font-bold">
-        {params?.countryName === "unitedKingdom" ? "United Kingdom" : params?.countryName} Executive Summary
+        {params?.countryName === "unitedKingdom" ? "United Kingdom" : params?.countryName === "Turkey" ? "Türkiye" : params?.countryName} Executive Summary
       </h1>
       <div className="w-9/12 align-justify text-justify ">
         <PlainText text={country?.executiveSummary}></PlainText>

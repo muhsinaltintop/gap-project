@@ -36,7 +36,7 @@ const CountryCard = ({ country }) => {
       />
 
       <div>
-        <h3 className="text-lg/tight font-bold text-gray-900">{country.countryName}</h3>
+        <h3 className="text-lg/tight font-bold text-gray-900">{country.countryName === "Turkey" ? "Türkiye" : country.countryName}</h3>
 
         <div className="grid grid-cols-4 gap-x-4 mt-0.5 text-gray-700">
           <Link

@@ -113,7 +113,7 @@ const Page = () => {
     
     { label: "Note on Return Decisions Issued for IRREGULAR Migrants", content: 
       <div className="max-w-6xl text-sm text-justify">
-    <div className="my-2">This category could be the case for EU or non-EU states. For the latter category, as many foreigners who would have sought asylum practically do not have access to asylum application or avoid it due to onward migration aims (e.g. Afghans in Turkey). When these migrants are apprehended during their entry, stay, working, or exiting, return/deportation/order to leave decision may be imposed on them. </div></div> },
+    <div className="my-2">This category could be the case for EU or non-EU states. For the latter category, as many foreigners who would have sought asylum practically do not have access to asylum application or avoid it due to onward migration aims (e.g. Afghans in Türkiye). When these migrants are apprehended during their entry, stay, working, or exiting, return/deportation/order to leave decision may be imposed on them. </div></div> },
     
     { label: "Note on Return Decisions Issues Upon NEGATIVE ASYLUM Applications", content: 
       <div className="max-w-6xl text-sm text-justify">
