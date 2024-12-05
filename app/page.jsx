@@ -61,7 +61,7 @@ organized presentation for those interested in return related data:
     GAPs Data Repository is a living platform, please
       <span className="text-primary"><Link href={"https://www.returnmigration.eu/contact-gaps"} target="_blank"> contact</Link></span> the Horizon Europe project GAPs coordinators to contribute data entries or for any queries and comments.
     </p>
-    <p className="text-sm mt-2">*Last Updated on 03.08.2024</p>
+    <p className="text-sm mt-2">*Last Updated on 05.12.2024</p>
   </div>
 );
 
