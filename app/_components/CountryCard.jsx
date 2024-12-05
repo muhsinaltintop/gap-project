@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 
 const CountryCard = ({ country }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -164,6 +164,8 @@ const CountryCard = ({ country }) => {
               </div>
             )}
           </div>
+          {
+            country.countryName === "United Kingdom" ? "" : 
           <Link
             href={
               ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
@@ -176,9 +178,10 @@ const CountryCard = ({ country }) => {
             className="group relative block"
           >
             <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
-              Country Profile on GAPs
+              Country Profile on GAPs <span className="float-right"><ExternalLink className="size-3"/></span> 
             </button>
           </Link>
+          }
         </div>
       </div>
     </div>
