@@ -27,7 +27,6 @@ const DataTable = ({ mergedData }) => {
         {mergedData.map((row, index) => (
                    
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
-            {console.log("row:", row)}
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
             <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn ===  0 | row.voluntaryReturn === undefined | row.voluntaryReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.voluntaryReturn}</td>
             <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn ===  0 | row.enforcedReturn === undefined | row.enforcedReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.enforcedReturn}</td>
