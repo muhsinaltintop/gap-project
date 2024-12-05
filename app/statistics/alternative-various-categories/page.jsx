@@ -160,7 +160,7 @@ const DataTable = ({ mergedData, countryCode, sourceData }) => {
         </tr>
         <tr className="bg-gray-100">
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
-          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2">{row.additionalNotes === "" ? <div className="text-gray-400">n/a</div> : row.additionalNotes}</td>))}
+          {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2 text-sm">{row.additionalNotes === "" ? <div className="text-gray-400">n/a</div> : row.additionalNotes}</td>))}
         </tr>
 
 
