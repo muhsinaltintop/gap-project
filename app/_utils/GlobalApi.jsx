@@ -213,9 +213,6 @@ const getAllRbtData = async (countryCode) => {
 
     ]);
     
-    
-    
-    
     const merged = api1Data.map((item, index) => ({
       year: item.year,
       voluntaryReturn: item.value,
@@ -239,7 +236,10 @@ const getAllRbtData = async (countryCode) => {
     console.error("Error fetching data: ", err);
     throw err;
   }
+  console.log("merged:", merged);
 }
+
+
 
 const getAvc = async (countryCode) => {
   const data = await fetchData(`/avc-${countryCode}?populate=*`);
