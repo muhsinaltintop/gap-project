@@ -31,7 +31,7 @@ const DataTable = ({ mergedData, country }) => {
                 <td className="border border-gray-300 px-4 py-2">
                   {row[yearKey] !== undefined && row[yearKey] !== -1 
                     ? row[yearKey] 
-                    : "n/a"}
+                    : <div className="text-gray-400">n/a</div>}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
                   {row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
@@ -39,7 +39,7 @@ const DataTable = ({ mergedData, country }) => {
                       {row[referenceKeys]}
                     </Link>
                   ) : (
-                    "n/a"
+                    <div className="text-gray-400">n/a</div>
                   )}
                 </td>
               </tr>
@@ -55,7 +55,7 @@ const DataTable = ({ mergedData, country }) => {
 
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">Note:</td>
-        <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0].note ? mergedData[0].note : "n/a"}</td>
+        <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0].note ? mergedData[0].note : <div className="text-gray-400">n/a</div>}</td>
         </tr>
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>

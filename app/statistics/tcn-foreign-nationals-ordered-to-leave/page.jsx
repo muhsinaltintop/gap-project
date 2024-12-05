@@ -28,11 +28,11 @@ const DataTable = ({ mergedData }) => {
         {mergedData.map((row, index) => (
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnDesicionsForIrregulars ? row.returnDesicionsForIrregulars : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnFollowingOrder ? row.returnFollowingOrder : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnNegativeAsylum ? row.returnNegativeAsylum : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnedMinors ? row.returnedMinors : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.returnTotal ? row.returnTotal : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnDesicionsForIrregulars === "n/a" | "" ?  <div className="text-gray-400">n/a</div> : row.returnDesicionsForIrregulars}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnFollowingOrder === "n/a" | "" ?  <div className="text-gray-400">n/a</div> : row.returnFollowingOrder}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnNegativeAsylum === "n/a" | "" ?  <div className="text-gray-400">n/a</div> : row.returnNegativeAsylum}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnedMinors === "n/a" | "" ?  <div className="text-gray-400">n/a</div> : row.returnedMinors}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.returnTotal === "n/a" | "" ?  <div className="text-gray-400">n/a</div> : row.returnTotal}</td>
           </tr>
         ))}
         <tr className="bg-gray-200">
@@ -43,16 +43,16 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceReturnDecisionsIrregular}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlReturnFollowingOrder != "n/a" || undefined ? (
+            {mergedData[0]?.urlReturnFollowingOrder != "n/a"|| undefined ? (
               <Link href={mergedData[0]?.urlReturnFollowingOrder} className="text-blue-500 hover:underline">
                 {mergedData[0]?.sourceReturnFollowingOrder}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
@@ -61,7 +61,7 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceReturnNegativeAsylum}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
@@ -70,7 +70,7 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceReturnedMinors}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
@@ -79,7 +79,7 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceTotalOrderReturn}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
         </tr>
