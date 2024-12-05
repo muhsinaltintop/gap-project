@@ -12,7 +12,7 @@ export default function StatisticsLayout({ children, params }) {
     return (
       <div>
         <div className="ml-4 mb-8">
-        <PageTitle title={title === "/Statistics" ? "" : title === "Stock Of Irregular Migrants" ? "Stock of Irregular Migrants" : title}/>  
+        <PageTitle title={title === "/Statistics" ? "" : title === "Stock Of Irregular Migrants" ? "Stock of Irregular Migrants" : title === "Tcn Foreign Nationals Ordered To Leave" ? "TCNs/Foreign Nationals Ordered To Leave" : title}/>  
         </div>      
         
         <div>{children}</div>
