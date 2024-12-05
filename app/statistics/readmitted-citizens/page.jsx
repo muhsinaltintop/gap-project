@@ -29,7 +29,7 @@ const DataTable = ({ mergedData, country }) => {
               <tr key={`${index}-${i}`} className={`bg-white ${i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
                 <td className="border border-gray-300 px-4 py-2">{yearKey.replace('year_', '')}</td>
                 <td className="border border-gray-300 px-4 py-2">
-                  {row[yearKey] !== undefined && row[yearKey] !== -1 
+                  {row[yearKey] !== undefined && row[yearKey] !== 0
                     ? row[yearKey] 
                     : <div className="text-gray-400">n/a</div>}
                 </td>
@@ -59,7 +59,7 @@ const DataTable = ({ mergedData, country }) => {
         </tr>
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
-        <td className="border border-gray-300 px-4 py-2" colSpan="5">Data is not avalible.</td>
+        <td className="border border-gray-300 px-4 py-2 text-sm" colSpan="5">Data is not avalible.</td>
         </tr>
       </tbody>
     </table>
@@ -99,6 +99,11 @@ const Page = () => {
 
   return (
     <div className="w-full mx-6">
+
+<div className="my-2 max-w-6xl">This section contains data on the number of citizens whose readmission is accepted by the citizenship country, hence citizens of a state who have been readmitted into it.
+</div>
+
+
       <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={readmittedCountries} />
       {loading && <p>Loading data...</p>}
       {error && <p>Error fetching data</p>}

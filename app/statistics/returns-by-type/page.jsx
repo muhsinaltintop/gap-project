@@ -24,23 +24,24 @@ const DataTable = ({ mergedData }) => {
       </thead>
       <tbody>
         {mergedData.map((row, index) => (
+                   
           <tr key={index} className={`bg-white ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
             <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn ? row.voluntaryReturn : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn ? row.enforcedReturn  : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.assistedReturn ? row.assistedReturn  : "n/a"}</td>
-            <td className="border border-gray-300 px-4 py-2">{row.totalReturn ? row.totalReturn  : "n/a"}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn ===  0 | row.voluntaryReturn === undefined ? <div className="text-gray-400">n/a</div> : row.voluntaryReturn}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn ===  0 | row.voluntaryReturn === undefined ? <div className="text-gray-400">n/a</div> : row.enforcedReturn}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.assistedReturn ===  0 | row.voluntaryReturn === undefined ? <div className="text-gray-400">n/a</div> : row.assistedReturn}</td>
+            <td className="border border-gray-300 px-4 py-2">{row.totalReturn ===  0 | row.voluntaryReturn === undefined ? <div className="text-gray-400">n/a</div> : row.totalReturn}</td>
           </tr>
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
           <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlVoluntaryReturn != "n/a" || undefined ? (
-              <Link href={mergedData[0]?.urlVoluntaryReturn} className="text-blue-500 hover:underline">
+              <Link href={mergedData[0]?.urlVoluntaryReturn} target="_blank" className="text-blue-500 hover:underline">
                 {mergedData[0]?.sourceVoluntaryReturn}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
@@ -49,7 +50,7 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceEnforcedReturn}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
@@ -58,7 +59,7 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceAssistedReturn}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
           <td className="border border-gray-300 px-4 py-2">
@@ -67,17 +68,17 @@ const DataTable = ({ mergedData }) => {
                 {mergedData[0]?.sourceTotalReturn}
               </Link>
             ) : (
-              "n/a"
+              <div className="text-gray-400">n/a</div>
             )}
           </td>
         </tr>
         <tr className="bg-gray-100">
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
-          <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote || "No notes available"}</td>
+          <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote === "" || "n/a" ? <div className="text-gray-400">n/a</div> : mergedData[0]?.additionalNote}</td>
         </tr>
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
-        <td className="border border-gray-300 px-4 py-2" colSpan="5">Data is not avalible.</td>
+        <td className="border border-gray-300 px-4 py-2 text-sm" colSpan="5">Data is not avalible.</td>
         </tr>
       </tbody>
     </table>
@@ -90,7 +91,7 @@ const Page = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const source = originalData.find(entry => entry.title ==="Returns by Type")
+  const source = originalData.find(entry => entry.title == "Returns by Type")
 
   const handleCountryChange = (countryCode) => {
     setCountryCode(countryCode);
@@ -147,7 +148,24 @@ const Page = () => {
 
   return (
     <div className="w-9/10 mx-6">
-      
+      <div className="my-2 max-w-6xl">
+      This section contains statistics on TCNs/foreign nationals returned following an order to leave, by type of return: 
+        <ul className="list-item list-disc">
+          <li>
+            Voluntary Return (voluntary departure)
+          </li>
+          <li>
+            Enforced return (removal) 
+          </li>
+          <li>
+           Assisted Return
+          </li>
+          <li>
+            Total
+          </li>
+        </ul>
+</div>
+
         <SelectCountryComponent country={countryCode} onCountryChange={handleCountryChange} countries={rbtCountries} />
         {loading && <p>Loading data...</p>}
         {error && <p>Error fetching data</p>}

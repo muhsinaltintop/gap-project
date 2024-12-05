@@ -39,7 +39,7 @@ const DataTable = ({ mergedData }) => {
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
           <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlReturnDecisionsIrregular != "n/a" || undefined ? (
-              <Link href={mergedData[0]?.urlReturnDecisionsIrregular} className="text-blue-500 hover:underline">
+              <Link href={mergedData[0]?.urlReturnDecisionsIrregular} target="_blank" className="text-blue-500 hover:underline">
                 {mergedData[0]?.sourceReturnDecisionsIrregular}
               </Link>
             ) : (
@@ -89,7 +89,7 @@ const DataTable = ({ mergedData }) => {
         </tr>
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
-        <td className="border border-gray-300 px-4 py-2" colSpan="5">Data is not avalible.</td>
+        <td className="border border-gray-300 px-4 py-2 text-sm" colSpan="5">Data is not avalible.</td>
         </tr>
       </tbody>
     </table>
@@ -126,8 +126,8 @@ const Page = () => {
     { label: "Note on Third Country Unaccompanied MINORS Returned Following an Order to Leave", content: <div className="max-w-6xl text-sm text-justify">
     <div><span className="font-bold">Minor</span> means a third-country national or stateless person under the age of 18 years. </div>
     <div className="my-2">
-    The <span className="font-bold">return of a minor</span> who arrives on the territory of an EU Member unaccompanied by the adult responsible for them by law or by the practice of the EU Member State concerned, and for as long as they are not effectively taken into the care of such a person or  who is left unaccompanied after they have entered the territory of the EU Member State ().
-    <Link href={'https://home-affairs.ec.europa.eu/networks/european-migration-network-emn/emn-asylum-and-migration-glossary/glossary/unaccompanied-minor_en'} target="_blank" className="text-primary">Directive 2011/95/EU</Link>).
+    The <span className="font-bold">return of a minor</span> who arrives on the territory of an EU Member unaccompanied by the adult responsible for them by law or by the practice of the EU Member State concerned, and for as long as they are not effectively taken into the care of such a person or  who is left unaccompanied after they have entered the territory of the EU Member State.
+    (<Link href={'https://home-affairs.ec.europa.eu/networks/european-migration-network-emn/emn-asylum-and-migration-glossary/glossary/unaccompanied-minor_en'} target="_blank" className="text-primary">Directive 2011/95/EU</Link>).
     </div>
     </div> }
   ];

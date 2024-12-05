@@ -59,8 +59,6 @@ const getPushBacks = async () => {
   return data;
 }
 
-// GlobalApi.js
-
 const getTcnReturnDesicionForIrregulars = async (countryKey) => {
   const data = await fetchData("/tcn-return-desicion-for-irregulars?populate=*");
   const filteredData = data.map(item => ({
@@ -214,7 +212,9 @@ const getAllRbtData = async (countryCode) => {
       getSourceReturn(countryCode)
 
     ]);
-
+    
+    
+    
     
     const merged = api1Data.map((item, index) => ({
       year: item.year,
@@ -233,7 +233,7 @@ const getAllRbtData = async (countryCode) => {
       urlTotalReturn: api5Data?.urlTotal || "n/a",
       additionalNote: api5Data?.notes || "n/a"
     }));
-
+    
     return merged;
   } catch (err) {
     console.error("Error fetching data: ", err);
