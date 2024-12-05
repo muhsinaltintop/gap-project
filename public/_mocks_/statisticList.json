@@ -1,11 +1,11 @@
 [
     {   "id": 1,
         "name": "Stock of Irregular Migrant",
-        "link": "#"
+        "link": "stock-of-irregular-migrants"
     },
     {   "id": 2,
         "name": "Asylum Application",
-        "link": "#"
+        "link": "asylum-applications"
     },
     {   "id": 3,
         "name": "Dublin Returns",
@@ -13,22 +13,22 @@
     },    
     {   "id": 4,
         "name": "TCNs/Foreign Nationals Ordered to Leave",
-        "link": "#"
+        "link": "tcn-foreign-nationals-ordered-to-leave"
     },    
     {   "id": 5,
         "name": "Returns By Type",
-        "link": "#"
+        "link": "returns-by-type"
     },    
     {   "id": 6,
         "name": "Returns By Citizenship",
-        "link": "#"
+        "link": "returns-by-citizenship"
     },    
     {   "id": 7,
         "name": "Alternative/Various Categories(National)",
-        "link": "#"
+        "link": "alternative-various-categories"
     },    
     {   "id": 8,
         "name": "Readmitted Citizens",
-        "link": "#"
+        "link": "readmitted-citizens"
     }
 ]

@@ -11,9 +11,8 @@ export default function StatisticsLayout({ children, params }) {
     
     return (
       <div>
-        {console.log(title)}
         <div className="ml-4 mb-8">
-        <PageTitle title={title === "/Statistics" ? "" : title}/>  
+        <PageTitle title={title === "/Statistics" ? "" : title === "Stock Of Irregular Migrants" ? "Stock of Irregular Migrants" : title}/>  
         </div>      
         
         <div>{children}</div>
