@@ -120,6 +120,7 @@ const ChartComponent = ({ data, title, countries }) => {
               value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "), // 100000'i 100 000 formatına çevir
               formatLegend(name)
             ]}
+            labelFormatter={(label) => <div className="font-bold text-white bg-primary text-center">{label}</div>}
           />
           <Legend formatter={formatLegend} />
           {filteredCountries.map((country, index) => (
