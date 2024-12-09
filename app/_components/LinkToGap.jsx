@@ -6,7 +6,7 @@ const LinkToGap = () => {
   return (
     <div className="w-full h-full">
       <div>
-        <Link href={"#"}>
+        <Link href={"https://zenodo.org/records/10790795"} target="_blank">
           <Image
             alt={"gaps project cover"}
             width={800}
