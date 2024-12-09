@@ -8,26 +8,30 @@
         "link": "asylum-applications"
     },
     {   "id": 3,
+        "name": "Entry Refusals",
+        "link": "entry-refusals"
+    },
+    {   "id": 4,
         "name": "Dublin Returns",
         "link": "dublin-returns"
-    },    
-    {   "id": 4,
+    },        
+    {   "id": 5,
         "name": "TCNs/Foreign Nationals Ordered to Leave",
         "link": "tcn-foreign-nationals-ordered-to-leave"
     },    
-    {   "id": 5,
+    {   "id": 6,
         "name": "Returns By Type",
         "link": "returns-by-type"
     },    
-    {   "id": 6,
+    {   "id": 7,
         "name": "Returns By Citizenship",
         "link": "returns-by-citizenship"
     },    
-    {   "id": 7,
+    {   "id": 8,
         "name": "Alternative/Various Categories(National)",
         "link": "alternative-various-categories"
     },    
-    {   "id": 8,
+    {   "id": 9,
         "name": "Readmitted Citizens",
         "link": "readmitted-citizens"
     }

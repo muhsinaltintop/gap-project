@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ChevronDown, ExternalLink } from "lucide-react";
+import statisticList from "../../public/_mocks_/statisticList"
 
 const CountryCard = ({ country }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -103,64 +104,14 @@ const CountryCard = ({ country }) => {
             </button>
             {isDropdownOpen && (
               <div className="absolute mt-2 w-full rounded bg-white shadow-lg z-50"> {/* Added z-50 here */}
-                <Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Stock of Irregular Migrant
-                </Link>
-                <Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Asylum Application
-                </Link>
-                <Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Entry Refusals
-                </Link>
-                <Link
-                  href={`/statistics/dublin-returns`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Dublin Returns
-                </Link><Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  TCNs/Foreign Nationals Ordered to Leave
-                </Link><Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Returns by Type
-                </Link><Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Returns by Citizenship
-                </Link><Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Alternative/Various Categories(National)
-                </Link><Link
-                  href={`/statistics/#`}
-                  target="_blank"
-                  className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border"
-                >
-                  Readmitted Citizens
-                </Link>
+              
+              {statisticList.map((statistic,index) => {
+          return (
+         <Link key={index} href={`/statistics/${statistic.link}`} target="_blank" className="block w-full p-2 text-sm text-gray-700 hover:bg-amber-600 hover:text-white border">
+            {statistic.name}
+         </Link> 
+        )
+        })}
               </div>
             )}
           </div>
@@ -177,7 +128,7 @@ const CountryCard = ({ country }) => {
             target="_blank"
             className="group relative block"
           >
-            <button className="block rounded bg-yellow-400 mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
+            <button className="block rounded text-white bg-primary mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
               Country Profile on GAPs <span className="float-right"><ExternalLink className="size-3"/></span> 
             </button>
           </Link>
