@@ -105,23 +105,21 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 )}
               </span>
             </div>
-            {["United Kingdom"].includes(selectedCountry?.countryName) ? (
-              ""
-            ) : (
-              <Link
+            {<Link
                 className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
                 href={
                   ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
                     selectedCountry?.countryName
                   )
-                    ? `https://www.returnmigration.eu/countries_${selectedCountry?.countryName.toLowerCase()}`
+                    ? `https://www.returnmigration.eu/countries_${selectedCountry?.countryName.toLowerCase()}`: 
+                    selectedCountry?.countryName === "United Kingdom" ? `https://www.returnmigration.eu/united-kingdom`
                     : `https://www.returnmigration.eu/countries-${selectedCountry?.countryName.toLowerCase()}`
                 }
                 target="_blank"
               >
                 {`${selectedCountry?.countryName === "Turkey" ? "TÜRKİYE" : selectedCountry?.countryName} Country Profile on GAP`}
               </Link>
-            )}
+            }
           </div>
         </section>
       </Modal>

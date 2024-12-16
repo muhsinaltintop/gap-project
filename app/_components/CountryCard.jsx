@@ -115,15 +115,13 @@ const CountryCard = ({ country }) => {
               </div>
             )}
           </div>
-          {
-            country.countryName === "United Kingdom" ? "" : 
-          <Link
+          {<Link
             href={
               ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
                 country?.countryName
               )
-                ? `https://www.returnmigration.eu/countries_${country?.countryName.toLowerCase()}`
-                : `https://www.returnmigration.eu/countries-${country?.countryName.toLowerCase()}`
+                ? `https://www.returnmigration.eu/countries_${country?.countryName.toLowerCase()}`: 
+                    country?.countryName === "United Kingdom" ? `https://www.returnmigration.eu/united-kingdom` : `https://www.returnmigration.eu/countries-${country?.countryName.toLowerCase()}`
             }
             target="_blank"
             className="group relative block"
