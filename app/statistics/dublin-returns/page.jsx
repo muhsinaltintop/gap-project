@@ -1,20 +1,21 @@
-import TabNavigation from "@/app/_components/_atoms/TabNavigation";
+import PageTitle from "@/app/_components/_atoms/PageTitle";
 import ChartComponent from "../../_components/ChartComponent";
-import { getCountryList, getDublinReturns } from "../../_utils/GlobalApi";
+import { getCountryList, getDublinReturns, getAlternativeDublinReturns } from "../../_utils/GlobalApi";
 
 const page = async () => {
   const dublinReturns = await getDublinReturns();
+  const alternativeDublinReturns = await getAlternativeDublinReturns();
   const countries = await getCountryList()
 
-  const tabs = [
-    { label: 'Note on Dublin Returns', content: <div className="max-w-6xl text-sm text-justify">
+  // const tabs = [
+  //   { label: 'Note on Dublin Returns', content: <div className="max-w-6xl text-sm text-justify">
 
-            </div> },
-    { label: null, content: null },
+  //           </div> },
+  //   { label: null, content: null },
     
-    { label: null, content: <div>Archive Content</div> },
-    { label: null, content: <div>Notifications Content</div> },
-  ];
+  //   { label: null, content: <div>Archive Content</div> },
+  //   { label: null, content: <div>Notifications Content</div> },
+  // ];
 
   return (
     <div className="w-full mx-6">
@@ -22,7 +23,9 @@ const page = async () => {
 
       <ChartComponent countries={countries} data={dublinReturns} title="Dublin Returns" />
 
-      <ChartComponent countries={countries} data={dublinReturns} title="Alternative Dublin Returns" />
+      <PageTitle title="Alternative Dublin Returns"/>
+
+      <ChartComponent countries={countries} data={alternativeDublinReturns} title="Alternative Dublin Returns" />
 
     </div>
   );
