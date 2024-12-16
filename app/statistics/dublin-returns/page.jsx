@@ -21,6 +21,9 @@ const page = async () => {
       <div className="my-2 max-w-6xl">This section contains number of third country nationals found to be illegally present who are subjected to the transferred from one Member State to another under the mechanism established by the Dublin Regulation (Council Regulation (EC) No 343/2003 and (EC) No 1560/2003).</div>
 
       <ChartComponent countries={countries} data={dublinReturns} title="Dublin Returns" />
+
+      <ChartComponent countries={countries} data={dublinReturns} title="Alternative Dublin Returns" />
+
     </div>
   );
 };

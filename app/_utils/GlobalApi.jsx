@@ -34,6 +34,11 @@ const getDublinReturns = async () => {
   return data;
 };
 
+const getAlternativeDublinReturns = async () => {
+  const data = await fetchData("/alternative-dublin-returns?populate=*");
+  return data;
+};
+
 const getStockOfIrregularMigrants = async () => {
   const data = await fetchData("/stock-of-irregular-migrants?populate=*")
   return data;
@@ -314,4 +319,4 @@ const getReadmittedCitizens = async (countryCode) => {
   return data;
 }
 
-export { getCountryList, getDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative, getAvc, getAlternativeSource };
+export { getCountryList, getDublinReturns, getAlternativeDublinReturns, getStockOfIrregularMigrants, getAsylumApplications, getPushBacks, getReturnByCitizenship, getAlternativeVariousCategories, getReadmittedCitizens, getTps, getAllTcnData, getAllRbtData, getAllAlternativeData, getStockOfIrregularAlternative, getAvc, getAlternativeSource };
