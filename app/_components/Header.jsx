@@ -1,24 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 function Header() {
   const Menu = [
-    { id: 1, name: "About", path: "/" },
-    { id: 2, name: "Team", path: "/" },
-    { id: 3, name: "Country Profiles", path: "/" },
-    { id: 4, name: "Publications", path: "/" },
-    { id: 5, name: "GAPs News", path: "/" },
-    { id: 6, name: "Contact", path: "/" }
+    { id: 1, name: "About", path: "https://www.returnmigration.eu/about" },
+    { id: 2, name: "Team", path: "https://www.returnmigration.eu/team-gaps" },
+    { id: 3, name: "Country Profiles", path: "https://www.returnmigration.eu/country-profiles-gaps" },
+    { id: 4, name: "Publications", path: "https://www.returnmigration.eu/publications-gaps" },
+    { id: 5, name: "GAPs News", path: "https://www.returnmigration.eu/gaps-news" },
+    { id: 6, name: "Contact", path: "https://www.returnmigration.eu/contact-gaps" },
+    { id: 7, name: "Blog", path: "https://www.returnmigration.eu/gapsblog" },
+    { id: 8, name: "Data Repository", path: "https://data.returnmigration.eu/" }
   ];
 
   const Social = [
-    { id: 1, name: "Facebook", path: "/", icon: <Facebook /> },
-    { id: 2, name: "Instagram", path: "/", icon: <Instagram /> },
-    { id: 3, name: "LinkedIn", path: "/", icon: <Linkedin /> },
-    { id: 4, name: "Twitter", path: "/", icon: <Twitter /> },
+    { id: 1, name: "Twitter", path: "https://x.com/gapsreturns", icon: <Twitter /> },
+    { id: 2, name: "LinkedIn", path: "https://www.linkedin.com/company/gaps-return-migration/", icon: <Linkedin /> },
+    { id: 3, name: "Facebook", path: "https://www.facebook.com/GAPSRETURNS/", icon: <Facebook /> },
+    { id: 4, name: "Youtube", path: "https://www.instagram.com/gapsreturns/", icon: <Youtube /> },
+    { id: 5, name: "Instagram", path: "https://www.instagram.com/gapsreturns/", icon: <Instagram /> },
   ];
   return (
     <div
@@ -30,11 +33,11 @@ function Header() {
           <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={100} />
         </Link>
 
-        <ul className="md:flex gap-8 hidden">
+        <ul className="md:flex gap-4 ml-96 hidden">
           {Menu.map((item, index) => (
             <Link key={index} href={item.path}>
               <li
-                className="hover:text-primary cursor:pointer hover:scale-105 transition-all ease-in-out"
+                className="text-primary hover:text-primary-light cursor:pointer hover:scale-105 transition-all ease-in-out text-sm font-bold"
                 key={item.id}
               >
                 {item.name}
@@ -43,9 +46,9 @@ function Header() {
           ))}
         </ul>
       </div>
-      <div className="flex gap-1">
+      <div className="flex gap-0 mr-20">
         {Social.map((item, index) => (
-          <Button key={index} className="bg-transparent text-primary hover:bg-primary hover:text-white transition-all ease-in-out">
+          <Button key={index} className="bg-transparent text-primary hover:text-primary-light hover:text-white transition-all ease-in-out size-2">
               <Link  href={item.path}>
               {item.icon}
               </Link>
