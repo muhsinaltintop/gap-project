@@ -1,13 +1,13 @@
-import { Lato } from "next/font/google";
+import { Gothic_A1 } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import SideMenu from "./_components/SideMenu";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./_components/Footer";
 
-const lato = Lato({
-  weight: ["100", "300", "400", "700", "900"],
-  subsets: ["latin"],
+const gothicA1 = Gothic_A1({
+  weight: ['100', '300', '400', '700', '900'],
+  subsets: ['latin'],
 });
 
 export const metadata = {
@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={gothicA1.className}>
         <div className="w-12/12 flex flex-col">
           <Header />
         </div>

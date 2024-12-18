@@ -244,11 +244,11 @@
             "typeOfLegislation": "Law",
             "urlEnglish": "https://www.gesetze-im-internet.de/englisch_asylvfg/englisch_asylvfg.html",
             "originalUrl": "https://www.gesetze-im-internet.de/asylvfg_1992/",
-            "notes": "procedure of the deportation of rejected asylum seekers subsection 4 sec. 34 onwards; definition of safe country of origin Sec. 29a; accelerated/fast-track procedure Sec. 30a; rejection of manifestly unfounded asylum applications Sec. 30; or inadmissability of the application Sec. 29. Annex II safe third countries: Albania, Bosnia and Herzegovina, Ghana, Kosovo, Macedonia, Former Yugoslav Republic, Montenegro, Senegal, Serbia.  Annex I safe third counrties Sec. 16a: Switzerland and Norway "
+            "notes": "procedure of the deportation of rejected asylum seekers subsection 4 Sec. 34 Asylum Act onwards; definition of safe country of origin Sec. 29a Asylum Act; accelerated/fast-track procedure Sec. 30a Asylum Act; rejection of manifestly unfounded asylum applications Sec. 30 Asylum Act; or inadmissability of the application Sec. 29 Asylum Act. Annex II safe third countries: Albania, Bosnia and Herzegovina, Ghana, Kosovo, Macedonia, Former Yugoslav Republic, Montenegro, Senegal, Serbia.  Annex I safe third counrties Sec. 16a Asylum Act: Switzerland and Norway"
           },
           {
-            "policyName": "Integration Act ",
-            "originalPolicyName": "Integrationsgesetz ",
+            "policyName": "Integration Act",
+            "originalPolicyName": "Integrationsgesetz",
             "policyTypeArea": {
               "assistedReturn": false,
               "borderManagement": true,
@@ -265,12 +265,12 @@
             "year": 2016,
             "month": 7,
             "day": 31,
-            "policyDescription": "Complete recast of sec. 29 (unzulässige Anträge) inadmissable applications. Summary of possible reasons leading to the inadmissibility of an asylum application: (1) Dublin, (2) asylum in another EU state, (3) safe third counrty, (4) other third non EU country willing to readmit and (5) subsequent or secondary application.",
+            "policyDescription": "Complete recast of Sec. 29 Asylum Act (unzulässige Anträge) inadmissable applications. Summary of possible reasons leading to the inadmissibility of an asylum application: (1) Dublin, (2) asylum in another EU state, (3) safe third counrty, (4) other third non EU country willing to readmit and (5) subsequent or secondary application.",
             "levelOfLegislation": "National",
             "typeOfLegislation": "Law",
             "urlEnglish": "",
             "originalUrl": "https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&start=//*%255B@attr_id=%27bgbl116s1939.pdf%27%255D#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl116s1939.pdf%27%5D__1684830413179",
-            "notes": "Inadmissibility of the asylum application will lead to the obligation to leave within one week Sec. 36 (1)."
+            "notes": "Inadmissibility of the asylum application will lead to the obligation to leave within one week Sec. 36 (1) Asylum Act."
           },
           {
             "policyName": "Third Law amending the Asylum Act ",
@@ -317,7 +317,7 @@
             "year": 2008,
             "month": 2,
             "day": 15,
-            "policyDescription": "The Act aims at enabling, regulating and restricting immigration of foreigners who are not citizens of the European Union. It lays out the legal framework for entry, residence and promotion of integration.",
+            "policyDescription": "The act aims at enabling, regulating and restricting immigration of foreigners who are not citizens of the European Union. It lays out the legal framework for entry, residence and promotion of integration.",
             "levelOfLegislation": "National",
             "typeOfLegislation": "Law",
             "urlEnglish": "https://www.gesetze-im-internet.de/englisch_aufenthg/index.html",
@@ -326,7 +326,7 @@
           },
           {
             "policyName": "Law on the Implementation of European Union Residence Directives and the Adaption of National Legislation and the EU Visa Code",
-            "originalPolicyName": "Gesetz zur Umsetzung Aufenthaltsrechtlicher Richtlinien der europäischen Union und zur Anpassung nationaler Rechtsvorschriften und den EU-Visakodex",
+            "originalPolicyName": "Gesetz zur Umsetzung aufenthaltsrechtlicher Richtlinien der europäischen Union und zur Anpassung nationaler Rechtsvorschriften und den EU-Visakodex",
             "policyTypeArea": {
               "assistedReturn": true,
               "borderManagement": false,
@@ -348,7 +348,7 @@
             "typeOfLegislation": "Law",
             "urlEnglish": "",
             "originalUrl": "https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&start=//*%5b@attr_id=%27bgbl111s2258.pdf%27%5d#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl111s2258.pdf%27%5D__1696846767052",
-            "notes": "Implementation of the Retrun Directive "
+            "notes": "Implementation of the EU Return Directive"
           },
           {
             "policyName": "Act on the redefinition of the right to stay and the termination of residence",
@@ -369,7 +369,7 @@
             "year": 2015,
             "month": 7,
             "day": 27,
-            "policyDescription": "\"The Act contains two basic provisions: the right to stay for well-integrated foreigners, and termination of residence for those who are not in need of protection. Act introduces also some ameliorations for certain groups of long stay persons and numerous aggravations, to facilitate the termination of residence of rejected asylum seekers, especially those from so-called \"safe countries of origin\"   asylum seekers are now obliged to present, surrender or leave with the authorities any relevant data carriers (mobile phones, tablets etc.). If they fail to do so authorities can order a search of him/her and the objects on His/her person. Access to the data must also be provided by the asylum applicant. ",
+            "policyDescription": "The act contains two basic provisions: the right to stay for well-integrated foreigners, and termination of residence for those who are not in need of protection. The act introduces also some ameliorations for certain groups of long stay persons and numerous aggravations, to facilitate the termination of residence of rejected asylum seekers, especially those from so-called \"safe countries of origin\"   asylum seekers are now obliged to present, surrender or leave with the authorities any relevant data carriers (mobile phones, tablets etc.). If they fail to do so authorities can order a search of him/her and the objects on his/her person. Access to the data must also be provided by the asylum applicant.",
             "levelOfLegislation": "National",
             "typeOfLegislation": "Law",
             "urlEnglish": "",
@@ -377,8 +377,8 @@
             "notes": "Reorganization of deportation law along the balance between private interests in staying and public interests in deportation.  Expulsion now requires a threat to public safety and order and a proportionality test that no longer leaves any room for discretion on the part of the foreigners authority."
           },
           {
-            "policyName": "\"Orderly Return Law\", Second law to improve the enforcement of the obligation to leave the country",
-            "originalPolicyName": "Geordnete-Rückkehr-Gesetz Zweites Gesetz zur besseren Durchsetzung der Ausreisepflicht",
+            "policyName": "Second law to improve the enforcement of the obligation to leave the country (Orderly Return Law)",
+            "originalPolicyName": "Zweites Gesetz zur besseren Durchsetzung der Ausreisepflicht (Geordnete-Rückkehr-Gesetz)",
             "policyTypeArea": {
               "assistedReturn": true,
               "borderManagement": false,
@@ -400,7 +400,7 @@
             "typeOfLegislation": "Law",
             "urlEnglish": "",
             "originalUrl": "https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&start=//*%5B@attr_id=%27bgbl119s1294.pdf%27%5D#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl119s1294.pdf%27%5D__1683115278475",
-            "notes": "The bill facilitates the use of detention by expanding the grounds for using detention e.g. when asylum seekers  do not cooperate for the purpose of their deportation or in cases in which there is no evidence of a risk of absconding. Similarly, the authorities responsible for carrying out deportations are granted the right to access apartments without a judicial order in certain circumstances. In violation of the EU Return Directive, the Bill also provides that, until 2022, people awaiting deportation may be placed in regular prisons as long as people affected will be held in premises separate from convicted criminals. Moreover, the length of stay in initial reception centres has been increased from 6 to 18 months as a general rule and to more than 18 months in certain circumstances (e.g. persons from safe countries of origin or persons who do not provide correct information on their identity). "
+            "notes": "The bill facilitates the use of detention by expanding the grounds for using detention e.g. when asylum seekers  do not cooperate for the purpose of their deportation or in cases in which there is no evidence of a risk of absconding. Similarly, the authorities responsible for carrying out deportations are granted the right to access apartments without a judicial order in certain circumstances. In violation of the EU Return Directive, the bill also provides that, until 2022, people awaiting deportation may be placed in regular prisons as long as people affected will be held in premises separate from convicted criminals. Moreover, the length of stay in initial reception centres has been increased from 6 to 18 months as a general rule and to more than 18 months in certain circumstances (e.g. persons from safe countries of origin or persons who do not provide correct information on their identity)."
           },
           {
             "policyName": "Act to postpone the census until 2022 and to amend the Residence Act",
@@ -421,12 +421,12 @@
             "year": 2020,
             "month": 12,
             "day": 3,
-            "policyDescription": "Introduction of the Sec. 62c on suppelmentary prepartory detention (ergänzende Vorbeirreitungshaft) in preparation for a deportation threat (Abschiebungsandrohung) for persons with an existing entry and residence ban, a threat to internal security or a particularly serious deportation interest. ",
+            "policyDescription": "Introduction of the Sec. 62c Residence Act on suppelmentary prepartory detention (ergänzende Vorbereitungshaft) in preparation for a deportation threat (Abschiebungsandrohung) for persons with an existing entry and residence ban, a threat to internal security or a particularly serious deportation interest. ",
             "levelOfLegislation": "National",
             "typeOfLegislation": "Law",
             "urlEnglish": "",
             "originalUrl": "https://www.bgbl.de/xaver/bgbl/start.xav#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl120s2675.pdf%27%5D__1684743681643",
-            "notes": "This amendment closes the regulatory gap in the cases where Sec. 62 III is not applicable, because the alien has applied for asylum (and is terefore allowed to stay in the country for the duration of the asylum procedure, i.e. there is no enforcable obligation to leave), in such cases Sec. 14 III Asylum Act would allow for the order or maintenance of detention, but rule requires that the alien is already in one of the types of detention or custody specified therein. Therefore in the case where the asylum application is filled before the order for detention was filled Sec. 62c allows for order of detention. "
+            "notes": "This amendment closes the regulatory gap in the cases where Sec. 62 (3) Residence Act is not applicable, because the alien has applied for asylum (and is therefore allowed to stay in the country for the duration of the asylum procedure, i.e. there is no enforcable obligation to leave), in such cases Sec. 14 (3) Asylum Act would allow for the order or maintenance of detention, but rule requires that the alien is already in one of the types of detention or custody specified therein. Therefore in the case where the asylum application is filled before the order for detention was filled Sec. 62c Residence Act allows for order of detention. "
           },
           {
             "policyName": "Law on the introduction of an opportunity residence law",
