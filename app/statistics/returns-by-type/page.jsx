@@ -196,6 +196,31 @@ Repository via the public report link.">
           </Link>
         </div>
             </div>
+            <div className="mt-2 mb-4">
+                  {console.log("title:", source?.title)}
+                {source?.title === "Returns by Type" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/rbt/rbt-alternative-germany.xlsx">
+                    Alternative Data For Germany
+                  </Link>
+                </div> ) : source?.title === "Returns by Type" && countryCode === "poland"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/rbt/rbt-alternative-poland.xlsx">
+                    Alternative Data For Poland
+                  </Link>
+                </div> ) : source?.title === "Returns by Type" && countryCode === "greece"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/rbt/rbt-alternative-greece.xlsm">
+                    Alternative Data For Greece
+                  </Link>
+                </div> ) : source?.title === "Returns by Type" && countryCode === "netherlands"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/rbt/rbt-alternative-netherlands.xlsx">
+                    Alternative Data For Netherlands
+                  </Link>
+                </div> ) : source?.title === "Returns by Type" && countryCode === "turkey"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/rbt/rbt-alternative-turkey.xlsx">
+                    Alternative Data For Turkey
+                  </Link>
+                </div> ): ""}
+                </div>
+            
             <TabNavigation tabs={tabs}/>
             </div>
             <div className="text-sm">
