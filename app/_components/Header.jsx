@@ -30,11 +30,11 @@ function Header() {
       <Link href="/">
         <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={100} className="min-w-48" />
       </Link>    
-      <div className="hidden md:flex flex-wrap gap-6 justify-center xl:flex-nowrap">
+      <div className="hidden text-ora md:flex flex-wrap gap-6 justify-center xl:flex-nowrap">
         {Menu.map((item, index) => (
           <Link key={index} href={item.path}>
             <div
-              className={`text-${item.name !== "Blog" ? "primary" : "orange"} font-semibold hover:text-primary-light cursor-pointer hover:scale-105 transition-all ease-in-out text-sm whitespace-nowrap`}
+              className={`text-${item.name !== "Blog" ? "primary" : "orange-500"} font-semibold hover:text-primary-light cursor-pointer hover:scale-105 transition-all ease-in-out text-sm whitespace-nowrap`}
               >
               {item.name}
             </div>
