@@ -24,38 +24,35 @@ function Header() {
     { id: 5, name: "Instagram", path: "https://www.instagram.com/gapsreturns/", icon: <Instagram /> },
   ];
   return (
-    <div
-      className="flex items-center justify-between p-4 shadow-sm"
-      id="MainContent"
-    >
-      <div className="flex items-center gap-10">
-        <Link href="/">
-          <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={100} />
-        </Link>
-
-        <ul className="md:flex gap-4 ml-96 hidden">
-          {Menu.map((item, index) => (
-            <Link key={index} href={item.path}>
-              <li
-                className="text-primary hover:text-primary-light cursor:pointer hover:scale-105 transition-all ease-in-out text-sm font-bold"
-                key={item.id}
+  <div className="flex items-center justify-between px-10 py-4 shadow-sm" id="MainContent">
+  
+    <div className="flex items-center flex-1 gap-10">
+      <Link href="/">
+        <Image src="/gaps_logo.png" alt="Your Logo" width={180} height={100} className="min-w-48" />
+      </Link>    
+      <div className="hidden md:flex flex-wrap gap-6 justify-center xl:flex-nowrap">
+        {Menu.map((item, index) => (
+          <Link key={index} href={item.path}>
+          {console.log("itamname:", item.name === "Blog")}            
+            <div
+              className={`text-${item.name !== "Blog" ? "primary" : "orange"} font-semibold hover:text-primary-light cursor-pointer hover:scale-105 transition-all ease-in-out text-sm whitespace-nowrap`}
               >
-                {item.name}
-              </li>
-            </Link>
-          ))}
-        </ul>
-      </div>
-      <div className="flex gap-0 mr-20">
-        {Social.map((item, index) => (
-          <Button key={index} className="bg-transparent text-primary hover:text-primary-light hover:text-white transition-all ease-in-out size-2">
-              <Link  href={item.path}>
-              {item.icon}
-              </Link>
-            </Button>
+              {item.name}
+            </div>
+          </Link>
         ))}
       </div>
     </div>
+  <div className="flex gap-4">
+    {Social.map((item, index) => (
+      <Button key={index} className="bg-transparent text-primary hover:text-primary-light hover:text-white transition-all ease-in-out size-2">
+        <Link href={item.path}>{item.icon}</Link>
+      </Button>
+    ))}
+  </div>
+</div>
+
+
   );
 }
 

@@ -55,6 +55,9 @@ module.exports = {
         buttonYellow: {
           DEFAULT: "#fdce18",
         },
+        orange: {
+          DEFAULT: "#ed8b21"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
