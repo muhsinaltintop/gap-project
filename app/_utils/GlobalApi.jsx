@@ -241,7 +241,6 @@ const getAllRbtData = async (countryCode) => {
     console.error("Error fetching data: ", err);
     throw err;
   }
-  console.log("merged:", merged);
 }
 
 

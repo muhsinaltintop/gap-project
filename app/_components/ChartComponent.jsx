@@ -167,7 +167,6 @@ Repository via the public report link."
               </div>
               </div>
                 <div className="mt-2 mb-4">
-                  {console.log("title:", title)}
                 {title === "Entry Refusals" && entry.country === "germany"  ? ( <div className="text-primary font-bold">
                   <Link href="/excel/entry-refusals/refused-entry-at-the-border-germany.xlsx">
                     Alternative Data For Germany

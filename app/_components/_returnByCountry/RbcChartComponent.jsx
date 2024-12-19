@@ -11,7 +11,6 @@ import {
 } from "recharts";
 import originalData from "../../../public/_mocks_/originalData.json";
 
-
 const ChartComponent = ({ data, title, countries }) => {
     const [selectedCountries, setSelectedCountries] = useState([]);
     const [source, setSource] = useState([]);

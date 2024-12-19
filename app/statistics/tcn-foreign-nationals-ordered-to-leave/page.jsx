@@ -208,7 +208,6 @@ const Page = () => {
             
       </div>
       <div className="mt-2 mb-4">
-                  {console.log("country:", countryCode)}
                 {source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
                   <Link href="/excel/tcn/unaccompanied-minors-germany.xlsx">
                     Alternative Data For Germany
@@ -216,6 +215,10 @@ const Page = () => {
                 </div> ) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "poland"  ? ( <div className="text-primary font-bold">
                   <Link href="/excel/tcn/ordered-to-leave-poland-eurostat.xlsx">
                     Alternative Data For Poland
+                  </Link>
+                </div> ) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "netherlands"  ? ( <div className="text-primary font-bold">
+                  <Link target="_blank" href="https://www.cbs.nl/nl-nl/cijfers/detail/85333NED?q=emigratie%20terugkeer#">
+                    Alternative Data For Netherlands
                   </Link>
                 </div> ) : ""}
                 </div>

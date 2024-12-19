@@ -6,6 +6,7 @@ import RbcChartComponent from "../../_components/_returnByCountry/RbcChartCompon
 import countries from "../../_components/_returnByCountry/returnCountries.json";
 import DropDown from "@/app/_components/_atoms/DropDown";
 import allCountries from "../../../public/_mocks_/countryList.json";
+import Link from "next/link";
 
 const Page = () => {
   const [countryCode, setCountryCode] = useState("");
@@ -120,12 +121,17 @@ const Page = () => {
             )}
           </div>
 
-          <div className="my-2">
-            {console.log("CC:", countryCode)
+          <div className="mt-2 mb-4">
+                {countryCode === "nl"  ? ( <div className="text-primary font-bold">
+                  <Link target="_blank" href="https://www.cbs.nl/nl-nl/cijfers/detail/85334NED?q=emigratie%20terugkeer#">
+                    Alternative Data For Netherlands
+                  </Link>
+                </div> ) : ""}
+        </div>
 
-            }
+          <div className="my-2">
             {countryCode === "nl" ? (
-              <div className="my-2 max-w-6xl text-justify"><span className="text-orange-500 font-bold">* Note on Netherlands:</span> Please note these data come from Dienst Terugkeer en Vertrek (Return And Repatriation Services). This source does not provide exact numbers per citizenship. (Note from web editor, to indicate the numbers, numbers set as 1)</div>
+              <div className="my-2 max-w-6xl text-justify"><span className="text-orange-500 font-bold">Note on Netherlands:</span> Please note these data come from Dienst Terugkeer en Vertrek (Return And Repatriation Services). This source does not provide exact numbers per citizenship. (Note from web editor, to indicate the numbers, numbers set as 1)</div>
 
             ): ""}
 
