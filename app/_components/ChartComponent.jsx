@@ -151,14 +151,34 @@ Repository via the public report link."
           <Link href={"/data-entry-teams"}>Data Entry Teams</Link>
         </div>
       </div>
+ 
+
       {filteredCountries.map((entry, index) => (
-        entry.note !== "" && (
-          <div key={index} className="flex text-sm mt-2 items-end">
-            <div style={{ color: getCountryColor(entry.country) }} className="font-bold mr-2 w-24">
-              Note on {formatLegend(entry.country)}: 
+        entry.note !== "" | entry.country === "poland" && (
+          
+            <div key={index} className="text-sm mt-2 items-end">
+              <div className="flex">
+
+              <div style={{ color: getCountryColor(entry.country) }} className="font-bold mr-2 w-24">
+               { entry.country !== "poland" && `Note on ${formatLegend(entry.country)}:`} 
+              </div>
+              <div>
+              {entry.note}
+              </div>
+              </div>
+                <div className="mt-2 mb-4">
+                  {console.log("title:", title === "Entry Refusals")}
+                {title === "Entry Refusals" && entry.country === "germany"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/entry-refusals/refused-entry-at-the-border-germany.xlsx">
+                    Alternative Data For Germany
+                  </Link>
+                </div> ) : title === "Entry Refusals" && entry.country === "poland"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/entry-refusals/refused-entry-poland-eurostat.xlsx">
+                    Alternative Data For Poland
+                  </Link>
+                </div> ) : ""}
+                </div>
             </div>
-            {entry.note}
-          </div>
         )
       ))}
     </div>
