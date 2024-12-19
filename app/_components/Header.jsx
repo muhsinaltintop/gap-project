@@ -33,7 +33,6 @@ function Header() {
       <div className="hidden md:flex flex-wrap gap-6 justify-center xl:flex-nowrap">
         {Menu.map((item, index) => (
           <Link key={index} href={item.path}>
-          {console.log("itamname:", item.name === "Blog")}            
             <div
               className={`text-${item.name !== "Blog" ? "primary" : "orange"} font-semibold hover:text-primary-light cursor-pointer hover:scale-105 transition-all ease-in-out text-sm whitespace-nowrap`}
               >
