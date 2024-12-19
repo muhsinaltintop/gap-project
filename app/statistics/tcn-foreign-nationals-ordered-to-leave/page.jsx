@@ -184,28 +184,41 @@ const Page = () => {
         {data.length > 0 ? (
           <div>
             <div className="flex font-bold justify-between mt-4 mb-4">
-        <div className="flex gap-1">
+            <div className="flex gap-1">
 
-            Original Data:
-            <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal text-primary">
+                Original Data:
+                <Link href={`${source?.originalData}`} target="_blank"> <span className="font-normal text-primary">
 
-            {source?.title}
-            </span>
-            </Link>
-            <MuiTooltip title="The above data are secondary data compiled from different sources. Please click here to see
-the original sources and access the raw data for the entire dataset. You will also find all
-appendixes and attached original files, if available, stored in the REDCap for the Data
-Repository via the public report link.">
-            <CircleHelp className="size-3" color="#0d7dff" />
-            </MuiTooltip>
-        </div>
-        <div className="font-bold text-primary">
+                {source?.title}
+                </span>
+                </Link>
+                <MuiTooltip title="The above data are secondary data compiled from different sources. Please click here to see
+    the original sources and access the raw data for the entire dataset. You will also find all
+    appendixes and attached original files, if available, stored in the REDCap for the Data
+    Repository via the public report link.">
+                <CircleHelp className="size-3" color="#0d7dff" />
+                </MuiTooltip>
+            </div>
+
+            <div className="font-bold text-primary">
           <Link href={'/data-entry-teams'}>
           Data Entry Teams  
           </Link>
         </div>
+            
       </div>
-
+      <div className="mt-2 mb-4">
+                  {console.log("country:", countryCode)}
+                {source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/tcn/unaccompanied-minors-germany.xlsx">
+                    Alternative Data For Germany
+                  </Link>
+                </div> ) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "poland"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/tcn/ordered-to-leave-poland-eurostat.xlsx">
+                    Alternative Data For Poland
+                  </Link>
+                </div> ) : ""}
+                </div>
 
           <TabNavigation tabs={tabs} />
           </div>
