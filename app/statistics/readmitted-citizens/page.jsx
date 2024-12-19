@@ -132,6 +132,19 @@ const Page = () => {
           </Link>
         </div>
             </div>
+
+            <div className="mt-2 mb-4">
+              {console.log(source.title)}
+                {source?.title === "Readmitted Citizens" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/read-citizens/readmitted-citizens-germany.xlsx">
+                    Alternative Data For Germany
+                  </Link>
+                </div> ) : source?.title === "Readmitted Citizens" && countryCode === "tunisia"  ? ( <div className="text-primary font-bold">
+                  <Link href="/excel/tcn/read-citizens/readmitted-citizens-tunisia.xlsx">
+                    Alternative Data For Tunisia
+                  </Link>
+                </div> ) : ""}
+                </div>
         </div>
       )}
     </div>
