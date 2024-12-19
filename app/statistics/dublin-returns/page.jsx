@@ -24,6 +24,10 @@ const page = async () => {
       <ChartComponent countries={countries} data={dublinReturns} title="Dublin Returns" />
 
       <PageTitle title="Alternative Dublin Returns"/>
+      <div className="max-w-6xl text-sm text-justify">
+      <div className="my-2">
+      Data repository combines data from multiple sources in terms of level of sources (e.g. national or European) and source of the data (official data/census, report, input of administrative documents in different levels, media outlets etc.). In case of existing multiple and/or conflicting data collected from different sources, you will see below an extra table showing the data that differs from the primary data added to the first table.</div>
+    </div>
 
       <ChartComponent countries={countries} data={alternativeDublinReturns} title="Alternative Dublin Returns" />
 
