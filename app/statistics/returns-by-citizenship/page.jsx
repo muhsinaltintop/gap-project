@@ -104,8 +104,8 @@ const Page = () => {
         value={selectedYear}
         onChange={handleYearChange}
       />
-      {loading && <p>Loading data...</p>} {/* Yükleme durumu */}
-      {error && <p>Error fetching data</p>} {/* Hata mesajı */}
+      {loading && <p>Loading data...</p>} 
+      {error && <p>Error fetching data</p>}
 
       {countryCode && selectedYear && !loading && !error && (
         <div>

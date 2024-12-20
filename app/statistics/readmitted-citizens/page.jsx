@@ -134,7 +134,6 @@ const Page = () => {
             </div>
 
             <div className="mt-2 mb-4">
-              {console.log(source.title)}
                 {source?.title === "Readmitted Citizens" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
                   <Link href="/excel/read-citizens/readmitted-citizens-germany.xlsx">
                     Alternative Data For Germany

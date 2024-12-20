@@ -14,7 +14,7 @@ import originalData from "../../../public/_mocks_/originalData.json";
 const ChartComponent = ({ data, title, countries }) => {
     const [selectedCountries, setSelectedCountries] = useState([]);
     const [source, setSource] = useState([]);
-  
+    
     const handleCountryChange = (country) => {
       const index = selectedCountries.indexOf(country);
       if (index === -1) {
@@ -40,12 +40,13 @@ const ChartComponent = ({ data, title, countries }) => {
         .slice(0, 10);
   
       const top10Countries = sortedData.map(([key]) => key);
+      
       if (otherTotalValue > 0 && !top10Countries.includes("otherTotal")) {
         top10Countries.push("otherTotal");
       }
       return top10Countries;
     };
-  
+    
     // Alfabetik sıralama (Other Total sona gelecek şekilde)
     const sortCountries = (countries) =>
       countries.sort((a, b) => {
@@ -55,7 +56,7 @@ const ChartComponent = ({ data, title, countries }) => {
       });
   
     const sortedSelectedCountries = sortCountries([...selectedCountries]);
-  
+      
     const filteredData = data.map((entry) => {
       const filteredEntry = { year: entry.year };
       sortedSelectedCountries.forEach((country) => {
@@ -89,6 +90,14 @@ const ChartComponent = ({ data, title, countries }) => {
           return "Other Total";
         case "turkey":
           return "Türkiye";
+        case "coteDIvoire":
+          return "Côte d'Ivoire";
+        case "democraticRepublicOfCongo":
+          return "Democratic Republic of Congo";
+        case "burkinaFaso":
+          return "Burkina Faso";
+        case "sriLanka":
+          return "Sri Lanka";
         default:
           return value.charAt(0).toUpperCase() + value.slice(1);
       }

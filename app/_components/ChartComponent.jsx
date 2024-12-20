@@ -84,6 +84,14 @@ const ChartComponent = ({ data, title, countries }) => {
         return "Other Total";
       case "turkey":
         return "Türkiye";
+      case "coteDIvoire":
+        return "Côte d'Ivoire";
+      case "democraticRepublicOfCongo":
+        return "Democratic Republic of Congo";
+      case "burkinaFaso":
+        return "Burkina Faso";
+      case "sriLanka":
+        return "Sri Lanka";
       default:
         return value.charAt(0).toUpperCase() + value.slice(1);
     }

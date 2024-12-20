@@ -77,156 +77,236 @@
   {
     "id": 16,
     "countryName": "albania",
-    "color": "#FF33C5"
+    "color": "#F8FD31"
   },
   {
     "id": 17,
     "countryName": "serbia",
-    "color": "#A6FF33"
+    "color": "#417B43"
   },
   {
     "id": 18,
     "countryName": "macedonia",
-    "color": "#33FFA6"
+    "color": "#8F2EE9"
   },
   {
     "id": 19,
     "countryName": "russianFederation",
-    "color": "#FFA633"
+    "color": "#A8E186"
   },
   {
     "id": 20,
     "countryName": "bosniaAndHerzegowina",
-    "color": "#FF33A6"
+    "color": "#07DA93"
   },
   {
     "id": 21,
     "countryName": "romania",
-    "color": "#33A6FF"
+    "color": "#EB5FAE"
   },
   {
     "id": 22,
     "countryName": "georgia",
-    "color": "#A633FF"
+    "color": "#87EF82"
   },
   {
     "id": 23,
     "countryName": "ukraine",
-    "color": "#33FF8A"
+    "color": "#863F02"
   },
   {
     "id": 24,
     "countryName": "syria",
-    "color": "#FF338A"
+    "color": "#1825A0"
   },
   {
     "id": 25,
     "countryName": "moldova",
-    "color": "#8AFF33"
+    "color": "#C79B12"
   },
   {
     "id": 26,
     "countryName": "algeria",
-    "color": "#338AFF"
+    "color": "#E6EA13"
   },
   {
     "id": 27,
     "countryName": "otherTotal",
-    "color": "#FF8A33"
+    "color": "#5DE79D"
   },
   {
     "id": 28,
     "countryName": "asia",
-    "color": "#C533FF"
+    "color": "#5E4CFA"
   },
   {
     "id": 29,
     "countryName": "turkiye",
-    "color": "#FFC533"
+    "color": "#9F6BE1"
   },
   {
     "id": 30,
     "countryName": "pakistan",
-    "color": "#33FFC5"
+    "color": "#7E3FAB"
   },
   {
     "id": 31,
     "countryName": "iran",
-    "color": "#C5FF33"
+    "color": "#ABCD45"
   },
   {
     "id": 32,
     "countryName": "bangladesh",
-    "color": "#33C5FF"
+    "color": "#C123FA"
   },
   {
     "id": 33,
     "countryName": "egypt",
-    "color": "#A633FF"
+    "color": "#9F2EF4"
   },
   {
     "id": 34,
     "countryName": "india",
-    "color": "#FF8A33"
+    "color": "#B4E128"
   },
   {
     "id": 35,
     "countryName": "niger",
-    "color": "#338AFF"
+    "color": "#F234BC"
   },
   {
     "id": 36,
     "countryName": "benin",
-    "color": "#8AFF33"
+    "color": "#8FA23C"
   },
   {
     "id": 37,
     "countryName": "togo",
-    "color": "#FF338A"
+    "color": "#7DBE23"
   },
   {
     "id": 38,
     "countryName": "chad",
-    "color": "#33FF8A"
+    "color": "#21F456"
   },
   {
     "id": 39,
     "countryName": "cameroon",
-    "color": "#A633FF"
+    "color": "#8D72E3"
   },
   {
     "id": 40,
     "countryName": "sriLanka",
-    "color": "#FFA633"
+    "color": "#36D7AB"
   },
   {
     "id": 41,
     "countryName": "burkinaFaso",
-    "color": "#FFA633"
+    "color": "#E7C912"
   },
   {
     "id": 42,
     "countryName": "gambia",
-    "color": "#FFA633"
+    "color": "#55FF34"
   },
   {
     "id": 43,
     "countryName": "guinea",
-    "color": "#FFA633"
+    "color": "#C4A12F"
   },
   {
     "id": 44,
     "countryName": "liberia",
-    "color": "#FFA633"
+    "color": "#BC2FF1"
   },
   {
     "id": 45,
     "countryName": "mali",
-    "color": "#FFA633"
+    "color": "#12CEAB"
   },
   {
     "id": 46,
     "countryName": "senegal",
-    "color": "#FFA633"
+    "color": "#A342DC"
+  },
+  {
+    "id": 47,
+    "countryName": "belarus",
+    "color": "#6A5FDD"
+  },
+  {
+    "id": 48,
+    "countryName": "russia",
+    "color": "#3DA72E"
+  },
+  {
+    "id": 49,
+    "countryName": "vietnam",
+    "color": "#C67234"
+  },
+  {
+    "id": 50,
+    "countryName": "china",
+    "color": "#FF872B"
+  },
+  {
+    "id": 51,
+    "countryName": "kazakhstan",
+    "color": "#FF938A"
+  },
+  {
+    "id": 52,
+    "countryName": "armenia",
+    "color": "#DFAE72"
+  },
+  {
+    "id": 53,
+    "countryName": "uzbekistan",
+    "color": "#9FA1DD"
+  },
+  {
+    "id": 54,
+    "countryName": "turkmenistan",
+    "color": "#72DCA2"
+  },
+  {
+    "id": 55,
+    "countryName": "mongolia",
+    "color": "#9E7AD5"
+  },
+  {
+    "id": 56,
+    "countryName": "colombia",
+    "color": "#72E6A8"
+  },
+  {
+    "id": 57,
+    "countryName": "coteDIvoire",
+    "color": "#FE91B2"
+  },
+  {
+    "id": 58,
+    "countryName": "congo",
+    "color": "#82FF7D"
+  },
+  {
+    "id": 59,
+    "countryName": "democraticRepublicOfCongo",
+    "color": "#87F221"
+  },
+  {
+    "id": 60,
+    "countryName": "philippines",
+    "color": "#DB27A3"
+  },
+  {
+    "id": 61,
+    "countryName": "ghana",
+    "color": "#A9F1A7"
+  },
+  {
+    "id": 62,
+    "countryName": "sudan",
+    "color": "#92FA6B"
   }
 ]
