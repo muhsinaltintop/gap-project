@@ -34,13 +34,15 @@ const DataTable = ({ mergedData, country }) => {
                     : <div className="text-gray-400">n/a</div>}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
-                  {row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
+                  {console.log("row:", row[yearKey])}
+
+                  {row[yearKey] === 0 ? "n/a" : row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
                     <Link href={row[sourceKeys[i]]} className="text-blue-500 hover:underline" target="_blank">
                       {row[referenceKeys]}
                     </Link>
-                  ) : (
+                  ) : row.reference.includes("n/a") ? (
                     <div className="text-gray-400">n/a</div>
-                  )}
+                  ): row.reference}
                 </td>
               </tr>
             ))
