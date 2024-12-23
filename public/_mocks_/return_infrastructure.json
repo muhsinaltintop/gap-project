@@ -132,608 +132,578 @@
       {
         "countryName": "Germany",
         "policies": [
-          {
-            "policyName": "Germany: \"Dublin Return\" ",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": false,
-              "forcedReturn": true,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
+            {
+                "policyName": "Germany: \"Dublin Return\"",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": false,
+                    "forcedReturn": true,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "Federal Office for Migration and Refugees (BAMF)",
+                "summary": "Asylum seeker is handed over to the EU country of first arrival. In 2022, a total of 4,158 'outgoing transfers' were carried out and Germany received a total of 3,700 'incoming transfers'.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 01.01.2014 (Dublin III Regulation)",
+                "targetGroup": "General",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "",
+                "programEvaluation": ""
             },
-            "actorsInvolved": "Federal Office for Migration and Refugees (BAMF) ",
-            "summary": "Asylum seeker is handed over to the EU country of first arrival. In 2022, a total of 4,158 'outgoing transfers' were carried out and Germany received a total of 3,700 'incoming transfers'. ",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
+            {
+                "policyName": "Germany: Return to \"safe country of origin\"",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": false,
+                    "forcedReturn": true,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "BAMF and AnkER (arrival) centres (accelerated procedures in two federal states: Bavaria, North Rhine-Westphalia)",
+                "summary": "German consitution defines as safe countries of origin the countries 'in which, on the basis of their laws, enforcement practices and general political conditions, it can be safely concluded that neither political persecution nor inhuman or degrading punishment or treatment exists'.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "Art. 16a (2), (3) Basic Law was amended in 26.05.1993",
+                "targetGroup": "migrants from safe third countries",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "",
+                "programEvaluation": ""
             },
-            "duration": "since 01.01.2014 (Dublin III Regulation) ",
-            "targetGroup": "General ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
+            {
+                "policyName": "Germany: 'Return' to a 'Safe third country'",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": false,
+                    "forcedReturn": true,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "German Federal Police at land border",
+                "summary": "A country that is willing to readmit the foreigner is regarded as a 'safe third country' for the asylum seeker.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "Sec. 29 (1) (3) Asylum Act was amended to the current version on the 06.08.2016.",
+                "targetGroup": "Asylum seekers, who's asylum application is inadmissible because another state is willing to take the asylum seeker back",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "n/a",
+                "programEvaluation": ""
             },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: Return to \"safe country of origin\" ",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": false,
-              "forcedReturn": true,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
+            {
+                "policyName": "Germany: 'Return' to a 'another third country' (sonstiger Drittstaat)",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": true,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "N/A",
+                "summary": "Migrants with a return order that cannot return to their country of origin may return to a third country that agrees to receive them (e.g. based on previous residence, partner's nationality). (akin to first country of asylum concept, i.e. where the applicant presumably holds travel document from)",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "Sec. 29 (1) (4) Asylum Act is in force in the current version since 06.08.2016.",
+                "targetGroup": "all migrants",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "",
+                "programEvaluation": ""
             },
-            "actorsInvolved": "BAMF and AnkER (arrival) centres (accelerated procedures in two federal states: Bavaria, North Rhine-Westphalia)",
-            "summary": "German consitution defines as safe countries of origin the countries 'in which, on the basis of their laws, enforcement practices and general political conditions, it can be safely concluded that neither political persecution nor inhuman or degrading punishment or treatment exists'.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
+            {
+                "policyName": "Germany: forced returns",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": false,
+                    "forcedReturn": true,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "The main responsibility for forced return measures rests with local and regional foreign-resident authorities  (ZAB);  counselling centres run by non-governmental organisation;  the authorities of municipalities and districts.",
+                "summary": "Forced return refers to the action that is being taken against such person who no longer have the right to stay within Germany and whose period for voluntary return has expired.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "n/a",
+                "targetGroup": "all migrants without a right to stay",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "n/a",
+                "programEvaluation": ""
             },
-            "duration": "Art. 16a (2), (3) Basic Law was amended in 26.05.1993",
-            "targetGroup": "migrants from safe third countries ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
+            {
+                "policyName": "Germany: Rückkehrförderprogramme REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programme, 2015, expanded with the StarthilfePlus programme for reintegration 2017",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "Federal Office for Migration and Refugees (BAMF; under Federal Ministry of the Interior, Building and Community (BMI))",
+                "summary": "\"Program to support return of (a) Persons from non-EU countries who are currently in the asylum procedure, whose asylum application has been rejected and are clearly obliged to leave the country and, who are entitled to asylum or have discretionary leave to remain can receive REAG/GARP.  (b) Persons from the EU who have become victims of human trafficking or forced prostitution can apply for assistance. \"StarthilfePlus\" programme, which has been expanding the nationwide return assistance programmes REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programme) with an additional financial bonus since the beginning of 2017\".",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 1979 REAG, in 1989 supplemented by GARP, since 2017 StarthilfePlus",
+                "targetGroup": "TCN, whose asylum application has been or clearly will be rejected, EU citizens who have been vicicm to human trafficking",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes",
+                "programEvaluation": "Non-EU countries "
             },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: 'Return' to a 'Safe third country'",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": false,
-              "forcedReturn": true,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
+            {
+                "policyName": "Germany: Perspektive Heimat",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "Federal Ministry for Economic Cooperation and Development (BMZ), GIZ, with advice centers in the origin countries (currently a remake/ reform of the mandate and tasks of these centers is underway)",
+                "summary": "The Federal Ministry of the Interior and Community (BMI) and the Federal Ministry for Economic Cooperation and Development (BMZ) have started a joint return initiative designed to promote voluntary return and lasting reintegration in the country of origin. The initiative aims at linking return counselling activities in Germany with economic development activities in the individual countries of origin.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "from 2017",
+                "targetGroup": "migrants who cannot stay in Germany permanently or who want to return to their country of origin voluntarily",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Afghanistan, Egypt, Albania, Gambia, Ghana, Iraq, Kosovo, Morocco, Nigeria, Pakistan, Senegal, Serbia and Tunisia",
+                "officialWebsite": "https://www.deutschland.de/en/topic/politics/migration-and-return-the-perspektive-heimat-program",
+                "programEvaluation": ""
             },
-            "actorsInvolved": "German Federal Police at land border",
-            "summary": "A country that is willing to readmit the foreigner is regarded as a 'safe third country' for the asylum seeker.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
+            {
+                "policyName": "Germany: Border controls at German-Austrian border (2015 to date)",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": true,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "German Federal Police",
+                "summary": "NGOs such as PRO ASYL arguing that border controls lead to refusals of entry of would-be asylum seekers in Germany who are denied access to an assessment of the BAMF whether Germany might be responsible for handling their asylum application. Independently of the pandemic situation, Germany has regularly re-introduced border controls. The prolongations occurred despite a ruling of the CJEU of 26 April 2022 in which the court states that border controls cannot exceed a duration of 6 months unless there is a new threat justifying a renewed introduction of controls for another six months maximum. A representative of the union of police officers equally criticized the extensions, on the grounds that they do not reduce irregular immigration but rather shift routes to other land borders.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 2015",
+                "targetGroup": "migrants trying to enter into Germany via Bavaria",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "",
+                "programEvaluation": ""
             },
-            "duration": "Sec. 29 (1) (3) Asylum Act was amended to the current version on the 06.08.2016.",
-            "targetGroup": "Asylum seekers, who's asylum application is inadmissible because another state is willing to take the asylum seeker back",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
+            {
+                "policyName": "Germany: Return to Greece and Spain",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": true,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "German Federal Police",
+                "summary": "In 2018, following a heated political debate, a new procedure was introduced which enables the Federal Police to refuse entry at the border and send persons back to Greece and Spain within 48 hours if they have previously applied for asylum there. This procedure is based on administrative regulations and special administrative readmission agreements with the two countries. These returns are therefore not based on the Dublin Regulation, but on a refusal of entry under the (national) notion of 'safe third countries' in combination with administrative arrangements concluded with other EU Member States. Since 2019, it was only applied to persons found at the Austrian-German border, as this was the only border where controls continue to take place: between August 2018 and May 2021, only 50 persons were returned (46 returns to Greece and 4 to Spain) on the basis of the readmission agreements with these countries. No refusals of entry were carried out between May 2021 and the end of 2021, two persons were returned to Spain in 2022.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 2018",
+                "targetGroup": "de jure all migrants trying to enter Germany, de facto only those from Austria",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "n/a",
+                "programEvaluation": ""
             },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: 'Return' to a 'another third country' (sonstiger Drittstaat)",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": true,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
+            {
+                "policyName": "Germany: Intensive search measures in the border area with Poland",
+                "policyTypeArea": {
+                    "assistedReturn": false,
+                    "borderManagement": true,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "German Federal Police",
+                "summary": "In 2021, the Federal Police registered 11,228 border crossings 'with a connection to Belarus', the main nationalities of persons crossing into Germany were from Iraq, Syria, Yemen and Afghanistan. The Federal Government did not introduce temporary border controls, and refusals of entry at the German-Polish border are therefore not permitted. The Federal Police conducts 'intensive search measures short of border controls' in the border area. Over the course of 2022, the number of unauthorised border crossings from Poland into Germany decreased, with 8,760 detected crossings (from Iraq, Syria and Egypt).",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "2021",
+                "targetGroup": "Those migrants trying to enter Germany from Poland",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "n/a",
+                "programEvaluation": ""
             },
-            "actorsInvolved": "",
-            "summary": "Migrants with a return order that cannot return to their country of origin may return to a third country that agrees to receive them (e.g. based on previous residence, partner's nationality). (akin to first country of asylum concept, i.e. where the applicant presumably holds travel document from)",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
+            {
+                "policyName": "StarthilfePlus - Supplementary Reintegration Support in the Country of Origin",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "BAMF.  IOM is responsible for implementing the reintegration assistance in the destination country.",
+                "summary": "SHP assistance can be granted - depending on nationality (not country of destination) - if voluntary return assistance has been granted at the same time through the REAG/GARP 2.0 program. The SHP benefits are determined by the BAMF together with the REAG/GARP 2.0 assistance.    A) Financial support in the target country (2nd start-up aid) in  - regular amount support   - reduced amount support,   B) Reintegration support in the area of housing,  C) Reintegration support for people with long-term toleration status, (only one-time support).",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "from 2017",
+                "targetGroup": "asylum seekers who have been rejected or will most likely be rejected and therefore are obliged to leave",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Benin, Burkina Faso, China, Colombia, Côte d'Ivoire, Guinea Bissau, Mali, Niger, Russian Federation, Senegal, Sierra Leone, Sudan, Togo, Algeria*, Armenia*, Bangladesh*, DR Congo (Kinshasa)*, Egypt*, Ethiopia*, The Gambia*, Ghana*, Guinea*, India*, Iraq*, Cameroon*, Kenya*, Mongolia*, Morocco*, Nigeria*, Pakistan*, Sri Lanka*, Tajikistan, Tunisia*, Turkey* and Vietnam*, Azerbaijan**, Iran**, Lebanon**,  Bosnia-Herzegovina***, Montenegro***, Albania****, Georgia****, Moldova****, Macedonia****, Serbia****",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ergaenzende-reintegrationsunterstuetzung-im-zielland-bei-einer-freiwilligen-rueckkehr-mit-reag-garp",
+                "programEvaluation": ""
             },
-            "duration": "Sec. 29 (1) (4) Asylum Act is in force in the current version since 06.08.2016.",
-            "targetGroup": "all migrants ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
+            {
+                "policyName": "European Reintegration Programme (EURP) (formerly Joint Reintegration Services (JRS-Programme))",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "The BAMF is responsible for coordinating this assistance at the national level.",
+                "summary": "The JRS program (\"Joint Reintegration Services\") provides individual reintegration assistance to returnees in their countries of origin.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 01.04.2022",
+                "targetGroup": "TNC, Support is possible for both those returning voluntarily and those who have been repatriated.",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Egypt, Ethiopia, Albania, Algeria, Armenia, Bangladesh, Gambia, Georgia, Ghana, Guinea, India, Iraq, Jordan, Cameroon, Kazakhstan, Kenya, Kyrgyzstan, Dem. Rep. Congo (Kinshasa), Morocco, Moldova, Mongolia, Nepal, Nigeria, North Macedonia, Pakistan, Palestine, Serbia, Somalia (with Somaliland), Sri Lanka, Tajikistan, Tunisia, Turkey and Vietnam",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/european-reintegration-programme-eurp/",
+                "programEvaluation": ""
             },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: forced returns",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": false,
-              "forcedReturn": true,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
+            {
+                "policyName": "URA",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "Baden-Württemberg, Berlin, Bremen, Lower Saxony, North Rhine-Westphalia (only voluntary returnees), Saxony, Saxony-Anhalt, Schleswig-Holstein, Thuringia (only voluntary returnees)  BAMF",
+                "summary": "The project offers reintegration support after your return to Kosovo to enable you to sustainably reintegrate in your country of origin.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": false,
+                    "federal": true,
+                    "local": false
+                },
+                "duration": "2016",
+                "targetGroup": "returnees who resided in German at least six most prior to their return",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Kosovo ",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ura",
+                "programEvaluation": ""
             },
-            "actorsInvolved": "The main responsibility for forced return measures rests with local and regional foreign-resident authorities  (ZAAB);  counselling centres run by non-governmental organisation;  the authorities of municipalities and districts.",
-            "summary": "Forced return refers to the action that is being taken against such person who no longer have the right t stay within Germany and whose period for voluntary return has expired. ",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
+            {
+                "policyName": "URA Albania",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "funded by BAMF and implemented by GIZ",
+                "summary": "The project focuses in particular on the often very demanding initial phase immediately after arrival in Albania. It helps those returning to settle in more easily and to generate individual prospects for a new beginning. To this end, the bridge component offers personal support based on trust as well as various counselling services and benefits in kind.   For persons with long-term toleration (at least 2 years), reintegration support under JRS has been available since January 1, 2023. Therefore, as of May 01, 2023 (cut-off date: departure), they are excluded from support under the bridging component Albania. Only the following states are participating in the program: Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": true,
+                    "local": false
+                },
+                "duration": "since 2021",
+                "targetGroup": "those who have returned to Albania voluntarily or were repatriated",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Albania ",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/brueckenkomponente-albanien",
+                "programEvaluation": ""
             },
-            "duration": "",
-            "targetGroup": "all migrants without a right to stay ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
+            {
+                "policyName": "Centre for Migration and Development",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "BMZ and GIZ",
+                "summary": "On behalf of the German Federal Ministry for Economic Cooperation and Development (BMZ), the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH operates so-called \"Centers for Migration and Development\" in various countries, which accompany returnees during their reintegration.  The centers advise and support you if you have returned from Germany, Europe or other countries to one of the following countries and need assistance with your local social and economic reintegration.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": false,
+                    "federal": true,
+                    "local": false
+                },
+                "duration": "since 2017",
+                "targetGroup": "those who have returned from Germany",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Albania, Egypt, Gambia, Ghana, Iraq, Kosovo, Morocco, Nigeria, Pakistan, Senegal, Serbia and Tunisia.",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/bmz-startfinder/",
+                "programEvaluation": ""
             },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: Rückkehrförderprogramme REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programme, 2015, expanded with the StarthilfePlus programme for reintegration 2017",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
+            {
+                "policyName": "SOLWODI - Help for women",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "SOLWODI and NGOs",
+                "summary": "The aim of the program is to enable single and single-parent women to return and to support their economic and social new start. In cooperation with local non-governmental organizations (NGOs), the program offers holistic as well as individually tailored counseling and support for women in Germany and in the destination countries. The program offers individual support for return and reintegration. This support can be in the form of contacts to our partner organizations in the target countries or financial.",
+                "areaScaleImplementation": {
+                    "global": true,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 1987",
+                "targetGroup": "single or single-parent woman, special need due to difficult life situation, vulnerability",
+                "targetOriginCountryRegion": {
+                    "all": true,
+                    "specific": false,
+                    "exceptions": false
+                },
+                "specific": "",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/solwodi-hilfe-fuer-frauen",
+                "programEvaluation": ""
             },
-            "actorsInvolved": "Federal Office for Migration and Refugees (BAMF; under Federal Ministry of the Interior, Building and Community (BMI))  ",
-            "summary": "\"Program to support return of (a) Persons from non-EU countries who are currently in the asylum procedure, whose asylum application has been rejected and are clearly obliged to leave the country and, who are entitled to asylum or have discretionary leave to remain can receive REAG/GARP.  (b) Persons from the EU who have become victims of human trafficking or forced prostitution can apply for assistance. \"StarthilfePlus\" programme, which has been expanding the nationwide return assistance programmes REAG/GARP (Reintegration and Emigration Programme for Asylum Seekers in Germany/Government Assisted Repatriation Programme) with an additional financial bonus since the beginning of 2017\".",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
+            {
+                "policyName": "Ipso Afghanistan",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "IPSO",
+                "summary": "The International Psychosocial Organization (Ipso) is a German-based humanitarian organisation with a branch in Afghanistan. It is an international non-governmental, non-profit and non-political organisation, which delivers psychosocial counselling services according to best practices to the people in need. The services are open to all people, regardless of which ethnic background, religion, race, gender or political affiliation.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since 2008",
+                "targetGroup": "returnees",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Afghanistan ",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ipso-afghanistan",
+                "programEvaluation": ""
             },
-            "duration": "since 1979 REAG, in 1989 supplemented by GARP, since 2017 StarthilfePlus",
-            "targetGroup": "TCN, whose asylum application has been or clearly will be rejected, EU citizens who have been vicicm to human trafficking ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
+            {
+                "policyName": "Caritas Serbia",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "Caritas Serbia and counseling centres, institution and authorities in Germany",
+                "summary": "Caritas Serbia is a humanitarian organisation of the Catholic Church and a member of the international Caritas network with national associations in more than 160 countries worldwide. Since 1995, Caritas Serbia has provided humanitarian aid and assistance to people in need, regardless of their nationality, religion or beliefs.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "established in 2017",
+                "targetGroup": "returnees to Serbia",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Serbia ",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/caritas-serbien",
+                "programEvaluation": ""
             },
-            "specific": "",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: Perspektive Heimat",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "Federal Ministry for Economic Cooperation and Development (BMZ), GIZ, with advice centers in the origin countries (currently a remake/ reform of the mandate and tasks of these centers is underway)",
-            "summary": "The Federal Ministry of the Interior and Community (BMI) and the Federal Ministry for Economic Cooperation and Development (BMZ) have started a joint return initiative designed to promote voluntary return and lasting reintegration in the country of origin. The initiative aims at linking return counselling activities in Germany with economic development activities in the individual countries of origin. ",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "from 2017 ",
-            "targetGroup": "migrants who cannot stay in Germany permanently or who want to return to their country of origin voluntarily",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Afghanistan, Egypt, Albania, Gambia, Ghana, Iraq, Kosovo, Morocco, Nigeria, Pakistan, Senegal, Serbia and Tunisia",
-            "officialWebsite": "https://www.deutschland.de/en/topic/politics/migration-and-return-the-perspektive-heimat-program",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: Border controls at German-Austrian border (2015 to date)",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": true,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "German Federal Police ",
-            "summary": "NGOs such as PRO ASYL arguing that border controls lead to refusals of entry of would-be asylum seekers in Germany who are denied access to an assessment of the BAMF whether Germany might be responsible for handling their asylum application. Independently of the pandemic situation, Germany has regularly re-introduced border controls. The prolongations occurred despite a ruling of the CJEU of 26 April 2022 in which the court states that border controls cannot exceed a duration of 6 months unless there is a new threat justifying a renewed introduction of controls for another six months maximum. A representative of the union of police officers equally criticized the extensions, on the grounds that they do not reduce irregular immigration but rather shift routes to other land borders.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since 2015 ",
-            "targetGroup": "migrants trying to enter into Germany via Bavaria",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
-            },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: Return to Greece and Spain",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": true,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "German Federal Police ",
-            "summary": "In 2018, following a heated political debate, a new procedure was introduced which enables the Federal Police to refuse entry at the border and send persons back to Greece and Spain within 48 hours if they have previously applied for asylum there. This procedure is based on administrative regulations and special administrative readmission agreements with the two countries. These returns are therefore not based on the Dublin Regulation, but on a refusal of entry under the (national) notion of 'safe third countries' in combination with administrative arrangements concluded with other EU Member States. Since 2019, it was only applied to persons found at the Austrian-German border, as this was the only border where controls continue to take place: between August 2018 and May 2021, only 50 persons were returned (46 returns to Greece and 4 to Spain) on the basis of the readmission agreements with these countries. No refusals of entry were carried out between May 2021 and the end of 2021, two persons were returned to Spain in 2022.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since 2018 ",
-            "targetGroup": "de jure all migrants trying to enter Germany, de facto only those from Austria ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
-            },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Germany: Intensive search measures in the border area with Poland",
-            "policyTypeArea": {
-              "assistedReturn": false,
-              "borderManagement": true,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "German Federal Police ",
-            "summary": "In 2021, the Federal Police registered 11,228 border crossings 'with a connection to Belarus', the main nationalities of persons crossing into Germany were from Iraq, Syria, Yemen and Afghanistan. The Federal Government did not introduce temporary border controls, and refusals of entry at the German-Polish border are therefore not permitted. The Federal Police conducts 'intensive search measures short of border controls' in the border area. Over the course of 2022, the number of unauthorised border crossings from Poland into Germany decreased, with 8,760 detected crossings (from Iraq, Syria and Egypt).",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "2021",
-            "targetGroup": "Those migrants trying to enter Germany from Poland ",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
-            },
-            "specific": "",
-            "officialWebsite": "",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "StarthilfePlus - Supplementary Reintegration Support in the Country of Origin ",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "BAMF.  IOM is responsible for implementing the reintegration assistance in the destination country.",
-            "summary": "SHP assistance can be granted - depending on nationality (not country of destination) - if voluntary return assistance has been granted at the same time through the REAG/GARP 2.0 program. The SHP benefits are determined by the BAMF together with the REAG/GARP 2.0 assistance.    A) Financial support in the target country (2nd start-up aid) in  - regular amount support   - reduced amount support,   B) Reintegration support in the area of housing,  C) Reintegration support for people with long-term toleration status, (only one-time support). ",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "from 2017 ",
-            "targetGroup": "asylum seekers who have been rejected or will most likely be rejected and therefore are obliged to leave ",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Benin, Burkina Faso, China, Colombia, Côte d'Ivoire, Guinea Bissau, Mali, Niger, Russian Federation, Senegal, Sierra Leone, Sudan, Togo, Algeria*, Armenia*, Bangladesh*, DR Congo (Kinshasa)*, Egypt*, Ethiopia*, The Gambia*, Ghana*, Guinea*, India*, Iraq*, Cameroon*, Kenya*, Mongolia*, Morocco*, Nigeria*, Pakistan*, Sri Lanka*, Tajikistan, Tunisia*, Türkiye* and Vietnam*, Azerbaijan**, Iran**, Lebanon**,  Bosnia-Herzegovina***, Montenegro***, Albania****, Georgia****, Moldova****, Macedonia****, Serbia****",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ergaenzende-reintegrationsunterstuetzung-im-zielland-bei-einer-freiwilligen-rueckkehr-mit-reag-garp",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "European Reintegration Programme (EURP) (formerly Joint Reintegration Services (JRS-Programme)) ",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "The BAMF is responsible for coordinating this assistance at the national level.",
-            "summary": "The JRS program (\"Joint Reintegration Services\") provides individual reintegration assistance to returnees in their countries of origin.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since 01.04.2022",
-            "targetGroup": "TNC, Support is possible for both those returning voluntarily and those who have been repatriated.",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Egypt, Ethiopia, Albania, Algeria, Armenia, Bangladesh, Gambia, Georgia, Ghana, Guinea, India, Iraq, Jordan, Cameroon, Kazakhstan, Kenya, Kyrgyzstan, Dem. Rep. Congo (Kinshasa), Morocco, Moldova, Mongolia, Nepal, Nigeria, North Macedonia, Pakistan, Palestine, Serbia, Somalia (with Somaliland), Sri Lanka, Tajikistan, Tunisia, Türkiye and Vietnam",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/european-reintegration-programme-eurp/",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "URA ",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "Baden-Württemberg, Berlin, Bremen, Lower Saxony, North Rhine-Westphalia (only voluntary returnees), Saxony, Saxony-Anhalt, Schleswig-Holstein, Thuringia (only voluntary returnees)  BAMF ",
-            "summary": "The project offers reintegration support after your return to Kosovo to enable you to sustainably reintegrate in your country of origin.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": false,
-              "federal": true,
-              "local": false
-            },
-            "duration": "2016 ",
-            "targetGroup": "returnees who resided in German at least six most prior to their return ",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Kosovo ",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ura",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "URA Albania ",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "funded by BAMF and implemented by GIZ ",
-            "summary": "The project focuses in particular on the often very demanding initial phase immediately after arrival in Albania. It helps those returning to settle in more easily and to generate individual prospects for a new beginning. To this end, the bridge component offers personal support based on trust as well as various counselling services and benefits in kind.   For persons with long-term toleration (at least 2 years), reintegration support under JRS has been available since January 1, 2023. Therefore, as of May 01, 2023 (cut-off date: departure), they are excluded from support under the bridging component Albania. Only the following states are participating in the program: Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Lower Saxony, North Rhine-Westphalia, Rhineland-Palatinate, Saxony, Saxony-Anhalt, Schleswig-Holstein and Thuringia.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": true,
-              "local": false
-            },
-            "duration": "since 2021 ",
-            "targetGroup": "those who have returned to Albania voluntarily or were repatriated",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Albania ",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/brueckenkomponente-albanien",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Centre for Migration and Development ",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "BMZ and GIZ ",
-            "summary": "On behalf of the German Federal Ministry for Economic Cooperation and Development (BMZ), the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH operates so-called \"Centers for Migration and Development\" in various countries, which accompany returnees during their reintegration.  The centers advise and support you if you have returned from Germany, Europe or other countries to one of the following countries and need assistance with your local social and economic reintegration.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": false,
-              "federal": true,
-              "local": false
-            },
-            "duration": "since 2017 ",
-            "targetGroup": "those who have returned from Germany ",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Albania, Egypt, Gambia, Ghana, Iraq, Kosovo, Morocco, Nigeria, Pakistan, Senegal, Serbia and Tunisia.",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/bmz-startfinder/",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "SOLWODI - Help for women",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "SOLWODI and NGOs ",
-            "summary": "The aim of the program is to enable single and single-parent women to return and to support their economic and social new start. In cooperation with local non-governmental organizations (NGOs), the program offers holistic as well as individually tailored counseling and support for women in Germany and in the destination countries. The program offers individual support for return and reintegration. This support can be in the form of contacts to our partner organizations in the target countries or financial. ",
-            "areaScaleImplementation": {
-              "global": true,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since 1987 ",
-            "targetGroup": " single or single-parent woman, special need due to difficult life situation, vulnerability",
-            "targetOriginCountryRegion": {
-              "all": true,
-              "specific": false,
-              "exceptions": false
-            },
-            "specific": "",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/solwodi-hilfe-fuer-frauen",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Ipso Afghanistan ",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "IPSO ",
-            "summary": "The International Psychosocial Organization (Ipso) is a German-based humanitarian organisation with a branch in Afghanistan. It is an international non-governmental, non-profit and non-political organisation, which delivers psychosocial counselling services according to best practices to the people in need. The services are open to all people, regardless of which ethnic background, religion, race, gender or political affiliation.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since 2008 ",
-            "targetGroup": "returnees",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Afghanistan ",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/ipso-afghanistan",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Caritas Serbia",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "Caritas Serbia and counseling centres, institution and authorities in Germany ",
-            "summary": "Caritas Serbia is a humanitarian organisation of the Catholic Church and a member of the international Caritas network with national associations in more than 160 countries worldwide. Since 1995, Caritas Serbia has provided humanitarian aid and assistance to people in need, regardless of their nationality, religion or beliefs.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "established in 2017 ",
-            "targetGroup": "returnees to Serbia ",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Serbia ",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/caritas-serbien",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "AWO Kosovo",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "AWO Nuremberg ",
-            "summary": "The primary goal of the return project is the sustainable reintegration of voluntary returnees from Germany to their country of origin, Kosovo.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since January 2007 and a counseling center open in Pristina in March 2009 ",
-            "targetGroup": "returnees to Kosovo ",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Kosovo ",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/awo-nuernberg-im-kosovo",
-            "programEvaluation": ""
-          },
-          {
-            "policyName": "Diakonie Kosova - Return and Reintegration Counselling",
-            "policyTypeArea": {
-              "assistedReturn": true,
-              "borderManagement": false,
-              "forcedReturn": false,
-              "irregularity": false,
-              "massExpulsion": false,
-              "preRemovalDetention": false
-            },
-            "actorsInvolved": "Diakonie Kosova (DiaKos) and the affiliated Diakonie Training Center (DTC) ",
-            "summary": "The primary goal of the return project is the sustainable reintegration of returnees from the Free State of Bavaria in their country of origin, Kosovo.",
-            "areaScaleImplementation": {
-              "global": false,
-              "EU": false,
-              "national": true,
-              "federal": false,
-              "local": false
-            },
-            "duration": "since 2007 (01 March 2022 until 29 February 2024)",
-            "targetGroup": "returnees to Kosovo ",
-            "targetOriginCountryRegion": {
-              "all": false,
-              "specific": true,
-              "exceptions": false
-            },
-            "specific": "Kosovo ",
-            "officialWebsite": "https://www.returningfromgermany.de/en/programmes/diakonie-kosova",
-            "programEvaluation": ""
-          }
+            {
+                "policyName": "AWO Kosovo",
+                "policyTypeArea": {
+                    "assistedReturn": true,
+                    "borderManagement": false,
+                    "forcedReturn": false,
+                    "irregularity": false,
+                    "massExpulsion": false,
+                    "preRemovalDetention": false
+                },
+                "actorsInvolved": "AWO Nuremberg",
+                "summary": "The primary goal of the return project is the sustainable reintegration of voluntary returnees from Germany to their country of origin, Kosovo.",
+                "areaScaleImplementation": {
+                    "global": false,
+                    "EU": false,
+                    "national": true,
+                    "federal": false,
+                    "local": false
+                },
+                "duration": "since January 2007 and a counseling center open in Pristina in March 2009",
+                "targetGroup": "returnees to Kosovo",
+                "targetOriginCountryRegion": {
+                    "all": false,
+                    "specific": true,
+                    "exceptions": false
+                },
+                "specific": "Kosovo ",
+                "officialWebsite": "https://www.returningfromgermany.de/en/programmes/awo-nuernberg-im-kosovo",
+                "programEvaluation": ""
+            }
         ]
-      },
+    },
       {
         "countryName": "Greece",
         "policies": [
