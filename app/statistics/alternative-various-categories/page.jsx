@@ -153,8 +153,6 @@ const DataTable = ({ mergedData, countryCode, sourceData }) => {
         ))}
         <tr className="bg-gray-200">
           <td className="border border-gray-300 px-4 py-2 font-bold">Source</td>
-          {console.log("sd:", sourceData.country)}
-
 
           {sourceData.map((row, index)=> (<td key={index} className="border border-gray-300 px-4 py-2 text-primary">{row.country === "germany" ? row.url : <Link target="_blank" href={row.url}>{row.source == 0 ? <div className="text-gray-400">n/a</div> : row.source}</Link>}</td>)
         )}

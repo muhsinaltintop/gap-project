@@ -218,6 +218,7 @@ const getAllRbtData = async (countryCode) => {
 
     ]);
     
+    
     const merged = api1Data.map((item, index) => ({
       year: item.year,
       voluntaryReturn: item.value,

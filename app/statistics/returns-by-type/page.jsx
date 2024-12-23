@@ -75,7 +75,11 @@ const DataTable = ({ mergedData }) => {
         </tr>
         <tr className="bg-gray-100">
           <td className="border border-gray-300 px-4 py-2 font-bold">Notes:</td>
-          <td className="border border-gray-300 px-4 py-2" colSpan="5">{mergedData[0]?.additionalNote === "" || "n/a" ? <div className="text-gray-400">n/a</div> : mergedData[0]?.additionalNote}</td>
+          <td className="border border-gray-300 px-4 py-2" colSpan="5">
+            { mergedData[0]?.additionalNote === "n/a" ? <div className="text-gray-400">n/a</div> : mergedData[0]?.additionalNote === "" ? <div className="text-gray-400">n/a</div> : <div>{mergedData[0]?.additionalNote}</div>
+            }
+            
+            </td>
         </tr>
         <tr>
         <td className="border border-gray-300 px-4 py-2 font-bold">*n/a</td>
