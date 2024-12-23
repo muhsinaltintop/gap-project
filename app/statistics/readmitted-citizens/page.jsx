@@ -36,7 +36,8 @@ const DataTable = ({ mergedData, country }) => {
                 <td className="border border-gray-300 px-4 py-2">
                   {row[yearKey] === 0 ? "n/a" : row[sourceKeys[i]] && !row[sourceKeys[i]].includes("n/a") ? (
                     <Link href={row[sourceKeys[i]]} className="text-blue-500 hover:underline" target="_blank">
-                      {row[referenceKeys]}
+                      {console.log(yearKey)}
+                      {yearKey === "year_2023" ? "Destatis, 2023" : "Migrationsbericht 2022"}
                     </Link>
                   ) : row.reference.includes("n/a") ? (
                     <div className="text-gray-400">n/a</div>
