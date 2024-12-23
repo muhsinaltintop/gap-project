@@ -267,20 +267,45 @@ resources to rebuild their lives.</div>, <div key="1" className="mt-2"><span cla
     "countryName": "Tunisia",
     "euMember": false,
     "executiveSummary": [
-  <div key="1" className="mt-2">The Tunisian context in terms of migration is specific, particular and complex. It constitutes the reflection of the political, economic and social situation experienced by our country from 2011, the year of the Arab spring revolution, until this date. The migratory phenomenon became very visible after the Tunisian revolution.</div>,
-  
-  <div key="2" className="mt-4">What deserves attention is that the approach defended by the political power was a relatively humanitarian approach towards Syrian asylum seekers who came in thousands to seek refuge in Tunisia or even towards illegal migrants coming from Libya through the southern borders following the outbreak of the Libyan armed conflict and the deterioration of the situation in this country. Tunisia did not close its
-  borders and offered these refugees and migrants the necessary assistance. The evolution that has taken place at the level of the legal context hasn’t been up to the challenges. The situation of asylum seekers and refugees is characterized by precariousness in addition to an incomplete legal framework and the lack of an asylum law. The legal texts applicable to migrants are, for their part, very old and incomplete.</div>,
-  
-  <div key="3" className="mt-2">This humanitarian approach has not persisted and has shifted towards a security approach, particularly over the last five years, both with regard to irregular migrants located in Tunisia and with regard to irregular Tunisian migrants abroad. Regarding irregular migrants living in Tunisia, they are subject to intolerance and discrimination. They are considered a threat to national security as evidenced by the
-  pushbacks towards the Libyan and Algerian borders. There is no possibility for regularization. Tunisia closed the door on regularization of illegal migrants and priority is given to voluntary and/or assisted return.</div>,
-  
-  <div key="4" className="mt-2">
-   On the institutional level, we notice the omnipresence of the Ministry of the Interior and the absence of any judicial control. Tunisian courts have limited involvement in monitoring and enforcing migration policies. This lack of judicial engagement underscores significant gaps in Tunisia’s institutional and legal responses to migration challenges.
+  <div key="1" className="mt-2">
+    The issue of migrant returns has long been present in Tunisia. In 1985, Libya expelled over 50,000 Tunisian migrant workers due to a political crisis between the two countries. However, it was in the 1990s that irregular migration gained a significant place in Tunisian-European relations and agendas. This was largely forced by the introduction of the Schengen system, including the visas System, as well as the intensification of irregular Mediterranean crossings towards Italy.
   </div>,
-  
-  <div key="5" className="mt-4">When it comes to the illegal Tunisian migrants, the pressure from the European Union is very visible: Tunisia is among the rare countries which cooperate with European countries in terms of readmission and return of its nationals through a fairly large number of bilateral readmission agreements. The emphasis is placed mainly on forced return with very often a failure of the reintegration of the Tunisian returnees and new attempts at illegal migration towards the European Union.</div>,
-  <div key="3" className="mt-2"><span className="font-bold mr-1">Author: </span> Hanen Ben Othman</div>
+
+  <div key="2" className="mt-2">
+    Since 1998, Tunisia has signed a readmission agreement with Italy to facilitate the return of its Nationals residing irregularly in this country. Many other agreements with other European countries followed. In the same year, Morocco signed similar agreements with both Italy and Spain. From that, the return and deportation of non-European nationals by EU member states have become a central and important part of the Euro-Mediterranean migration relationships.
+  </div>,
+
+  <div key="3" className="mt-2">
+    The EU and its membersStates havegradually tightened their migration policies regarding Nationals from Third Countries, following the adoption of the Return Directive in 2008. The Arab uprisings, especially the Tunisian revolution and the war against Libya in 2011 and the years after, resulted to a remarkablerise in irregular migrant arrivals from Tunisia and Libya, with over 60,000 migrants reaching the Southern coasts of Italy within just a few months.
+  </div>,
+
+  <div key="4" className="mt-2">
+    In the same time, Tunisia has welcomed 313,000 people who fled the war in Libya. Thanks to the support of international organizations, it has ensured a gigantic and unprecedented operation of truly voluntary repatriation, by air and sea, of 179,284 migrants to their countries of origin, in Africa (140,062) and Asia (39,222).
+  </div>,
+
+  <div key="5" className="mt-2">
+    Because of these upheavals, the EU reevaluates its relations with Tunisia and Libya, leading to propose a new type of agreement with third countries, the "Mobility Partnership". Both parties signed just the political Statement of this agreement in March 2014. However, this agreement was never completely and effectively adopted due to important disagreements and conflicts between Tunisia and the EU. The UE conditions “facilitating visas deliverance” against accepting (by Tunisia) a larger number of Nationals readmission, andNationals from Third Countries who had irregularly entered the EU via Tunisia.
+  </div>,
+
+  <div key="6" className="mt-2">
+    The evolution that has taken place at the level of the legal context hasn’t been up to the challenges. The situation of asylum seekers and refugees is characterized by precariousness in addition to an incomplete legal framework and the lack of an asylum law. The legal texts applicable to migrants are, for their part, very old and incomplete.
+  </div>,
+
+  <div key="7" className="mt-2">
+    The increase in irregular departures from Tunisia, including Tunisian citizens and foreign Nationals, has intensified since 2017 and after the end of the Covid-19 pandemic. The numerical growth of these flows has strained relations betweenTunisia and the EU. This explains the growth in the number of forced returns of Tunisian migrants expelled from the Schengen area and readmitted by the Tunisian authorities: 1,345 in 2021, 2,225 in 2022 and 2,515 in 2023.
+  </div>,
+
+  <div key="8" className="mt-2">
+    At the same time, the number of arrivals from Tunisia to Italy has continued to increase, from 14,685 in 2020 to 20,218 in 2021, 32,371 in 2022, and reaching 97,000 in 2023. The majority of these irregular migrants are foreigners who crossed irregularly the Tunisian land borders with Libya and Algeria. Many others entered regularly through Tunis airport but remained in Tunisia beyond the three-month tourist stay period. Finally, the interceptions of irregular migrants at sea and their disembarkation in Tunisian ports have largely contributed to increasing the number of these migrants, which is the source of growing tensions around the presence and visibility of these sub-Saharan migrants. The Tunisian state is struggling to ensure balanced management of these irregular flows.
+  </div>,
+
+  <div key="9" className="mt-2">
+    The signing of the MoU by Tunisia and the EU in July 2023 was precipitated by this migration crisis. Sub-Saharan migrants in particular have faced waves of violence and deportations at the desert borders with Algeria and Libya. A new return policy has emerged in 2023-2024. Thanks to funding from Italy and the European Union, South-South returns, presented as voluntary returns of sub-Saharan migrants to their countries of origin, and operated by the IOM office in Tunisia, have already exceeded 7,000 people during the period from March 2023 to August 2024. These returns did not exceed a few hundred/year before 2023.
+  </div>,
+
+  <div key="10" className="mt-2">
+    <span className="font-bold mr-1">Authors: </span> Hassen Boubakri, Hanen Ben Othmen, Malak Jedidi
+  </div>
 ],
 
     "returnPolicyTimeline": true,
