@@ -9,7 +9,7 @@ const Page = ({ params }) => {
   // PDF'in var olup olmadığını kontrol eden bir fonksiyon
   const checkPdfExists = async () => {
     try {
-      const response = await fetch(`/pdfs/${params.countryName}_ardl.pdf`, {
+      const response = await fetch(`/pdfs/${params.countryName}_rptl.pdf`, {
         method: "HEAD",
       });
       setPdfExists(response.ok); // PDF mevcutsa response.ok true döner

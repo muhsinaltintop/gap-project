@@ -8,7 +8,7 @@ const Page = ({ params }) => {
 
   const checkPdfExists = async () => {
     try {
-      const response = await fetch(`/pdfs/${params.countryName}_ardl.pdf`, {
+      const response = await fetch(`/pdfs/${params.countryName}_rfcl.pdf`, {
         method: "HEAD",
       });
       setPdfExists(response.ok); // PDF mevcutsa response.ok true döner
