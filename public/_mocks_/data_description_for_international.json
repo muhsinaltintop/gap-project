@@ -3,54 +3,54 @@
     "label": "Country",
     "accessor": "country",
     "description": "Country Name",
-    "width" : "w-4"
+    "width" : "8%"
   },
   {
     "label": "Policy Title",
     "accessor": "policyName",
     "description": "Policy Title in English",
-    "width" : "w-8"
+    "width" : "12%"
   },
   {
     "label": "Type of Biletral Agreement",
     "accessor": "typeOfBiletralAgreement",
     "description": "Agreement type",
-    "width" : "w-4"
+    "width" : "10%"
   },
   {
     "label": "Signatory State",
     "accessor": "signatoryState",
     "description": "Signatory State",
-    "width" : "w-4"
+    "width" : "8%"
   },
   {
     "label": "Signature Date",
     "accessor": "signatureDate",
     "description": "Signature Date",
-    "width" : "w-4"
+    "width" : "8%"
   },
   {
     "label": "Entry Into Force Date",
     "accessor": "entryIntoForceDate",
     "description": "Entry Into Force Date",
-    "width" : "w-4"
+    "width" : "8%"
   },
   {
     "label": "Negotiation Start Date",
     "accessor": "negotiationStartDate",
     "description": "Negotiation Start Date",
-    "width" : "w-4"
+    "width" : "8%"
   },
   { 
     "label": "Media CoverageUrl",
     "accessor": "mediaCoverageUrl",
     "description": "Url for Media Coverage",
-    "width" : "w-4" 
+    "width" : "8%" 
   },
   { 
     "label": "Note",
     "accessor": "note",
     "description": "Notes on Policies",
-    "width" : "w-6" 
+    "width" : "20%" 
   }
 ]

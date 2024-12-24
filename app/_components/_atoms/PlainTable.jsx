@@ -19,15 +19,16 @@ const PlainTable = ({ policies, headersData, pathName, selectedCountries }) => {
             <div className="overflow-x-auto rotate-180">
                 <table
                     ref={tableRef}
-                    className="divide-y-2 divide-gray-200 bg-white text-sm table-fixed rotate-180"
+                    className="divide-y-2 divide-gray-200 bg-white text-sm rotate-180" style={{ tableLayout: "fixed", width: "120%" }}
                 >
                     <thead>
                         <tr>
                             {headers.map((header, index) => (
                                 <th
-                                    key={index}
-                                    className={`px-4 py-2 font-bold text-gray-900 bg-secondary text-left ${header.width}`}
-                                >
+                                key={index}
+                                style={{ width: header.width }}
+                                className="px-4 py-2 font-bold text-gray-900 bg-secondary text-left"
+                            >
                                     <span className="flex items-center">
                                         {header.label.split(" ").slice(0, -1).join(" ")}
                                         <br />
