@@ -9,6 +9,7 @@ import {
 import { Tooltip } from "@mui/material";
 import countryProfileData from "../../public/_mocks_/countryProfile.jsx";
 import ModalComponent from "./ModalComponent";
+import CountryNameFormatter from "../_helper/CountryNameFormatter.jsx";
 
 const MapChart = () => {
   const [content, setContent] = useState("");
@@ -40,7 +41,7 @@ const MapChart = () => {
           <Geographies geography="/features.json">
             {({ geographies }) =>
               geographies.map((geo, index) => (
-                <Tooltip key={index} title={content}>
+                <Tooltip key={index} title={CountryNameFormatter(content)}>
                   {geo.properties.color ? (
                     <Geography
                       className={

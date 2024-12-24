@@ -13,6 +13,7 @@ import { Tooltip as MuiTooltip } from "@mui/material";
 import originalData from "../../public/_mocks_/originalData.json";
 import Link from "next/link";
 import { CircleHelp } from "lucide-react";
+import CountryNameFormatter from "../_helper/CountryNameFormatter";
 
 const ChartComponent = ({ data, title, countries }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -71,31 +72,6 @@ const ChartComponent = ({ data, title, countries }) => {
     setSource(foundData || "No results found");
   }, [title, data]);
 
-  // Formatter function for legend and checkboxes
-  const formatLegend = (value) => {
-    switch (value) {
-      case "unitedKingdom":
-        return "United Kingdom";
-      case "russianFederation":
-        return "Russian Federation";
-      case "bosniaAndHerzegowina":
-        return "Bosnia and Herzegowina";
-      case "otherTotal":
-        return "Other Total";
-      case "turkey":
-        return "Türkiye";
-      case "coteDIvoire":
-        return "Côte d'Ivoire";
-      case "democraticRepublicOfCongo":
-        return "Democratic Republic of Congo";
-      case "burkinaFaso":
-        return "Burkina Faso";
-      case "sriLanka":
-        return "Sri Lanka";
-      default:
-        return value.charAt(0).toUpperCase() + value.slice(1);
-    }
-  };
 
   return (
     <div className="m-10">
@@ -113,7 +89,7 @@ const ChartComponent = ({ data, title, countries }) => {
               onChange={() => handleCountryChange(entry.countryName)}
               className="align-middle mr-1"
             />
-            {formatLegend(entry.countryName)}
+            {CountryNameFormatter(entry.countryName)}
           </label>
         ))}
     </div>
@@ -126,11 +102,11 @@ const ChartComponent = ({ data, title, countries }) => {
           <Tooltip 
             formatter={(value, name) => [
               value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "), // 100000'i 100 000 formatına çevir
-              formatLegend(name)
+              CountryNameFormatter(name)
             ]}
             labelFormatter={(label) => <div className="font-bold text-white bg-primary text-center">{label}</div>}
           />
-          <Legend formatter={formatLegend} />
+          <Legend formatter={CountryNameFormatter} />
           {filteredCountries.map((country, index) => (
             <Bar
               key={index}
@@ -168,7 +144,7 @@ Repository via the public report link."
               <div className="flex">
 
               <div style={{ color: getCountryColor(entry.country) }} className="font-bold mr-2 w-24">
-               { entry.country !== "poland" && `Note on ${formatLegend(entry.country)}:`} 
+               { entry.country !== "poland" && `Note on ${CountryNameFormatter(entry.country)}:`} 
               </div>
               <div>
               {entry.note}
