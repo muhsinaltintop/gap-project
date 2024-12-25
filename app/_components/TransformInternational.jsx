@@ -1,14 +1,14 @@
 const TransformInternational = (data) => {
     const formatDate = (inputDate) => {
         if (inputDate === "N/A" || inputDate === "n/a") {
-            return "n/a";
+            return "";
           }
         
           const date = new Date(inputDate);
         
          
           if (isNaN(date.getTime())) {
-            return "n/a";
+            return "";
           }
         
          

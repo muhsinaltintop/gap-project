@@ -80,7 +80,7 @@ const PlainTable = ({ policies, headersData, pathName, selectedCountries }) => {
                                           )}
                                         </span>
                                         ) : (
-                                            policy[header.accessor] !== undefined ? policy[header.accessor] : 'n/a'
+                                            policy[header.accessor] !== undefined ? policy[header.accessor] : ''
                                         )}
                                     </td>
                                 ))}

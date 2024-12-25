@@ -30,9 +30,9 @@
     "width" : "8%"
   },
   {
-    "label": "Entry Into Force Date",
+    "label": "Entry into Force Date",
     "accessor": "entryIntoForceDate",
-    "description": "Entry Into Force Date",
+    "description": "Entry into Force Date",
     "width" : "8%"
   },
   {
@@ -42,7 +42,7 @@
     "width" : "8%"
   },
   { 
-    "label": "Media CoverageUrl",
+    "label": "Media Coverage Url",
     "accessor": "mediaCoverageUrl",
     "description": "Url for Media Coverage",
     "width" : "8%" 
