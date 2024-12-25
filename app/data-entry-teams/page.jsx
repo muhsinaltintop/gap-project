@@ -3,7 +3,7 @@ import DataEntryTeams from '../_components/DataEntryTeams'
 
 const page = () => {
   return (
-    <div><DataEntryTeams/></div>
+    <div className='mx-auto items-center mt-20'><DataEntryTeams/></div>
   )
 }
 
