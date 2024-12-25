@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <div className="w-12/12 flex flex-col">
           <Header />
         </div>
-        <div className="w-4/12 mx-auto my-4 text-xl font-bold text-center bg-primary border rounded-lg text-white">
+        <div className="mx-auto py-4 mb-4 text-xl font-bold text-center bg-primary-light border text-primary">
           {"GAPs DATA REPOSITORY"}
         </div>
         <div className="flex w-12/12">
