@@ -150,14 +150,14 @@ Repository via the public report link."
               {entry.note}
               </div>
               </div>
-                <div className="mt-2 mb-4">
-                {title === "Entry Refusals" && entry.country === "germany"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/entry-refusals/refused-entry-at-the-border-germany.xlsx">
-                    Alternative Data For Germany
+                <div className="mt-2 mb-4 w-96">
+                {title === "Entry Refusals" && entry.country === "germany"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  
+                    Germany data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/entry-refusals/refused-entry-at-the-border-germany.xlsx" className="text-primary">please click to download the data file.
                   </Link>
-                </div> ) : title === "Entry Refusals" && entry.country === "poland"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/entry-refusals/refused-entry-poland-eurostat.xlsx">
-                    Alternative Data For Poland
+                </div> ) : title === "Entry Refusals" && entry.country === "poland"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Poland data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/entry-refusals/refused-entry-poland-eurostat.xlsx" className="text-primary">
+                  please click to download the data file.
                   </Link>
                 </div> ) : ""}
                 </div>

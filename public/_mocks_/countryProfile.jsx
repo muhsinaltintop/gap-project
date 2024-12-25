@@ -78,7 +78,7 @@ const countryProfileData = [
   <div key="6" className="mt-2">Existing legal inconsistencies are accompanied by poor data availability on returns. Data inconsistencies exist among different data categories (e.g. between administrative procedures and actual enforcement of returns), different data sources and different terms used. These observations may partly point to shifts in systems of recording and reporting on data over the years, alongside (in)consistency between statistical and legal categories and (lack of) convergence with EU terminology.</div>,
   
   <div key="7" className="mt-2">Assisted Voluntary Return and Reintegration program run by IOM provides the ground for a more humane approach to return migration, even if the context in which it operates is one of coercion, as it also addresses migrants who have been issued with a return decision and even detainees. Nevertheless, it remains underfunded if compared to other types of forced removals, a choice that reveals the political priorities of the authorities in current return and – more generally – migration issues.</div>,
-  <div key="3" className="mt-2"><span className="font-bold mr-1">Authors: </span>Eva Papatzabni & George Kandylis</div>
+  <div key="3" className="mt-2"><span className="font-bold mr-1">Authors: </span>Ηatziprokopiou, P., Kandylis, G., Komita, K., Koutrolikou, P., Papatzani, E., & Tramountanis, A.</div>
 
 ],
 

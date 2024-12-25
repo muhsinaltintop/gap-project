@@ -200,28 +200,28 @@ Repository via the public report link.">
           </Link>
         </div>
             </div>
-            <div className="mt-2 mb-4">
-                {source?.title === "Returns by Type" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/rbt/rbt-alternative-germany.xlsx">
-                    Alternative Data For Germany
-                  </Link>
-                </div> ) : source?.title === "Returns by Type" && countryCode === "poland"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/rbt/rbt-alternative-poland.xlsx">
-                    Alternative Data For Poland
-                  </Link>
-                </div> ) : source?.title === "Returns by Type" && countryCode === "greece"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/rbt/rbt-alternative-greece.xlsm">
-                    Alternative Data For Greece
-                  </Link>
-                </div> ) : source?.title === "Returns by Type" && countryCode === "netherlands"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/rbt/rbt-alternative-netherlands.xlsx">
-                    Alternative Data For Netherlands
-                  </Link>
-                </div> ) : source?.title === "Returns by Type" && countryCode === "turkey"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/rbt/rbt-alternative-turkey.xlsx">
-                    Alternative Data For Turkey
-                  </Link>
-                </div> ): ""}
+            <div className="mt-2 mb-4 w-96">
+                {source?.title === "Returns by Type" && countryCode === "germany"  ? (<div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                    Germany data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/rbt/rbt-alternative-germany.xlsx" className="text-primary">please click to download the data file.
+                </Link>
+              </div> 
+              ) : source?.title === "Returns by Type" && countryCode === "poland"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                Poland data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/rbt/rbt-alternative-poland.xlsx" className="text-primary">please click to download the data file.
+              </Link>
+            </div> ) : source?.title === "Returns by Type" && countryCode === "greece"  ? ( 
+              <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+              Greece data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/rbt/rbt-alternative-greece.xlsm" className="text-primary">please click to download the data file.
+            </Link>
+          </div>
+              ) : source?.title === "Returns by Type" && countryCode === "netherlands"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                Netherlands data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/rbt/rbt-alternative-netherlands.xlsx" className="text-primary">please click to download the data file.
+              </Link>
+            </div>) : source?.title === "Returns by Type" && countryCode === "turkey"  ? ( 
+              <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+              Türkiye data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/rbt/rbt-alternative-turkey.xlsx" className="text-primary">please click to download the data file.
+            </Link>
+          </div>
+              ): ""}
                 </div>
             
             <TabNavigation tabs={tabs}/>

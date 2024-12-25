@@ -134,16 +134,16 @@ const Page = () => {
         </div>
             </div>
 
-            <div className="mt-2 mb-4">
-                {source?.title === "Readmitted Citizens" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/read-citizens/readmitted-citizens-germany.xlsx">
-                    Alternative Data For Germany
-                  </Link>
-                </div> ) : source?.title === "Readmitted Citizens" && countryCode === "tunisia"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/tcn/read-citizens/readmitted-citizens-tunisia.xlsx">
-                    Alternative Data For Tunisia
-                  </Link>
-                </div> ) : ""}
+            <div className="mt-2 mb-4 w-96">
+                {source?.title === "Readmitted Citizens" && countryCode === "germany"  ? ( 
+                  <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  
+                  Germany data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/read-citizens/readmitted-citizens-germany.xlsx" className="text-primary">please click to download the data file.
+                </Link>
+              </div> ) : source?.title === "Readmitted Citizens" && countryCode === "tunisia"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Tunisia data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/tcn/read-citizens/readmitted-citizens-tunisia.xlsx" className="text-primary">please click to download the data file.
+                </Link>
+              </div> ) : ""}
                 </div>
         </div>
       )}

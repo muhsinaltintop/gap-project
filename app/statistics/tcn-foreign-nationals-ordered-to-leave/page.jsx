@@ -207,20 +207,17 @@ const Page = () => {
         </div>
             
       </div>
-      <div className="mt-2 mb-4">
-                {source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "germany"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/tcn/unaccompanied-minors-germany.xlsx">
-                    Alternative Data For Germany
-                  </Link>
-                </div> ) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "poland"  ? ( <div className="text-primary font-bold">
-                  <Link href="/excel/tcn/ordered-to-leave-poland-eurostat.xlsx">
-                    Alternative Data For Poland
-                  </Link>
-                </div> ) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "netherlands"  ? ( <div className="text-primary font-bold">
-                  <Link target="_blank" href="https://www.cbs.nl/nl-nl/cijfers/detail/85333NED?q=emigratie%20terugkeer#">
-                    Alternative Data For Netherlands
-                  </Link>
-                </div> ) : ""}
+      <div className="mt-2 mb-4 w-96">
+                {source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "germany"  ? (<div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                    Germany data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/tcn/unaccompanied-minors-germany.xlsx" className="text-primary">please click to download the data file.
+                </Link>
+              </div>) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "poland"  ? ( 
+                <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Poland data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/tcn/ordered-to-leave-poland-eurostat.xlsx" className="text-primary">please click to download the data file.</Link>
+                </div>) : source?.title === "TCNs/Foreign Nationals Ordered to Leave" && countryCode === "netherlands"  ? ( 
+                  <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Netherlands data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="https://www.cbs.nl/nl-nl/cijfers/detail/85333NED?q=emigratie%20terugkeer#" className="text-primary">please click to download the data file.</Link>
+                </div>) : ""}
                 </div>
 
           <TabNavigation tabs={tabs} />

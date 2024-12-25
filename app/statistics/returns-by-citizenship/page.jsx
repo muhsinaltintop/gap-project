@@ -121,12 +121,11 @@ const Page = () => {
             )}
           </div>
 
-          <div className="mt-2 mb-4">
-                {countryCode === "nl"  ? ( <div className="text-primary font-bold">
-                  <Link target="_blank" href="https://www.cbs.nl/nl-nl/cijfers/detail/85334NED?q=emigratie%20terugkeer#">
-                    Alternative Data For Netherlands
-                  </Link>
-                </div> ) : ""}
+          <div className="mt-2 mb-4 w-96">
+                {countryCode === "nl"  ? (<div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Netherlands data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="https://www.cbs.nl/nl-nl/cijfers/detail/85334NED?q=emigratie%20terugkeer#" className="text-primary">please click to download the data file.
+              </Link>
+            </div>) : ""}
         </div>
 
           <div className="my-2">
