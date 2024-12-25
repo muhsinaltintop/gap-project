@@ -53,14 +53,14 @@ const Footer = () => {
             <div>
 
                 
-               Web application created by {" "}
+               Data visualized by {" "}
                <Link href={"#"}>
-                 <span className="font-bold">Muhsin Altıntop</span>
+                 <span className="font-bold">Odyssey Counselling</span>
                </Link>
             </div>
 
             <div>
-              Data Collected By <Link href={'/data-entry-teams'}>
+              Data collected by <Link href={'/data-entry-teams'}>
               <span className="font-bold text-primary">
 
               National Teams
