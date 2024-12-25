@@ -6,7 +6,7 @@ const CountryNameFormatter = (value) => {
       case "russianFederation":
         return "Russian Federation";
       case "bosniaAndHerzegowina":
-        return "Bosnia and Herzegowina";
+        return "Bosnia and Herzegovina";
       case "otherTotal":
         return "Other Total";
       case "turkey":
