@@ -1851,7 +1851,397 @@
             "specific": "",
             "officialWebsite": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/anpassning-av-utlanningsdatalagen-till-eus_H503254/html/",
             "programEvaluation": ""
-          }
+          },
+          {
+            "policyName": "Project AMIRA II (Assisting Migrants in Return and Asylum, 2023-2026)",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": true,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Red Cross, Iraqi Red Crescent Society, EU's Asylum, Migration and Integration Fund (AMIF), Specific cooperation with Red Moon in Iraq, Local Authorities and Organizations, Protection Dialogues and Advocacy Groups",
+            "summary": "Project AMIRA II (Assisting Migrants in Return and Asylum) is an initiative funded by the EU's Asylum, Migration and Integration Fund (AMIF) and is set to run from 2023 to 2026. The project is managed by the Swedish Red Cross and aims to provide support to individuals who have been refused asylum in Sweden and those who are returning to their home countries.",
+            "areaScaleImplementation": {
+                "global": true,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2023",
+            "targetGroup": "individuals who have been refused asylum in Sweden and those who are returning to their home countries",
+            "targetOriginCountryRegion": {
+                "all": true,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "All countries, specific cooperation with Red Moon in Iraq",
+            "officialWebsite": "",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "Dublin returns (Swedish Migration Agency is the responsible authority)",
+            "policyTypeArea": {
+                "assistedReturn": false,
+                "borderManagement": false,
+                "forcedReturn": true,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency, IOM, EU Member States",
+            "summary": "Dublin returns refer to the process under the Dublin Regulation, which determines the EU Member State responsible for examining an asylum application. In Sweden, the Swedish Migration Agency handles Dublin transfers.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": true,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "",
+            "targetGroup": "Asylum seekers whose applications are being processed under the Dublin Regulation.",
+            "targetOriginCountryRegion": {
+                "all": true,
+                "specific": false,
+                "exceptions": false
+            },
+            "specific": "",
+            "officialWebsite": "https://www.migrationsverket.se/download/18.39a9cd9514a34607721417/1485556221542/Dublinprocessen_en.pdf",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "Somalia-ÅV (2022)",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency, Somali Government, IOM, Local Communities and Organizations in Somalia. ",
+            "summary": "In 2022, the Swedish Migration Agency conducted a preliminary study called Somalia-ÅV. This study aimed to investigate the conditions for developing and improving the processes for return migration and sustainable reintegration for individuals returning to Somalia. The focus was on understanding the challenges and opportunities in facilitating effective reintegration for returnees.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": true,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2022",
+            "targetGroup": "Returning Migrants: Individuals returning to Somalia from Sweden",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "Somalia",
+            "officialWebsite": "",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "MAVRRI project, Multiparty Approaches to Voluntary Return and Reintegration Information",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "The Swedish Migration Agency cooperated with the Nordic countries - Norway and Finland and civil society organizations such as the Swedish Red Cross, the City Mission, the Church of Sweden, Amnesty",
+            "summary": "MAVRRI project, Multiparty Approaches to Voluntary Return and Reintegration Information. This was a Swedish project with an overarching goal to increase prior knowledge about support for voluntary return and AVVRs. The Migration Agency cooperated with the Nordic countries Norway and Finland and civil society organizations such as the Swedish Red Cross, the City Mission, the Church of Sweden, Amnesty. The project ran from 1 July 2021-15 June 2022 and was funded by the Netherlands Asylum, Migration and Integration Fund (AMIF) within the European Return and Reintegration Network (ERRIN) programme.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": true,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2021-2022",
+            "targetGroup": "voluntary returnees",
+            "targetOriginCountryRegion": {
+                "all": true,
+                "specific": false,
+                "exceptions": false
+            },
+            "specific": "",
+            "officialWebsite": "https://www.migrationsverket.se/Om-Migrationsverket/EU-och-internationellt/Internationellt-utvecklingssamarbete.html",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "The collaboration between the Swedish Migration Agency (Migrationsverket) and the Turkish Directorate-General of Migration Management (DGMM) since 2014",
+            "policyTypeArea": {
+                "assistedReturn": false,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency (Migrationsverket), Turkish Directorate-General of Migration Management (DGMM) ",
+            "summary": "The Swedish Migration Agency and the Turkish migration authority Directorate-General of Migration Management (DGMM) have collaborated since 2014 to strengthen DGMM's work with international protection and management issues.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": true,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2014",
+            "targetGroup": "asylum seekers and refugees, migrants facing forced return, Turkish authorities and migration professionals, vulnerable migrants, migrants participating in integration and reintegration programs",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "Turkey",
+            "officialWebsite": "https://www.migrationsverket.se/english.html  ,  https://www.goc.gov.tr/",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "AMIF funded Pre-study for return to Ukraine (2024)",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency (Migrationsverket), Ministry of Justice, Asylum, Migration, and Integration Fund (AMIF), International Organization for Migration (IOM), Ukrainian Authorities",
+            "summary": "AMIF funded Pre-study for return to Ukraine: (2024) The Swedish Migration Agency has an effective and legally secure process to be able to offer and pay out financial support to those with temporary protection who want to travel back to Ukraine while the protection is valid, or after the protection has ceased to apply.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": true,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2024",
+            "targetGroup": "those with temporary protection who want to travel back to Ukraine while the protection is valid, or after the protection has ceased to apply",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "Ukraine",
+            "officialWebsite": "https://www.migrationsverket.se/English/Search.html?query=return+to+ukraine&page=1",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "Act Church of Sweden (Return operations in South Sudan) ",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Act Church of Sweden, Bread for the World (BfdW), Christian Aid (CA), South Sudan Council of Churches (SSCC), The Lutheran World Federation (LWF), Norwegian Church Aid (NCA), United Methodist Committee on Relief (UMCOR)",
+            "summary": "Act Church of Sweden is involved in return operations in South Sudan as part of their broader humanitarian and development efforts. They work in collaboration with various organizations and local partners to support sustainable development and the rights and dignity of people in vulnerable situations. Some of the key activities include: Humanitarian Aid, Development Projects, Advocacy and Capacity Building.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2023",
+            "targetGroup": "Returnees: Individuals returning to South Sudan",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "South Sudan",
+            "officialWebsite": "https://www.svenskakyrkan.se/",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "EU Reintegration Programme (EURP)",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency",
+            "summary": "The EU Reintegration Programme (EURP) in Sweden provides support to migrants returning to their countries of origin. The Swedish Migration Agency is involved in implementing the EURP and provides various forms of support to returnees, including reception on arrival, temporary accommodation, job advice, and medical care.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "",
+            "targetGroup": "migrants returning to their countries of origin",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "Armenia, Bangladesh, Democratic Republic of Congo, El Salvador, Egypt, Ethiopia, Gambia, Iraq, Jordan, Mongolia, Morocco, Nigeria, Pakistan and Somalia.",
+            "officialWebsite": "https://www.frontex.europa.eu/return-and-reintegration/reintegration-assistance/",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "Cash support programme (Swedish Migration Agency)",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency",
+            "summary": "The Swedish Migration Agency offers a cash support program called reestablishment support for individuals returning to their country of origin. The support is paid out in the country of origin, typically through the International Organization for Migration (IOM). The applicant will need to contact the IOM office in their country of origin to arrange the payment.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "",
+            "targetGroup": "rejected asylum seekers who are returning,  voluntary returnees,  family members who are also returning",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": " Afghanistan, Central African Republic, Democratic Republic of Congo, El Salvador, Eritrea, Iraq, Yemen, Libya, Nigeria, Pakistan, Somalia, Palestine, Sudan, South Sudan, Ethiopia, Lebanon.",
+            "officialWebsite": "https://www.migrationsverket.se/English/Private-individuals/Leaving-Sweden/Rejection-of-application-for-asylum/Support-for-re-establishment/Cash-support.html?utm_source=chatgpt.com",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "Voluntary repatriation (Swedish Migration Agency) based on Ordinance (1984:890) on grants for foreigners travelling from Sweden to settle in another country. ",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency",
+            "summary": "Voluntary repatriation (Swedish Migration Agency) based on Ordinance (1984:890) on grants for foreigners travelling from Sweden to settle in another country. Last amendment SFS 2009:1162.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "",
+            "targetGroup": "refugees/quota refugees, subsidiary protection",
+            "targetOriginCountryRegion": {
+                "all": true,
+                "specific": false,
+                "exceptions": false
+            },
+            "specific": "",
+            "officialWebsite": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-1984890-om-bidrag-till-utlanningars_sfs-1984-890/",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "NORAQ project: A Nordic platform together with Denmark and Norway to strengthen return and reintegration in Iraq.",
+            "policyTypeArea": {
+                "assistedReturn": true,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "The actors involved in the NORAQ project in Sweden include: Swedish Migration Agency, International Centre for Migration Policy Development (ICMPD), Rwanga Foundation, Local Authorities and Organizations.",
+            "summary": "The Nordic Cooperation on Return and Reintegration in Iraq (NORAQ) is a collaborative framework established by Denmark, Norway, and Sweden to enhance migration management and support the sustainable reintegration of returnees in Iraq. Launched on June 4, 2024, in Baghdad, NORAQ aims to align the Nordic countries' development cooperation initiatives in Iraq, fostering a unified approach to address migration challenges. Sweden attended via SI-COM (Sweden-Iraq Cooperation on Migration Governance) project. 2024-2026. Swedish Migration Agency is responsible.",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2024",
+            "targetGroup": "Returning Migrants: Individuals returning to Iraq",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "Iraq",
+            "officialWebsite": "https://www.migrationsverket.se/Om-Migrationsverket/Aktuellt/Nyhetsarkiv/Nyhetsarkiv-2024/2024-06-19-Migrationsverket-startar-nordiskt-samarbete-i-Irak.html",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "MIRCO project (2024-2026)",
+            "policyTypeArea": {
+                "assistedReturn": false,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency, Serbian Commissioner for Refugees and Migration, EU Delegation in Serbia, Ministries of Interior and Security.",
+            "summary": "MIRCO project: The Swedish Migration Agency will, together with the Serbian Commissioner for Refugees and Migration and the EU Delegation in Serbia, implement a project regarding the development of a regional digital Migration Academy, common to the Western Balkans candidate countries (Serbia, Bosnia & Herzegovina, North Macedonia, Montenegro, Albania, Kosovo)This project is financed by the EU and implemented by the International Centre for Migration Policy Development (ICMPD). The project focuses on strengthening regional cooperation on migration management between the Western Balkans and neighboring EU Member States..  ",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2024-2026",
+            "targetGroup": "migration authorities, policy makers, migration practitioners, local communities",
+            "targetOriginCountryRegion": {
+                "all": false,
+                "specific": true,
+                "exceptions": false
+            },
+            "specific": "Serbia, Bosnia & Herzegovina, North Macedonia, Montenegro, Albania, Kosovo",
+            "officialWebsite": "",
+            "programEvaluation": ""
+        },
+        {
+            "policyName": "Talk2Connect (T2C) project (2022-2023)",
+            "policyTypeArea": {
+                "assistedReturn": false,
+                "borderManagement": false,
+                "forcedReturn": false,
+                "irregularity": false,
+                "massExpulsion": false,
+                "preRemovalDetention": false
+            },
+            "actorsInvolved": "Swedish Migration Agency, ICMPD, Return officers, Reintegration actors, EU Delegation, Local and International Organizations",
+            "summary": "In 2022-2023, Swedish Migration Agency led the Talk2Connect (T2C) project. This project aimed at  creating a digital platform that linked return officers with reintegration actors to enable information and knowledge flows between European states and countries of origin. This project is developed by the European Return and Reintegration Network (ERRIN), which has now transitioned to the Return and Reintegration Facility (RRF).",
+            "areaScaleImplementation": {
+                "global": false,
+                "EU": false,
+                "national": false,
+                "federal": false,
+                "local": false
+            },
+            "duration": "2022-2023",
+            "targetGroup": "The target group for the Talk2Connect (T2C) project includes stakeholders directly involved in return and reintegration processes: return officers, reintegration actors, returnees.",
+            "targetOriginCountryRegion": {
+                "all": true,
+                "specific": false,
+                "exceptions": false
+            },
+            "specific": "",
+            "officialWebsite": "https://reintegrationfacility.eu/category/talk-2-connect/",
+            "programEvaluation": ""
+        }
         ]
       },
       {
