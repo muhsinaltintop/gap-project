@@ -6,10 +6,11 @@ import React from "react";
 
 function Header() {
   const Menu = [
-    { id: 1, name: "GAPs Main Page", path: "https://www.returnmigration.eu/", openNewPage: true },
-    { id: 2, name: "National Teams", path: "/data-entry-teams" },
-    { id: 3, name: "Country Profiles", path: "/country-list" },
-    { id: 4, name: "Contact", path: "/contact" },
+    { id: 1, name: "Repository Main Page", path: "/" },
+    { id: 2, name: "GAPs Project Website", path: "https://www.returnmigration.eu/", openNewPage: true },
+    { id: 3, name: "Data Collection Teams", path: "/data-entry-teams" },
+    { id: 4, name: "Country Progiles", path: "/country-list" },
+    { id: 5, name: "Contact", path: "/contact" }
   ];
 
   // const Social = [
