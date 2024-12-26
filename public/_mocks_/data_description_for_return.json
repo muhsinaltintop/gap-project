@@ -62,13 +62,13 @@
     "label": "Offical Website",
     "accessor": "officialWebsite",
     "description": "No Description",
-    "width": "20%"
+    "width": "8%"
   },
   {
     "label": "Program Evaluation",
     "accessor": "programEvaluation",
     "description": "No Description",
-    "width": "10%"
+    "width": "8%"
   }
 
 ]
