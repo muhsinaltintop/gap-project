@@ -1313,7 +1313,7 @@
             "programEvaluation": ""
           },
           {
-            "policyName": "The Act on residence permits for students at upper secondary level (2017:353) / Lag (2017:353) om uppehållstillst ånd för studerande på gymnasial nivå",
+            "policyName": "The Act on residence permits for students at upper secondary level (2017:353) / Lag (2017:353) om uppehållstillstånd för studerande på gymnasial nivå",
             "policyTypeArea": {
               "assistedReturn": false,
               "borderManagement": false,
@@ -1383,7 +1383,7 @@
               "preRemovalDetention": true
             },
             "actorsInvolved": "Migration Agency, Migration Courts, Migration Court of Appeal",
-            "summary": "The temporary law was introduced in connection with the refugee situation in 2015 with the aim of reducing asylum immigration to Sweden. Through the restrictions that were introduced, Sweden's asylum rules were lowered to the minimum level required by EU law and international conventions.2 After the temporary law was introduced in July 2016, the number of asylum seekers coming to Sweden has decreased. In 2017, approximately 26,000 asylum seekers came to Sweden, compared to the refugee situation in 2015, when just under 163,000 people sought asylum.",
+            "summary": "The temporary law was introduced in connection with the refugee situation in 2015 with the aim of reducing asylum immigration to Sweden. Through the restrictions that were introduced, Sweden's asylum rules were lowered to the minimum level required by EU law and international conventions. After the temporary law was introduced in July 2016, the number of asylum seekers coming to Sweden has decreased. In 2017, approximately 26,000 asylum seekers came to Sweden, compared to the refugee situation in 2015, when just under 163,000 people sought asylum.",
             "areaScaleImplementation": {
               "global": false,
               "EU": false,
@@ -1403,7 +1403,7 @@
             "programEvaluation": ""
           },
           {
-            "policyName": "The Unaccompanied Minors Guardian Act (2005:429) / Lag (2005:429) om god man för ensamkomma nde barn",
+            "policyName": "The Unaccompanied Minors Guardian Act (2005:429) / Lag (2005:429) om god man för ensamkommande barn",
             "policyTypeArea": {
               "assistedReturn": false,
               "borderManagement": false,
@@ -1583,7 +1583,7 @@
             "programEvaluation": ""
           },
           {
-            "policyName": "Ordinance on re- establishment support for certain foreigners (2008:778) / Förordning (2008:778) om återetablering sstöd för vissa utlänningar",
+            "policyName": "Ordinance on re- establishment support for certain foreigners (2008:778) / Förordning (2008:778) om återetableringsstöd för vissa utlänningar",
             "policyTypeArea": {
               "assistedReturn": true,
               "borderManagement": false,
@@ -1733,7 +1733,7 @@
             "programEvaluation": ""
           },
           {
-            "policyName": "Implementation of the Return Directive Prop. 2011/12:60 /   Genomförande av återvändandedirektivetProp. 2011/12:60",
+            "policyName": "Implementation of the Return Directive Prop. 2011/12:60 /   Genomförande av återvändandedirektivet Prop. 2011/12:60",
             "policyTypeArea": {
               "assistedReturn": false,
               "borderManagement": true,
@@ -1823,7 +1823,7 @@
             "programEvaluation": ""
           },
           {
-            "policyName": "Adaptation of the Aliens Data Act to the EU Data Protection Regulation Prop. 2017/18:254 / Anpassning av utlänningsdatalagen till EU:s dataskyddsförordningProp. 2017/18:254",
+            "policyName": "Adaptation of the Aliens Data Act to the EU Data Protection Regulation Prop. 2017/18:254 / Anpassning av utlänningsdatalagen till EU:s dataskyddsförordning Prop. 2017/18:254",
             "policyTypeArea": {
               "assistedReturn": false,
               "borderManagement": true,
