@@ -80,13 +80,13 @@ const PlainTable = ({ policies, headersData, pathName, selectedCountries }) => {
                             )}
                         </span>
                     ) : header.accessor === 'officialWebsite' && policy.officialWebsite ? (
-                        <Link href={policy.officialWebsite} target="_blank" className="text-blue-500 underline">
-                            Link
+                        <Link href={policy.officialWebsite} target="_blank" className="flex text-blue-500">
+                            Link <ExternalLink className="size-3 ml-1" color="#0d7dff"/>
                         </Link>
                     ) : header.accessor === 'programEvaluation' && policy.programEvaluation ? (
-                        <Link href={policy.programEvaluation} target="_blank" className="text-blue-500 underline">
-                            Link
-                        </Link>
+                        <Link href={policy.programEvaluation} target="_blank" className="flex text-blue-500">
+                            Link <ExternalLink className="size-3 ml-1" color="#0d7dff"/>
+                        </Link> 
                     )  : (
                         policy[header.accessor] !== undefined ? policy[header.accessor] : ''
                     )}
