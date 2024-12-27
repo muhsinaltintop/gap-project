@@ -189,6 +189,15 @@ const getAssistedReturn = async (countryKey) => {
   return filteredData;
 };
 
+const getSpontaneousReturn = async (countryKey) => {
+  const data = await fetchData("/rbt-spontaneous?populate=*");
+  const filteredData = data.map(item => ({
+    year: item.year,
+    value: item[countryKey] == -1  ? "n/a" : item[countryKey]
+  }));
+  return filteredData;
+};
+
 const getTotalReturn = async (countryKey) => {
   const data = await fetchData("/rbt-total?populate=*");
   const filteredData = data.map(item => ({
@@ -209,12 +218,13 @@ const getSourceReturn = async (countryKey) => {
 const getAllRbtData = async (countryCode) => {
   try {
     // Birden fazla API'den veri çekiyoruz
-    const [api1Data, api2Data, api3Data, api4Data, api5Data] = await Promise.all([
+    const [api1Data, api2Data, api3Data, api4Data, api5Data, api6Data] = await Promise.all([
       getVoluntaryReturn(countryCode),
       getEnforcedReturn(countryCode),
       getAssistedReturn(countryCode),
       getTotalReturn(countryCode),
-      getSourceReturn(countryCode)
+      getSourceReturn(countryCode),
+      getSpontaneousReturn(countryCode)
 
     ]);
     
@@ -225,6 +235,7 @@ const getAllRbtData = async (countryCode) => {
       enforcedReturn: api2Data[index]?.value || "n/a", 
       assistedReturn: api3Data[index]?.value || "n/a",
       totalReturn: api4Data[index]?.value || "n/a",
+      spontaneousReturn: api6Data[index]?.value || "n/a",
       sourceVoluntaryReturn: api5Data?.sourceVoluntaryReturn || "n/a",
       sourceEnforcedReturn: api5Data?.sourceEnforcedReturn || "n/a",
       sourceAssistedReturn: api5Data?.sourceAssistedReturn || "n/a",
