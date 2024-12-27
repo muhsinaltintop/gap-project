@@ -161,6 +161,18 @@ Repository via the public report link."
                   Poland data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/entry-refusals/refused-entry-poland-eurostat.xlsx" className="text-primary">
                   please click to download the data file.
                   </Link>
+                </div> ) : title === "Asylum Application" && entry.country === "netherlands"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Netherlands data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="https://www.vluchtelingenwerk.nl/nl/nieuws-en-kennis/cijfers-over-vluchtelingen-nederland-europa-wereldwijd/bescherming-nederland" target="_blank" className="text-primary">
+                  please click to download the data file.
+                  </Link>
+                </div> ) : title === "Asylum Application" && entry.country === "poland"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  Poland data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/asylum-applications/asylum-applications-poland.xlsx" className="text-primary">
+                  please click to download the data file.
+                  </Link>
+                </div> ) : title === "Asylum Application" && entry.country === "unitedKingdom"  ? ( <div className="font-bold border border-primary-light rounded-xl bg-primary-light p-4">
+                  United Kingdom data includes multiple and/or conflicting numbers from different sources. To see alternative data, <Link href="/excel/asylum-applications/asylum-applications-uk.xlsx" className="text-primary">
+                  please click to download the data file.
+                  </Link>
                 </div> ) : ""}
                 </div>
             </div>
