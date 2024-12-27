@@ -32,7 +32,7 @@ const DataTable = ({ mergedData }) => {
             <td className="border border-gray-300 px-4 py-2">{row.voluntaryReturn ===  0 | row.voluntaryReturn === undefined | row.voluntaryReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.voluntaryReturn}</td>
             <td className="border border-gray-300 px-4 py-2">{row.enforcedReturn ===  0 | row.enforcedReturn === undefined | row.enforcedReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.enforcedReturn}</td>
             <td className="border border-gray-300 px-4 py-2">{row.assistedReturn ===  0 | row.assistedReturn === undefined | row.assistedReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.assistedReturn}</td>
-            {row.spontaneousReturn !== "n/a" ? <td className="border border-gray-300 px-4 py-2">{row.spontaneousReturn ===  0 | row.spontaneousReturn === undefined | row.spontaneousReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.spontaneousReturn}</td> : ""}
+            {row.spontaneousReturn !== "n/a" ? <td className="border border-gray-300 px-4 py-2">{row.spontaneousReturn === undefined | row.spontaneousReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.spontaneousReturn}</td> : ""}
             
             <td className="border border-gray-300 px-4 py-2">{row.totalReturn ===  0 | row.totalReturn === undefined | row.totalReturn === "n/a" ? <div className="text-gray-400">n/a</div> : row.totalReturn}</td>
           </tr>
