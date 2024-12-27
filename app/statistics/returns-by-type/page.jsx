@@ -20,7 +20,7 @@ const DataTable = ({ mergedData }) => {
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Voluntary Return</th>
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Enforced Return</th>
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Assisted Return</th>
-          {mergedData[0].spontaneousReturn !== "n/a" ?  <th className="border border-gray-300 px-4 py-2 font-bold text-left">Spontaneous Return</th> : ""}
+          {mergedData[1].spontaneousReturn !== "n/a" ?  <th className="border border-gray-300 px-4 py-2 font-bold text-left">Spontaneous Return</th> : ""}
           <th className="border border-gray-300 px-4 py-2 font-bold text-left">Total</th>
         </tr>
       </thead>
@@ -66,16 +66,18 @@ const DataTable = ({ mergedData }) => {
               <div className="text-gray-400">n/a</div>
             )}
           </td>
-          {console.log("mD:", mergedData[0])}
-          {/* <td className="border border-gray-300 px-4 py-2">
-            {mergedData[0]?.urlSpontaneousReturn !== "n/a" || undefined ? (
-              <Link href={mergedData[0]?.urlSpontaneousReturn} className="text-blue-500 hover:underline">
+          {mergedData[0]?.sourceSpontaneousReturn !== "n/a" ? <td className="border border-gray-300 px-4 py-2">
+            {mergedData[0]?.sourceSpontaneousReturn && mergedData[0]?.urlSpontaneousReturn !== "n/a" ? <Link href={mergedData[0]?.urlSpontaneousReturn} className="text-blue-500 hover:underline">
                 {mergedData[0]?.sourceSpontaneousReturn}
+              </Link> : mergedData[0]?.sourceSpontaneousReturn && mergedData[0]?.urlSpontaneousReturn === "n/a" ? <div className="text-black">{mergedData[0]?.sourceSpontaneousReturn}</div>  : "" }
+            {/* {mergedData[0]?.urlSpontaneousReturn !== "n/a" || undefined ? (
+              <Link href={mergedData[0]?.urlSpontaneousReturn} className="text-blue-500 hover:underline">
+                
               </Link>
             ) : (
               <div className="text-gray-400">n/a</div>
-            )}
-          </td> */}
+            )} */}
+          </td> : ""}
           <td className="border border-gray-300 px-4 py-2">
             {mergedData[0]?.urlTotalReturn != "n/a" || undefined ? (
               <Link href={mergedData[0]?.urlTotalReturn} className="text-blue-500 hover:underline">
