@@ -239,11 +239,13 @@ const getAllRbtData = async (countryCode) => {
       sourceVoluntaryReturn: api5Data?.sourceVoluntaryReturn || "n/a",
       sourceEnforcedReturn: api5Data?.sourceEnforcedReturn || "n/a",
       sourceAssistedReturn: api5Data?.sourceAssistedReturn || "n/a",
+      sourceSpontaneousReturn: api5Data?.sourceSpontaneousReturn || "n/a",
       sourceTotalReturn: api5Data?.sourceTotal || "n/a",
       //URL bilgileri
       urlVoluntaryReturn: api5Data?.urlVoluntaryReturn || "n/a",
       urlEnforcedReturn: api5Data?.urlEnforcedReturn || "n/a",
       urlAssistedReturn: api5Data?.urlAssistedReturn || "n/a",
+      urlSpontaneousReturn: api5Data?.urlSpontaneousReturn || "n/a",
       urlTotalReturn: api5Data?.urlTotal || "n/a",
       additionalNote: api5Data?.notes || "n/a"
     }));
