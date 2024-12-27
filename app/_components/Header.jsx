@@ -9,7 +9,7 @@ function Header() {
     { id: 1, name: "Repository Main Page", path: "/" },
     { id: 2, name: "GAPs Project Website", path: "https://www.returnmigration.eu/", openNewPage: true },
     { id: 3, name: "Data Collection Teams", path: "/data-entry-teams" },
-    { id: 4, name: "Country Progiles", path: "/country-list" },
+    { id: 4, name: "Country Profiles", path: "/country-list" },
     { id: 5, name: "Contact", path: "/contact" }
   ];
 
