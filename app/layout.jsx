@@ -11,8 +11,32 @@ const gothicA1 = Gothic_A1({
 });
 
 export const metadata = {
-  title: "GAPs Policy Search App",
-  description: "14 Country, Different Immigraion Policy Areas",
+  title: "GAPs Data Repository",
+  description: "GAPs Data Repository is an open-access platform providing comprehensive qualitative and quantitative data on national return regimes, launched in 2024 as part of the Horizon Europe project GAPs.",
+  openGraph: {
+    title: "GAPs Data Repository",
+    description: "GAPs Data Repository is an open-access platform providing comprehensive qualitative and quantitative data on national return regimes, launched in 2024 as part of the Horizon Europe project GAPs.",
+    url: "https://data.returnmigration.eu/",
+    images: [
+      {
+        url: "https://data.returnmigration.eu/gaps_logo.png",
+        width: 600,
+        height: 600,
+        alt: "Global Property Logo",
+      }
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GAPs Data Repository",
+    description: "GAPs Data Repository is an open-access platform providing comprehensive qualitative and quantitative data on national return regimes, launched in 2024 as part of the Horizon Europe project GAPs.",
+    images: ["https://data.returnmigration.eu/gaps_logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico", // Path to your favicon
+    sizes: "32x32",
+  },
 };
 
 export default function RootLayout({ children }) {
