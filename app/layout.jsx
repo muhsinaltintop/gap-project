@@ -20,8 +20,8 @@ export const metadata = {
     images: [
       {
         url: "https://data.returnmigration.eu/gaps_logo.png",
-        width: 600,
-        height: 600,
+        width: 500,
+        height: 200,
         alt: "Global Property Logo",
       }
     ],
