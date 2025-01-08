@@ -117,7 +117,7 @@ const ModalComponent = ({ open, handleClose, selectedCountry }) => {
                 }
                 target="_blank"
               >
-                {`${selectedCountry?.countryName === "Turkey" ? "TÜRKİYE" : selectedCountry?.countryName} Country Profile on GAP`}
+                {`${selectedCountry?.countryName === "Turkey" ? "TÜRKİYE" : selectedCountry?.countryName} Country Profile on GAPs`}
               </Link>
             }
           </div>
