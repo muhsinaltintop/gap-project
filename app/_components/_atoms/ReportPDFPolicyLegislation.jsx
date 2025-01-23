@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Font, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
 
-// Register the font using URL paths (relative to the public directory)
+// Register Greek font
 Font.register({
   family: 'GFS Neohellenic',
   fonts: [
@@ -9,9 +9,22 @@ Font.register({
   ],
 });
 
+// Register Arabic font
+Font.register({
+  family: 'Amiri',
+  fonts: [
+    { src: '/fonts/Amiri-Regular.ttf', fontWeight: 400 },
+  ],
+});
+
 const styles = StyleSheet.create({
   greek: {
     fontFamily: 'GFS Neohellenic',
+  },
+  arabic: {
+    fontFamily: 'Amiri',
+    direction: 'rtl', // Right-to-left text direction
+    textAlign: 'right', // Right-aligned text
   },
   page: {
     padding: 20,
@@ -42,16 +55,14 @@ const styles = StyleSheet.create({
   },
   header: {
     fontWeight: 'bold',
-    textAlign: 'center',// Center align header text
+    textAlign: 'center', // Center align header text
   },
-
   tableHeader: {
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: '12px',
     marginVertical: '3px',
   },
-
   headerCell: {
     backgroundColor: '#e0e0e0',
     fontSize: '10px',
@@ -75,7 +86,6 @@ const styles = StyleSheet.create({
     borderTopColor: '#000',
     paddingTop: 10,
   },
-
   col1: { flex: 3 },
   col2: { flex: 7 },
   col3: { flex: 7 },
@@ -86,6 +96,9 @@ const styles = StyleSheet.create({
   col8: { flex: 11 },
   col9: { flex: 8 },
 });
+
+// Helper function to check if text is Arabic
+const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 
 const ReportPDFPolicyLegislation = ({ policies, headers, selectedCountries }) => {
 
@@ -100,7 +113,7 @@ const ReportPDFPolicyLegislation = ({ policies, headers, selectedCountries }) =>
 
   return (
     <Document>
-       <Page style={styles.page} orientation='landscape'>
+      <Page style={styles.page} orientation="landscape">
         <View style={styles.table}>
           <Text style={styles.tableHeader}>
             {`Return Related Legislation and Policy Mapping (${formattedCountries.join(', ')})`}
@@ -123,7 +136,9 @@ const ReportPDFPolicyLegislation = ({ policies, headers, selectedCountries }) =>
                 <Text style={styles.cellText}>{policy.policyName}</Text>
               </View>
               <View style={[styles.tableCell, styles.col3]}>
-                <Text style={policy.country === "Greece" ? [styles.cellText, styles.greek] : styles.cellText}>{policy.originalPolicyName}</Text>
+                <Text style={policy.country === "Greece" ? [styles.cellText, styles.greek] : isArabic(policy.originalPolicyName) ? styles.arabic : styles.cellText}>
+                  {policy.originalPolicyName}
+                </Text>
               </View>
               <View style={[styles.tableCell, styles.col4]}>
                 <Text style={styles.cellText}>{policy.announcedYear}</Text>
@@ -146,7 +161,9 @@ const ReportPDFPolicyLegislation = ({ policies, headers, selectedCountries }) =>
             </View>
           ))}
         </View>
-        <Text style={styles.footer}>Document downloaded on {getCurrentDate()} from https://www.returnmigration.eu/</Text>
+        <Text style={styles.footer}>
+          Document downloaded on {getCurrentDate()} from https://www.returnmigration.eu/
+        </Text>
       </Page>
     </Document>
   );
