@@ -95,6 +95,15 @@ const CountryCard = ({ country }) => {
               Return Infrastructure
             </button>
           </Link>
+          <Link
+            target="_blank"
+            href={`/international-cooperation`}
+            className="group relative block"
+          >
+            <button className="block rounded bg-yellow-600 text-white mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
+              International Cooperation
+            </button>
+          </Link>
           <div className="relative" ref={dropdownRef}> {/* Ensure this has relative positioning and ref */}
             <button
               className="block rounded bg-yellow-600 text-white mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105"
