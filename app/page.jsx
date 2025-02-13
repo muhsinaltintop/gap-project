@@ -55,7 +55,7 @@ organized presentation for those interested in return related data:
      <Link href={'/data-entry-teams'} className="text-primary">national experts</Link>{" "} and the quality of original data sources consulted during the data collection phase.
     </p>
     <p className="mt-2">
-    To learn more about the types of data, selection criteria, scope, coverage, data quality and assurance, archiving and presentation, roles and responsibilities in data curation, and the technical data dictionary codebook, please see the full report: <Link href={"https://zenodo.org/records/10790795"} target="_blank" className="text-primary"> D1.2 GAPs Data Repository on return: Guideline, data samples and codebook</Link>. 
+    To learn more about the types of data, selection criteria, scope, coverage, data quality and assurance, archiving and presentation, roles and responsibilities in data curation, and the technical data dictionary codebook, please see the full report: <Link href={"https://doi.org/10.5281/zenodo.14862490"} target="_blank" className="text-primary"> D1.2 GAPs Data Repository on return: Guideline, data samples and codebook</Link>. 
     </p>
     <p className="mt-2">
     GAPs Data Repository is a living platform, please
