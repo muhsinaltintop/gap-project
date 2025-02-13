@@ -1,4 +1,4 @@
-const BASE_URL = "https://gap-project-eight.vercel.app/api";
+const BASE_URL = "https://data.returnmigration.eu/api";
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {

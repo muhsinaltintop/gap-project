@@ -1,0 +1,23 @@
+[0;1;32m●[0m mariadb.service - MariaDB 10.11.8 database server
+     Loaded: loaded (]8;;file://srv662179/usr/lib/systemd/system/mariadb.service/usr/lib/systemd/system/mariadb.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Thu 2025-02-13 10:42:45 UTC; 17s ago
+       Docs: ]8;;man:mariadbd(8)man:mariadbd(8)]8;;
+             ]8;;https://mariadb.com/kb/en/library/systemd/https://mariadb.com/kb/en/library/systemd/]8;;
+   Main PID: 2625 (mariadbd)
+     Status: "[0;1;36mTaking your SQL requests now...[0m"
+      Tasks: 13 (limit: 62605)
+     Memory: 79.0M (peak: 82.1M)
+        CPU: 368ms
+     CGroup: /system.slice/mariadb.service
+             └─[0;38;5;245m2625 /usr/sbin/mariadbd[0m
+
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Note] InnoDB: log sequence number 45502; transaction id 14
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Note] Plugin 'FEEDBACK' is disabled.
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Note] Server socket created on IP: '127.0.0.1'.
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Note] InnoDB: Buffer pool(s) load completed at 250213 10:42:45
+Feb 13 10:42:45 srv662179 mariadbd[2625]: 2025-02-13 10:42:45 0 [Note] /usr/sbin/mariadbd: ready for connections.
+Feb 13 10:42:45 srv662179 mariadbd[2625]: Version: '10.11.8-MariaDB-0ubuntu0.24.04.1'  socket: '/run/mysqld/mysqld.sock'  port: 3306  Ubuntu 24.04
+Feb 13 10:42:45 srv662179 systemd[1]: Started mariadb.service - MariaDB 10.11.8 database server.
+Feb 13 10:42:45 srv662179 /etc/mysql/debian-start[2643]: Upgrading MariaDB tables if necessary.
