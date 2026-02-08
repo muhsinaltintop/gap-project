@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Myths",
+    "description": "Debanking return migration/deportation policy myths with the GAPs research",
+    "imageUrl": "/posters/poster-01.png"
+  },
+  {
+    "id": 2,
+    "title": "Greece Country Case",
+    "description": "The GAPs team at the National Centre for Social Research - EKKE in Greece studied the legal and institutional framework on returns, the issue of irregularisation, Return Migration Infrastructures (RMIs) by focusing on the AVRR program, as well as migrants’ experiences and aspirations related to returns and multiple trajectories.",
+    "imageUrl": "/posters/poster-02.webp"
+  },
+  {
+    "id": 3,
+    "title": "Greece Country Case",
+    "description": "The GAPs team at the National Centre for Social Research - EKKE in Greece studied the legal and institutional framework on returns, the issue of irregularisation, Return Migration Infrastructures (RMIs) by focusing on the AVRR program, as well as migrants’ experiences and aspirations related to returns and multiple trajectories.",
+    "imageUrl": "/posters/poster-03.png"
+  },
+  {
+    "id": 4,
+    "title": "Working Paper 2",
+    "description": "The GAPs project studied the legal, institutional and policy frameworks governing return and readmission at EU level in five in-depth country cases (Sweden, Poland, Germany, Greece, Netherlands) and three additional country snapshots (Italy, France, Hungary), identifying key gaps, tensions, and convergences in Europe’s evolving return regime.",
+    "imageUrl": "/posters/poster-04.webp"
+  },
+  {
+    "id": 5,
+    "title": "Working Paper 3",
+    "description": "The GAPs project studied how return migration governance is put into practice at the everyday implementation level in 11 countries, both EU member states (Germany, Greece, the Netherlands, Poland, and Sweden), and non-EU member states (Georgia, Iraq, Morocco, Nigeria, Tunisia, and Turkey). The former focus on RMIs returning migrants from the EU, and the latter on RMIs receiving returnees from the EU.",
+    "imageUrl": "/posters/poster-05.png"
+  },
+  {
+    "id": 6,
+    "title": "Working Paper 4",
+    "description": "The GAPs project examined how return migration is governed in the African and Middle Eastern regions and the role played by the EU, focusing on the governance of forced returns from Turkey, Lebanon, Jordan, and Iraq to Syria; from Morocco, Tunisia, and Libya to Nigeria; and from Iran and Turkey to Afghanistan.",
+    "imageUrl": "/posters/poster-06.png"
+  },
+  {
+    "id": 7,
+    "title": "Working Paper 5",
+    "description": "The GAPs project examined return cooperation efforts, 32 readmission agreements, 26 memorandums of understanding as well as 35 no-agreement cases between EU Member States (MSs) and third countries between 2008 and 2023. Using the Qualitative Comparative Analysis (QCA) method, the meta-analysis focused on the six macro conditions and several subfactors that are likely to shape outcomes of bilateral return diplomacy.",
+    "imageUrl": "/posters/poster-07.png"
+  },
+  {
+    "id": 8,
+    "title": "Working Paper 7",
+    "description": "The GAPs project studied the return aspirations and trajectories of migrants by examining the governance of returns alongside migrants’ perspectives and experiences on return in Turkey, Morocco, Poland, and Greece.",
+    "imageUrl": "/posters/poster-08.png"
+  },
+  {
+    "id": 9,
+    "title": "Data Repository",
+    "description": "GAPs Data Repository offers an overview of available qualitative and quantitative data on national return regimes. It is launched in 2024 as an output of the Horizon Europe project ‘GAPS: De-centring the Study of Migrant Returns and Readmission Policies in Europe and Beyond’ (101094341).",
+    "imageUrl": "/posters/poster-09.png"
+  },
+  {
+    "id": 10,
+    "title": "Data Repository",
+    "description": "GAPs Data Repository offers an overview of available qualitative and quantitative data on national return regimes. It is launched in 2024 as an output of the Horizon Europe project ‘GAPS: De-centring the Study of Migrant Returns and Readmission Policies in Europe and Beyond’ (101094341).",
+    "imageUrl": "/posters/poster-10.png"
+  }
+]

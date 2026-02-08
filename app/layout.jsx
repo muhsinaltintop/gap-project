@@ -34,8 +34,7 @@ export const metadata = {
     images: ["https://data.returnmigration.eu/gaps_logo.png"],
   },
   icons: {
-    icon: "/favicon.ico", // Path to your favicon
-    sizes: "32x32",
+    icon: "/gaps.png", // Path to your favicon
   },
 };
 

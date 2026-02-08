@@ -10,7 +10,8 @@ function Header() {
     { id: 2, name: "GAPs Project Website", path: "https://www.returnmigration.eu/", openNewPage: true },
     { id: 3, name: "Data Collection Teams", path: "/data-entry-teams" },
     { id: 4, name: "Country Profiles", path: "/country-list" },
-    { id: 5, name: "Contact", path: "/contact" }
+    { id: 5, name: "Posters", path: "/posters" },
+    { id: 6, name: "Contact", path: "/contact" }
   ];
 
   // const Social = [
