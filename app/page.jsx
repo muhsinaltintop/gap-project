@@ -2,6 +2,7 @@ import Link from "next/link";
 import PlainText from "./_components/_atoms/PlainText";
 import LinkToGap from "./_components/LinkToGap";
 import Map from "./_components/Map";
+import LinkToIndicator from "./_components/LinkToIndicator";
 
 const mainText = (
   <div className="text-sm">
@@ -74,7 +75,12 @@ export default function Home() {
         </div>
         
         <div className="mr-6 mt-6 col-span-2">
+          <div>
           <LinkToGap />
+          </div>
+          <div className="mt-4">
+          <LinkToIndicator />
+          </div>
         </div>
       </div>
       <div className="mx-6 mt-6 h-100 rounded-lg">
