@@ -11,7 +11,7 @@ const page = () => {
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {posters.slice(0, 10).map((poster) => (
-          <PosterCard key={poster.id} poster={poster} />
+          <PosterCard key={poster.id} poster={poster} aspect={"210/297"} />
         ))}
       </div>
     </div>
