@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const PosterCard = ({ poster }) => {
+const PosterCard = ({ poster, aspect }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -10,14 +10,16 @@ const PosterCard = ({ poster }) => {
       {/* CARD */}
       <div
         onClick={() => setIsOpen(true)}
-        className="
-          group relative flex h-full flex-col
+        className={`group relative flex h-full flex-col
           rounded-xl border border-slate-200 shadow-sm
-          aspect-[210/297] overflow-hidden
+          overflow-hidden
           bg-contain bg-center bg-no-repeat
           cursor-pointer
-        "
-        style={{ backgroundImage: `url(${poster.imageUrl})` }}
+        `}
+        style={{
+          aspectRatio: aspect,
+          backgroundImage: `url(${poster.imageUrl})`,
+        }}
       >
         {/* Overlay */}
         <div

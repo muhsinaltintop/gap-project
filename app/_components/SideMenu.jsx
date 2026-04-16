@@ -30,6 +30,11 @@ const SideMenu = () => {
     },
     {
       id: 6,
+      name: "Promising Practices",
+      path: "/promising-practices",
+    },
+    {
+      id: 7,
       name: "Statistics",
       path: "/",
       submenu: [

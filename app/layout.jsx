@@ -4,6 +4,7 @@ import Header from "./_components/Header";
 import SideMenu from "./_components/SideMenu";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./_components/Footer";
+import ScrollToTop from "./_components/ScrollToTop";
 
 const gothicA1 = Gothic_A1({
   weight: ['100', '300', '400', '700', '900'],
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
           <div className="w-80">
             <SideMenu />
           </div>
+          <ScrollToTop/>
           {children}
           <SpeedInsights />
         </div>

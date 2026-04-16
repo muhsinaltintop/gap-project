@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "country": "afghanistan",
+    "type": "Post-Return",
+    "imageUrl": "/promising-practices/promising-afg-cover.png"
+  },
+  {
+    "id": 2,
+    "country": "canada",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-ca-cover.png"
+  },
+  {
+    "id": 3,
+    "country": "georgia",
+    "type": "Post-Return",
+    "imageUrl": "/promising-practices/promising-geo-cover.png"
+  },
+  {
+    "id": 4,
+    "country": "germany-1",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-ger-1-cover.png"
+  },
+  {
+    "id": 5,
+    "country": "germany-2",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-ger-2-cover.png"
+  },
+  {
+    "id": 6,
+    "country": "greece-1",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-gre-1-cover.png"
+  },
+  {
+    "id": 7,
+    "country": "greece-2",
+    "type": "Return",
+    "imageUrl": "/promising-practices/promising-gre-2-cover.png"
+  },
+  {
+    "id": 8,
+    "country": "iraq",
+    "type": "Post-Return",
+    "imageUrl": "/promising-practices/promising-ir-cover.png"
+  },
+  {
+    "id": 9,
+    "country": "jordan",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-jo-cover.png"
+  },
+  {
+    "id": 10,
+    "country": "morocco",
+    "type": "Post-Return",
+    "imageUrl": "/promising-practices/promising-mo-cover.png"
+  },
+  {
+    "id": 11,
+    "country": "nigeria-1",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-ni-1-cover.png"
+  },
+  {
+    "id": 12,
+    "country": "nigeria",
+    "type": "Post-Return",
+    "imageUrl": "/promising-practices/promising-ni-2-cover.png"
+  },
+  {
+    "id": 13,
+    "country": "netherland",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-nl-cover.png"
+  },
+  {
+    "id": 14,
+    "country": "sweden-1",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-sw-1-cover.png"
+  },
+  {
+    "id": 15,
+    "country": "sweden-2",
+    "type": "Pre-Return",
+    "imageUrl": "/promising-practices/promising-sw-2-cover.png"
+  },
+  {
+    "id": 16,
+    "country": "turkiye",
+    "type": "Post-Return",
+    "imageUrl": "/promising-practices/promising-tr-cover.png"
+  }
+
+]
