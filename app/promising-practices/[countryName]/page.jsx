@@ -1,5 +1,6 @@
 "use client"
 import PDFViewer from "@/app/_components/_atoms/PDFViewer";
+import Capitalize from "@/app/_helper/Capitalize";
 import React, { useState, useEffect } from "react";
 
 const Page = ({ params }) => {
@@ -35,7 +36,7 @@ const Page = ({ params }) => {
   return (
     <div>
       <h1 className="text-xl font-bold">
-        Promising Policy for {params?.countryName == "turkiye" ? "Türkiye" : params.countryName}
+        Promising Policy for {params?.countryName == "turkiye" ? "Türkiye" : params?.countryName == "iraq" ? "Iraq" : Capitalize(params?.countryName)}
       </h1>
       <PDFViewer filename={`promising-${params.countryName}`} />
     </div>
