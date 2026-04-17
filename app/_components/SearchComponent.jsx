@@ -7,6 +7,8 @@ import Button from "../_components/_atoms/Button";
 import TableComponent from "./TableComponent";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import ExternalReturnComponent from "./ExternalReturnComponent";
+import ExternalInternationalCoopComponent from "./ExternalInternationalCoopComponent";
 
 const SearchComponent = ({ data, countryList, headers }) => {
   const sortedCountryData = countryList.sort((a, b) => 
@@ -37,9 +39,9 @@ const SearchComponent = ({ data, countryList, headers }) => {
   const [filteredPolicies, setFilteredPolicies] = useState([]);
 
   const handleSearch = () => {
-
-
     let filtered = data.flatMap((country) => {
+     console.log("country:", country);
+     console.log("selected", selectedCountries);
      
 
       if (
@@ -63,7 +65,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
 
             return matchesYear && matchesTerm;
           })
-          .map((policy) => ({ country: country.countryName, ...policy }));
+          .map((policy) => ({ country: country?.countryName == "unitedKingdom" ? "United Kingdom" : country?.countryName, ...policy }));
       }
       return [];
     });
@@ -72,6 +74,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
 
   return (
     <div className="mx-2 first-line:flex flex-col max-w-7xl">
+      {console.log("filtered:", filteredPolicies)}
       <div className="w-11/12">
       <h2 className="flex font-bold text-lg mb-4">
         {pathName === "/policy-legislation"
@@ -100,6 +103,9 @@ const SearchComponent = ({ data, countryList, headers }) => {
           <p className="mt-1">
             Return Migration Infrastructure maps the programs and projects launched by returning state’ agencies or international organisations to enable the return of people to their country of origin or who migrate to a country willing to receive them. It also covers programs designed for readmission and reintegration of returnees in the country of origin. Mapping of actors, targets, and types of these programs and projects is of importance to understand how return migration governance is put into practice by returning states and how it is operated in the county of origin.
           </p>
+          <br />
+          <h2 className="text-primary font-bold text-lg">Return Migration Infrastructures (Original Links to Project WebPage)</h2>
+          <ExternalReturnComponent />
         </div>
           : "/international-cooperation" ? 
           <div className="text-justify text-sm">
@@ -107,6 +113,9 @@ const SearchComponent = ({ data, countryList, headers }) => {
             </p>
             <p className="mt-2">Each entry includes the names of the signatories, the year of signature or type of cooperation instrument, web links to the original agreement if available. International cooperation items can be searched by entering the signing countries, relevant date or key terms. All entries can also be downloaded as a PDF/Excel document.
             </p>
+
+            <h2 className="text-primary font-bold text-lg">International Cooperation (Original Links)</h2>
+            <ExternalInternationalCoopComponent/>
           </div> 
           : "" }
       <div className="flex flex-col gap-4">

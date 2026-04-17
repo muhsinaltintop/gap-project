@@ -124,6 +124,7 @@ const CountryCard = ({ country }) => {
               </div>
             )}
           </div>
+          <div>
           {<Link
             href={
               ["Greece", "Iraq", "Morocco", "Poland", "Sweden"].includes(
@@ -139,7 +140,20 @@ const CountryCard = ({ country }) => {
               Country Profile on GAPs <span className="float-right"><ExternalLink className="size-3"/></span> 
             </button>
           </Link>
-          }
+          
+        }
+        </div>
+        <div>
+          <Link
+            target="_blank"
+            href={`/promising-practices`}
+            className="group relative block"
+          >
+            <button className="block rounded bg-red-700 text-white mt-2 h-12 w-48 p-2 text-sm font-bold transition hover:scale-105">
+              Promising Practices
+            </button>
+          </Link>
+        </div>
         </div>
       </div>
     </div>

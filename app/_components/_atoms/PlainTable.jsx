@@ -23,8 +23,6 @@ const PlainTable = ({ policies, headersData, pathName, selectedCountries }) => {
                 >
                     <thead>
                         <tr>
-                            {console.log("headers:", headers)}
-                            {console.log("policies:", policies)}
 
                             {headers.map((header, index) => (
                                 <th
