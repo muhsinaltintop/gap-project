@@ -39,9 +39,9 @@ const SearchComponent = ({ data, countryList, headers }) => {
   const [filteredPolicies, setFilteredPolicies] = useState([]);
 
   const handleSearch = () => {
-
-
     let filtered = data.flatMap((country) => {
+     console.log("country:", country);
+     console.log("selected", selectedCountries);
      
 
       if (
@@ -65,7 +65,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
 
             return matchesYear && matchesTerm;
           })
-          .map((policy) => ({ country: country.countryName, ...policy }));
+          .map((policy) => ({ country: country?.countryName == "unitedKingdom" ? "United Kingdom" : country?.countryName, ...policy }));
       }
       return [];
     });
@@ -74,6 +74,7 @@ const SearchComponent = ({ data, countryList, headers }) => {
 
   return (
     <div className="mx-2 first-line:flex flex-col max-w-7xl">
+      {console.log("filtered:", filteredPolicies)}
       <div className="w-11/12">
       <h2 className="flex font-bold text-lg mb-4">
         {pathName === "/policy-legislation"
