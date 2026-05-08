@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:8.0
+
+    container_name: data-returnmigration-db
+
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: "StrongRootPassword123!"
+      MYSQL_DATABASE: "odycodig_gap"
+      MYSQL_USER: "gap_app"
+      MYSQL_PASSWORD: "StrongAppPassword123!"
+
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+    ports:
+      - "127.0.0.1:3307:3306"
+
+  app:
+    build: .
+
+    container_name: data-returnmigration
+
+    restart: unless-stopped
+
+    depends_on:
+      - db
+
+    ports:
+      - "127.0.0.1:3001:3000"
+
+    environment:
+      NODE_ENV: production
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: gap_app
+      DB_PASS: "StrongAppPassword123!"
+      DB_SCHEMA: odycodig_gap
