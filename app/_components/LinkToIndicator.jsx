@@ -6,7 +6,7 @@ const LinkToIndicator = () => {
   return (
     <div className="w-full h-full">
       <div>
-        <Link href={"https://zenodo.org/records/10790795"} target="_blank">
+        <Link href={"https://zenodo.org/records/18720917"} target="_blank">
           <Image
             alt={"gaps project cover"}
             width={800}
@@ -16,7 +16,7 @@ const LinkToIndicator = () => {
         </Link>
       </div>
       <div className="mt-1 align-end text-center">
-        <Link href={"https://zenodo.org/records/10790795"} target={"_blank"}>
+        <Link href={"https://zenodo.org/records/18720917"} target={"_blank"}>
           <Button
             label={"Read Full Report"}
             icon={false}
